@@ -1,48 +1,67 @@
-# v0.19 final composite readability update
+# 文化活动海报系统 v0.19
 
-详见 `layout_engine_v018/readability/README.md`、`audit/READABILITY_AUDIT_V019.md`；保留 v0.18 SVG-first、v0.17 多路线 Prompt Compiler 及 LoRA 备用分支。
+自主式文化活动宣传海报生成技能。从活动简报出发，经参考图检索、多路线 Prompt 编译、SVG-first 双语排版、最终合成可读性质检，交付可编辑的中英文竖版海报。
 
-> **v0.18 排版优先更新：** 新增 `layout_engine_v018/`，采用 SVG-first editable composition，禁止无依据逐字尺寸变奏，详见 `layout_engine_v018/README.md`。
+## 运行时入口
 
-# Cultural Event Poster Skill v0.17
+| 文件 | 作用 |
+|---|---|
+| `SKILL.md` | 唯一任务协议，定义完整流水线与断点规则 |
+| `ACTIVE_RULE_INDEX.md` | 规则优先级索引，所有门禁的执行顺序与短路条件 |
+| `manifest.json` | 版本元数据、45 项核心特性清单、质量门禁阈值 |
 
-**Default entry: `SKILL.md`, `ACTIVE_RULE_INDEX.md`, `ROUTE_RESELECTION_V017.md`**.
+## 主要目录
 
-## This release fixes
-- Production prompts inheriting the built-in fermentation example's fixed cyan/red/warm-paper palette.
-- Reusing ZCOOL KuaiLe because the font had been installed, even after explicit negative aesthetic feedback.
-- Pretending three variations of the same Lead/palette/typography are three different creative directions.
-- Treating technical correctness (font cmap, watermark, layout) as proof of design quality.
+| 目录 | 内容 |
+|---|---|
+| `core/` | 42 个 YAML 规则定义（参考检索、配色门禁、字体 DNA、捷径防线等） |
+| `layout_engine_v018/` | SVG-first 排版引擎 + 最终合成可读性审计/修复脚本 |
+| `modules/prompt_compiler_v017/` | 多路线 Prompt 编译器，为同一参考输出差异化方案 |
+| `reference_library/` | 113 张参考图、10 个视觉簇索引，供两阶段检索使用 |
+| `style_packs/` | 风格包配置（当前含 S01_PLAYFUL_DOODLE），含正负参考图与路由参数 |
+| `scripts/` | 命令行工具：路由编译、LoRA 门禁、字体覆盖检查、参考比对等 |
+| `schemas/` | JSON Schema：Lead 有效性、参考蓝图、路线输入、字体蓝图等 |
+| `model_adapters/` | 后端能力注册表与 LoRA 适配器配置 |
+| `tests_v017/` | 纯标准库单元测试（19 项） |
+| `tests/` | 集成测试（需 Pillow） |
+| `audit/` | v0.19 质检证据（4 组可读性场景的渲染/审计报告） |
+| `feedback_registry/` | 用户审美否定记录，优先于历史 Design PASS |
+| `collaboration/` | 参考包格式规范与风格包交接文档 |
+| `examples/` | 简报样例、参考蓝图示例、LoRA 候选模板 |
 
-This is an autonomous poster creation skill, not a human-in-the-loop art-director workflow. Breakpoints remain only for missing essential brief facts, font/model downloads, permissions/costs or non-automatable verification constraints. No paid API required by this release. LoRA support remains optional for compatible external backends.
+## 快速命令
 
-### Main command
-`python scripts/compile_routes_v017.py <PROJECT_PRODUCTION_INPUT_JSON> <PROJECT_OUTPUT_DIR>`
+```bash
+# 运行路由编译器
+python scripts/compile_routes_v017.py <输入JSON> <输出目录>
 
-For input shape see `modules/prompt_compiler_v017/PROMPT_COMPILER_V017.md`; sample JSONs are **not** a production source of defaults.
+# 跑纯标准库测试
+python -m unittest discover -s tests_v017 -v
 
-### Tests
-`python -m unittest discover -s tests_v017 -v`
+# 参考图并排比对（需 Pillow）
+python scripts/create_reference_comparison_v017.py \
+  --lead <参考图.jpg> --generated <生成图.png> --out <比对结果.png>
+```
 
-### Side-by-side image proof (Pillow)
-`python scripts/create_reference_comparison_v017.py --lead <reference.jpg> --generated <hero.png> --out <comparison.png>`
+## 依赖
 
-This version is tested as a compiler and workflow package; it has not yet produced an actual aesthetically verified new poster. Do not report an automated design score from the compiler.
+- Python 3.9+
+- `tests_v017/` 仅需标准库
+- `tests/` 与 `layout_engine_v018/readability/` 需要 `Pillow` 和 `NumPy`
+- LoRA 支持可选，需兼容外部后端；不支持时自动降级为 BASELINE_ONLY
 
----
+## 质量门禁
 
-## 仓库版本更新记录
+| 指标 | 阈值 |
+|---|---|
+| Design 最低分 | 82 |
+| Production 最低分 | 85 |
+| 视觉证据 | 必须提供 |
+| 最终合成可读性 | 阻断级（不通过不出图） |
+| SHA256 视觉审批 | 必须 |
 
-### v0.19 入库（2026-10-12）
+## 版本说明
 
-`cultural_event_poster_skill_v0_19.zip`（382 个文件，约 50 MB）已完整解压并作为当前版本置于仓库根目录，包内文件保持逐字节原样，未做裁剪。
+本仓库当前为 v0.19（2026-10-12 入库）。旧版中文交互版 Skill 已从工作树移除，可从历史提交 `44ab75e` 恢复。
 
-新增的主要目录：`core/`、`scripts/`、`modules/`、`schemas/`、`layout_engine_v018/`（含 `readability/audit_and_repair.py`）、`style_packs/`、`reference_library/`（113 张参考图，10 个视觉簇）、`model_adapters/`、`case_studies/`、`audit/`、`feedback_registry/`、`collaboration/`、`tests/`、`tests_v017/`、`archive/`。
-
-本仓库原有的中文交互版 Skill（`SKILL.md`、`README.md`、`agents/`、`evals/`、`examples/`、`references/`，共 11 个文件）已从工作树删除，不再作为运行时入口；需要回看时从历史提交 `44ab75e` 取出。
-
-运行时入口以 v0.19 为准：`SKILL.md`、`ACTIVE_RULE_INDEX.md`、`manifest.json`。
-
-依赖说明：`tests/` 与 `layout_engine_v018/readability/` 需要 Pillow 与 NumPy，缺失时会 import 失败；`python -m unittest discover -s tests_v017` 为纯标准库测试。
-
-注意：`SKILL.md` 的 frontmatter 名称已变为 `cultural-event-poster-system`，若技能加载器要求目录名与 `name` 一致，需要把目录改名为 `cultural-event-poster-system`，或让加载器以 frontmatter 为准。
+`SKILL.md` frontmatter 名称为 `cultural-event-poster-system`。若技能加载器要求目录名与 `name` 一致，请将本目录改名为 `cultural-event-poster-system`。
