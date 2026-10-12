@@ -49,4 +49,4 @@ NEEDS_INFO / READY_BASELINE / READY_LORA_DISCOVERY / WAITING_FOR_LORA_APPROVAL /
 所有需用户决策的断点停止当前执行，收到答复后恢复；不要自动承诺后台持续处理。
 
 ## v0.15 BP_FONT_DOWNLOAD 补充
-中文/英文实际标题字体文件无匹配候选时，按 `FONT_DOWNLOAD_BREAKPOINT.md` 给出最优推荐与权限证据，不得默默回退。下载或授权请求不能被 LoRA 许可替代。
+中文/英文实际标题字体文件无匹配候选时，按 `docs/TYPOGRAPHY_SYSTEM.md` 给出最优推荐与权限证据，不得默默回退。下载或授权请求不能被 LoRA 许可替代。
