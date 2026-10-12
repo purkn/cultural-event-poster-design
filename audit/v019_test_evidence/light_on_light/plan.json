@@ -1,0 +1,38 @@
+{
+  "canvas": {
+    "width": 480,
+    "height": 660,
+    "background": "#ffffff",
+    "safe_margin": 16
+  },
+  "h0": {
+    "id": "h0",
+    "mode": "STANDARD_BLOCK",
+    "text": "EVENT",
+    "lines": [
+      "EVENT"
+    ],
+    "x": 40,
+    "y": 60,
+    "max_width": 370,
+    "font_file": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "font_family": "DejaVu Sans",
+    "font_size": 64,
+    "fill": "#ffffff",
+    "lock_position": true,
+    "approved_text_colors": [
+      "#1a1a1a"
+    ]
+  },
+  "text_blocks": [],
+  "readability_policy": {
+    "max_repair_rounds": 2
+  },
+  "hero": {
+    "file": "/mnt/data/v019_work/cultural_event_poster_skill_v0_18/audit/v019_test_evidence/light_on_light/hero.png",
+    "x": 0,
+    "y": 0,
+    "width": 480,
+    "height": 660
+  }
+}

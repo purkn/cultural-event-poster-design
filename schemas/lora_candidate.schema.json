@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "candidate_id",
+    "repo_id",
+    "base_model_family",
+    "base_model_id",
+    "revision",
+    "license",
+    "weight_filename",
+    "source_verified",
+    "visual_previews_verified",
+    "license_verified",
+    "license_evidence_url",
+    "output_use_allowed"
+  ],
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "repo_id": {
+      "type": "string"
+    },
+    "base_model_family": {
+      "type": "string"
+    },
+    "base_model_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "license": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "weight_filename": {
+      "type": "string",
+      "pattern": "\\.safetensors$"
+    },
+    "size_mb": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "source_verified": {
+      "type": "boolean"
+    },
+    "visual_previews_verified": {
+      "type": "boolean"
+    },
+    "commercial_output_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "redistribution_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "license_verified": {
+      "type": "boolean"
+    },
+    "license_evidence_url": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "output_use_allowed": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    }
+  }
+}

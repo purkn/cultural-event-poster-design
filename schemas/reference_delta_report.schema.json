@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReferenceDeltaReport",
+  "type": "object",
+  "required": [
+    "lead_reference",
+    "rows",
+    "overall_status"
+  ],
+  "properties": {
+    "lead_reference": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array",
+      "minItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "variable",
+          "lead",
+          "generated",
+          "status"
+        ],
+        "properties": {
+          "variable": {
+            "type": "string"
+          },
+          "lead": {},
+          "generated": {},
+          "delta": {},
+          "status": {
+            "enum": [
+              "GREEN",
+              "AMBER",
+              "RED"
+            ]
+          }
+        }
+      }
+    },
+    "overall_status": {
+      "enum": [
+        "GREEN",
+        "AMBER",
+        "RED"
+      ]
+    },
+    "partial_break_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

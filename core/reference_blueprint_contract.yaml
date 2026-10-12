@@ -1,0 +1,18 @@
+version: 0.13
+required_before_rough_if_lead_exists: true
+sections: [borrow, transform, do_not_copy, target_tolerance, surface, H0_type_DNA]
+tolerance:
+  H0_area_ratio: 0.20
+  hero_area_ratio: 0.20
+  visual_center_shift: 0.10
+  info_density_ratio: 0.20
+  color_role_count_delta: 1
+  background_value_regime: same_class
+  medium_class: same_family
+  H0_weight_class_delta: 1
+  H0_fill_effect_class: same_unless_predeclared_break
+  accent_area_multiplier: [0.5, 1.5]
+  negative_space_region: same_or_adjacent
+  type_image_relation_level_delta: 1
+partial_break_requires_reason_before_rough: true
+reroute_if_expected_global_breaks_gte: 2

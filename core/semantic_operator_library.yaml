@@ -1,0 +1,32 @@
+version: 0.13
+purpose: generate ideas from visual operations rather than object lists
+operators:
+  SCALE_INVERSION:
+    description: make an everyday object impossibly large or tiny
+  CONTAINER_WORLD:
+    description: turn one object into a space/world that contains the event
+  WORD_METAMORPHOSIS:
+    description: make title strokes become theme-specific material or action
+  MATERIAL_SUBSTITUTION:
+    description: build one familiar form from an unexpected theme material
+  NEGATIVE_SPACE_REVEAL:
+    description: let empty space form the key symbol or title
+  IMPOSSIBLE_RELATION:
+    description: connect two normally separate objects/actions into one visual logic
+  SEQUENCE_TRANSFORMATION:
+    description: show one thing slowly transforming into another across the poster
+  SINGLE_SYMBOL_SYSTEM:
+    description: use one symbol repeatedly with controlled variation
+  CROPPED_MONUMENT:
+    description: overscale one object so only part of it is visible
+  PARTICIPATORY_MAP:
+    description: represent social participation as a diagram/map rather than a scene
+  TYPE_AS_OBJECT:
+    description: treat H0 characters as physical objects that interact with space
+  TRACE_OR_PATH:
+    description: use one continuous line/path to connect the event experience
+rules:
+  - generate_at_least_12_text_concepts
+  - use_at_least_6_different_operators
+  - no more than_3_literal_theme_objects_per_concept
+  - an_operator_is_not_a_concept_until_theme_specificity_is_written

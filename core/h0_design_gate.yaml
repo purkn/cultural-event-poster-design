@@ -1,0 +1,47 @@
+version: 0.13
+purpose: make H0 intentionally designed and reference-consistent
+strategy_router_required: true
+routes:
+  REFERENCE_LED_DISPLAY_TYPE:
+    accepted_interventions:
+      - reference_matched_typeface_DNA
+      - custom_scale_and_proportion
+      - custom_tracking_and_line_spacing
+      - vertical_or_grid_arrangement
+      - crop_or_edge_relationship
+      - image_axis_or_overlap_relationship
+    note: font_selection_plus_reference_led_composition_can_be_sufficient
+  GLYPH_SAFE_ARTWORD:
+    accepted_interventions:
+      - per_character_scale_or_proportion_design_only_with_lead_evidence_and_verified_custom_paths
+      - structural_stroke_substitution
+      - controlled_deformation_from_exact_glyph_skeleton
+      - custom_spacing_as_part_of_spatial_concept
+      - thematic_material_affecting_contour_or_structure
+  IMAGE_INTEGRATED_H0:
+    accepted_interventions:
+      - interlocking_with_image
+      - image_inside_type
+      - type_as_object
+      - shared_axis_or_cutout
+required:
+  - exact_character_identity
+  - explicit_typography_strategy
+  - relation_to_lead_or_concept
+not_sufficient:
+  - default_font_without_reference_DNA_analysis
+  - size_increase_only
+  - tracking_only_without_spatial_reason
+  - outline_shadow_or_gradient_only
+hard_fail:
+  - inaccurate_character
+  - title_unrelated_to_visual_system
+  - decorative_effect_added_only_to_prove_artword_status
+  - H0_reference_DNA_severe_mismatch
+
+# v0.18 stronger default; overrides permissive artword examples
+v018_layout_override:
+  default_h0_mode: STANDARD_BLOCK
+  allow_per_glyph_variation: only_custom_verified_paths_with_reference_evidence
+  forbid_css_random_rotation_or_size_variation: true
+  same_source_plan_svg_html: true

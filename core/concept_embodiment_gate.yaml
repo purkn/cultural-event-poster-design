@@ -1,0 +1,26 @@
+version: 0.13
+purpose: ensure concept changes poster structure rather than decorating a generic layout
+structural_dimensions:
+  - hero_shape
+  - H0_structure
+  - composition_skeleton
+  - negative_space_shape
+  - scale_relationship
+  - image_type_relation
+  - reading_path
+minimum_changed_dimensions: 2
+removal_test:
+  question: if the concept-specific effect is removed, does the poster remain almost unchanged?
+  if_yes: hard_fail
+weak_effects_not_sufficient_alone:
+  - glow
+  - steam
+  - grain
+  - sticker
+  - decorative_line
+  - generic_texture
+  - small_symbol
+hard_fail:
+  - concept_exists_only_in_caption_or_explanation
+  - concept_only_adds_surface_effect
+  - no_structural_consequence

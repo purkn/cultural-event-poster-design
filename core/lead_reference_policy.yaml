@@ -1,0 +1,18 @@
+version: 0.13
+default_mode: lead_reference_first
+lead_candidate_thresholds:
+  topology_match: 80
+  asset_structure_match: 72
+  information_density_match: 70
+  reference_quality: 82
+support_reference_max: 1
+support_must_solve_one_named_problem: true
+role_synthesis:
+  default: false
+  allow_when:
+    - no_reference_can_hold_whole_design_logic
+    - references_solve_non_conflicting_problems
+    - resulting_route_has_single_visual_personality
+forbidden:
+  - four_reference_average_by_default
+  - mixing_styles_to_hide_coverage_gap

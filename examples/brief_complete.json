@@ -1,0 +1,35 @@
+{
+  "poster_purpose": "announcement",
+  "event_mode": "offline",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "fields": {
+    "title_zh": {
+      "value": "周末文化节",
+      "status": "confirmed",
+      "source": "user_text"
+    },
+    "title_en": {
+      "value": "Weekend Culture Festival",
+      "status": "confirmed",
+      "source": "user_text"
+    },
+    "date_text": {
+      "value": "2026-11-08",
+      "status": "confirmed",
+      "source": "user_text"
+    },
+    "venue_name": {
+      "value": "城市文化中心",
+      "status": "confirmed",
+      "source": "user_text"
+    },
+    "logo": {
+      "value": null,
+      "status": "missing",
+      "source": null
+    }
+  }
+}

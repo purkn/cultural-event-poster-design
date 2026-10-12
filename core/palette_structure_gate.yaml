@@ -1,0 +1,15 @@
+version: 0.13
+source_priority: [lead_reference, style_pack, concept, event_semantics]
+default_roles: [background, dominant, secondary_optional, accent]
+default_high_saturation_accent_max_ratio: 0.12
+semantic_color_shortcuts:
+  lawn_nature: green
+  outdoor: orange_sun_blue_cloud
+  children: rainbow
+  technology: blue_purple_gradient
+  heritage: red_gold
+rules:
+  - semantic shortcut colors require lead_or_concept_evidence
+  - new high_saturation hue without evidence is fail
+  - information colors must belong to same role map
+  - equal_weight_multicolor requires lead evidence

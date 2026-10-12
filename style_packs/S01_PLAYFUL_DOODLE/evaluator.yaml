@@ -1,0 +1,28 @@
+version: 0.13
+style_id: S01_PLAYFUL_DOODLE
+style_relative_dimensions:
+  artword_character: 20
+  controlled_naivety: 15
+  mark_variation: 12
+  scale_tension: 12
+  negative_space_shape: 10
+  palette_control: 10
+  non_sticker_sheet: 11
+  theme_specificity: 10
+hard_fail:
+  - even_icon_ring
+  - plain_H0
+  - polished_generic_vector_pack
+  - style_is_only_surface_texture
+reference_evidence_required: true
+
+core_v013_required_gates:
+  - reference_blueprint_when_lead_exists
+  - reference_delta_gate
+  - palette_structure_gate
+  - typography_reference_gate
+  - semantic_decoration_ban
+  - negative_space_gate
+  - medium_surface_fidelity_gate
+  - h0_reference_fidelity_gate
+  - effect_discipline_gate

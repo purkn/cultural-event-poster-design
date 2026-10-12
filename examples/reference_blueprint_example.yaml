@@ -1,0 +1,68 @@
+reference_id: REF-XXX
+spatial:
+  H0_bbox: [0.70, 0.05, 0.22, 0.28]
+  hero_bbox: [0.00, 0.00, 1.00, 0.78]
+  visual_center: [0.47, 0.42]
+  main_axis: flowing_diagonal
+ratios:
+  H0_area: 0.10
+  hero_area: 0.74
+  info_area: 0.15
+  negative_space_area: 0.24
+palette:
+  background_value_regime: high_key
+  background: {family: white, area: 0.35, saturation: low, lightness: very_high}
+  dominant: {family: cobalt_blue, area: 0.58, saturation: high, lightness: medium}
+  accent: {family: none, area: 0.00}
+surface:
+  medium_class: engraving_like_print
+  dimensionality: flat
+  edge_behavior: crisp_rough
+  mark_frequency: dense
+  dominant_mark: fine_curved_lines
+  lighting_model: none
+  surface_finish: matte_paper
+  background_value_regime: high_key
+  texture_scale: fine
+typography:
+  H0_type_DNA:
+    skeleton_class: high_contrast_song_ming
+    stroke_contrast: high
+    weight: light
+    width: normal_to_narrow
+    vertical_proportion: tall
+    terminal_personality: sharp_elegant
+    arrangement: vertical_cluster
+    fill_behavior: flat_solid
+    color_role: white_knockout
+    effect_class: none
+  body_personality: compact_serif
+  english_personality: high_contrast_serif
+  numeric_style: classic_serif
+type_image_relation: overlaid_on_hero
+negative_space:
+  largest_region: lower_left
+  role: information_anchor
+material:
+  paper: visible
+  mark_language: dense_engraved_flow_lines
+  line_weight_variation: medium
+decoration:
+  count: 0
+  role: none
+distinctive_moves:
+  - dense blue-white flow field dominates the canvas
+  - thin white vertical H0 sits inside the active hero field
+  - bottom information cuts into the flow with a large white negative shape
+borrow:
+  - medium/surface fingerprint
+  - high-key blue-white value regime
+  - thin high-contrast vertical H0 personality
+  - flow-field-to-negative-space topology
+transform:
+  - replace original exhibition subject with current event metaphor
+  - redesign flow pattern from current source material
+do_not_copy:
+  - original wording
+  - original exhibition-specific text
+  - exact line trajectories

@@ -1,0 +1,26 @@
+version: 0.13
+name: STRONG_LEAD_MODE
+enable_when:
+  topology_match_min: 0.70
+  medium_surface_match_min: 0.65
+  typography_DNA_match_min: 0.60
+  palette_value_match_min: 0.60
+  overall_match_min: 0.68
+borrow_strength:
+  composition_grammar: high
+  hero_scale_relationship: high
+  type_image_relationship: high
+  negative_space_logic: high
+  medium_surface_fingerprint: high
+  palette_value_regime: high
+  H0_type_DNA: high
+  exact_palette_values: low_to_medium
+  unique_graphics: forbidden
+support_reference_max: 1
+support_scope_required: true
+require:
+  - transformation_statement
+  - originality_delta
+  - information_fit_check
+  - no_near_copy_check
+  - triple_delta_report

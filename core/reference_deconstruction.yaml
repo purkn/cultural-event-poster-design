@@ -1,0 +1,29 @@
+version: 0.13
+engine: top_candidate_structure_surface_type_deconstruction
+coarse_top_k: 16
+deconstruct_top_k: 8
+fields:
+  spatial: [H0_bbox, hero_bbox, info_bboxes, visual_center, main_axis, symmetry]
+  ratios: [H0_area, hero_area, info_area, decoration_area, negative_space_area]
+  negative_space: [grid_map, largest_region, region_location, region_function]
+  palette: [background_role, dominant_role, secondary_role, accent_roles, area_ratios, saturation_levels, lightness_levels, background_value_regime, chromatic_role_count]
+  H0_type_DNA: [skeleton_class, stroke_contrast, weight, width, vertical_proportion, terminal_personality, arrangement, fill_behavior, color_role, effect_class]
+  supporting_typography: [body_personality, english_personality, numeric_style, tracking, alignment, line_height]
+  surface: [medium_class, dimensionality, edge_behavior, mark_frequency, dominant_mark, lighting_model, surface_finish, texture_scale]
+  type_image: [relationship, overlap_level, shared_axis]
+  marks: [line_weight, variation, roughness, fill_type]
+  crop_scale: [object_count, dominant_object_count, extreme_crop, edge_breaks, scale_ratio]
+  decoration: [count, scale_classes, roles]
+  distinctive_moves: 3
+rerank_weights:
+  topology: 15
+  medium_surface: 14
+  H0_type_DNA: 13
+  type_image_relation: 10
+  palette_value_regime: 10
+  density_negative_space: 8
+  asset_structure: 7
+  information_architecture: 7
+  tone: 4
+  event_semantics: 2
+  format: 2

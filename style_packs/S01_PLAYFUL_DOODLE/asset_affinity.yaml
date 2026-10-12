@@ -1,0 +1,19 @@
+version: 0.13
+photography:
+  affinity: medium
+  preferred_transform: [trace, crop_fragment, recolor, collage]
+archival_scan:
+  affinity: medium
+  preferred_transform: [zine_collage, line_overlay]
+children_art:
+  affinity: high
+  preferred_transform: [preserve_marks, selective_collage, do_not_redraw_cleanly]
+object_photo:
+  affinity: medium_high
+  preferred_transform: [simplify, doodlify, iconize]
+illustration:
+  affinity: high
+  preferred_transform: [preserve_character, recolor, crop]
+no_image_brief:
+  affinity: high
+  preferred_transform: [artword_first, simple_character_or_symbol]

@@ -1,0 +1,24 @@
+{
+  "source_file": "cultural_event_poster_skill_v0_18(2).zip",
+  "new_version": "v0.19",
+  "files_checked": 382,
+  "extensions": {
+    ".md": 78,
+    ".json": 46,
+    ".yaml": 60,
+    ".py": 15,
+    ".jpg": 139,
+    ".png": 22,
+    ".csv": 1,
+    ".svg": 19,
+    ".html": 1
+  },
+  "json_parse_errors": 0,
+  "yaml_parse_errors": 0,
+  "python_compile_errors": 0,
+  "zip_integrity": "verified_after_packaging",
+  "static_hygiene_findings": [],
+  "new_tests_passed": 10,
+  "preexisting_tests_passed": 44,
+  "scope": "Static hygiene plus final-render synthetic pixel tests; no claim of real-world aesthetic guarantee."
+}

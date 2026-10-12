@@ -1,0 +1,22 @@
+version: 0.13
+default_mode: autonomous
+phases:
+  - brief_parse
+  - asset_audit
+  - visual_opportunity
+  - reference_retrieval
+  - reference_deconstruction
+  - lead_validity_gate
+  - lead_dominance_contract
+  - reference_blueprint
+  - typography_strategy_router
+  - concept_embodiment
+  - information_fit
+  - rough_competition
+  - triple_reference_delta
+  - deterministic_composition
+  - design_production_QA
+user_confirmation_required_only_for:
+  - licensed_font_download
+  - missing_critical_official_asset
+  - ambiguous_factual_content

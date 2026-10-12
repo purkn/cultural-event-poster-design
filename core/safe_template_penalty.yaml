@@ -1,0 +1,18 @@
+version: 0.13
+purpose: detect clean but generic institutional poster shortcuts
+signals:
+  centered_large_title: 2
+  rectangular_hero_frame: 2
+  thin_double_border: 2
+  bottom_three_column_info: 2
+  global_axial_symmetry: 2
+  beige_or_white_safe_background: 1
+  conventional_serif_or_songti_without_custom_H0: 3
+  title_image_info_as_three_independent_blocks: 3
+  ui_button_like_cta: 2
+  no_scale_tension: 2
+high_risk_combination:
+  signal_count_min: 3
+  concept_embodiment_below: 14
+  action: hard_fail
+note: individual signals are not forbidden; the failure is their untransformed template combination

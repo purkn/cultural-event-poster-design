@@ -1,0 +1,120 @@
+{
+  "overall": "MEASURABLE_PASS",
+  "renderer": "CairoSVG",
+  "note": "Automated proxy; subjective typography and unannotated subject saliency still require visual approval.",
+  "protected_regions_supplied": false,
+  "final_delivery_allowed": false,
+  "findings": [
+    {
+      "id": "h0",
+      "text": "EVENT",
+      "role": "h0",
+      "status": "PASS",
+      "bbox_px": [
+        46,
+        72,
+        206,
+        48
+      ],
+      "contrast_threshold": 3.0,
+      "contrast_q10": 18.75,
+      "contrast_min": 18.75,
+      "contrast_pass_fraction": 1.0,
+      "luminance_std": 0.0,
+      "edge_density": 0.0,
+      "high_background_complexity": false,
+      "thumbnail_font_px": 16.0,
+      "thumbnail_signal": 0.508,
+      "protected_overlap": [],
+      "reasons": [],
+      "warnings": []
+    }
+  ],
+  "visual_review_status": "PENDING",
+  "render_sha256": "90062e49af03878f9ce748c1f9fa5b8c310f41a305837d477ef0c8f0002af518",
+  "technical_readability_gate": "PASS",
+  "visual_approval_required": true,
+  "auto_repair_rounds_used": 1,
+  "change_log": [
+    {
+      "type": "approved_color",
+      "target": "h0",
+      "from": "#151824",
+      "to": "#ffffff"
+    }
+  ],
+  "repair_history": [
+    {
+      "round": 0,
+      "overall": "FAIL",
+      "findings": [
+        {
+          "id": "h0",
+          "text": "EVENT",
+          "role": "h0",
+          "status": "FAIL",
+          "bbox_px": [
+            46,
+            72,
+            206,
+            48
+          ],
+          "contrast_threshold": 3.0,
+          "contrast_q10": 1.061,
+          "contrast_min": 1.052,
+          "contrast_pass_fraction": 0.0,
+          "luminance_std": 0.0,
+          "edge_density": 0.0,
+          "high_background_complexity": false,
+          "thumbnail_font_px": 16.0,
+          "thumbnail_signal": 0.002,
+          "protected_overlap": [],
+          "reasons": [
+            "LOCAL_CONTRAST_FAIL",
+            "LOW_THUMBNAIL_VISIBILITY"
+          ],
+          "warnings": []
+        }
+      ],
+      "repairs": [
+        {
+          "type": "approved_color",
+          "target": "h0",
+          "from": "#151824",
+          "to": "#ffffff"
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "overall": "MEASURABLE_PASS",
+      "findings": [
+        {
+          "id": "h0",
+          "text": "EVENT",
+          "role": "h0",
+          "status": "PASS",
+          "bbox_px": [
+            46,
+            72,
+            206,
+            48
+          ],
+          "contrast_threshold": 3.0,
+          "contrast_q10": 18.75,
+          "contrast_min": 18.75,
+          "contrast_pass_fraction": 1.0,
+          "luminance_std": 0.0,
+          "edge_density": 0.0,
+          "high_background_complexity": false,
+          "thumbnail_font_px": 16.0,
+          "thumbnail_signal": 0.508,
+          "protected_overlap": [],
+          "reasons": [],
+          "warnings": []
+        }
+      ]
+    }
+  ],
+  "must_escalate_layout": false
+}

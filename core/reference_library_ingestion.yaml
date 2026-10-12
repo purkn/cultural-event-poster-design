@@ -1,0 +1,15 @@
+version: 0.13
+input: unclassified_reference_bundle
+steps:
+  - normalize_files
+  - remove_os_metadata
+  - assign_reference_id
+  - inspect_visual_grammar
+  - assign_provisional_cluster
+  - tag_dimensions
+  - compute_cluster_coverage
+  - promote_only_mature_clusters_to_style_pack
+notes:
+  - folder names and filenames are hints, not ground truth
+  - visual inspection overrides filename-based clustering
+  - sparse clusters stay in reference_library and do not become style packs yet

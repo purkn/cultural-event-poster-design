@@ -1,0 +1,11 @@
+{
+  "cluster": "R05_DIFFUSE_GRADIENT_ABSTRACT",
+  "count": 4,
+  "reference_ids": [
+    "REF-068",
+    "REF-069",
+    "REF-070",
+    "REF-113"
+  ],
+  "status": "provisional_cluster"
+}

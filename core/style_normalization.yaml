@@ -1,0 +1,22 @@
+version: 0.13
+purpose: compare different style routes without mixing design and production quality
+within_style:
+  compare_to: lead_and_anchor_median
+  dimensions:
+    - design_personality_coherence
+    - H0_character
+    - type_image_relationship
+    - composition_tension
+    - palette_material_control
+    - non_template_feel
+normalized_style_score:
+  median_equivalent: 75
+  clearly_above_median: 90
+  slightly_below_median: 65
+  clearly_below_median: 50
+cross_style_route_comparison:
+  normalized_reference_score: 25
+  universal_design_score: 75
+production_score:
+  separate_gate: true
+  may_not_compensate_design: true

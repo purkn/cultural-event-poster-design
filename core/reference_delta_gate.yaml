@@ -1,0 +1,40 @@
+version: 0.13
+required_tables:
+  structure:
+    - H0_area_ratio
+    - hero_area_ratio
+    - information_area_ratio
+    - visual_center
+    - main_axis
+    - type_image_relation
+    - largest_negative_space_location
+    - density_heatmap
+  surface:
+    - medium_class
+    - dimensionality
+    - background_value_regime
+    - color_role_count
+    - dominant_accent_ratio
+    - mark_frequency
+    - lighting_model
+    - surface_finish
+  typography:
+    - skeleton_class
+    - stroke_contrast
+    - weight
+    - width_proportion
+    - arrangement
+    - fill_behavior
+    - effect_class
+    - H0_color_role
+statuses: [GREEN, AMBER, RED]
+hard_red:
+  - high_key_low_key_inversion
+  - flat_print_to_volumetric_generative
+  - H0_weight_delta_gte_2
+  - flat_solid_to_multicolor_gradient_without_evidence
+  - type_image_relation_completely_changed
+  - surface_red_count_gte_2
+  - typography_red_count_gte_2
+  - only_abstract_style_similarity_remains
+red_action: regenerate_or_reselect_lead

@@ -1,0 +1,20 @@
+version: 0.13
+purpose: legacy name retained; now evaluates DESIGN only, not mechanical production
+design_score_total: 100
+dimensions:
+  concept_embodiment: 18
+  H0_type_image_integration: 15
+  composition_visual_tension: 14
+  non_genericness: 12
+  lead_reference_intelligence: 10
+  asset_transformation_intelligence: 10
+  theme_specificity: 8
+  style_material_maturity: 7
+  craft_coherence: 6
+hard_fail:
+  - concept_embodiment_failure
+  - H0_plain_font_shortcut
+  - severe_safe_template_failure
+  - generic_template_structure
+  - no_visual_evidence_pass_claim
+pass_min: 78

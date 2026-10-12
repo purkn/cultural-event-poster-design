@@ -1,0 +1,17 @@
+version: 0.13
+rules:
+  - visual_design_scores_require_actual_image_inspection
+  - scores_8_of_10_or_higher_require_specific_visible_evidence
+  - reference_intelligence_requires_side_by_side_lead_or_anchor_comparison
+caps:
+  no_final_image_inspection:
+    design_score_max: 60
+  no_reference_side_by_side:
+    lead_reference_intelligence_max: 5
+    style_material_maturity_max: 4
+forbidden_justifications:
+  - elements_are_complete
+  - palette_matches_rules
+  - information_is_clear
+  - technically_correct
+  - no_overflow

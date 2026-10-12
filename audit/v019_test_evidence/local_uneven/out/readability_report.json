@@ -1,0 +1,78 @@
+{
+  "overall": "FAIL",
+  "renderer": "CairoSVG",
+  "note": "Automated proxy; subjective typography and unannotated subject saliency still require visual approval.",
+  "protected_regions_supplied": false,
+  "final_delivery_allowed": false,
+  "findings": [
+    {
+      "id": "h0",
+      "text": "EVENT",
+      "role": "h0",
+      "status": "FAIL",
+      "bbox_px": [
+        46,
+        72,
+        206,
+        48
+      ],
+      "contrast_threshold": 3.0,
+      "contrast_q10": 1.0,
+      "contrast_min": 1.0,
+      "contrast_pass_fraction": 0.5931,
+      "luminance_std": 0.491,
+      "edge_density": 0.0022,
+      "high_background_complexity": true,
+      "thumbnail_font_px": 16.0,
+      "thumbnail_signal": 0.677,
+      "protected_overlap": [],
+      "reasons": [
+        "LOCAL_CONTRAST_FAIL",
+        "COMPLEX_BACKGROUND_WEAK_TEXT"
+      ],
+      "warnings": []
+    }
+  ],
+  "visual_review_status": "PENDING",
+  "render_sha256": "fd4c43061946dc6939911f1acb79cc4222c18e722dae36c06f49a4b17d8e986a",
+  "technical_readability_gate": "FAIL",
+  "visual_approval_required": true,
+  "auto_repair_rounds_used": 0,
+  "change_log": [],
+  "repair_history": [
+    {
+      "round": 0,
+      "overall": "FAIL",
+      "findings": [
+        {
+          "id": "h0",
+          "text": "EVENT",
+          "role": "h0",
+          "status": "FAIL",
+          "bbox_px": [
+            46,
+            72,
+            206,
+            48
+          ],
+          "contrast_threshold": 3.0,
+          "contrast_q10": 1.0,
+          "contrast_min": 1.0,
+          "contrast_pass_fraction": 0.5931,
+          "luminance_std": 0.491,
+          "edge_density": 0.0022,
+          "high_background_complexity": true,
+          "thumbnail_font_px": 16.0,
+          "thumbnail_signal": 0.677,
+          "protected_overlap": [],
+          "reasons": [
+            "LOCAL_CONTRAST_FAIL",
+            "COMPLEX_BACKGROUND_WEAK_TEXT"
+          ],
+          "warnings": []
+        }
+      ]
+    }
+  ],
+  "must_escalate_layout": true
+}

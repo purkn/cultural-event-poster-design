@@ -1,0 +1,28 @@
+version: 0.13
+design_score_total: 100
+design_dimensions:
+  concept_embodiment: 12
+  lead_blueprint_structural_fidelity: 12
+  medium_surface_fidelity: 12
+  H0_typography_reference_fidelity: 12
+  type_image_integration: 10
+  composition_visual_tension: 10
+  palette_value_structure: 9
+  asset_transformation_intelligence: 7
+  non_genericness_effect_discipline: 6
+  information_architecture: 4
+  negative_space_intention: 3
+  theme_specificity: 3
+design_pass_min: 82
+production_score_total: 100
+production_dimensions:
+  factual_accuracy: 20
+  H0_character_accuracy: 15
+  readability_overflow: 15
+  information_completeness: 12
+  image_cleanliness: 10
+  format_resolution: 10
+  bilingual_consistency: 10
+  mandatory_asset_correctness: 8
+production_pass_min: 85
+no_compensation: true

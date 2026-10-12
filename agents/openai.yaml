@@ -1,4 +1,0 @@
-interface:
-  display_name: "文化活动宣传主视觉"
-  short_description: "补齐活动信息并选择视觉类别，四版选稿后输出中英文竖版宣传海报"
-  default_prompt: "使用 $cultural-event-poster-design 为我的文化活动设计主视觉，在信息确认、类别选择和四版选稿处暂停，最终交付中英文各一张4:5 PNG。"

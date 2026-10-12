@@ -1,0 +1,8 @@
+version: 0.13
+policy: 操作器是启发工具，不是覆盖率 KPI。
+rules:
+  - select operators from visual opportunities and style operator affinity
+  - no requirement to use all operators
+  - avoid semantically redundant operators in same route pool
+  - prefer 2_to_5 high-fit operators per style candidate
+  - diversity is judged by visual mechanism, not operator count

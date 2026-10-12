@@ -1,0 +1,32 @@
+version: 0.13
+engine: case_based_lead_reference_retrieval
+query_fields:
+  - visual_topology_need
+  - asset_structure
+  - type_image_relation_need
+  - information_density
+  - H0_shape
+  - tone
+  - material_process_need
+  - bilingual_need
+  - format
+  - channel
+  - event_semantics
+weights:
+  visual_topology_match: 22
+  asset_structure_match: 18
+  type_image_relation_match: 15
+  information_density_match: 12
+  H0_opportunity_match: 10
+  tone_match: 9
+  material_process_match: 7
+  format_match: 4
+  event_semantic_match: 3
+retrieve_top_k: 12
+lead_candidate_thresholds:
+  topology_match: 80
+  asset_structure_match: 72
+  information_density_match: 70
+  reference_quality: 82
+support_reference_max: 1
+role_synthesis_default: false

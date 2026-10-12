@@ -1,0 +1,22 @@
+version: 0.13
+policy: lead_reference_first; role_decomposition_is_fallback_not_default
+lead_reference:
+  learn:
+    - visual_topology
+    - dominant_scale
+    - type_image_relationship
+    - negative_space_logic
+    - information_zone_logic
+    - material_personality
+support_reference:
+  max_count: 1
+  requirement: must_solve_one_named_gap
+fallback_role_synthesis:
+  allow_only_if_no_lead_reference_can_hold_whole_design_logic: true
+  roles: [hero_anchor, layout_anchor, type_anchor, material_anchor, asset_transform_anchor]
+forbidden:
+  - copying_unique_character
+  - copying_exact_custom_graphic
+  - copying_copywriting
+  - pixel_level_layout_clone
+  - four_role_average_as_default

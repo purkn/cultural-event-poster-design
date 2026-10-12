@@ -1,0 +1,31 @@
+version: 0.13
+route_definition:
+  - style_pack_or_style_family
+  - lead_reference
+  - optional_support_reference
+  - visual_opportunity
+  - concept_operator
+  - asset_transform
+  - H0_strategy
+  - layout_promise
+text_route_count: 6_to_10
+rough_count:
+  high_coverage_min: 2
+  medium_coverage_min: 2
+  low_coverage_min: 3
+  one_rough_exception:
+    requires_strong_lead: true
+    first_rough_design_score_min: 88
+route_gate_weights:
+  idea_strength: 14
+  concept_embodiment: 16
+  theme_specificity: 12
+  asset_intelligence: 12
+  lead_reference_fit: 10
+  H0_integration: 10
+  posterization: 8
+  information_fit: 8
+  bilingual_feasibility: 4
+  originality: 4
+  generatability: 2
+pass_min: 76

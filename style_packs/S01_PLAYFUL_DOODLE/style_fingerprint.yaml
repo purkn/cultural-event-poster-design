@@ -1,0 +1,25 @@
+version: 0.13
+style_id: S01_PLAYFUL_DOODLE
+palette_behavior:
+  background: light_warm_or_white
+  accents: 2_to_4_clear_colors
+  saturation: selective_bright
+mark_behavior:
+  - hand_drawn
+  - imperfect
+  - mixed_stroke_weight
+  - marker_crayon_pen_variation
+scale_hierarchy:
+  - one_large_artword_or_graphic
+  - few_supporting_marks
+negative_space:
+  - generous_but_not_corporate_minimal
+materiality:
+  - paper
+  - crayon_marker_pen
+  - occasional_stamp_or_collage
+artword_personality:
+  - custom
+  - readable
+  - irregular
+  - integrated_with_image

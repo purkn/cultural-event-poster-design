@@ -1,0 +1,69 @@
+{
+  "description": "SVG editable layout structure demo, NOT a finished art-direction poster",
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "background": "#F7F7F3",
+    "safe_margin": 48
+  },
+  "shapes": [
+    {
+      "type": "line",
+      "x1": 70,
+      "y1": 330,
+      "x2": 1005,
+      "y2": 330,
+      "stroke": "#111111",
+      "stroke_width": 2
+    },
+    {
+      "type": "rect",
+      "x": 70,
+      "y": 405,
+      "width": 940,
+      "height": 530,
+      "fill": "#E7E9E3"
+    }
+  ],
+  "h0": {
+    "mode": "STANDARD_BLOCK",
+    "id": "h0",
+    "text": "美味发酵节",
+    "lines": [
+      "美味发酵节"
+    ],
+    "x": 70,
+    "y": 115,
+    "max_width": 940,
+    "font_file": "/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf",
+    "font_family": "AR PL SungtiL GB",
+    "font_size": 110,
+    "font_weight": "normal",
+    "line_spacing": 132,
+    "fill": "#111111"
+  },
+  "text_blocks": [
+    {
+      "id": "date",
+      "text": "2026.10.14 — 10.18",
+      "x": 70,
+      "y": 1010,
+      "max_width": 900,
+      "font_file": "/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf",
+      "font_family": "AR PL SungtiL GB",
+      "font_size": 38,
+      "fill": "#111111"
+    },
+    {
+      "id": "venue",
+      "text": "杭州天目里",
+      "x": 70,
+      "y": 1110,
+      "max_width": 900,
+      "font_file": "/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf",
+      "font_family": "AR PL SungtiL GB",
+      "font_size": 34,
+      "fill": "#111111"
+    }
+  ]
+}

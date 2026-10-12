@@ -1,0 +1,17 @@
+version: 0.13
+style_id: S01_PLAYFUL_DOODLE
+avoid:
+  - beige_safe_institutional_template
+  - even_ring_of_doodle_icons
+  - uniform_brush_everywhere
+  - pastel_cute_without_graphic_tension
+  - childish_clipart_feel
+  - freeform_fake_chinese
+  - generic_sticker_sheet
+  - H0_as_plain_font
+
+  - semantic_filler_sun_cloud
+  - semantic_filler_music_note
+  - semantic_green_for_lawn
+  - disconnected_body_typography
+  - dead_space_disguised_as_negative_space

@@ -1,0 +1,16 @@
+version: 0.13
+max_penalty: 35
+penalties:
+  centered_title_with_even_icon_ring: 8
+  theme_noun_checklist: 8
+  uniform_mark_language_everywhere: 4
+  interchangeable_H0: 7
+  ui_button_like_cta: 3
+  perfectly_safe_symmetry: 4
+  no_scale_contrast: 4
+  decorative_elements_without_conceptual_role: 4
+  generic_institutional_frame_image_columns: 10
+notes:
+  - penalties may stack up to max_penalty
+  - any penalty >= 8 triggers mandatory concept/design review
+  - safe_template_penalty.yaml handles combination failures

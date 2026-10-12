@@ -1,0 +1,19 @@
+version: 0.13
+purpose: keep each Hero Rough faithful to its own route while allowing top two routes to come from different styles
+required_per_rough:
+  - route_id
+  - style_pack
+  - substyle
+  - anchor_refs
+  - visual_mechanism
+  - palette_logic
+  - mark_or_material_language
+  - asset_transform_plan
+  - H0_role
+  - information_reserve
+  - negative_constraints
+comparison_rules:
+  - do not require top2 roughs to share a style
+  - each rough must be compared to its own anchors first
+  - cross-style choice happens only after normalization
+  - rough means lower finish, not relaxed style fidelity

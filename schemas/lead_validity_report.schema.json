@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LeadValidityReport",
+  "type": "object",
+  "required": [
+    "reference_id",
+    "topology",
+    "medium_surface",
+    "typography_DNA",
+    "palette_value_regime",
+    "classification"
+  ],
+  "properties": {
+    "reference_id": {
+      "type": "string"
+    },
+    "topology": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "medium_surface": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "typography_DNA": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "palette_value_regime": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "overall": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "classification": {
+      "enum": [
+        "STRONG_LEAD",
+        "WEAK_LEAD",
+        "STRUCTURE_ONLY_REFERENCE",
+        "REJECT"
+      ]
+    },
+    "support_scope": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "cluster": "R04_ACID_DIGITAL_EXPERIMENTAL",
+  "count": 16,
+  "reference_ids": [
+    "REF-023",
+    "REF-026",
+    "REF-040",
+    "REF-041",
+    "REF-063",
+    "REF-064",
+    "REF-065",
+    "REF-066",
+    "REF-095",
+    "REF-096",
+    "REF-097",
+    "REF-098",
+    "REF-099",
+    "REF-100",
+    "REF-101",
+    "REF-112"
+  ],
+  "status": "provisional_cluster"
+}

@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ReferenceBlueprint",
+  "type": "object",
+  "required": [
+    "reference_id",
+    "spatial",
+    "ratios",
+    "palette",
+    "typography",
+    "type_image_relation",
+    "negative_space",
+    "distinctive_moves",
+    "surface"
+  ],
+  "properties": {
+    "reference_id": {
+      "type": "string"
+    },
+    "spatial": {
+      "type": "object"
+    },
+    "ratios": {
+      "type": "object"
+    },
+    "palette": {
+      "type": "object"
+    },
+    "typography": {
+      "type": "object",
+      "required": [
+        "H0_type_DNA"
+      ],
+      "properties": {
+        "H0_type_DNA": {
+          "type": "object",
+          "required": [
+            "skeleton_class",
+            "stroke_contrast",
+            "weight",
+            "width",
+            "arrangement",
+            "fill_behavior",
+            "effect_class"
+          ],
+          "properties": {
+            "skeleton_class": {
+              "type": "string"
+            },
+            "stroke_contrast": {
+              "type": "string"
+            },
+            "weight": {
+              "type": "string"
+            },
+            "width": {
+              "type": "string"
+            },
+            "vertical_proportion": {
+              "type": "string"
+            },
+            "terminal_personality": {
+              "type": "string"
+            },
+            "arrangement": {
+              "type": "string"
+            },
+            "fill_behavior": {
+              "type": "string"
+            },
+            "color_role": {
+              "type": "string"
+            },
+            "effect_class": {
+              "type": "string"
+            }
+          }
+        },
+        "body_personality": {
+          "type": "string"
+        },
+        "english_personality": {
+          "type": "string"
+        },
+        "numeric_style": {
+          "type": "string"
+        }
+      }
+    },
+    "type_image_relation": {
+      "type": "string"
+    },
+    "negative_space": {
+      "type": "object"
+    },
+    "material": {
+      "type": "object"
+    },
+    "decoration": {
+      "type": "object"
+    },
+    "distinctive_moves": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "borrow": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "transform": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "do_not_copy": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "surface": {
+      "type": "object",
+      "required": [
+        "medium_class",
+        "dimensionality",
+        "background_value_regime",
+        "lighting_model",
+        "surface_finish"
+      ],
+      "properties": {
+        "medium_class": {
+          "type": "string"
+        },
+        "dimensionality": {
+          "type": "string"
+        },
+        "edge_behavior": {
+          "type": "string"
+        },
+        "mark_frequency": {
+          "type": "string"
+        },
+        "dominant_mark": {
+          "type": "string"
+        },
+        "lighting_model": {
+          "type": "string"
+        },
+        "surface_finish": {
+          "type": "string"
+        },
+        "background_value_regime": {
+          "type": "string"
+        },
+        "texture_scale": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

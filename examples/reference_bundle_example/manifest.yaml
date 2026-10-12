@@ -1,0 +1,10 @@
+provisional_style_name: example_style
+positive_refs:
+  - file: positive/01.jpg
+    learn: [hero, artword, color, material]
+    do_not_learn: [specific_subject, copy]
+negative_refs:
+  - file: negative/01.jpg
+    avoid: [generic_template, wrong_mood]
+notes:
+  intended_use: cultural_events

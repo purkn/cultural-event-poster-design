@@ -1,0 +1,16 @@
+version: 0.13
+admission_sources: [lead_reference, concept_structure, mandatory_asset, style_anchor_evidence]
+default_banned_shortcuts:
+  outdoor: [sun, cloud, grass_sprout]
+  music: [music_note, guitar, headphone, speaker]
+  children: [star, smiley, rainbow]
+  coffee: [cup, bean, kettle, croissant_scatter]
+  eco: [leaf, globe, recycle_arrow]
+  heritage: [cloud_motif, seal, red_gold_frame]
+  technology: [blue_purple_glow, HUD, particle_grid]
+  art_exhibition: [random_blob, generic_gradient]
+filler_test:
+  removal_does_not_change_concept: true
+  removal_does_not_change_reading_path: true
+  removal_does_not_change_composition: true
+  action: remove

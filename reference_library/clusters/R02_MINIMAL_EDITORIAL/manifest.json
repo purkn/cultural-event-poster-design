@@ -1,0 +1,20 @@
+{
+  "cluster": "R02_MINIMAL_EDITORIAL",
+  "count": 13,
+  "reference_ids": [
+    "REF-028",
+    "REF-029",
+    "REF-030",
+    "REF-031",
+    "REF-032",
+    "REF-033",
+    "REF-039",
+    "REF-088",
+    "REF-089",
+    "REF-090",
+    "REF-091",
+    "REF-092",
+    "REF-094"
+  ],
+  "status": "provisional_cluster"
+}
