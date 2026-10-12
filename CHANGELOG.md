@@ -1,29 +1,19 @@
-# v0.19 (2026-10) — Final Composite Readability Gate
-- New executable `layout_engine_v018/readability/audit_and_repair.py` + local contrast, texture, protected elements and thumbnail checks.
-- Actual full rendering → isolate under-text background → hard fail → style-bounded repair → re-render → re-audit → render-bound visual approval.
-- Bounded local-tint drawing added to SVG compositor; existing SVG text stays editable.
-- QA / SKILL / Active Rule Index / Poster Plan schema wired to one gate; no parallel general scoring system.
-- Added four required failure scenarios and additional edge regression tests. Original Reference Library, LoRA and multi-route generator preserved.
+# 更新记录
 
-## 0.16
-- 在首轮 Hero Rough 前新增带结构化输入校验的 Prompt Compiler；为同一参考输出 A/B/C 方案。
-- 参考是否真的经过观察和是否实际发送给后端分开记录；不再声称文本提示词已完成图像条件生成。
-- 保留 LoRA，当前不支持后端走 BASELINE_ONLY；加强泛黄旧纸/图标贴纸/镜像素材等捷径防线。
-- 提供一个从 P03 参考图到 Prompt 的可复现示例与 16 项静态测试，不宣称真实生图审美已验证。
+## v0.19 文档整合（2026-10-12）
+- 将根目录中 24 份重复的设计/参考/字体/LoRA 规范，收敛为 `docs/` 的四个领域文件；删除的旧版原文仍可通过 Git 历史恢复。
+- 重写中文 README、SKILL 与规则索引，修复 README 中 YAML 数量错误（实际 46）和标题编号积累问题。
+- 统一参考拆解权重的权威来源为 `core/reference_deconstruction.yaml`；区分 H0 视觉设计策略与 SVG 执行参数，减少版本间冲突。
+- 不修改 Python 代码、JSON/YAML 配置、真实测试或原始参考图；本文档提交**不等于**证明端到端审美质量。
 
-# Change Log
+## v0.19 功能（原版）
+- 新增 `layout_engine_v018/readability/audit_and_repair.py`：对最终合成图局部对比、纹理、主体碰撞和缩略可读性进行检测、限次修复与再渲染。
+- 技术验收须结合最终 PNG SHA256 的视觉审核才可通过。
 
-## v0.14 — Brief & Model Adapter Integration
-- Inserts P0/P1/P2 preflight into authoritative workflow before design/model search, with source trace and compact clarifying breakpoints.
-- Defines capability-first `find_lora` selection with verified metadata, rights, explicit download consent, baseline A/B and non-LoRA fallback.
-- Creates registry and backend capability contracts, S01 optional adapter preferences.
-- Adds offline safety gate scripts + metadata-only Hugging Face candidate search + regression tests.
-- Preserves original reference library, v0.13 Lead / Surface / H0 / QA gates.
-
-## v0.13
-See historical audit and case study for original reference-fidelity changes.
-
-## v0.15 — Chinese Type Assurance
-- Based on observed REF-097 vs v0.13 Dunhuang poster Chinese H0 mismatch.
-- Added Type DNA blueprint, separate mechanical/visual gates, font-file cmap probe, specimen image renderer, browser-face audit, and safe font download breakpoint.
-- Prevented Songti-by-name, CSS weight synthesis, ordinary-font-as-custom-display, and text-accuracy score inflation shortcuts.
+## 历史功能路线
+- **v0.18**：SVG-first 排版、H0 逐字变奏限制，双语布局。
+- **v0.17**：多路线 Prompt Compiler，用户否定路线优先与重选机制。
+- **v0.16**：初版参考驱动的 Prompt 编译协议与静态测试。
+- **v0.15**：中文字体技术覆盖、样张对比和许可门禁。
+- **v0.14**：活动信息预检、可选 LoRA 与权限确认。
+- **v0.13**：参考图的 Structure / Surface / Typography 忠诚度与偏差审计。

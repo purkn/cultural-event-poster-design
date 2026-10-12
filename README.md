@@ -1,67 +1,48 @@
-# 文化活动海报系统 v0.19
+# 文化活动宣传海报生成 Skill
 
-自主式文化活动宣传海报生成技能。从活动简报出发，经参考图检索、多路线 Prompt 编译、SVG-first 双语排版、最终合成可读性质检，交付可编辑的中英文竖版海报。
+当前版本 **v0.19**。面向文化活动的参考驱动创意、两条以上设计路线、字体样张与艺术字、中文和英文 SVG 排版、最终图文叠加可读性检查。
 
-## 运行时入口
+> **项目边界：**这是一套规则 + Python 工具集，不是单命令全自动调用 AI 的生图服务。Prompt Compiler 不直接生成图片；最终交付需要视觉审核，不能依赖自动分数。
 
-| 文件 | 作用 |
-|---|---|
-| `SKILL.md` | 唯一任务协议，定义完整流水线与断点规则 |
-| `ACTIVE_RULE_INDEX.md` | 规则优先级索引，所有门禁的执行顺序与短路条件 |
-| `manifest.json` | 版本元数据、45 项核心特性清单、质量门禁阈值 |
+## 从哪里开始
+- [SKILL.md](SKILL.md)：任务唯一入口与断点、交付步骤。
+- [ACTIVE_RULE_INDEX.md](ACTIVE_RULE_INDEX.md)：当前规则优先级；旧版历史记录不能覆盖新门禁。
+- [QA_ACCEPTANCE.md](QA_ACCEPTANCE.md)：质量分数、失败条件和视觉批准要求。
+- [manifest.json](manifest.json)：v0.19 元数据、正式能力声明。
 
-## 主要目录
+## 规范文档
+- [参考与视觉保真](docs/REFERENCE_SYSTEM.md)：Lead、Support、结构/配色/媒介与三维差异审查。
+- [字体与艺术字](docs/TYPOGRAPHY_SYSTEM.md)：H0 路线、字体许可、字符覆盖、中英字形样张。
+- [设计、创意路线与用户反馈](docs/DESIGN_AND_ROUTES.md)：多方案、反通用模板、拒绝路线重选。
+- [可选 LoRA](docs/OPTIONAL_LORA.md)：后端能力、许可、下载确认、基线 A/B。
 
+## 核心资源
 | 目录 | 内容 |
-|---|---|
-| `core/` | 42 个 YAML 规则定义（参考检索、配色门禁、字体 DNA、捷径防线等） |
-| `layout_engine_v018/` | SVG-first 排版引擎 + 最终合成可读性审计/修复脚本 |
-| `modules/prompt_compiler_v017/` | 多路线 Prompt 编译器，为同一参考输出差异化方案 |
-| `reference_library/` | 113 张参考图、10 个视觉簇索引，供两阶段检索使用 |
-| `style_packs/` | 风格包配置（当前含 S01_PLAYFUL_DOODLE），含正负参考图与路由参数 |
-| `scripts/` | 命令行工具：路由编译、LoRA 门禁、字体覆盖检查、参考比对等 |
-| `schemas/` | JSON Schema：Lead 有效性、参考蓝图、路线输入、字体蓝图等 |
-| `model_adapters/` | 后端能力注册表与 LoRA 适配器配置 |
-| `tests_v017/` | 纯标准库单元测试（19 项） |
-| `tests/` | 集成测试（需 Pillow） |
-| `audit/` | v0.19 质检证据（4 组可读性场景的渲染/审计报告） |
-| `feedback_registry/` | 用户审美否定记录，优先于历史 Design PASS |
-| `collaboration/` | 参考包格式规范与风格包交接文档 |
-| `examples/` | 简报样例、参考蓝图示例、LoRA 候选模板 |
+| --- | --- |
+| `core/` | **46 个** YAML 配置（数值与状态以可执行配置为准） |
+| `reference_library/` | **113 张**参考图，**10 个暂定视觉簇**；不等于 10 套风格包 |
+| `style_packs/` | 当前 **1 套正式风格包** `S01_PLAYFUL_DOODLE` |
+| `modules/prompt_compiler_v017/` | 仅编译路线/提示词，不进行真实生图 |
+| `layout_engine_v018/` | SVG-first 混合可编辑排版与 v0.19 最终合成可读性质检 |
+| `scripts/`、`schemas/` | 命令行脚本与契约 |
+| `tests/`、`tests_v017/`、`audit/` | 测试与分版本审计证据 |
 
-## 快速命令
+## 环境与常用命令
+需要 Python 3.9+。核心工具按功能需要 Pillow、NumPy、fontTools、CairoSVG（部分系统另需 Cairo 图形依赖）。脚本和测试里的示例字体可能指向 Linux 路径，在 macOS / Windows 上须替换为本机有授权且含所需字符的字体；跳过测试不视为通过。
 
 ```bash
-# 运行路由编译器
-python scripts/compile_routes_v017.py <输入JSON> <输出目录>
-
-# 跑纯标准库测试
+python scripts/preflight_brief.py examples/brief_complete.json
+python scripts/compile_routes_v017.py <正式项目JSON> <输出目录>
 python -m unittest discover -s tests_v017 -v
-
-# 参考图并排比对（需 Pillow）
-python scripts/create_reference_comparison_v017.py \
-  --lead <参考图.jpg> --generated <生成图.png> --out <比对结果.png>
+python -m unittest discover -s tests -v
+python -m unittest discover -s layout_engine_v018/tests -v
+python -m unittest discover -s layout_engine_v018/readability -p 'test_readability.py' -v
+python layout_engine_v018/readability/audit_and_repair.py poster_plan.json --out-dir build/readability
 ```
 
-## 依赖
+生成 SVG 的直接输出仅为**候选预览**。可读性合格不等于最终视觉批准；需要真实看图、审查中英文并保存与最终 PNG SHA256 绑定的审核记录，详见 [质检模块](layout_engine_v018/readability/README.md)。
 
-- Python 3.9+
-- `tests_v017/` 仅需标准库
-- `tests/` 与 `layout_engine_v018/readability/` 需要 `Pillow` 和 `NumPy`
-- LoRA 支持可选，需兼容外部后端；不支持时自动降级为 BASELINE_ONLY
+## 维护原则
+每条可执行阈值仅在代码或 `core/*.yaml` 保留唯一权威定义，概念说明见 `docs/`，对外介绍见 README，流程见 SKILL。历史说明保留于 Git 提交历史，避免同主题 `*_GATE.md` 在根目录重复维护。
 
-## 质量门禁
-
-| 指标 | 阈值 |
-|---|---|
-| Design 最低分 | 82 |
-| Production 最低分 | 85 |
-| 视觉证据 | 必须提供 |
-| 最终合成可读性 | 阻断级（不通过不出图） |
-| SHA256 视觉审批 | 必须 |
-
-## 版本说明
-
-本仓库当前为 v0.19（2026-10-12 入库）。旧版中文交互版 Skill 已从工作树移除，可从历史提交 `44ab75e` 恢复。
-
-`SKILL.md` frontmatter 名称为 `cultural-event-poster-system`。若技能加载器要求目录名与 `name` 一致，请将本目录改名为 `cultural-event-poster-system`。
+第三方参考图片、字体和模型须分别核查权利；仓库收录不自动等于可商用或可再分发。版本记录见 [CHANGELOG.md](CHANGELOG.md)。
