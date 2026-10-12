@@ -64,17 +64,21 @@ def ensure_coverage(font, chars):
     except ImportError:
         raise LayoutError("FONTTOOLS_MISSING:fontTools required for glyph coverage")
     fp=font['font_file'];face_index=int(font.get('face_index',0))
-    if str(fp).lower().endswith(('.ttc','.otc')):
-        c=TTCollection(fp,lazy=True)
-        if face_index<0 or face_index>=len(c.fonts): raise LayoutError('FONT_FACE_INDEX_INVALID')
-        face=c.fonts[face_index]
-    else:
-        face=TTFont(fp,lazy=True)
-    cmap={}
-    for t in face['cmap'].tables:
-        if t.isUnicode():cmap.update(t.cmap)
-    miss=sorted(set(ch for ch in chars if not ch.isspace() and ord(ch) not in cmap))
-    if miss: raise LayoutError('GLYPHS_MISSING:'+''.join(miss))
+    owner = TTCollection(fp,lazy=True) if str(fp).lower().endswith(('.ttc','.otc')) else TTFont(fp,lazy=True)
+    try:
+        if isinstance(owner, TTCollection):
+            if face_index<0 or face_index>=len(owner.fonts): raise LayoutError('FONT_FACE_INDEX_INVALID')
+            face=owner.fonts[face_index]
+        else:
+            if face_index != 0: raise LayoutError('FONT_FACE_INDEX_INVALID')
+            face=owner
+        cmap={}
+        for t in face['cmap'].tables:
+            if t.isUnicode():cmap.update(t.cmap)
+        miss=sorted(set(ch for ch in chars if not ch.isspace() and ord(ch) not in cmap))
+        if miss: raise LayoutError('GLYPHS_MISSING:'+''.join(miss))
+    finally:
+        owner.close()
 
 
 def estimate_text_width(font, line, fontconfig):

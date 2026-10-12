@@ -54,7 +54,7 @@ def compile_routes(data, root, input_location=None):
         errors.append('REJECTED_FEEDBACK_NEEDS_PREVIOUS_ROUTE')
     prior=feedback.get('previous_route') or {}
     required_change=feedback.get('must_change',[]) if feedback.get('rejected') else []
-    fingerprints=[];compiled=[];route_ids=set()
+    fingerprints=[];visual_contracts=[];compiled=[];route_ids=set()
     for i,r in enumerate(routes):
         tag=f'R{i+1}'
         if not isinstance(r,dict):errors.append(f'{tag}:INVALID_ROUTE');continue
@@ -93,6 +93,16 @@ def compile_routes(data, root, input_location=None):
                    'type_family':clean(typ.get('type_family')),'concept_id':clean(concept.get('id')),
                    'medium':clean(lead.get('medium'))}
         fingerprints.append(signature)
+        visual_contracts.append({
+            name: tuple(clean(obj.get(key)).casefold() for key in keys)
+            for name, obj, keys in (
+                ('lead', lead, ('medium','type_dna','structure','value_regime')),
+                ('color', col, ('background','dominant','secondary')),
+                ('typography', typ, ('strategy','type_family','h0_design_action')),
+                ('concept', concept, ('hero_subject','visible_mechanism','theme_binding')),
+                ('composition', comp, ('hero_zone','h0_zone','info_zone','negative_space')),
+            )
+        })
         if feedback.get('rejected'):
             for field in required_change:
                 if field not in signature:errors.append(f'{tag}:INVALID_MUST_CHANGE_FIELD:{field}')
@@ -127,8 +137,13 @@ def compile_routes(data, root, input_location=None):
                            if backend.get('supports_reference_images') else [])+
                           ([{'role':'verified_glyph','path':str((root/typ['verified_glyph_path']).resolve()),'must_send_at_runtime':True}]
                            if data.get('mode')=='h0_artword' and typ.get('verified_glyph_path') else [])})
-    if len(set((s['lead_id'],s['palette_family'],s['type_family'],s['concept_id']) for s in fingerprints))<len(fingerprints):
-        errors.append('ROUTES_ARE_DUPLICATES_NOT_REAL_COMPARISON')
+    for i, first in enumerate(visual_contracts):
+        for second in visual_contracts[i+1:]:
+            changed = sum(first[key] != second[key] for key in first)
+            if changed == 0:
+                errors.append('ROUTES_ARE_DUPLICATES_NOT_REAL_COMPARISON')
+            elif changed < 2:
+                errors.append('ROUTES_NEED_TWO_VISUAL_DIMENSION_CHANGES')
     if errors:raise RouteError(errors)
     if not backend.get('supports_reference_images'):
         warnings.append('TEXT_ONLY_REFERENCE_FALLBACK:visual_match_unverified')

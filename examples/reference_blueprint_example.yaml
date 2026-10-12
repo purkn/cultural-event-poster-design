@@ -66,3 +66,9 @@ do_not_copy:
   - original wording
   - original exhibition-specific text
   - exact line trajectories
+
+# Explicit project tolerance; remaining defaults come from reference_blueprint_contract.
+target_tolerance:
+  H0_area_ratio: 0.20
+  hero_area_ratio: 0.20
+  visual_center_shift: 0.10

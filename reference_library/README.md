@@ -42,7 +42,7 @@ python scripts/reference_library.py query --event-type 艺术展览 --compositio
 
 ## 视觉证据边界
 
-四维标签来自文件名，状态为 provisional；16 张含未知标签。数量覆盖不代表媒介、字形或风格成熟度。关键词得分不等于细粒度匹配分，不能直接晋升 Strong Lead 或 Style Pack。实际观察 Top 6–8 原图，按照 `docs/REFERENCE_SYSTEM.md` 与 Lead/Blueprint 门禁精拆，再决定用途。旧簇可继续辅助检索，历史覆盖判断不能套用整个新库。
+四维标签来自文件名，状态为 provisional；16 张含未知标签。数量覆盖不代表媒介、字形或风格成熟度。关键词得分不等于细粒度匹配分，不能直接晋升 Strong Lead 或 Style Pack。实际观察 Top 6–8 原图，按照 [docs/REFERENCE_SYSTEM.md](../docs/REFERENCE_SYSTEM.md) 与 Lead/Blueprint 门禁精拆，再决定用途。旧簇可继续辅助检索，历史覆盖判断不能套用整个新库。
 
 ## Git 维护
 

@@ -1,6 +1,6 @@
 # 质量验收、图文可读性和正式交付（v0.19）
 
-> 本文合并原 `QA_ACCEPTANCE.md`、`DESIGN_QUALITY_CORE.md` 中评分和证据要求。**数值以 `core/design_quality_scores.yaml` 为权威；像素检测阈值以 `layout_engine_v018/readability/audit_and_repair.py` 为执行权威**，详细说明见 [readability 模块](../layout_engine_v018/readability/README.md)。
+> 本文合并原 `QA_ACCEPTANCE.md`、`DESIGN_QUALITY_CORE.md` 中评分和证据要求。**数值以 [core/design_quality_scores.yaml](../core/design_quality_scores.yaml) 为权威；像素检测阈值以 [layout_engine_v018/readability/audit_and_repair.py](../layout_engine_v018/readability/audit_and_repair.py) 为执行权威**，详细说明见 [readability 模块](../layout_engine_v018/readability/README.md)。
 
 ## 1. 先硬门禁，后分数
 

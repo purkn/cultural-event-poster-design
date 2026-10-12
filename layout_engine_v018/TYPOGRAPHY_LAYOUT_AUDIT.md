@@ -2,7 +2,7 @@
 
 ## 可核对的规则层根因
 1. `SKILL.md` 把最终文字明确交给 HTML/CSS，但包内没有统一的最终 Poster Layout Compositor；字体检测、Prompt 编译器等脚本不能替代排版算法。
-2. `core/h0_design_gate.yaml` 允许 `per_character_scale_or_proportion_design`，但没有“为什么要逐字变化”的强制证据字段和默认禁止逻辑；Agent 就会把此建议当作通用装饰方案。
+2. [core/h0_design_gate.yaml](../core/h0_design_gate.yaml) 允许 `per_character_scale_or_proportion_design`，但没有“为什么要逐字变化”的强制证据字段和默认禁止逻辑；Agent 就会把此建议当作通用装饰方案。
 3. `TYPOGRAPHY_ENGINE_V015.md` 专注字体合法性、字形覆盖、回退与视觉对照；没有可执行的 H0 尺寸/定位上限、双语占位测量和返工次数上限。
 4. `PALETTE_AND_TYPE_DECISION_V017.md` 虽然指出“不要靠调字距/旋转假装艺术字”，但没有提供强制的默认安全排版路径，也没定义 SVG 源文件交付规范。
 5. 许多旧规则同时存在（如“必须 H0 是艺术字”和“参考为克制细宋”的上下游张力），Agent 在局部字体修补中容易绕圈。

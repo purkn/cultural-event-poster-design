@@ -26,3 +26,7 @@ core_v013_required_gates:
   - medium_surface_fidelity_gate
   - h0_reference_fidelity_gate
   - effect_discipline_gate
+
+signal_definitions:
+  plain_H0: default_or_interchangeable_title_without_reference_led_structural_design
+# A reference-led flat solid title can pass; lack of effects alone is not plain_H0.

@@ -1,6 +1,6 @@
 version: 0.13
 required_before_rough_if_lead_exists: true
-sections: [borrow, transform, do_not_copy, target_tolerance, surface, H0_type_DNA]
+sections: [borrow, transform, do_not_copy, target_tolerance, surface, typography.H0_type_DNA]
 tolerance:
   H0_area_ratio: 0.20
   hero_area_ratio: 0.20

@@ -4,13 +4,13 @@
 
 ## 1. 必须先判断是否可用
 
-先读取 `model_adapters/backend_capabilities.json` 或运行时可信能力声明：`backend_id`、`base_model_family/id/revision`、`supports_external_lora`、`supports_reference_images`、`supports_seed`、`supports_local_files`、`supports_weight_setting`、`max_loras` 等。unknown 不等于 yes。后端无外部 LoRA 接口、底模不确定、用户不允许联网或本风格不适用 → **`BASELINE_ONLY` / SKIP**，照常使用无 LoRA 的参考引导路线。
+先读取 [model_adapters/backend_capabilities.json](../model_adapters/backend_capabilities.json) 或运行时可信能力声明：`backend_id`、`base_model_family/id/revision`、`supports_external_lora`、`supports_reference_images`、`supports_seed`、`supports_local_files`、`supports_weight_setting`、`max_loras` 等。unknown 不等于 yes。后端无外部 LoRA 接口、底模不确定、用户不允许联网或本风格不适用 → **`BASELINE_ONLY` / SKIP**，照常使用无 LoRA 的参考引导路线。
 
 **不可假定 ChatGPT 内置生图接口支持加载第三方 .safetensors。**
 
 ## 2. 搜索只查元数据，不默认下载
 
-仅在支持且确有价值时从可信模型卡/托管方查 3–5 个候选（`scripts/find_lora.py` 仅检索公开元数据；`scripts/lora_gate.py` 只检查兼容及许可）。记录：作者与模型页 URL、revision、权重文件、大小、精确 base family/id、输出与商业/再分发许可、触发词、预览图、适用场景、风险。缺合法来源、精确许可、兼容性 → `REJECT_UNKNOWN` / `REJECT_UNVERIFIED`，不把授权请求当作跳过查证的方式。
+仅在支持且确有价值时从可信模型卡/托管方查 3–5 个候选（[scripts/find_lora.py](../scripts/find_lora.py) 仅检索公开元数据；[scripts/lora_gate.py](../scripts/lora_gate.py) 只检查兼容及许可）。记录：作者与模型页 URL、revision、权重文件、大小、精确 base family/id、输出与商业/再分发许可、触发词、预览图、适用场景、风险。缺合法来源、精确许可、兼容性 → `REJECT_UNKNOWN` / `REJECT_UNVERIFIED`，不把授权请求当作跳过查证的方式。
 
 筛选优先：后端支持/底模架构匹配/权重格式与许可证硬过滤；软比较参考媒介 30%、主体适配 20%、素材适配 15%、色彩表面稳定 15%、多样性 10%、成本性能 10%。没有实际预览的候选不能提升为 approved。
 

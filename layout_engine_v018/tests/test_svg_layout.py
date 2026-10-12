@@ -4,14 +4,10 @@ from xml.etree import ElementTree as ET
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_poster_svg import generate, LayoutError
 
-CANDIDATES=[
-'/usr/share/fonts/truetype/arphic-gbsn00lp/gbsn00lp.ttf',
-'/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc',
-'/System/Library/Fonts/PingFang.ttc'
-]
-F=next((p for p in CANDIDATES if Path(p).is_file()),None)
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'tests'))
+from font_fixtures import local_font
+F, FACE, FAMILY = local_font('cjk')
 
-@unittest.skipUnless(F,'Test requires local CJK font; set in test fixture')
 class LayoutTests(unittest.TestCase):
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory()
@@ -19,8 +15,8 @@ class LayoutTests(unittest.TestCase):
         self.path=Path(self.temp.name)/'out.svg'
         self.plan={
           'canvas':{'width':1080,'height':1350,'background':'#F7F7F3','safe_margin':48},
-          'h0':{'mode':'STANDARD_BLOCK','id':'h0','text':'美味发酵节','lines':['美味发酵节'],'x':66,'y':92,'max_width':960,'font_file':F,'face_index':0,'font_family':'Noto Sans CJK SC','font_size':120,'fill':'#151515'},
-          'text_blocks':[{'id':'date','text':'2026.10.14 - 10.18','x':70,'y':1090,'max_width':900,'font_file':F,'font_family':'Noto Sans CJK SC','font_size':36,'fill':'#151515'}]
+          'h0':{'mode':'STANDARD_BLOCK','id':'h0','text':'美味发酵节','lines':['美味发酵节'],'x':66,'y':92,'max_width':960,'font_file':F,'face_index':FACE,'font_family':FAMILY,'font_size':120,'fill':'#151515'},
+          'text_blocks':[{'id':'date','text':'2026.10.14 - 10.18','x':70,'y':1090,'max_width':900,'font_file':F,'face_index':FACE,'font_family':FAMILY,'font_size':36,'fill':'#151515'}]
         }
     def test_svg_contains_editable_text(self):
         generate(self.plan,self.path)

@@ -47,7 +47,7 @@ python -m unittest discover -s layout_engine_v018/tests -v
 python -m unittest discover -s layout_engine_v018/readability -p 'test_readability.py' -v
 ```
 
-部分测试使用 Linux 字体路径，其他平台需适配或可能跳过/失败；不可把跳过称为通过。**本仓库目前没有经过独立证明的一键端到端真实生图保证。**
+字体集成测试发现本机 Noto CJK/STHeiti 与 DejaVu Sans/Arial；可用 `POSTER_TEST_CJK_FONT`、`POSTER_TEST_CJK_FACE`、`POSTER_TEST_LATIN_FONT` 指定字体。缺字体会明确报错，测试不下载或分发字体。**本仓库目前没有经过独立证明的一键端到端真实生图保证。**
 
 ```bash
 # 预检活动信息
@@ -68,3 +68,21 @@ python layout_engine_v018/readability/audit_and_repair.py poster_plan.json --out
 ## 版权与使用边界
 
 参考图库包含来自第三方的视觉素材；入库不意味着已获商业、改编或再分发许可。权属未核实前不得默认商用。仓库未提供统一明确的许可证时，不能推定代码、素材和字体可以自由再分发。旧版文档曾以不同数值解释同一规则，现已合并为当前文档；历史详情通过 [CHANGELOG.md](CHANGELOG.md) 与 Git 提交追溯。
+
+## 专项手册与历史证据
+
+- [collaboration/REFERENCE_BUNDLE_FORMAT.md](collaboration/REFERENCE_BUNDLE_FORMAT.md)
+- [collaboration/STYLE_PACK_HANDOFF.md](collaboration/STYLE_PACK_HANDOFF.md)
+- [style_packs/S01_PLAYFUL_DOODLE/STYLE.md](style_packs/S01_PLAYFUL_DOODLE/STYLE.md)
+- [style_packs/S01_PLAYFUL_DOODLE/prompt_compiler.md](style_packs/S01_PLAYFUL_DOODLE/prompt_compiler.md)
+- [style_packs/S01_PLAYFUL_DOODLE/tests/regression_briefs.md](style_packs/S01_PLAYFUL_DOODLE/tests/regression_briefs.md)
+- [style_packs/S01_PLAYFUL_DOODLE/failure_cases/COFFEE_FAILURE_ANALYSIS.md](style_packs/S01_PLAYFUL_DOODLE/failure_cases/COFFEE_FAILURE_ANALYSIS.md)
+- [style_packs/S01_PLAYFUL_DOODLE/failure_cases/GENERIC_STICKER_SHEET_FAILURE.md](style_packs/S01_PLAYFUL_DOODLE/failure_cases/GENERIC_STICKER_SHEET_FAILURE.md)
+- [tests/V13_REGRESSION.md](tests/V13_REGRESSION.md)
+- [audit/READABILITY_AUDIT_V019.md](audit/READABILITY_AUDIT_V019.md)
+- [audit/history/HYGIENE_AUDIT_V012.md](audit/history/HYGIENE_AUDIT_V012.md)
+- [audit/history/HYGIENE_AUDIT_V013.md](audit/history/HYGIENE_AUDIT_V013.md)
+- [audit/history/HYGIENE_AUDIT_V014.md](audit/history/HYGIENE_AUDIT_V014.md)
+- [audit/history/HYGIENE_AUDIT_V015.md](audit/history/HYGIENE_AUDIT_V015.md)
+- [audit/history/PROMPT_COMPILER_V016_SCOPE.md](audit/history/PROMPT_COMPILER_V016_SCOPE.md)
+- [audit/history/ROOT_CAUSE_V017.md](audit/history/ROOT_CAUSE_V017.md)
