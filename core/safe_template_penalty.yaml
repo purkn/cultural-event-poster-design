@@ -14,5 +14,7 @@ signals:
 high_risk_combination:
   signal_count_min: 3
   concept_embodiment_below: 14
+  concept_score_source: core/route_competition.yaml
+  concept_score_max: 16
   action: hard_fail
 note: individual signals are not forbidden; the failure is their untransformed template combination

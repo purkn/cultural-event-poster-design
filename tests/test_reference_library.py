@@ -70,6 +70,16 @@ class LibraryTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'checksum mismatch'):
             rebuild(self.root)
 
+    def test_corrupt_existing_library_blocks_new_batch_before_copy(self):
+        self.poster('REF-001_市集_自由拼贴_手写_蓝黄.jpg')
+        ingest(self.source, 'batch-one', self.root)
+        entry = read(self.root / 'index.json')[0]
+        (self.root / entry['image_path']).write_bytes(b'broken')
+        before = {str(p.relative_to(self.root)): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
+        with self.assertRaisesRegex(ValueError, 'checksum mismatch'):
+            ingest(self.source, 'batch-two', self.root)
+        after = {str(p.relative_to(self.root)): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
+        self.assertEqual(before, after)
     def test_composition_precedes_event_semantics(self):
         self.poster('REF-001_市集_中心轴对称_衬线_蓝黄.jpg')
         self.poster('REF-002_艺术展览_自由拼贴_手写_蓝白.jpg', 'blue')

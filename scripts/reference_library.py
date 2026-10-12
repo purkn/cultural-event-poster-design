@@ -40,6 +40,7 @@ def image_info(path):
 def ingest(source, collection, root=ROOT):
     if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', collection):
         raise ValueError('Collection must be a lowercase slug')
+    validate_existing(root)
     source = Path(source)
     files = sorted(p for p in source.iterdir() if p.suffix.lower() in {'.jpg', '.jpeg', '.png', '.webp'})
     if not files:
@@ -86,15 +87,13 @@ def ingest(source, collection, root=ROOT):
     return rebuild(root)
 
 
-def rebuild(root=ROOT):
+def validate_existing(root=ROOT):
     entries = []
     for manifest in sorted((root / 'collections').glob('*/manifest.json')):
         entries.extend(read(manifest)['references'])
     # Prefer keyword-tagged records as canonical, while preserving all legacy IDs.
     entries.sort(key=lambda entry: (entry.get('metadata_source') != 'filename_keywords', entry['id']))
     ids = set()
-    hashes = {}
-    facets = {field: defaultdict(list) for field in FACETS}
     for entry in entries:
         if entry['id'] in ids:
             raise ValueError(f"Duplicate ID: {entry['id']}")
@@ -107,6 +106,15 @@ def rebuild(root=ROOT):
             raise ValueError(f'Asset checksum mismatch: {path}')
         if image_info(path) != {key: entry[key] for key in ('width', 'height', 'aspect')}:
             raise ValueError(f'Image dimensions mismatch: {path}')
+    return entries
+
+
+def rebuild(root=ROOT):
+    entries = validate_existing(root)
+    hashes = {}
+    facets = {field: defaultdict(list) for field in FACETS}
+    for entry in entries:
+        sha = entry["sha256"]
         entry.pop('duplicate_of', None)
         if sha in hashes:
             entry['duplicate_of'] = hashes[sha]

@@ -1,6 +1,7 @@
 version: 0.13
 engine: top_candidate_structure_surface_type_deconstruction
 coarse_top_k: 16
+coarse_top_k_scope: visual_candidate_expansion_after_initial_shortlist
 deconstruct_top_k: 8
 fields:
   spatial: [H0_bbox, hero_bbox, info_bboxes, visual_center, main_axis, symmetry]
@@ -15,6 +16,7 @@ fields:
   crop_scale: [object_count, dominant_object_count, extreme_crop, edge_breaks, scale_ratio]
   decoration: [count, scale_classes, roles]
   distinctive_moves: 3
+rerank_weight_scale: relative_weights_normalize_by_sum
 rerank_weights:
   topology: 15
   medium_surface: 14

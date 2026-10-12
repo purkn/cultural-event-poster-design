@@ -31,6 +31,8 @@ weights:
   format_match: 4
   event_semantic_match: 3
 retrieve_top_k: 12
+# Initial ranked shortlist; coarse visual expansion and deep review are separate stages.
+retrieve_top_k_scope: initial_ranked_shortlist
 lead_candidate_thresholds:
   topology_match: 80
   asset_structure_match: 72

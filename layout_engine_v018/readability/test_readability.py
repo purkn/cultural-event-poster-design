@@ -1,3 +1,4 @@
+import sys
 import copy
 import json
 import tempfile
@@ -7,7 +8,9 @@ import numpy as np
 from PIL import Image
 from audit_and_repair import run
 
-F='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'tests'))
+from font_fixtures import local_font
+F, _, FAMILY = local_font('latin')
 
 class ReadabilityRegression(unittest.TestCase):
     def setUp(self):
@@ -16,7 +19,7 @@ class ReadabilityRegression(unittest.TestCase):
         self.base={
             'canvas':{'width':480,'height':660,'background':'#ffffff','safe_margin':16},
             'h0':{'id':'h0','mode':'STANDARD_BLOCK','text':'EVENT','lines':['EVENT'],
-                  'x':40,'y':60,'max_width':370,'font_file':F,'font_family':'DejaVu Sans',
+                  'x':40,'y':60,'max_width':370,'font_file':F,'font_family':FAMILY,
                   'font_size':64,'fill':'#ffffff','lock_position':True},
             'text_blocks':[],'readability_policy':{'thumbnail_scale':0.25,'max_repair_rounds':2}
         }
@@ -94,7 +97,7 @@ class ApprovalRegression(unittest.TestCase):
     def test_render_bound_visual_review_allows_final(self):
         from audit_and_repair import run
         plan={'canvas':{'width':480,'height':660,'background':'#080808','safe_margin':20},
-          'h0':{'id':'h0','text':'EVENT','x':40,'y':60,'max_width':380,'font_file':F,'font_family':'DejaVu Sans','font_size':62,'fill':'#ffffff'},'text_blocks':[]}
+          'h0':{'id':'h0','text':'EVENT','x':40,'y':60,'max_width':380,'font_file':F,'font_family':FAMILY,'font_size':62,'fill':'#ffffff'},'text_blocks':[]}
         path=self.d/'base.json';path.write_text(json.dumps(plan))
         output=self.d/'approved'
         one=run(path,output)

@@ -11,7 +11,11 @@
     "type_image_relation",
     "negative_space",
     "distinctive_moves",
-    "surface"
+    "surface",
+    "borrow",
+    "transform",
+    "do_not_copy",
+    "target_tolerance"
   ],
   "properties": {
     "reference_id": {
@@ -162,6 +166,11 @@
           "type": "string"
         }
       }
+    },
+    "target_tolerance": {
+      "type": "object",
+      "minProperties": 1,
+      "description": "Project tolerance mapping; baseline authority is core/reference_blueprint_contract.yaml"
     }
   }
 }

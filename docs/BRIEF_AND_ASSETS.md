@@ -1,6 +1,6 @@
 # 活动简报、素材与断点规范（v0.19）
 
-> **执行范围**：任何主视觉生成、LoRA 检索或字体下载之前。入口为 `scripts/preflight_brief.py`；以实际执行器支持的字段名为准。本文合并原 `BRIEF_INTAKE_BREAKPOINTS.md`，不另设平行规则。
+> **执行范围**：任何主视觉生成、LoRA 检索或字体下载之前。入口为 [scripts/preflight_brief.py](../scripts/preflight_brief.py)；以实际执行器支持的字段名为准。本文合并原 `BRIEF_INTAKE_BREAKPOINTS.md`，不另设平行规则。
 
 ## 1. 信息可信度与事实约束
 
@@ -16,7 +16,7 @@
 
 **预热豁免**：只有用户明确选择 teaser 且允许 TBA，才可将日期/地点标为待公布。线上/混合活动需要相应访问方式，不能只检查物理场馆。
 
-**字段名准确性**：人类 Brief 可能称 `title`、`registration_link`；执行器的 JSON 使用 `fields.title_zh/title_en`、`fields.registration_url` 等结构。编写输入时以 `scripts/preflight_brief.py` 为准，不要把本段示意名称当作现有 JSON Schema。
+**字段名准确性**：人类 Brief 可能称 `title`、`registration_link`；执行器的 JSON 使用 `fields.title_zh/title_en`、`fields.registration_url` 等结构。编写输入时以 [scripts/preflight_brief.py](../scripts/preflight_brief.py) 为准，不要把本段示意名称当作现有 JSON Schema。
 
 ## 3. 断点与授权
 

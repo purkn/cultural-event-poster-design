@@ -4,7 +4,7 @@
 
 ## 1. 先选择设计策略，再映射到技术执行模式
 
-**设计策略**（`core/h0_strategy_router.yaml`、`core/h0_design_gate.yaml`）与 **SVG 参数**（`layout_engine_v018/schemas/poster_plan.schema.json`）是两个层级，不能直接混用：
+**设计策略**（[core/h0_strategy_router.yaml](../core/h0_strategy_router.yaml)、[core/h0_design_gate.yaml](../core/h0_design_gate.yaml)）与 **SVG 参数**（[layout_engine_v018/schemas/poster_plan.schema.json](../layout_engine_v018/schemas/poster_plan.schema.json)）是两个层级，不能直接混用：
 
 | H0 设计策略 | 条件 | SVG 实现模式 |
 | --- | --- | --- |

@@ -72,6 +72,23 @@ class RouteCompilerTests(unittest.TestCase):
         d=base();d['routes'][1]=copy.deepcopy(d['routes'][0]);d['routes'][1]['id']='alternative_other'
         with self.assertRaises(m.RouteError) as e:m.compile_routes(d,ROOT)
         self.assertIn('ROUTES_ARE_DUPLICATES',str(e.exception))
+    def test_new_ids_do_not_create_visual_difference(self):
+        d=base(); d['routes'][1]=copy.deepcopy(d['routes'][0])
+        d['routes'][1]['id']='new-route'; d['routes'][1]['concept']['id']='new-label'
+        with self.assertRaisesRegex(m.RouteError, 'ROUTES_ARE_DUPLICATES'):
+            m.compile_routes(d,ROOT)
+    def test_one_visual_dimension_is_insufficient(self):
+        d=base(); d['routes'][1]=copy.deepcopy(d['routes'][0])
+        d['routes'][1]['id']='new-route'
+        d['routes'][1]['concept']['visible_mechanism']='a different visible transformation'
+        with self.assertRaisesRegex(m.RouteError, 'TWO_VISUAL_DIMENSION'):
+            m.compile_routes(d,ROOT)
+    def test_two_visual_dimensions_are_accepted(self):
+        d=base(); d['routes'][1]=copy.deepcopy(d['routes'][0])
+        d['routes'][1]['id']='new-route'
+        d['routes'][1]['concept']['visible_mechanism']='a different visible transformation'
+        d['routes'][1]['composition']['hero_zone']='centered vertical shape'
+        self.assertEqual(m.compile_routes(d,ROOT)['compile_status'],'COMPILED_NOT_RENDERED')
     def test_reject_unknown_image(self):
         d=base();d['routes'][0]['lead']['path']='missing.jpg'
         with self.assertRaises(m.RouteError) as e:m.compile_routes(d,ROOT)

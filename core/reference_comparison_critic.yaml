@@ -1,4 +1,5 @@
 version: 0.13
+anchor_scope: focused_route_critic_subset_2_to_4_from_maturity_benchmark
 comparison_set:
   lead_reference_required_when_available: true
   style_anchor_refs_min: 2
