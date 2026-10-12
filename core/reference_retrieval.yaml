@@ -1,5 +1,13 @@
 version: 0.13
 engine: case_based_lead_reference_retrieval
+keyword_shortlist:
+  entrypoint: scripts/reference_library.py query
+  index: reference_library/index.json
+  facets: [event_type, composition, typography, palette]
+  deduplicate_by: sha256
+  metadata_status: provisional
+  score_scope: coarse_keywords_only_not_lead_thresholds
+  zero_match_fallback: browse_legacy_clusters_and_previews_then_visual_retrieval
 query_fields:
   - visual_topology_need
   - asset_structure

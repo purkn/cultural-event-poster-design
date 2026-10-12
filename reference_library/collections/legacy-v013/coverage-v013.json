@@ -1,0 +1,52 @@
+{
+  "R01_PLAYFUL_HANDDRAWN": {
+    "count": 14,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  },
+  "R02_MINIMAL_EDITORIAL": {
+    "count": 13,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  },
+  "R03_EXPERIMENTAL_TYPOGRAPHIC": {
+    "count": 29,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  },
+  "R04_ACID_DIGITAL_EXPERIMENTAL": {
+    "count": 16,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  },
+  "R05_DIFFUSE_GRADIENT_ABSTRACT": {
+    "count": 4,
+    "coverage": "coverage_C_sparse",
+    "style_pack_status": "not_promoted"
+  },
+  "R06_SOFT_NARRATIVE_ILLUSTRATION": {
+    "count": 7,
+    "coverage": "coverage_B_auxiliary",
+    "style_pack_status": "not_promoted"
+  },
+  "R07_BOLD_EVENT_POP": {
+    "count": 2,
+    "coverage": "coverage_C_sparse",
+    "style_pack_status": "not_promoted"
+  },
+  "R08_PHOTO_CINEMATIC": {
+    "count": 1,
+    "coverage": "coverage_C_sparse",
+    "style_pack_status": "not_promoted"
+  },
+  "R09_COLLAGE_ZINE_MIXED": {
+    "count": 12,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  },
+  "R10_LIFESTYLE_CULTURAL_EDITORIAL": {
+    "count": 15,
+    "coverage": "coverage_A_retrieval_ready",
+    "style_pack_status": "not_promoted"
+  }
+}

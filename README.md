@@ -1,6 +1,6 @@
 # 文化活动宣传海报设计 Skill
 
-**版本：v0.19｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
+**版本：v0.19.1｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
 
 本仓库是供 AI Agent 和设计人员使用的**设计工作流与 Python 工具集**，不是自行调用图像模型的一键生图服务。核心优势是：从活动 Brief 与参考图构建可追溯的视觉路线、以 SVG/JSON 做中英文字排版，最终按实际叠字画面检查文字可读性，并要求真实视觉复核。
 
@@ -19,11 +19,25 @@
 
 ## 代码与素材分工
 
-`core/`：**46 份 YAML 配置**（不是 42 份）；`scripts/`：预检、字体、模型与参考比较脚本；`modules/prompt_compiler_v017/`：多路线提示词编译器（只生成 Prompt，不自行调用生图 API）；`layout_engine_v018/`：SVG 排版及 v0.19 合成图可读性质检；`reference_library/`：113 张参考图、10 个暂定 cluster；`style_packs/`：当前正式风格包仅 **S01_PLAYFUL_DOODLE 一套**；`schemas/`：数据契约；`audit/`：本版审计与历史记录；`tests/`、`tests_v017/`：回归测试。
+`core/`：**46 份 YAML 配置**（不是 42 份）；`scripts/`：预检、字体、模型与参考比较脚本；`modules/prompt_compiler_v017/`：多路线提示词编译器（只生成 Prompt，不自行调用生图 API）；`layout_engine_v018/`：SVG 排版及 v0.19 合成图可读性质检；`reference_library/`：401 张不同图片、514 条含历史别名的索引记录、四维关键词标签与原 10 个暂定 cluster；`style_packs/`：当前正式风格包仅 **S01_PLAYFUL_DOODLE 一套**；`schemas/`：数据契约；`audit/`：本版审计与历史记录；`tests/`、`tests_v017/`：回归测试。
+
+## 参考图更新与检索
+
+新采集批次 `keyword-20261012` 包含原 113 张海报；保留历史 ID 与路径，按哈希去重，不计为额外图片。新文件按批次存放，活动、构图、字体、配色以多维索引组织。标签待视觉确认；16 张未知项在 `review_queue.json`。
+
+结构与维护命令见 [参考库说明](reference_library/README.md)。离线图库：[gallery.html](reference_library/previews/gallery.html)。
+
+```bash
+python -m pip install -r requirements.txt
+python scripts/reference_library.py query --event-type 市集 --typography 手写 --top 12
+python scripts/reference_library.py import /path/to/new-posters --collection keyword-YYYYMMDD
+python scripts/reference_library.py rebuild
+python scripts/reference_library.py previews
+```
 
 ## 安装与初步校验
 
-建议 Python 3.9+。需要运行图文可读性模块时，安装 `Pillow`、`NumPy`、`CairoSVG`、`fontTools`；不同操作系统可能需要 CairoSVG 系统图形库。示例 Poster Plan 含测试机的字体绝对路径，应改为本机存在且许可明确的字体文件。
+参考库工具建议 Python 3.10+（原引擎 Python 3.9+）。需要运行图文可读性模块时，安装 `Pillow`、`NumPy`、`CairoSVG`、`fontTools`；不同操作系统可能需要 CairoSVG 系统图形库。示例 Poster Plan 含测试机的字体绝对路径，应改为本机存在且许可明确的字体文件。
 
 ```bash
 python -m pip install Pillow numpy cairosvg fonttools

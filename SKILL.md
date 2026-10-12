@@ -1,10 +1,11 @@
 ---
 name: cultural-event-poster-system
-version: 0.19
+metadata:
+  version: "0.19.1"
 description: 中文文化活动宣传海报设计工作流。活动信息预检、参考图主导的多方案生成、中文字体证据、双语 SVG 排版以及最终叠字画面可读性质检；真实生图依赖可用后端。
 ---
 
-# 文化活动宣传海报 Skill · 唯一任务协议 v0.19
+# 文化活动宣传海报 Skill · 唯一任务协议 v0.19.1
 
 **职责**：根据活动简报、素材和视觉参考，执行创意路线、主视觉制作、中英文排版与质量审查。默认自主推进，**仅在真实事实缺口、授权/费用与不可替代的用户决策上设置断点**。不得把“需要审查”理解成每一步都询问。本文是流程入口；细节在 `docs/`，数值以相应代码/`core/*.yaml` 为准。
 
@@ -21,6 +22,12 @@ description: 中文文化活动宣传海报设计工作流。活动信息预检�
 | G. 排版与双语 | 使用同一份 Poster Plan 构建中文/英文 SVG，核对事实、字符、版式、安全区域；HTML 只能作为可选预览 | 越界、错字、伪中文字必须返工；SVG 仅为候选 |
 | H. 最终可读性 | 必跑 `layout_engine_v018/readability/audit_and_repair.py`，对实际 PNG 与无字底图逐块测对比、纹理、缩略信息；仅做授权修复，最多两轮 | `technical_readability_gate=FAIL` 或 `must_escalate_layout` → 返回布局/主视觉 |
 | I. 正式验收 | 真实视觉 Agent 检查最终 PNG、25% 缩略、主体遮挡及字体，并提交 **当前 PNG SHA256** 绑定的 review；分别验 Design 与 Production | Design <82 或 Production <85、硬门禁失败、无有效 `--visual-review` → **禁止交付 PASS** |
+
+## 参考库粗检索（v0.19.1）
+
+读取 [参考库维护说明](reference_library/README.md)。当前为 401 张不同图片；统一索引 514 条记录含 113 条历史别名。新批次 ID 为 `keyword-20261012:REF-XXX`，旧 ID 与路径保留，不能按同号替换。
+
+运行 `scripts/reference_library.py query` 按活动、构图、字体、配色生成候选；检索按 SHA256 去重。文件名标签均为 provisional，16 张含未知标签；关键词得分不能作为 Strong Lead 证据。实际查看候选原图后按 `docs/REFERENCE_SYSTEM.md` 精拆与验收。增量导入、批次 manifest 重建、预览更新见库说明。
 
 ## 专题权威文档（按需求读取，避免全量重复加载）
 

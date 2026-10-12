@@ -1,15 +1,22 @@
-version: 0.13
-input: unclassified_reference_bundle
+version: 0.19.1
+input: reference_folder_or_bundle
+entrypoint: scripts/reference_library.py
+identity:
+  new: "<collection>:REF-XXX"
+  legacy: preserve_existing_ids_and_paths
+  duplicate_detection: sha256
+  alias_map: reference_library/aliases.json
 steps:
-  - normalize_files
-  - remove_os_metadata
-  - assign_reference_id
-  - inspect_visual_grammar
-  - assign_provisional_cluster
-  - tag_dimensions
-  - compute_cluster_coverage
-  - promote_only_mature_clusters_to_style_pack
+  - inventory_supported_images_and_ignore_os_metadata
+  - validate_filename_keywords_and_batch_id_conflicts
+  - verify_image_decoding_dimensions_and_sha256
+  - preserve_source_names_and_copy_into_collection
+  - save_collection_manifest
+  - rebuild_unified_index_facets_aliases_and_coverage
+  - regenerate_paginated_previews
 notes:
-  - folder names and filenames are hints, not ground truth
-  - visual inspection overrides filename-based clustering
-  - sparse clusters stay in reference_library and do not become style packs yet
+  - filename_keywords_are_provisional_not_visual_evidence
+  - same_batch_import_is_idempotent_and_preserves_visual_annotations
+  - distinct_artwork_with_same_id_is_rejected
+  - duplicate_images_count_once_in_retrieval
+  - inspect_top_candidates_before_strong_lead_or_style_pack_promotion

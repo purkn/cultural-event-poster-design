@@ -1,4 +1,4 @@
-# 有效规则索引 v0.19（唯一冲突裁决入口）
+# 有效规则索引 v0.19.1（唯一冲突裁决入口）
 
 ## 权威优先级
 
@@ -8,6 +8,8 @@
 4. **六份主题文档**：`docs/BRIEF_AND_ASSETS.md`、`docs/REFERENCE_SYSTEM.md`、`docs/DESIGN_AND_ROUTES.md`、`docs/TYPOGRAPHY_SYSTEM.md`、`docs/QUALITY_AND_DELIVERY.md`、`docs/OPTIONAL_LORA.md`；与代码并存时负责解释**原因及操作过程**，不另设重复阈值。
 5. **模块和风格包说明**：`modules/prompt_compiler_v017/PROMPT_COMPILER_V017.md`、`layout_engine_v018/README.md`、`layout_engine_v018/readability/README.md` 和当前 Style Pack，负责对应模块的操作细节；不得推翻上级硬门禁。
 6. `audit/history/` 与历史 changelog 仅为过去版本的证据，**不是有效运行规范**。
+
+参考库运行机制以 `scripts/reference_library.py` 与 `reference_library/README.md` 为准；统一索引按批次 manifest 重建，保留历史别名，关键词只用于粗检索，不覆盖视觉 Lead 门禁。
 
 ## 防误用：三个容易混淆的层级
 

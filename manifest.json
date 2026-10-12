@@ -1,16 +1,25 @@
 {
   "name": "cultural-event-poster-system",
   "display_name": "文化活动宣传海报系统",
-  "version": "0.19.0",
+  "version": "0.19.1",
   "architecture": "reference-led-generation-svg-first-with-final-composite-readability-gate",
   "default_mode": "autonomous",
   "current_style_packs": [
     "S01_PLAYFUL_DOODLE"
   ],
   "reference_library": {
-    "total_images": 113,
-    "clusters": 10,
-    "classification_status": "provisional_visual-cluster-index"
+    "total_images": 401,
+    "total_records": 514,
+    "legacy_aliases": 113,
+    "collections": [
+      "legacy-v013",
+      "keyword-20261012"
+    ],
+    "index": "reference_library/index.json",
+    "facets": "reference_library/facets.json",
+    "aliases": "reference_library/aliases.json",
+    "classification_status": "filename_keywords_provisional_visual_review_required",
+    "maintenance_script": "scripts/reference_library.py"
   },
   "style_pack_spec": "2.4",
   "core_features": [
@@ -58,7 +67,10 @@
     "thumbnail_legibility_proxy",
     "protected_subject_avoidance",
     "style_bounded_auto_repair",
-    "render_sha256_visual_approval"
+    "render_sha256_visual_approval",
+    "batch_namespaced_reference_ids",
+    "keyword_facet_retrieval",
+    "sha256_reference_deduplication"
   ],
   "quality_gates": {
     "design_min": 82,
