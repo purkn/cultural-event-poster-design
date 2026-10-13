@@ -3,7 +3,7 @@ input: reference_folder_or_bundle
 entrypoint: scripts/reference_library.py
 identity:
   new: "<collection>:REF-XXX"
-  legacy: preserve_existing_ids_and_paths
+  legacy: preserve_ids_as_aliases_to_canonical_images
   duplicate_detection: sha256
   alias_map: reference_library/aliases.json
 steps:
@@ -19,4 +19,4 @@ notes:
   - same_batch_import_is_idempotent_and_preserves_visual_annotations
   - distinct_artwork_with_same_id_is_rejected
   - duplicate_images_count_once_in_retrieval
-  - inspect_top_candidates_before_strong_lead_or_style_pack_promotion
+  - inspect_top_candidates_before_strong_lead_or_strong_lead_selection

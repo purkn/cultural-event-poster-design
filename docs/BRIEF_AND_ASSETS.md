@@ -1,6 +1,6 @@
 # 活动简报、素材与断点规范（v0.19）
 
-> **执行范围**：任何主视觉生成、LoRA 检索或字体下载之前。入口为 [scripts/preflight_brief.py](../scripts/preflight_brief.py)；以实际执行器支持的字段名为准。本文合并原 `BRIEF_INTAKE_BREAKPOINTS.md`，不另设平行规则。
+> **执行范围**：任何主视觉生成或字体下载之前。入口为 [scripts/preflight_brief.py](../scripts/preflight_brief.py)；以实际执行器支持的字段名为准。本文合并原 `BRIEF_INTAKE_BREAKPOINTS.md`，不另设平行规则。
 
 ## 1. 信息可信度与事实约束
 
@@ -24,9 +24,8 @@
 - `BP_CONFLICT`：同时指出冲突来源，要求用户指定版本。
 - `BP_ASSET_RIGHTS`：对来源、可改编范围、肖像/授权不清的素材请求说明；不伪造商标和版权。
 - `BP_FONT_DOWNLOAD`：只有本地无适合且可合法使用的字体时，推荐具名选项，说明来源、许可、大小、费用、缓存与拒绝方案，用户明确同意后下载。详见 [字体规范](TYPOGRAPHY_SYSTEM.md)。
-- `BP_LORA_DOWNLOAD`：必须先验证后端、底模及许可证，再请求某一个特定 LoRA 的当次授权；不同模型不可复用同一次同意。详见 [可选 LoRA](OPTIONAL_LORA.md)。
 
-断点暂停当前操作；不得声称已在后台继续。关键状态以执行器为准：`WAITING_FOR_USER` / `READY_BASELINE`；无 LoRA 支持时 `BASELINE_ONLY` 不属于失败。
+断点暂停当前操作；不得声称已在后台继续。关键状态以执行器为准：`WAITING_FOR_USER` / `READY_BASELINE`。
 
 ## 4. 素材处理与双语
 

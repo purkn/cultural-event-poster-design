@@ -7,13 +7,13 @@ m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 
 def fresh_route(id,lead_id,palette,type_family,concept_id):
     if lead_id=='P09':
-        img='style_packs/S01_PLAYFUL_DOODLE/references/positive/P09.jpg'
+        img='reference_library/collections/keyword-20261012/images/REF-001_文化节庆_自由拼贴_手写_蓝黄.jpg'
         med='large simplified outline and loose pastel-flat color accents'
         structure='one dominant image mass under loose black heading'
         dna='brushy informal lettering with a black strong headline'
         val='high_key'
     else:
-        img='style_packs/S01_PLAYFUL_DOODLE/references/positive/P05.jpg'
+        img='reference_library/collections/keyword-20261012/images/REF-002_文化节庆_模块化网格_无衬线_绿米白.jpg'
         med='black delicate freehand ink drawing with restrained spot colors'
         structure='type concentrated top, narrative drawings in open center, compact small information below'
         dna='high contrast clean narrow black Chinese typography, editorially arranged'
@@ -33,7 +33,7 @@ def base():
     return {'schema_version':'0.17','project_id':'fermentation_hangzhou_2026','mode':'hero_rough',
             'brief':{'confirmed':True,'title':'美味发酵节','date':'2026.10.14—10.18','venue':'杭州天目里','core_experience':'发酵中的时间与食物变化'},
             'canvas':{'width':1080,'height':1350},
-            'backend':{'id':'local-imagegen','supports_reference_images':False,'supports_external_lora':False,'supports_negative_prompt':False},
+            'backend':{'id':'local-imagegen','supports_reference_images':False,'supports_negative_prompt':False},
             'feedback':{'project_id':'fermentation_hangzhou_2026','rejected':True,
                 'previous_route':{'lead_id':'P03','palette_family':'cyan_red_warm_cream','type_family':'ZCOOL KuaiLe','concept_id':'giant_single_jar_blob','background_family':'distressed_warm_paper'},
                 'must_change':['palette_family','type_family','concept_id','background_family'],
@@ -47,7 +47,6 @@ class RouteCompilerTests(unittest.TestCase):
         self.assertEqual(p['compile_status'],'COMPILED_NOT_RENDERED')
         self.assertEqual(p['design_status'],'NOT_VISUALLY_REVIEWED')
         self.assertEqual(len(p['routes']),2)
-        self.assertTrue(any('BASELINE_ONLY' in x for x in p['warnings']))
     def test_reject_same_color(self):
         d=base();d['routes'][0]['color']['palette_family']='cyan_red_warm_cream';d['routes'][0]['lead']['palette_family']='cyan_red_warm_cream'
         with self.assertRaises(m.RouteError) as e:m.compile_routes(d,ROOT)
@@ -109,13 +108,6 @@ class RouteCompilerTests(unittest.TestCase):
         d=base();d['feedback']['project_id']='other_project'
         with self.assertRaises(m.RouteError) as e:m.compile_routes(d,ROOT)
         self.assertIn('FEEDBACK_PROJECT_MISMATCH',str(e.exception))
-    def test_no_invented_lora(self):
-        p=m.compile_routes(base(),ROOT)
-        self.assertEqual(p['backend']['lora_route'],'BASELINE_ONLY')
-    def test_yes_lora_still_needs_authorization(self):
-        d=base();d['backend']['supports_external_lora']=True
-        p=m.compile_routes(d,ROOT)
-        self.assertEqual(p['backend']['lora_route'],'OPTIONAL_AUTHORIZED_ONLY')
     def test_example_file_rejected_for_production(self):
         d=base()
         with self.assertRaises(m.RouteError) as e:m.compile_routes(d,ROOT,ROOT/'examples'/'sample.json')

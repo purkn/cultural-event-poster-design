@@ -3,7 +3,7 @@ principle: separate variables when diagnosing, but autonomous production may com
 modes:
   production_route_competition:
     candidates_may_vary:
-      - style_pack
+      - reference_style
       - substyle
       - visual_concept
       - asset_transform
@@ -12,11 +12,11 @@ modes:
       - each route is decomposed and scored on explicit dimensions
       - style quality is normalized against that style's own anchors
   diagnostic_concept_test:
-    fixed: [style_pack, substyle, anchors, palette_logic, mark_language, materiality]
+    fixed: [reference_style, substyle, anchors, palette_logic, mark_language, materiality]
     variable: [visual_concept]
   diagnostic_style_test:
     fixed: [visual_concept, core_subject_relationship, information_goal]
-    variable: [style_pack, substyle]
+    variable: [reference_style, substyle]
 hard_fail:
   - cross_style_comparison_without_normalization
   - route_choice_based_only_on_event_type

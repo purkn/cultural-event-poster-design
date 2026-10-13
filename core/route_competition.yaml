@@ -1,6 +1,6 @@
 version: 0.13
 route_definition:
-  - style_pack_or_style_family
+  - reference_style_family
   - lead_reference
   - optional_support_reference
   - visual_opportunity

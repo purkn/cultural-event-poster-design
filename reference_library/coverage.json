@@ -1,10 +1,9 @@
 {
-  "total_images": 514,
+  "total_images": 401,
   "unique_images": 401,
-  "duplicate_images": 113,
+  "duplicate_images": 0,
   "collections": {
-    "keyword-20261012": 401,
-    "legacy-v013": 113
+    "keyword-20261012": 401
   },
   "facets": {
     "event_type": {

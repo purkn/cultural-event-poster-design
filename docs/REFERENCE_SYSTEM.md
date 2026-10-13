@@ -5,14 +5,14 @@
 ## 1. 检索和角色分配
 
 - 阶段 A：结合活动 Brief、媒介和构图特征，从 [参考库](../reference_library/README.md) 做粗检索。默认 `coarse_top_k=16`。
-- 阶段 B：实际查看候选原图，拆解默认前 `deconstruct_top_k=8`，再排序。旧库 113 张图的 10 个 cluster 只是**临时检索标签**，不是十套已验证 Style Pack。
+- 阶段 B：实际查看候选原图，拆解默认前 `deconstruct_top_k=8`，再排序。使用统一参考库的关键词粗检索与实际原图复核，不使用旧视觉簇预设。
 - **Strong Lead** 控制全局拓扑、媒介表面、背景明度、色彩角色、H0 字体人格、信息分区、留白和图字关系；不能只因为主题相似就选 Lead。
 - **Support** 最多服务一个写明的局部缺口，必须记录 `support_scope`，不得用支持图覆盖 Lead 的整体视觉世界。
 - 单纯结构相似、表面/字体/色彩不符的图片标记 `STRUCTURE_ONLY_REFERENCE`，只可辅助排版，不得冒充 Strong Lead。
 
 ### 批次索引与关键词粗检索（v0.19.1）
 
-参考库现为 401 张不同图片，统一索引 514 条含 113 条旧编号别名。新增批次包含全部旧图，`aliases.json` 按 SHA256 映射旧编号到新批次编号，`image_path` 相对参考库根目录；旧图片路径保留。新增 ID 为 `<collection>:REF-XXX`，不能按序号匹配新旧作品。
+参考库现为 401 张不同图片，统一索引 401 条；113 条旧编号别名单独保存在 aliases.json。新增批次包含全部旧图，`aliases.json` 按 SHA256 映射旧编号到新批次编号，`image_path` 相对参考库根目录；旧图片副本已移除，别名定位到新批次 image_path。新增 ID 为 `<collection>:REF-XXX`，不能按序号匹配新旧作品。
 
 `facets.json` 按活动 / 构图 / 字体 / 配色提供多维候选，不创建四份图片副本。运行：
 
@@ -53,7 +53,7 @@ python scripts/reference_library.py query --composition 非对称网格 --typogr
 
 必须对照 Lead 保存 Structure、Surface、Typography 三类 Delta（GREEN/AMBER/RED）。以下为典型 **RED**：高明度↔低明度反转、二维印刷/版画→发光 3D、H0 字重跨两级以上、无依据的纯色标题→多色渐变/Glow、图字关系完全改变、Surface 或 Typography 两项以上显著冲突。
 
-- 色彩先记录背景/主色/次色/点色的角色、面积、饱和度和来源；优先级 Lead → Style Pack → Concept → 主题联想。
+- 色彩先记录背景/主色/次色/点色的角色、面积、饱和度和来源；优先级 Lead → 参考风格 → Concept → 主题联想。
 - 不自动把“草坪=绿、传统=红金、科技=蓝紫霓虹”，不擅自增添不属于参考的透明玻璃、阴影或多色发光效果。
 - 留白须承担围合、导视、适配信息或尺度张力中的至少两种作用；单纯大片空白不计质量分。
 - 只有看过真实 Lead 和生成结果、保存并排证据，才能声称“忠实匹配参考”。文本 Prompt 编译不能代替实际生图评审。

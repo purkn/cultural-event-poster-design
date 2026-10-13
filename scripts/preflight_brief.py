@@ -41,7 +41,7 @@ def assess(doc):
         defaults.append('未提供主视觉素材：可在授权范围内生成，不是阻断项')
     result={'status':'WAITING_FOR_USER' if missing else 'READY_BASELINE',
             'blocking_missing':missing,'confirmation_warnings':warnings,'nonblocking_defaults':defaults,
-            'may_generate_hero':not missing, 'may_find_lora':not missing,
+            'may_generate_hero':not missing,
             'suggested_question': ('为了制作正式海报，请补充：'+'；'.join(missing)+'。如果是预热海报，请明确允许日期/地点待公布。') if missing else None}
     return result
 

@@ -38,7 +38,7 @@ def compile_routes(data, root, input_location=None):
         width,height=int(can['width']),int(can['height'])
         if width<256 or height<256:errors.append('INVALID_CANVAS')
     except (KeyError,TypeError,ValueError):errors.append('INVALID_CANVAS');width=height=0
-    if not all(isinstance(backend.get(k),bool) for k in ('supports_reference_images','supports_external_lora','supports_negative_prompt')):
+    if not all(isinstance(backend.get(k),bool) for k in ('supports_reference_images','supports_negative_prompt')):
         errors.append('BACKEND_CAPABILITIES_NOT_VERIFIED')
     if input_location:
         path=Path(input_location).resolve()
@@ -147,14 +147,9 @@ def compile_routes(data, root, input_location=None):
     if errors:raise RouteError(errors)
     if not backend.get('supports_reference_images'):
         warnings.append('TEXT_ONLY_REFERENCE_FALLBACK:visual_match_unverified')
-    if not backend.get('supports_external_lora'):
-        warnings.append('BASELINE_ONLY:external_lora_not_supported')
-    else:
-        warnings.append('LORA_OPTIONAL:only_after_license_compatibility_user_download_approval_and_runtime_verification')
     return {'schema_version':'0.17','project_id':data.get('project_id'), 'compile_status':'COMPILED_NOT_RENDERED',
             'design_status':'NOT_VISUALLY_REVIEWED','feedback_applied':bool(feedback.get('rejected')),
-            'backend':{'id':backend.get('id'), 'reference_conditioning':'REQUESTED_NOT_VERIFIED' if backend.get('supports_reference_images') else 'TEXT_ONLY_REFERENCE_FALLBACK',
-                       'lora_route':'OPTIONAL_AUTHORIZED_ONLY' if backend.get('supports_external_lora') else 'BASELINE_ONLY'},
+            'backend':{'id':backend.get('id'), 'reference_conditioning':'REQUESTED_NOT_VERIFIED' if backend.get('supports_reference_images') else 'TEXT_ONLY_REFERENCE_FALLBACK'},
             'warnings':warnings,'routes':compiled}
 
 def main():
