@@ -1,11 +1,11 @@
 ---
 name: cultural-event-poster-system
 metadata:
-  version: "0.20.0"
+  version: "0.20.1"
 description: 中文文化活动宣传海报设计工作流。活动信息预检、参考图主导的多方案生成、中文字体证据、双语 SVG 排版以及最终叠字画面可读性质检；真实生图依赖可用后端。
 ---
 
-# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.0
+# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.1
 
 **职责**：根据活动简报、素材和视觉参考，执行创意路线、主视觉制作、中英文排版与质量审查。默认自主推进，**仅在真实事实缺口、授权/费用与不可替代的用户决策上设置断点**。不得把“需要审查”理解成每一步都询问。本文是流程入口；细节在 `docs/`，数值以相应代码/`core/*.yaml` 为准。
 
@@ -31,7 +31,7 @@ description: 中文文化活动宣传海报设计工作流。活动信息预检�
 
 ## 专题权威文档（按需求读取，避免全量重复加载）
 
-- [活动信息、素材和授权断点](docs/BRIEF_AND_ASSETS.md)
+- [活动信息、素材和授权断点](docs/BRIEF_AND_ASSETS.md)；收到组员参考或已有候选时，先读 [团队素材交接](collaboration/REFERENCE_BUNDLE_FORMAT.md)，保留项目范围及证据位置
 - [参考图检索、Lead Blueprint 与 Delta](docs/REFERENCE_SYSTEM.md)
 - [Concept、路线、反馈和防模板化](docs/DESIGN_AND_ROUTES.md)
 - [H0 字体设计与真实字库证据](docs/TYPOGRAPHY_SYSTEM.md)
