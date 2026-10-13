@@ -1,4 +1,4 @@
-# 活动简报、素材与断点规范（v0.19）
+# 活动简报、素材与断点规范
 
 > **执行范围**：任何主视觉生成或字体下载之前。入口为 [scripts/preflight_brief.py](../scripts/preflight_brief.py)；以实际执行器支持的字段名为准。本文合并原 `BRIEF_INTAKE_BREAKPOINTS.md`，不另设平行规则。
 

@@ -1,6 +1,6 @@
 # Final Composite Readability Gate v0.19 (唯一可读性质检入口)
 
-此模块**接在 v0.18 SVG 母版生成之后、Production PASS 之前**；它不是另一套通用设计评分器。
+此模块**接在 SVG 母版生成之后、Production PASS 之前**；它不是另一套通用设计评分器。
 
 ## 审计对象 / 工作机制
 
@@ -12,7 +12,7 @@
 - 25% 的缩略图检查标题 / 关键信息实际有效字号和亮度信号；并保留原始尺寸检查。**缩略判断是工程启发式，不等于真人阅读测试**。
 - WCAG 大字（正常文字 >=24px 或粗体 >=19px）参照 3:1；其它文字参照 4.5:1。这是适用情况下的基线，**复杂图像海报并非被法律要求统一满足网站 WCAG**。
 
-## 生产门禁（默认可调，要求记录调参理由）
+## 生产门禁（可收紧，不允许降低门槛）
 
 | 指标 | 默认阈值 | 影响 |
 |---|---|---|
@@ -38,18 +38,17 @@
 
 ## 最终视觉批准不是自评分
 
-脚本先产出 `poster_final_review.svg`, `final_render.png`, `pre_text_background.png`, `poster_plan_review.json`, `readability_report.json`。即使技术指标 PASS，`final_delivery_allowed` 仍为 false，直到视觉 Agent 实际看图后提供 `--visual-review review.json`，复核并存档最终 PNG 的 SHA256 与五项具体观察：
-`text_over_subject`, `font_personality`, `type_hierarchy`, `thumbnail_readability`, `hero_visual_integrity`。
+脚本先产出 `poster_final_review.svg`、`final_render.png`、`thumbnail.png`、`pre_text_background.png`、`poster_plan_review.json` 和 `readability_report.json`。技术 PASS 仍不允许正式交付；有看图能力的评审实际检查当前图像后，按下方完整协议提交 `--visual-review review.json`。
 
-视觉证明必须对应当前最终 PNG 的 SHA256，否则判 stale / reject。不要把模型编造的“85 分、通过”冒充看图证据；若视觉 Agent 无法看图，保持 `PENDING`，用户只能得到候选稿 + 不合格/待验证报告，而非正式成品。
+视觉证据必须对应当前 PNG/缩略图与所列文件哈希。不能把模型编造的“85 分、通过”冒充真实看图；无法看图时保持 `PENDING`，仅交候选稿及待验证报告。
 
 ## 命令（需 Pillow、NumPy、CairoSVG、fontTools，且图像渲染器能使用指定字体）
 
 ```bash
-python layout_engine_v018/readability/audit_and_repair.py poster_plan.json \
+python layout_engine/readability/audit_and_repair.py poster_plan.json \
   --out-dir build/readability --max-rounds 2
 # 视觉代理查看 build/readability/final_render.png，填写准确 SHA256 的 review.json：
-python layout_engine_v018/readability/audit_and_repair.py poster_plan.json \
+python layout_engine/readability/audit_and_repair.py poster_plan.json \
   --out-dir build/readability --max-rounds 2 --visual-review build/readability/review.json
 ```
 
@@ -58,3 +57,13 @@ python layout_engine_v018/readability/audit_and_repair.py poster_plan.json \
 `status: REVIEW_REQUIRED` 说明强对比但复杂，需要视觉确认；`technical_readability_gate: FAIL` 不得被人工打分覆盖。
 
 **限制**：只能自动检测本系统保留为 SVG text/path 的文字；无法单靠像素验证 AI 直接画在 hero 位图里的伪文字或其真实语义。位图内的正式信息不受支持，仍必须在 SVG 文字层重建。复杂渐变文字、CSS 滤镜、叠加模式或外部 SVG 编辑未重回渲染流水线时，需专门适配或判 `UNVERIFIED`。预览器 CairoSVG 与目标客户端渲染字体不完全一致时，必须进行最终目标渲染器复检。
+
+## 最终评审协议
+
+复制本目录 `visual_review_template.json` 到项目目录。按 [质量与交付规范](../../docs/QUALITY_AND_DELIVERY.md) 在真实看图后填写上下文、材料 path/SHA256、逐项预检、反默认套路的语境判断、分项评分与问题复验。旧版只含五段观察的审批不再足够。
+
+每次最终渲染输出 `thumbnail.png`（默认 25%）及其 SHA；`readability_report.json` 另含 `review_issues/design_score/production_score/poster_plan_sha256`。技术 PASS、完整评审 PASS 和当前图像证据同时成立，才允许正式交付。参考对照可用 `python scripts/create_reference_comparison.py --lead lead.jpg --generated final.png --out comparison.png` 构建；工具只生成对照材料，不替代看图。
+
+CLI：像素失败退出 3；指定 `--visual-review` 但评审未通过退出 4；无 review 的技术预检通过退出 0，但 `final_delivery_allowed=false`。材料与分项审美理由由评审负责，验证器不自动识别“好看”或认证看图行为。
+
+评审中的 `poster_plan` 指向本轮输出 `poster_plan_review.json`，与当前最终图和缩略图一起绑定，不能引用修改前的旧 Plan。

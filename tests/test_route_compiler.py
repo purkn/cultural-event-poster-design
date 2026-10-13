@@ -2,7 +2,7 @@ import unittest, importlib.util, copy
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
-spec=importlib.util.spec_from_file_location('routes',ROOT/'scripts'/'compile_routes_v017.py')
+spec=importlib.util.spec_from_file_location('routes',ROOT/'scripts'/'compile_routes.py')
 m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 
 def fresh_route(id,lead_id,palette,type_family,concept_id):

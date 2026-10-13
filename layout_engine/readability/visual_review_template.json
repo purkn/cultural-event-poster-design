@@ -1,0 +1,207 @@
+{
+  "review_version": "1",
+  "render_sha256": "REPLACE_WITH_CURRENT_RENDER_SHA256",
+  "decision": "PENDING",
+  "reviewer": "",
+  "design_read": {
+    "event": "",
+    "audience": "",
+    "channel": "",
+    "visual_intent": "",
+    "reference_basis": ""
+  },
+  "artifacts": {
+    "final_render": {
+      "path": "",
+      "sha256": ""
+    },
+    "thumbnail": {
+      "path": "",
+      "sha256": ""
+    },
+    "reference_comparison": {
+      "path": "",
+      "sha256": ""
+    },
+    "typography_proof": {
+      "path": "",
+      "sha256": ""
+    },
+    "reference_blueprint": {
+      "path": "",
+      "sha256": ""
+    },
+    "poster_plan": {
+      "path": "",
+      "sha256": ""
+    }
+  },
+  "observations": {
+    "text_over_subject": "",
+    "font_personality": "",
+    "type_hierarchy": "",
+    "thumbnail_readability": "",
+    "hero_visual_integrity": ""
+  },
+  "preflight": {
+    "brief_and_audience_fit": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "reference_fidelity": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "visible_concept_and_theme_specificity": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "typography_and_type_image_craft": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "composition_hierarchy_and_density": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "palette_and_material_coherence": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "factual_and_bilingual_accuracy": {
+      "status": "PENDING",
+      "evidence": ""
+    },
+    "output_and_evidence_integrity": {
+      "status": "PENDING",
+      "evidence": ""
+    }
+  },
+  "anti_default": {
+    "generic_theme_symbols": {
+      "status": "PENDING",
+      "evidence": "",
+      "reason": ""
+    },
+    "decorative_labels_and_microcopy": {
+      "status": "PENDING",
+      "evidence": "",
+      "reason": ""
+    },
+    "default_palette_or_font_without_reference_basis": {
+      "status": "PENDING",
+      "evidence": "",
+      "reason": ""
+    },
+    "unnecessary_effects_or_template_composition": {
+      "status": "PENDING",
+      "evidence": "",
+      "reason": ""
+    }
+  },
+  "issues": [],
+  "design_scores": {
+    "concept_embodiment": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "lead_blueprint_structural_fidelity": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "medium_surface_fidelity": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "H0_typography_reference_fidelity": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "type_image_integration": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "composition_visual_tension": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "palette_value_structure": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "asset_transformation_intelligence": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "non_genericness_effect_discipline": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "information_architecture": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "negative_space_intention": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "theme_specificity": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    }
+  },
+  "production_scores": {
+    "factual_accuracy": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "H0_character_accuracy": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "readability_overflow": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "information_completeness": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "image_cleanliness": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "format_resolution": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "bilingual_consistency": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    },
+    "mandatory_asset_correctness": {
+      "score": null,
+      "evidence": "",
+      "artifact_refs": []
+    }
+  }
+}

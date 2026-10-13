@@ -1,10 +1,10 @@
-# 中英字体、H0 艺术字与技术证据规范（v0.19）
+# 中英字体、H0 艺术字与技术证据规范
 
 > 合并原 `TYPOGRAPHY_ENGINE_V015`、`TYPE_SPECIMEN_SOP`、`FONT_DOWNLOAD_BREAKPOINT`、`TYPOGRAPHY_REFERENCE_GATE`、`TYPOGRAPHY_STRATEGY_ROUTER`、`H0_REFERENCE_FIDELITY_GATE` 与 H0 实现限制。中文/英文分别验收。
 
 ## 1. 先选择设计策略，再映射到技术执行模式
 
-**设计策略**（[core/h0_strategy_router.yaml](../core/h0_strategy_router.yaml)、[core/h0_design_gate.yaml](../core/h0_design_gate.yaml)）与 **SVG 参数**（[layout_engine_v018/schemas/poster_plan.schema.json](../layout_engine_v018/schemas/poster_plan.schema.json)）是两个层级，不能直接混用：
+**设计策略**（[core/h0_strategy_router.yaml](../core/h0_strategy_router.yaml)、[core/h0_design_gate.yaml](../core/h0_design_gate.yaml)）与 **SVG 参数**（[layout_engine/schemas/poster_plan.schema.json](../layout_engine/schemas/poster_plan.schema.json)）是两个层级，不能直接混用：
 
 | H0 设计策略 | 条件 | SVG 实现模式 |
 | --- | --- | --- |
@@ -13,6 +13,10 @@
 | `IMAGE_INTEGRATED_H0` | 参考的图像与字形在构图中嵌合 | 无字形改造时 `STANDARD_BLOCK` 配合图层；实际定制轮廓须用 `CUSTOM_GLYPH` |
 
 `CUSTOM_DISPLAY` 是特殊的字体制作分支/描述，不是 `h0.mode` 的合法值。**当前执行器只有 `STANDARD_BLOCK` 和 `CUSTOM_GLYPH` 两种模式**，不可填写另三种设计策略当作 `mode`。H0 采用不同大小/旋转的单字符 CSS 拼装作为默认艺术字，一律拒绝。
+
+### 逐字变形的启用条件
+
+默认使用 `STANDARD_BLOCK`，整行/整组协调，不能靠每字随机字号、旋转或缩放补救排不下的标题。只有 Lead 裁片能证明具体逐字差异、变化承担图字互锁或笔画概念、合法字形轮廓与字符映射已核验时，才启用 `CUSTOM_GLYPH`。不能用 CSS transform 拼装系统字宣称定制艺术字。生成后独立渲染核对源文本完整性，并比较至少两套样张；选择最适合参考与信息层级的方案，而不是最夸张的方案。布局失败应回到整体标题框、换行或构图，不陷入逐字修补。
 
 ## 2. 字体人格分析
 
@@ -42,4 +46,4 @@ python scripts/render_type_specimen.py --font /path/to/licensed-font.otf --text 
 
 对于高定制 H0：从正确合法的真实字形骨架生成可核对的 SVG 轮廓，保存源文字、字符映射、矢量形变与证据；AI 位图中的伪文字不能作为正式活动信息。第三方字体二进制不得未经许可打包进入公开仓库。
 
-**执行器边界**：SVG 源码中 `<text>` 可修改；导入 Figma 后是否仍为可编辑文字，取决于导入方式，不做保证。详见 [SVG 排版说明](../layout_engine_v018/SVG_FIRST_LAYOUT.md)。
+**执行器边界**：SVG 源码中 `<text>` 可修改；导入 Figma 后是否仍为可编辑文字，取决于导入方式，不做保证。详见 [SVG 排版说明](../layout_engine/SVG_FIRST_LAYOUT.md)。

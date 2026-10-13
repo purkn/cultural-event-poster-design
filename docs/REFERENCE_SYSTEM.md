@@ -1,4 +1,4 @@
-# 参考检索、拆解和忠实度规范（v0.19）
+# 参考检索、拆解和忠实度规范
 
 > **唯一说明文档**。量化配置优先读取 [core/reference_deconstruction.yaml](../core/reference_deconstruction.yaml)、[core/lead_validity_gate.yaml](../core/lead_validity_gate.yaml)、[core/reference_blueprint_contract.yaml](../core/reference_blueprint_contract.yaml)、[core/reference_delta_gate.yaml](../core/reference_delta_gate.yaml) 与相关 `core/*.yaml`。本页整合原 Lead Validity / Dominance、Reference Deconstruction / Blueprint / Delta、Medium Surface、Palette Structure、Typography Reference 等重复说明。
 

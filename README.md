@@ -1,6 +1,6 @@
 # 文化活动宣传海报设计 Skill
 
-**版本：v0.20.1｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
+**版本：v0.20.2｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
 
 本仓库是供 AI Agent 和设计人员使用的**设计工作流与 Python 工具集**，不是自行调用图像模型的一键生图服务。核心优势是：从活动 Brief 与参考图构建可追溯的视觉路线、以 SVG/JSON 做中英文字排版，最终按实际叠字画面检查文字可读性，并要求真实视觉复核。
 
@@ -24,8 +24,8 @@ manifest.json                   当前版本、模块与参考库清单
 docs/                           5 份主题规范：简报、参考、设计、字体、交付
 core/                           45 份按职责拆分的 YAML 规则与阈值
 scripts/                        预检、参考库维护、提示词编译、字体与对照图工具
-modules/prompt_compiler_v017/    当前使用的提示词编译器及输入示例
-layout_engine_v018/              当前使用的 SVG 排版引擎、像素可读性质检与测试
+modules/prompt_compiler/         当前使用的提示词编译器及输入示例
+layout_engine/                  当前使用的 SVG 排版引擎、像素可读性质检与测试
 reference_library/
   collections/keyword-20261012/  唯一当前批次：401 张原图及权威 manifest
   index.json / index.csv        401 条派生索引，JSON 用于程序、CSV 便于人工检查
@@ -37,7 +37,7 @@ schemas/                        输入和视觉证据的数据契约
 examples/                       活动与 Blueprint 示例，不作正式生产输入
 feedback_registry/              项目专属否定反馈，避免再次生成被拒绝路线
 collaboration/                  外部参考素材交接格式
-tests/ / tests_v017/             当前规则、字体、参考库和编译器回归测试
+tests/                          当前规则、字体、参考库和编译器回归测试
 audit/                          保留最终可读性测试证据；历史报告从 Git 查询
 ```
 
@@ -49,7 +49,9 @@ audit/                          保留最终可读性测试证据；历史报告
 
 ### 哪些旧内容删除，哪些保留
 
-删除 v0.12–v0.17 历史审计、旧视觉簇统计、风格包晋升与交接、过期回归说明及未实现的 LoRA 支线。历史可从 Git 提交恢复，不再另建 archive 副本。`v017` 编译器和 `v018` 排版目录是**正在运行的模块及契约版本**，不是废弃副本；保留名称可避免破坏命令、Schema、导入与下游调用。core 的旧 version 字段同样表示该规则的修订来源，并不意味着规则已废弃。
+旧图片副本、视觉簇、S01 和未实现的 LoRA 支线已删除；本轮再删除历史排版审计，将逐字变形规范整合到字体手册。活动模块现在按功能命名：`modules/prompt_compiler/`、`layout_engine/`、`scripts/compile_routes.py`、`scripts/create_reference_comparison.py`；编译器测试并入 `tests/`，Schema 和反馈文件名也移除旧版本后缀。
+
+旧路径已移除，使用本 README 的新命令；没有为旧路径新增重复包装脚本。输入中的 `schema_version="0.17"` 是仍兼容的路由数据契约，与 Skill 发布版本独立；不因改目录名而改变字段含义。core 的 version 表示各规则的修订来源。`audit/v019_test_evidence/` 仅保留可追溯的历史测试输入/输出，不属于当前生产协议。
 
 规则入口、解释文档、数值配置、执行代码和测试分别承担不同职责；不为减少文件数而合并成一份难以维护的大文件。最终可读性图像证据保留，防止把历史实验结果误称当前真实生成能力。`.local-history/` 是本机忽略目录，不属于 GitHub 仓库。
 
@@ -80,11 +82,10 @@ python scripts/reference_library.py previews
 参考库工具建议 Python 3.10+（原引擎 Python 3.9+）。需要运行图文可读性模块时，安装 `Pillow`、`NumPy`、`CairoSVG`、`fontTools`；不同操作系统可能需要 CairoSVG 系统图形库。示例 Poster Plan 含测试机的字体绝对路径，应改为本机存在且许可明确的字体文件。
 
 ```bash
-python -m pip install Pillow numpy cairosvg fonttools
-python -m unittest discover -s tests_v017 -v
+python -m pip install -r requirements.txt
 python -m unittest discover -s tests -v
-python -m unittest discover -s layout_engine_v018/tests -v
-python -m unittest discover -s layout_engine_v018/readability -p 'test_readability.py' -v
+python -m unittest discover -s layout_engine/tests -v
+python -m unittest discover -s layout_engine/readability -p 'test_readability.py' -v
 ```
 
 字体集成测试发现本机 Noto CJK/STHeiti 与 DejaVu Sans/Arial；可用 `POSTER_TEST_CJK_FONT`、`POSTER_TEST_CJK_FACE`、`POSTER_TEST_LATIN_FONT` 指定字体。缺字体会明确报错，测试不下载或分发字体。**本仓库目前没有经过独立证明的一键端到端真实生图保证。**
@@ -94,16 +95,16 @@ python -m unittest discover -s layout_engine_v018/readability -p 'test_readabili
 python scripts/preflight_brief.py examples/brief_complete.json
 
 # 正式项目 JSON 须自行准备，不能直接用 examples 充当生产输入
-python scripts/compile_routes_v017.py project.json build/routes
+python scripts/compile_routes.py project.json build/routes
 
 # 先将示例 JSON 的 font_file 修改为本机有效路径
-python layout_engine_v018/scripts/build_poster_svg.py layout_engine_v018/examples/example_plan.json build/poster.svg --png build/preview.png
+python layout_engine/scripts/build_poster_svg.py layout_engine/examples/example_plan.json build/poster.svg --png build/preview.png
 
 # 对真实 Poster Plan 的成图执行像素可读性审计
-python layout_engine_v018/readability/audit_and_repair.py poster_plan.json --out-dir build/readability
+python layout_engine/readability/audit_and_repair.py poster_plan.json --out-dir build/readability
 ```
 
-编译、SVG 预览与最终可读性是不同阶段；**不经 `--visual-review` 且未绑定最终 PNG SHA256 时，只能称候选稿，不是正式通过的交付物**。具体证据流程详见 [可读性模块说明](layout_engine_v018/readability/README.md)。
+编译、SVG 预览与最终可读性是不同阶段；**不经 `--visual-review` 且未绑定最终 PNG SHA256 时，只能称候选稿，不是正式通过的交付物**。具体证据流程详见 [可读性模块说明](layout_engine/readability/README.md)。
 
 ## 版权与使用边界
 
@@ -112,15 +113,19 @@ python layout_engine_v018/readability/audit_and_repair.py poster_plan.json --out
 ## 专项手册与分支整理
 
 - [参考素材交接格式](collaboration/REFERENCE_BUNDLE_FORMAT.md)
-- [最终可读性模块](layout_engine_v018/readability/README.md)
+- [最终可读性模块](layout_engine/readability/README.md)
 - [最终可读性历史测试证据](audit/READABILITY_AUDIT_V019.md)
 
 两个 refactor 文档分支已由 main 的 PR #1 整合；此次合并记录它们的祖先关系并保留当前已修复的规则，避免恢复过期文件。hygiene 分支已由 PR #3 合并，无须再次合并。分支合并不删除分支，也不重写历史。
 
-## 本次整理验证
+## 评审改进与验证
 
-跟踪文件从 745 个减至 560 个，Markdown 从 35 份减至 19 份；401 张新原图的 SHA256 与尺寸全部核验，113 个别名目标全部存在。63 项回归测试通过，静态解析、相对链接及删除范围比对通过。可读性测试使用本机 Cairo 动态库；运行环境仍需提供对应依赖。
+参考 Taste-Skill 的 §0 Brief Inference、§9 反默认套路、§11 先审计后修改、§14 最终预检机制，并将它们适配为海报评审。活动、受众、品牌和 Lead 决定视觉语言；不照搬网页动画、居中/宋体/纯黑禁令或默认配色。机制直接维护在 [质量与交付](docs/QUALITY_AND_DELIVERY.md)，运行此 Skill 不需要 Taste-Skill 依赖。
 
-审计仍报告一组字节相同的 JSON：`audit/v019_test_evidence/local_uneven/plan.json` 与其 `out/poster_plan_review.json`。前者是输入，后者是未自动修复时的输出证据，分别证明阶段行为，因此保留。测试通过不代表已完成真实海报生图与审美验收。
+`core/design_quality_scores.yaml` 是唯一最终评分来源，旧 critic 的 78 分独立门槛已移除。`scripts/poster_review.py` 校验最终 PNG 与缩略图、参考对照/字体/Blueprint/Plan 的材料哈希、逐项预检、语境例外、分项得分与问题复验；Design ≥82、Production ≥85 且所有检查通过才允许正式交付。旧版只填写五段观察的 review 必须迁移到 [新空模板](layout_engine/readability/visual_review_template.json) 并重新看图。
+
+文件完整性与代码回归不能证明评审者真实看图或设计好看，正式项目仍需实际视觉审查。审计保留一组相同输入/输出 JSON（local_uneven），用于证明未发生自动修复；历史可读性证据不得当作当前项目的审批。
 
 团队提供正/负参考与已有概念时，使用 [素材交接格式](collaboration/REFERENCE_BUNDLE_FORMAT.md) 记录学习范围、项目负反馈及权限；概念卡补充素材使用与双语信息空间，详见 [设计与路线](docs/DESIGN_AND_ROUTES.md)。这些是工作流记录，当前脚本不自动解析交接 YAML。
+
+本轮验证：83 项回归测试通过，Skill 入口校验、解析、相对链接与迁移范围比对通过；Markdown 从 19 份减至 17 份，22 个跟踪路径完成迁移。保留路由数据契约 0.17，旧命令与旧视觉审批需按当前文档迁移。

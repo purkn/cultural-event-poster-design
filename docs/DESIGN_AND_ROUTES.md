@@ -1,4 +1,4 @@
-# 主视觉概念、路线选择与反套路规范（v0.19）
+# 主视觉概念、路线选择与反套路规范
 
 > 合并原 `DESIGN_QUALITY_CORE`、`EFFECT_DISCIPLINE_GATE`、`NEGATIVE_SPACE_GATE`、`SEMANTIC_DECORATION_BAN`、`PALETTE_AND_TYPE_DECISION_V017`、`ROUTE_RESELECTION_V017`、`VISUAL_QA_AND_SHORTCUT_AUDIT_V017` 的通用规则；量化评审见 [质量规范](QUALITY_AND_DELIVERY.md)。
 
@@ -16,7 +16,7 @@
 
 新任务必须先读取本项目 `feedback_registry/`（如果存在对应任务的记录），并基于本次 Brief、素材、Lead 重新构造生产输入。负反馈**只在对应任务作用域生效**，例如某活动否定青蓝/旧纸/粗笨标题，不代表所有其它风格永久禁止这些元素。
 
-至少准备 **两条真正不同**的路线，每条包含 Lead、色彩、H0 策略、Concept、布局与素材处理，原则上至少变化两个主要维度；编译入口为 [scripts/compile_routes_v017.py](../scripts/compile_routes_v017.py)，详见 [模块说明](../modules/prompt_compiler_v017/PROMPT_COMPILER_V017.md)。
+至少准备 **两条真正不同**的路线，每条包含 Lead、色彩、H0 策略、Concept、布局与素材处理，原则上至少变化两个主要维度；编译入口为 [scripts/compile_routes.py](../scripts/compile_routes.py)，详见 [模块说明](../modules/prompt_compiler/PROMPT_COMPILER.md)。
 
 [core/route_competition.yaml](../core/route_competition.yaml) 还定义了探索期文本路线 6–10 条、常见 2 张 rough（低覆盖 ≥3）及特殊强参考例外。这是**更广义的创意探索/视觉候选评审规则**，与编译器“至少 2 条输入路由”不是同一数量层级；若真实执行该阶段，按对应配置记录，不可把仅两条编译结果冒称已经完成全部探索。
 

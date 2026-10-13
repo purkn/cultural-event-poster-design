@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validated multi-route visual prompt compiler. No model calls, downloads, or image QA.
-Usage: python scripts/compile_routes_v017.py /path/project.json /path/output
+Usage: python scripts/compile_routes.py /path/project.json /path/output
 Python >= 3.9; standard library only.
 """
 from __future__ import annotations
