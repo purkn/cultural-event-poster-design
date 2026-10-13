@@ -37,4 +37,4 @@
 python scripts/preflight_brief.py examples/brief_complete.json
 ```
 
-该命令仅检查活动数据，不执行生图。
+该命令仅检查活动数据，不执行生图。团队交接的正/负参考、学习与禁复制说明及权限记录见 [参考素材交接](../collaboration/REFERENCE_BUNDLE_FORMAT.md)。
