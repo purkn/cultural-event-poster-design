@@ -1,6 +1,6 @@
-# 参考图库 v0.20.0
+# 参考图库
 
-401 张不同海报；401 条索引记录；113 个历史编号单独保留为别名。新批次包含原库全部图片，检索按 SHA256 去重。桌面源文件保持原样。
+385 张不同海报；385 条索引记录；105 个历史编号单独保留为别名。检索按 SHA256 去重。桌面源文件保持原样。
 
 ## 文件结构
 
@@ -9,7 +9,7 @@ reference_library/
   collections/
     keyword-20261012/
       manifest.json          新批次权威元数据与哈希
-      images/                保留关键词文件名的 401 张原图
+      images/                保留关键词文件名的 385 张原图
   index.json / index.csv     从批次 manifest 生成的统一索引
   facets.json                活动 / 构图 / 字体 / 配色 → ID 列表
   aliases.json               旧编号 / 重复图片 ID → canonical ID（保留映射，不含图片副本）
@@ -37,7 +37,7 @@ python scripts/reference_library.py query --event-type 艺术展览 --compositio
 
 ## 视觉证据边界
 
-四维标签来自文件名，状态为 provisional；16 张含未知标签。数量覆盖不代表媒介、字形或风格成熟度。关键词得分不等于细粒度匹配分，不能直接晋升 Strong Lead 。实际观察 Top 6–8 原图，按照 [docs/REFERENCE_SYSTEM.md](../docs/REFERENCE_SYSTEM.md) 与 Lead/Blueprint 门禁精拆，再决定用途。旧视觉簇已移除；别名通过哈希确定，不按序号猜测。
+四维标签来自文件名，状态为 provisional；当前没有含未知标签的记录。数量覆盖不代表媒介、字形或风格成熟度。关键词得分不等于细粒度匹配分，不能直接晋升 Strong Lead 。实际观察 Top 6–8 原图，按照 [docs/REFERENCE_SYSTEM.md](../docs/REFERENCE_SYSTEM.md) 与 Lead/Blueprint 门禁精拆，再决定用途。旧视觉簇已移除；别名通过哈希确定，不按序号猜测。
 
 ## Git 维护
 

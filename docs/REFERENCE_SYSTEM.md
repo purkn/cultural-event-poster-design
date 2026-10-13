@@ -12,7 +12,7 @@
 
 ### 批次索引与关键词粗检索（v0.19.1）
 
-参考库现为 401 张不同图片，统一索引 401 条；113 条旧编号别名单独保存在 aliases.json。新增批次包含全部旧图，`aliases.json` 按 SHA256 映射旧编号到新批次编号，`image_path` 相对参考库根目录；旧图片副本已移除，别名定位到新批次 image_path。新增 ID 为 `<collection>:REF-XXX`，不能按序号匹配新旧作品。
+参考库现为 385 张不同图片，统一索引 385 条；105 条旧编号别名单独保存在 aliases.json。`aliases.json` 按 SHA256 映射旧编号到新批次编号，`image_path` 相对参考库根目录；旧图片副本已移除，别名定位到新批次 image_path。新增 ID 为 `<collection>:REF-XXX`，不能按序号匹配新旧作品。
 
 `facets.json` 按活动 / 构图 / 字体 / 配色提供多维候选，不创建四份图片副本。运行：
 
@@ -22,7 +22,7 @@ python scripts/reference_library.py query --composition 非对称网格 --typogr
 
 关键词子串命中按构图 4、字体 3、配色 2、活动 1 排序，自动排除重复图片，返回实际命中字段。此分数只服务粗筛，不能套用视觉门槛。无命中时浏览统一图库与预览继续检索，不直接断言覆盖不足。
 
-所有文件名标签均为 provisional；16 张含未知项。批次计数与标签覆盖见 `coverage.json`，待检查项见 `review_queue.json`；数量不代表媒介/H0/风格成熟度。批次 manifest 是元数据来源，导入与重新标注后使用脚本重建索引和预览，详见 [库维护说明](../reference_library/README.md)。
+所有文件名标签均为 provisional；当前待复核队列为空。批次计数与标签覆盖见 `coverage.json`，待检查项见 `review_queue.json`；数量不代表媒介/H0/风格成熟度。批次 manifest 是元数据来源，导入与重新标注后使用脚本重建索引和预览，详见 [库维护说明](../reference_library/README.md)。
 
 ## 2. Strong Lead 判断
 

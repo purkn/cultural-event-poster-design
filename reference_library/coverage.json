@@ -1,9 +1,9 @@
 {
-  "total_images": 401,
-  "unique_images": 401,
+  "total_images": 385,
+  "unique_images": 385,
   "duplicate_images": 0,
   "collections": {
-    "keyword-20261012": 401
+    "keyword-20261012": 385
   },
   "facets": {
     "event_type": {
@@ -15,7 +15,6 @@
       "体育活动": 13,
       "音乐演出": 40,
       "商业推广": 36,
-      "未知": 16,
       "工作坊": 11
     },
     "composition": {
@@ -23,7 +22,7 @@
       "模块化网格": 46,
       "中心轴对称": 144,
       "单栏纵向": 5,
-      "不规则自由布局": 24,
+      "不规则自由布局": 8,
       "非对称网格": 59,
       "满版构图": 42,
       "上下分区": 31,
@@ -38,8 +37,7 @@
       "书法": 35,
       "衬线": 57,
       "混合字体": 9,
-      "像素": 3,
-      "未知": 16
+      "像素": 3
     },
     "palette": {
       "蓝黄": 8,
@@ -81,7 +79,6 @@
       "白灰": 3,
       "粉多色": 1,
       "白蓝": 42,
-      "未知": 16,
       "粉白": 1,
       "棕橙": 1,
       "白黄": 3,
@@ -166,6 +163,6 @@
       "红绿粉": 1
     }
   },
-  "unknown_tag_images": 16,
+  "unknown_tag_images": 0,
   "coverage_basis": "inventory_and_provisional_tags_not_visual_style_maturity"
 }
