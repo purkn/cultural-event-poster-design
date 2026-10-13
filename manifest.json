@@ -1,7 +1,7 @@
 {
   "name": "cultural-event-poster-system",
   "display_name": "文化活动宣传海报系统",
-  "version": "0.20.0",
+  "version": "0.20.1",
   "architecture": "reference-led-generation-svg-first-with-final-composite-readability-gate",
   "default_mode": "autonomous",
   "reference_library": {
