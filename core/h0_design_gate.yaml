@@ -40,7 +40,7 @@ hard_fail:
   - H0_reference_DNA_severe_mismatch
 
 # v0.18 stronger default; overrides permissive artword examples
-v018_layout_override:
+layout_execution_constraints:
   default_h0_mode: STANDARD_BLOCK
   allow_per_glyph_variation: only_custom_verified_paths_with_reference_evidence
   forbid_css_random_rotation_or_size_variation: true

@@ -1,7 +1,7 @@
-# SVG-first 海报排版架构 v0.18
+# SVG 海报排版架构
 
 ## 定位
-本模块替换 v0.17 的“仅 HTML 双语排版”最终组装分支；不替换活动内容检查、Hero、参考检索、字体授权、双语翻译与审美评审。
+本模块负责 SVG 与 JSON 母版的最终组装；不替换活动内容检查、Hero、参考检索、字体授权、双语翻译与审美评审。
 
 **输出的权威设计源文件是 `poster_zh.svg` / `poster_en.svg` + 对应 `poster_plan.json`，PNG 只是导出预览。** 原图/摄影/生图 Hero 可在 SVG 内保留嵌入的位图，其它图层可用 SVG 文字、路径、形状编辑；这叫“可编辑的混合 SVG”，不是所有像素都矢量化。
 
@@ -34,7 +34,7 @@
 - H0 图层在实际导出时偷偷切换字体。
 
 ## 输入接口
-`python layout_engine_v018/scripts/build_poster_svg.py poster_plan.json poster.svg`
+`python layout_engine/scripts/build_poster_svg.py poster_plan.json poster.svg`
 当设置 `--png poster.png` 时，若已安装 cairosvg 会尝试同时导出。真正跨工具预览最好再用 Chromium / Inkscape 核验。
 
 

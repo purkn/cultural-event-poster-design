@@ -1,7 +1,7 @@
 {
   "name": "cultural-event-poster-system",
   "display_name": "文化活动宣传海报系统",
-  "version": "0.20.1",
+  "version": "0.20.2",
   "architecture": "reference-led-generation-svg-first-with-final-composite-readability-gate",
   "default_mode": "autonomous",
   "reference_library": {
@@ -65,7 +65,9 @@
     "render_sha256_visual_approval",
     "batch_namespaced_reference_ids",
     "keyword_facet_retrieval",
-    "sha256_reference_deduplication"
+    "sha256_reference_deduplication",
+    "context_led_visual_preflight",
+    "artifact_bound_score_and_issue_validation"
   ],
   "quality_gates": {
     "design_min": 82,
@@ -75,7 +77,8 @@
     "visual_approval_sha256_required": true,
     "readability_blocking": true
   },
-  "prompt_compiler_module": "modules/prompt_compiler_v017",
-  "svg_layout_engine": "layout_engine_v018",
-  "readability_engine": "layout_engine_v018/readability/audit_and_repair.py"
+  "prompt_compiler_module": "modules/prompt_compiler",
+  "svg_layout_engine": "layout_engine",
+  "readability_engine": "layout_engine/readability/audit_and_repair.py",
+  "review_validator": "scripts/poster_review.py"
 }

@@ -1,11 +1,11 @@
 ---
 name: cultural-event-poster-system
 metadata:
-  version: "0.20.1"
+  version: "0.20.2"
 description: 中文文化活动宣传海报设计工作流。活动信息预检、参考图主导的多方案生成、中文字体证据、双语 SVG 排版以及最终叠字画面可读性质检；真实生图依赖可用后端。
 ---
 
-# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.1
+# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.2
 
 **职责**：根据活动简报、素材和视觉参考，执行创意路线、主视觉制作、中英文排版与质量审查。默认自主推进，**仅在真实事实缺口、授权/费用与不可替代的用户决策上设置断点**。不得把“需要审查”理解成每一步都询问。本文是流程入口；细节在 `docs/`，数值以相应代码/`core/*.yaml` 为准。
 
@@ -15,13 +15,13 @@ description: 中文文化活动宣传海报设计工作流。活动信息预检�
 | --- | --- | --- |
 | A. 简报与素材 | 执行 `scripts/preflight_brief.py`；核对活动名、日期、地点/线上链接、指定的票价/二维码/署名及来源。素材做权属和可修改性审计 | P0 → `WAITING_FOR_USER`；不编造事实、不生图 |
 | B. 用户反馈 | 读取本项目适用的 `feedback_registry/`；明确必须避免的旧版路线指纹，不能把别的项目的否定全局化 | 用户已否定的方案 `USER_REJECTED`，旧自评作废 |
-| C. 参考与概念 | 看真实参考图，粗筛、精拆并记录 Strong Lead / Support Scope；构建 Blueprint 和可见的 Concept 机制 | 无视觉证据不能宣布参考忠实；冲突需重新选 Lead |
-| D. 路线与后端 | 至少两条真正不同的路线；检测后端是否支持参考图；运行 `scripts/compile_routes_v017.py` | 缺有效路线 → `NEED_NEW_ROUTE`；无法送参考图 → `TEXT_ONLY_REFERENCE_FALLBACK` |
+| C. 参考与概念 | 看真实参考图，粗筛、精拆并记录 Strong Lead / Support Scope；先写活动/受众/渠道/视觉意图/参考依据的 Design Read，再构建 Blueprint 和可见 Concept | 无视觉证据不能宣布参考忠实；冲突需重新选 Lead |
+| D. 路线与后端 | 至少两条真正不同的路线；检测后端是否支持参考图；运行 `scripts/compile_routes.py` | 缺有效路线 → `NEED_NEW_ROUTE`；无法送参考图 → `TEXT_ONLY_REFERENCE_FALLBACK` |
 | E. 主视觉 Rough | 调用实际可用的生图/素材编辑工具，分别生成候选并保存【Lead/Prompt/Rough】对照；先判断画面语言、配色、概念和用户反馈 | 无真实成图 → `NOT_VISUALLY_REVIEWED`，不能打 Design PASS |
 | F. H0 与字体 | 按参考选择字体设计策略，检测真实字体授权/字形覆盖，制作至少两套字形样张；中文和英文分别比较 | 缺合法字体 → `BP_FONT_DOWNLOAD`；字体不匹配 → `TYPOGRAPHY_UNRESOLVED` |
 | G. 排版与双语 | 使用同一份 Poster Plan 构建中文/英文 SVG，核对事实、字符、版式、安全区域；HTML 只能作为可选预览 | 越界、错字、伪中文字必须返工；SVG 仅为候选 |
-| H. 最终可读性 | 必跑 `layout_engine_v018/readability/audit_and_repair.py`，对实际 PNG 与无字底图逐块测对比、纹理、缩略信息；仅做授权修复，最多两轮 | `technical_readability_gate=FAIL` 或 `must_escalate_layout` → 返回布局/主视觉 |
-| I. 正式验收 | 真实视觉 Agent 检查最终 PNG、25% 缩略、主体遮挡及字体，并提交 **当前 PNG SHA256** 绑定的 review；分别验 Design 与 Production | Design <82 或 Production <85、硬门禁失败、无有效 `--visual-review` → **禁止交付 PASS** |
+| H. 最终可读性 | 必跑 `layout_engine/readability/audit_and_repair.py`，对实际 PNG 与无字底图逐块测对比、纹理、缩略信息；仅做授权修复，最多两轮 | `technical_readability_gate=FAIL` 或 `must_escalate_layout` → 返回布局/主视觉 |
+| I. 正式验收 | 真实视觉 Agent 检查最终 PNG、25% 缩略、主体遮挡及字体，按质量规范逐项预检、语境反模板检查和问题复验，提交绑定**当前 PNG/缩略图及证据文件 SHA256**的完整 review；分项计算 Design 与 Production | Design <82 或 Production <85、硬门禁失败、无有效 `--visual-review` → **禁止交付 PASS** |
 
 ## 参考库粗检索（v0.20.0）
 

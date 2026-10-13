@@ -1,6 +1,6 @@
-# Prompt Compiler v0.17 — 多路线编译协议
+# Prompt Compiler — 多路线编译协议
 
-**绝不把示例当默认输入**。编译前从本次任务的 Brief 和素材构建 `schema_version=0.17` 的生产 JSON，路径不得位于 examples/golden/sample/test。用户已否定的路线要载入 feedback。Brief 预检、素材检查及真实参考观察完成后调用 `compile_routes_v017.py`，它只负责规范与 Prompt 生成，不负责视觉观察或真正生图。
+**绝不把示例当默认输入**。编译前从本次任务的 Brief 和素材构建 `schema_version="0.17"`（输入契约版本） 的生产 JSON，路径不得位于 examples/golden/sample/test。用户已否定的路线要载入 feedback。Brief 预检、素材检查及真实参考观察完成后调用 `compile_routes.py`，它只负责规范与 Prompt 生成，不负责视觉观察或真正生图。
 
 ## 路线单位而非 A/B/C 同色微调
 一个 route 是 `{lead, color, typography, concept, composition}` 的整体。一轮至少两条真实不同的路线，且至少改变其中两个维度（失败重做时需要精确响应 user.must_change）。允许路线采用不同参考风格；缺 Lead 或理由不足时返回 STOP，不强迫套用预设风格。

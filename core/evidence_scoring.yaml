@@ -1,14 +1,19 @@
-version: 0.13
+version: 0.20.2
+score_source: core/design_quality_scores.yaml
 rules:
   - visual_design_scores_require_actual_image_inspection
-  - scores_8_of_10_or_higher_require_specific_visible_evidence
-  - reference_intelligence_requires_side_by_side_lead_or_anchor_comparison
+  - each_score_requires_specific_visible_evidence_and_artifact_references
+  - reference_fidelity_requires_side_by_side_lead_comparison
 caps:
   no_final_image_inspection:
     design_score_max: 60
-  no_reference_side_by_side:
-    lead_reference_intelligence_max: 5
-    style_material_maturity_max: 4
+  no_structure_surface_typography_delta:
+    design_score_max: 70
+  no_surface_fingerprint:
+    medium_surface_fidelity_max: 4
+  no_H0_type_DNA:
+    H0_typography_reference_fidelity_max: 4
+note: caps describe incomplete drafts; missing required evidence can never obtain final PASS
 forbidden_justifications:
   - elements_are_complete
   - palette_matches_rules

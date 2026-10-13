@@ -22,6 +22,8 @@ except ImportError:
     cairosvg=None
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'scripts'))
 from build_poster_svg import generate, LayoutError, SVG, SVG_NS
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'scripts'))
+from poster_review import assess_review
 
 DEFAULTS={
     'contrast_body':4.5, 'contrast_large':3.0,
@@ -173,6 +175,9 @@ def audit(plan,svgfile,save_dir=None):
     if save_dir:
         d=Path(save_dir);d.mkdir(parents=True,exist_ok=True)
         final.save(d/'final_render.png');before.save(d/'pre_text_background.png')
+        factor = pol['thumbnail_scale']
+        final.resize((max(1, round(final.width * factor)), max(1, round(final.height * factor))),
+                     Image.Resampling.LANCZOS).save(d/'thumbnail.png')
     return {'overall':'FAIL' if any(f['status']=='FAIL' for f in findings) else
              ('REVIEW_REQUIRED' if any(f['status']=='REVIEW' for f in findings) else 'MEASURABLE_PASS'),
             'renderer':'CairoSVG','note':'Automated proxy; subjective typography and unannotated subject saliency still require visual approval.',
@@ -277,19 +282,26 @@ def run(plan_path,outdir,max_rounds=None,visual_review_file=None):
     result=audit(plan,svg,save_dir=outdir)
     deliverable=result['overall']!='FAIL'
     image_digest=hashlib.sha256((outdir/'final_render.png').read_bytes()).hexdigest()
+    (outdir/'poster_plan_review.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf8')
+    plan_digest=hashlib.sha256((outdir/'poster_plan_review.json').read_bytes()).hexdigest()
     approval='PENDING'
+    review_result={'issues': ['VISUAL_REVIEW_REQUIRED']}
+    thumbnail_digest=hashlib.sha256((outdir/'thumbnail.png').read_bytes()).hexdigest()
     if visual_review_file:
-        evidence=json.loads(Path(visual_review_file).read_text(encoding='utf8'))
-        required={'text_over_subject','font_personality','type_hierarchy','thumbnail_readability','hero_visual_integrity'}
-        if (evidence.get('render_sha256')==image_digest and evidence.get('decision')=='PASS'
-            and isinstance(evidence.get('reviewer'),str) and evidence['reviewer'].strip()
-            and isinstance(evidence.get('observations'),dict)
-            and set(evidence['observations'])>=required
-            and all(isinstance(evidence['observations'][k],str) and len(evidence['observations'][k])>=12 for k in required)):
-            approval='PASS'
-        else:approval='REJECTED_INVALID_OR_STALE'
+        review_path=Path(visual_review_file).resolve()
+        try:
+            evidence=json.loads(review_path.read_text(encoding='utf8'))
+            review_result=assess_review(evidence,image_digest,thumbnail_digest,review_path.parent,poster_plan_sha256=plan_digest)
+        except (OSError, ValueError):
+            review_result={'status':'REJECTED_INCOMPLETE','issues':['REVIEW_UNREADABLE_OR_INVALID_JSON']}
+        approval=review_result['status']
     result.update({'final_delivery_allowed': bool(deliverable and approval=='PASS'),
                    'visual_review_status':approval,
+                   'review_issues':review_result['issues'],
+                   'design_score':review_result.get('design_score'),
+                   'production_score':review_result.get('production_score'),
+                   'thumbnail_sha256':thumbnail_digest,
+                   'poster_plan_sha256':plan_digest,
                    'render_sha256':image_digest,
                    'technical_readability_gate':'PASS' if deliverable else 'FAIL',
                    'visual_approval_required':True,
@@ -298,13 +310,12 @@ def run(plan_path,outdir,max_rounds=None,visual_review_file=None):
                    'repair_history':rounds,
                    'must_escalate_layout':not deliverable})
     (outdir/'readability_report.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
-    (outdir/'poster_plan_review.json').write_text(json.dumps(plan,ensure_ascii=False,indent=2),encoding='utf8')
     return result
 
 def main():
     parser=argparse.ArgumentParser(description='Final SVG contrast/complexity/subject gate and constrained repair')
     parser.add_argument('plan');parser.add_argument('--out-dir',required=True);parser.add_argument('--max-rounds',type=int)
-    parser.add_argument('--visual-review',help='JSON review of exact final PNG digest and five visual dimensions')
+    parser.add_argument('--visual-review',help='JSON review with artifact hashes, context, preflight, scores and resolved issues')
     args=parser.parse_args()
     try:
         result=run(args.plan,args.out_dir,args.max_rounds,args.visual_review)
@@ -312,7 +323,8 @@ def main():
                           'final_delivery_allowed':result['final_delivery_allowed'],
                           'must_escalate_layout':result['must_escalate_layout'],
                           'report':str(Path(args.out_dir)/'readability_report.json')},ensure_ascii=False))
-        sys.exit(0 if result['technical_readability_gate']=='PASS' else 3)
+        sys.exit(3 if result['technical_readability_gate']!='PASS' else
+                 4 if args.visual_review and not result['final_delivery_allowed'] else 0)
     except (LayoutError,RuntimeError,ValueError,KeyError,OSError) as exc:
         print('READABILITY_AUDIT_ERROR:'+str(exc),file=sys.stderr);sys.exit(2)
 if __name__=='__main__':main()

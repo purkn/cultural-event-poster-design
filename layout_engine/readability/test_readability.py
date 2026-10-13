@@ -103,9 +103,8 @@ class ApprovalRegression(unittest.TestCase):
         one=run(path,output)
         self.assertEqual(one['technical_readability_gate'],'PASS')
         self.assertFalse(one['final_delivery_allowed'])
-        review={'render_sha256':one['render_sha256'],'decision':'PASS','reviewer':'design-agent-with-image-inspection',
-            'observations':{k:'Reviewed actual render and checked contrast, shape and image relationship.'
-             for k in ('text_over_subject','font_personality','type_hierarchy','thumbnail_readability','hero_visual_integrity')}}
+        from review_fixtures import review_fixture
+        review=review_fixture(self.d,output/'final_render.png',output/'thumbnail.png',output/'poster_plan_review.json')
         fp=self.d/'review.json';fp.write_text(json.dumps(review))
         two=run(path,output,visual_review_file=fp)
         self.assertTrue(two['final_delivery_allowed'])
@@ -114,6 +113,48 @@ class ApprovalRegression(unittest.TestCase):
         three=run(path,output,visual_review_file=fp)
         self.assertFalse(three['final_delivery_allowed'])
         self.assertEqual(three['visual_review_status'],'REJECTED_INVALID_OR_STALE')
+
+    def current_review(self):
+        from review_fixtures import review_fixture
+        plan={'canvas':{'width':480,'height':660,'background':'#080808','safe_margin':20},
+          'h0':{'id':'h0','text':'EVENT','x':40,'y':60,'max_width':380,'font_file':F,
+                'font_family':FAMILY,'font_size':62,'fill':'#ffffff'},'text_blocks':[]}
+        path=self.d/'base.json';path.write_text(json.dumps(plan))
+        output=self.d/'out'
+        initial=run(path,output)
+        review=review_fixture(self.d,output/'final_render.png',output/'thumbnail.png',output/'poster_plan_review.json')
+        fp=self.d/'review.json'
+        return path,output,review,fp,initial
+
+    def test_high_scores_with_failed_check_do_not_allow_final(self):
+        path,output,review,fp,_=self.current_review()
+        review['preflight']['reference_fidelity']['status']='FAIL'
+        fp.write_text(json.dumps(review))
+        result=run(path,output,visual_review_file=fp)
+        self.assertEqual(result['technical_readability_gate'],'PASS')
+        self.assertFalse(result['final_delivery_allowed'])
+        self.assertIn('CHECK_UNRESOLVED:reference_fidelity',result['review_issues'])
+
+    def test_unresolved_issue_blocks_actual_delivery(self):
+        path,output,review,fp,_=self.current_review()
+        review['issues']=[{'area':'H0','evidence':'Subject shoulder competes with title.',
+                          'repair_action':'Adjust title position and review again.','status':'OPEN'}]
+        fp.write_text(json.dumps(review))
+        self.assertFalse(run(path,output,visual_review_file=fp)['final_delivery_allowed'])
+
+    def test_legacy_review_cli_fails_with_exit4(self):
+        import subprocess
+        import audit_and_repair
+        path,output,review,fp,_=self.current_review()
+        old={k:review[k] for k in ('render_sha256','decision','reviewer','observations')}
+        fp.write_text(json.dumps(old))
+        process=subprocess.run([sys.executable,audit_and_repair.__file__,str(path),'--out-dir',
+                                str(output),'--visual-review',str(fp)],capture_output=True,text=True)
+        self.assertEqual(process.returncode,4,process.stderr)
+        result=json.loads(process.stdout)
+        self.assertEqual(result['technical_readability_gate'],'PASS')
+        self.assertFalse(result['final_delivery_allowed'])
+
 
 class NoScoreGaming(unittest.TestCase):
     def test_lowering_threshold_rejected(self):
