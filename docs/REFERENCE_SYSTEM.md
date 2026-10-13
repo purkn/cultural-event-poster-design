@@ -20,7 +20,7 @@
 python scripts/reference_library.py query --composition 非对称网格 --typography 无衬线 --top 16
 ```
 
-关键词子串命中按构图 4、字体 3、配色 2、活动 1 排序，自动排除重复图片，返回实际命中字段。此分数只服务粗筛，不能套用视觉门槛。无命中时浏览旧簇与预览继续检索，不直接断言覆盖不足。
+关键词子串命中按构图 4、字体 3、配色 2、活动 1 排序，自动排除重复图片，返回实际命中字段。此分数只服务粗筛，不能套用视觉门槛。无命中时浏览统一图库与预览继续检索，不直接断言覆盖不足。
 
 所有文件名标签均为 provisional；16 张含未知项。批次计数与标签覆盖见 `coverage.json`，待检查项见 `review_queue.json`；数量不代表媒介/H0/风格成熟度。批次 manifest 是元数据来源，导入与重新标注后使用脚本重建索引和预览，详见 [库维护说明](../reference_library/README.md)。
 
@@ -63,3 +63,5 @@ python scripts/reference_library.py query --composition 非对称网格 --typogr
 数量按阶段区分：初始排序 shortlist 12 → 视觉候选扩展 16 → 深度拆解 8。拆解 rerank_weights 为相对权重（总和 92，排序时归一化），不是百分比。风格成熟度基准用 3–5 张，单路线批评从中选 2–4 张；二者不能互换。
 
 Blueprint 的 H0 DNA 位于 `typography.H0_type_DNA`，项目必须填写 borrow、transform、do_not_copy 与 target_tolerance；schema 校验结构，真实借鉴质量仍由看图门禁判断。
+
+团队可提供学习/禁复制及负参考备注，接收格式见 [素材交接](../collaboration/REFERENCE_BUNDLE_FORMAT.md)。备注不提高视觉证据等级；负反馈须保留项目作用域。
