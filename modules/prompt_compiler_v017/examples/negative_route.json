@@ -16,7 +16,6 @@
   "backend": {
     "id": "local-imagegen",
     "supports_reference_images": false,
-    "supports_external_lora": false,
     "supports_negative_prompt": false
   },
   "feedback": {
@@ -47,7 +46,7 @@
       "id": "alternative_1",
       "lead": {
         "id": "P03",
-        "path": "style_packs/S01_PLAYFUL_DOODLE/references/positive/P03.jpg",
+        "path": "reference_library/collections/keyword-20261012/images/REF-003_讲座论坛_中心轴对称_手写_蓝黄.jpg",
         "observed": true,
         "observation_note": "实际观察：large simplified outline and loose pastel-flat color accents; one dominant image mass under loose black heading",
         "palette_family": "cyan_red_warm_cream",
@@ -95,7 +94,7 @@
       "id": "alternative_2",
       "lead": {
         "id": "P05",
-        "path": "style_packs/S01_PLAYFUL_DOODLE/references/positive/P05.jpg",
+        "path": "reference_library/collections/keyword-20261012/images/REF-002_文化节庆_模块化网格_无衬线_绿米白.jpg",
         "observed": true,
         "observation_note": "实际观察：black delicate freehand ink drawing with restrained spot colors; type concentrated top, narrative drawings in open center, compact small information below",
         "palette_family": "black_white_spot",

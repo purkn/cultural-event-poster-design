@@ -123,6 +123,11 @@ def rebuild(root=ROOT):
         for field in FACETS:
             if entry.get(field):
                 facets[field][entry[field]].append(entry['id'])
+    aliases = read(root / 'aliases.json') if (root / 'aliases.json').exists() else {}
+    aliases.update({entry['id']: entry['duplicate_of'] for entry in entries if entry.get('duplicate_of')})
+    canonical_ids = {entry['id'] for entry in entries if not entry.get('duplicate_of')}
+    if any(target not in canonical_ids or alias in canonical_ids for alias, target in aliases.items()):
+        raise ValueError('Invalid reference alias target or canonical ID collision')
     write(root / 'index.json', entries)
     columns = sorted({key for entry in entries for key in entry})
     with (root / 'index.csv').open('w', encoding='utf-8-sig', newline='') as handle:
@@ -130,7 +135,7 @@ def rebuild(root=ROOT):
         writer.writeheader()
         writer.writerows(entries)
     write(root / 'facets.json', facets)
-    write(root / 'aliases.json', {entry['id']: entry['duplicate_of'] for entry in entries if entry.get('duplicate_of')})
+    write(root / 'aliases.json', aliases)
     write(root / 'review_queue.json', [entry['id'] for entry in entries if entry.get('needs_review')])
     coverage = {
         'total_images': len(entries), 'unique_images': len(hashes),

@@ -80,6 +80,27 @@ class LibraryTests(unittest.TestCase):
             ingest(self.source, 'batch-two', self.root)
         after = {str(p.relative_to(self.root)): p.read_bytes() for p in self.root.rglob('*') if p.is_file()}
         self.assertEqual(before, after)
+    def test_alias_survives_removing_duplicate_asset_and_manifest(self):
+        self.poster('REF-001_市集_自由拼贴_手写_蓝黄.jpg')
+        ingest(self.source, 'batch-one', self.root)
+        ingest(self.source, 'batch-two', self.root)
+        import shutil
+        shutil.rmtree(self.root / 'collections/batch-two')
+        coverage = rebuild(self.root)
+        self.assertEqual(coverage['total_images'], 1)
+        self.assertEqual(read(self.root / 'aliases.json'), {'batch-two:REF-001': 'batch-one:REF-001'})
+        rebuild(self.root)
+        self.assertEqual(read(self.root / 'aliases.json'), {'batch-two:REF-001': 'batch-one:REF-001'})
+
+    def test_invalid_alias_blocks_rebuild_before_index_write(self):
+        self.poster('REF-001_市集_自由拼贴_手写_蓝黄.jpg')
+        ingest(self.source, 'batch-one', self.root)
+        before = (self.root / 'index.json').read_bytes()
+        (self.root / 'aliases.json').write_text(json.dumps({'old': 'missing'}))
+        with self.assertRaisesRegex(ValueError, 'Invalid reference alias'):
+            rebuild(self.root)
+        self.assertEqual((self.root / 'index.json').read_bytes(), before)
+
     def test_composition_precedes_event_semantics(self):
         self.poster('REF-001_市集_中心轴对称_衬线_蓝黄.jpg')
         self.poster('REF-002_艺术展览_自由拼贴_手写_蓝白.jpg', 'blue')

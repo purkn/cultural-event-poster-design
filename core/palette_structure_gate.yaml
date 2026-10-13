@@ -1,5 +1,5 @@
 version: 0.13
-source_priority: [lead_reference, style_pack, concept, event_semantics]
+source_priority: [lead_reference, reference_style, concept, event_semantics]
 default_roles: [background, dominant, secondary_optional, accent]
 default_high_saturation_accent_max_ratio: 0.12
 semantic_color_shortcuts:

@@ -1,18 +1,14 @@
 {
   "name": "cultural-event-poster-system",
   "display_name": "文化活动宣传海报系统",
-  "version": "0.19.1",
+  "version": "0.20.0",
   "architecture": "reference-led-generation-svg-first-with-final-composite-readability-gate",
   "default_mode": "autonomous",
-  "current_style_packs": [
-    "S01_PLAYFUL_DOODLE"
-  ],
   "reference_library": {
     "total_images": 401,
-    "total_records": 514,
+    "total_records": 401,
     "legacy_aliases": 113,
     "collections": [
-      "legacy-v013",
       "keyword-20261012"
     ],
     "index": "reference_library/index.json",
@@ -21,7 +17,6 @@
     "classification_status": "filename_keywords_provisional_visual_review_required",
     "maintenance_script": "scripts/reference_library.py"
   },
-  "style_pack_spec": "2.4",
   "core_features": [
     "brief_asset_fingerprint",
     "visual_opportunity_before_reference_retrieval",

@@ -8,7 +8,7 @@
 5. 高层旧门禁很多，但没有一个针对最终叠字像素的权威产线入口；缺少失败后的安全修复器，修复依赖 Agent 反复微调。存在评分自证和跳过复检捷径。
 
 ## 本次最小必要接入
-- 保留 v0.18 SVG-first、Prompt Compiler v0.17、113 张参考、Style Pack 与 LoRA，不另造并行的“总评审系统”。
+- 历史范围：当时保留 v0.18 SVG-first 和 Prompt Compiler v0.17；参考库与生成路径的当前状态见根 README。
 - SVG 生成器只新增受控 `local_readability_treatments` 绘制能力及清晰 DRAFT 状态。
 - 同一 Layout Engine 内新加 [audit_and_repair.py](../layout_engine_v018/readability/audit_and_repair.py)（成图独立层渲染、像素局部度量、受控修复、重渲染、复检、出证）。
 - 原 `SKILL.md` 的生产流水线步骤 L 更新为 Final Composite Readability，原 QA 分数不变但变为不可被补偿的硬门禁。`ACTIVE_RULE_INDEX.md` 赋予唯一权威入口。

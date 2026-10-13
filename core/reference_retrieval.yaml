@@ -7,7 +7,7 @@ keyword_shortlist:
   deduplicate_by: sha256
   metadata_status: provisional
   score_scope: coarse_keywords_only_not_lead_thresholds
-  zero_match_fallback: browse_legacy_clusters_and_previews_then_visual_retrieval
+  zero_match_fallback: browse_previews_then_visual_retrieval
 query_fields:
   - visual_topology_need
   - asset_structure

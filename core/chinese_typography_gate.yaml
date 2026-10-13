@@ -1,7 +1,7 @@
 version: 0.15
 priority: hard_gate
 name: CHINESE_TYPOGRAPHY_GATE
-applicable_to: all_style_packs
+applicable_to: all_reference_styles
 required_stages:
   - reference_type_blueprint
   - font_file_provenance

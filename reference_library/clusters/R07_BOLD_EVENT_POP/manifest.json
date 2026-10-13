@@ -1,9 +1,0 @@
-{
-  "cluster": "R07_BOLD_EVENT_POP",
-  "count": 2,
-  "reference_ids": [
-    "REF-042",
-    "REF-043"
-  ],
-  "status": "provisional_cluster"
-}

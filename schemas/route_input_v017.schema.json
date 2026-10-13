@@ -2,15 +2,76 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Poster Route Compiler v0.17 Production Input",
   "type": "object",
-  "required": ["schema_version", "project_id", "mode", "brief", "canvas", "backend", "routes"],
+  "required": [
+    "schema_version",
+    "project_id",
+    "mode",
+    "brief",
+    "canvas",
+    "backend",
+    "routes"
+  ],
   "properties": {
-    "schema_version": {"const": "0.17"},
-    "project_id": {"type": "string", "minLength": 1},
-    "mode": {"enum": ["hero_rough", "h0_artword"]},
-    "brief": {"type": "object", "required": ["confirmed", "title", "date", "venue", "core_experience"]},
-    "canvas": {"type": "object", "required": ["width", "height"]},
-    "backend": {"type": "object", "required": ["id", "supports_reference_images", "supports_external_lora", "supports_negative_prompt"]},
-    "feedback": {"type": ["object", "null"]},
-    "routes": {"type": "array", "minItems": 2, "items": {"type": "object", "required": ["id", "lead", "color", "typography", "concept", "composition", "reference_fit_reason", "negative_constraints"]}}
+    "schema_version": {
+      "const": "0.17"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mode": {
+      "enum": [
+        "hero_rough",
+        "h0_artword"
+      ]
+    },
+    "brief": {
+      "type": "object",
+      "required": [
+        "confirmed",
+        "title",
+        "date",
+        "venue",
+        "core_experience"
+      ]
+    },
+    "canvas": {
+      "type": "object",
+      "required": [
+        "width",
+        "height"
+      ]
+    },
+    "backend": {
+      "type": "object",
+      "required": [
+        "id",
+        "supports_reference_images",
+        "supports_negative_prompt"
+      ]
+    },
+    "feedback": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "routes": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "lead",
+          "color",
+          "typography",
+          "concept",
+          "composition",
+          "reference_fit_reason",
+          "negative_constraints"
+        ]
+      }
+    }
   }
 }
