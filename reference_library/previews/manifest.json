@@ -1,6 +1,6 @@
 {
   "page_size": 40,
-  "total_images": 401,
+  "total_images": 385,
   "pages": [
     "contact-001.jpg",
     "contact-002.jpg",
@@ -11,7 +11,6 @@
     "contact-007.jpg",
     "contact-008.jpg",
     "contact-009.jpg",
-    "contact-010.jpg",
-    "contact-011.jpg"
+    "contact-010.jpg"
   ]
 }

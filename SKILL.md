@@ -1,11 +1,11 @@
 ---
 name: cultural-event-poster-system
 metadata:
-  version: "0.20.2"
+  version: "0.20.3"
 description: 中文文化活动宣传海报设计工作流。活动信息预检、参考图主导的多方案生成、中文字体证据、双语 SVG 排版以及最终叠字画面可读性质检；真实生图依赖可用后端。
 ---
 
-# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.2
+# 文化活动宣传海报 Skill · 唯一任务协议 v0.20.3
 
 **职责**：根据活动简报、素材和视觉参考，执行创意路线、主视觉制作、中英文排版与质量审查。默认自主推进，**仅在真实事实缺口、授权/费用与不可替代的用户决策上设置断点**。不得把“需要审查”理解成每一步都询问。本文是流程入口；细节在 `docs/`，数值以相应代码/`core/*.yaml` 为准。
 
@@ -25,9 +25,9 @@ description: 中文文化活动宣传海报设计工作流。活动信息预检�
 
 ## 参考库粗检索（v0.20.0）
 
-读取 [参考库维护说明](reference_library/README.md)。当前为 401 张不同图片；统一索引 401 条记录，113 个旧编号单独保存在 aliases.json。新批次 ID 为 `keyword-20261012:REF-XXX`，旧 ID 保留为别名，原图统一使用新批次路径，不能按同号替换。
+读取 [参考库维护说明](reference_library/README.md)。当前为 385 张不同图片；统一索引 385 条记录，105 个旧编号单独保存在 aliases.json。新批次 ID 为 `keyword-20261012:REF-XXX`，旧 ID 保留为别名，原图统一使用新批次路径，不能按同号替换。
 
-运行 `scripts/reference_library.py query` 按活动、构图、字体、配色生成候选；检索按 SHA256 去重。文件名标签均为 provisional，16 张含未知标签；关键词得分不能作为 Strong Lead 证据。实际查看候选原图后按 `docs/REFERENCE_SYSTEM.md` 精拆与验收。增量导入、批次 manifest 重建、预览更新见库说明。
+运行 `scripts/reference_library.py query` 按活动、构图、字体、配色生成候选；检索按 SHA256 去重。文件名标签均为 provisional；关键词得分不能作为 Strong Lead 证据。实际查看候选原图后按 `docs/REFERENCE_SYSTEM.md` 精拆与验收。增量导入、批次 manifest 重建、预览更新见库说明。
 
 ## 专题权威文档（按需求读取，避免全量重复加载）
 
