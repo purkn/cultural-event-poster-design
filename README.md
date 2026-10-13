@@ -1,6 +1,6 @@
 # 文化活动宣传海报设计 Skill
 
-**版本：v0.20.0｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
+**版本：v0.20.1｜参考图驱动、多路线主视觉探索、双语 SVG 排版与可读性质检**
 
 本仓库是供 AI Agent 和设计人员使用的**设计工作流与 Python 工具集**，不是自行调用图像模型的一键生图服务。核心优势是：从活动 Brief 与参考图构建可追溯的视觉路线、以 SVG/JSON 做中英文字排版，最终按实际叠字画面检查文字可读性，并要求真实视觉复核。
 
@@ -122,3 +122,5 @@ python layout_engine_v018/readability/audit_and_repair.py poster_plan.json --out
 跟踪文件从 745 个减至 560 个，Markdown 从 35 份减至 19 份；401 张新原图的 SHA256 与尺寸全部核验，113 个别名目标全部存在。63 项回归测试通过，静态解析、相对链接及删除范围比对通过。可读性测试使用本机 Cairo 动态库；运行环境仍需提供对应依赖。
 
 审计仍报告一组字节相同的 JSON：`audit/v019_test_evidence/local_uneven/plan.json` 与其 `out/poster_plan_review.json`。前者是输入，后者是未自动修复时的输出证据，分别证明阶段行为，因此保留。测试通过不代表已完成真实海报生图与审美验收。
+
+团队提供正/负参考与已有概念时，使用 [素材交接格式](collaboration/REFERENCE_BUNDLE_FORMAT.md) 记录学习范围、项目负反馈及权限；概念卡补充素材使用与双语信息空间，详见 [设计与路线](docs/DESIGN_AND_ROUTES.md)。这些是工作流记录，当前脚本不自动解析交接 YAML。
