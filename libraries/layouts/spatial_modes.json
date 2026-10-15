@@ -1,0 +1,203 @@
+{
+  "axis": "空间分配与文字落位，不替代M构图骨架或S风格",
+  "modes": [
+    {
+      "id": "V01",
+      "name": "三分构图",
+      "orientation": "portrait",
+      "visual_and_reading": "主体竖长置于x28–72,y10–82；两侧形成窄信息带，读左→主体→右",
+      "title_and_information": "主标题在左带可纵向断行；右带副信息，底部统一日期/场地",
+      "fit_and_failure": "细长单对象、工艺骨架；长事实不能挤进两条窄带",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V02",
+      "name": "左右构图",
+      "orientation": "portrait",
+      "visual_and_reading": "图占左约55–65%，字占右30–40%；也可镜像",
+      "title_and_information": "标题右上，副标题/日期右下，同一对齐轴",
+      "fit_and_failure": "人物/对象方向朝文字；主体反向逃出画面或中文窄列拥挤需换版",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V03",
+      "name": "上下构图",
+      "orientation": "portrait",
+      "visual_and_reading": "上部25–40%标题与简要信息，下部50–65%主视觉",
+      "title_and_information": "标题上方成组，参加信息放上部底或最下边",
+      "fit_and_failure": "强单幅图、较多信息；禁止上部像整段说明书",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V04",
+      "name": "对角构图",
+      "orientation": "portrait",
+      "visual_and_reading": "主体沿左下→右上或反向跨越；两端形成视觉平衡",
+      "title_and_information": "标题在起点/终点一侧，事实落另一个安静角",
+      "fit_and_failure": "动作、户外、放飞；角度和字倾斜不必一致，事实保持水平",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V05",
+      "name": "曲线构图",
+      "orientation": "portrait",
+      "visual_and_reading": "一条S/C线索连接2–3个内容节点，中心空隙形成字场",
+      "title_and_information": "主标题处于曲线开口，信息在路径末端外侧",
+      "fit_and_failure": "过程、游逛、时间叙事；禁止蛇形装饰绕字却无主题关系",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V06",
+      "name": "中心构图",
+      "orientation": "portrait",
+      "visual_and_reading": "主体中心x25–75,y28–72；边缘空间环绕焦点",
+      "title_and_information": "标题可上方和下方分组但语义连续；事实在底部",
+      "fit_and_failure": "图腾、单展品、强识别；避免四角小字抢焦点",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V07",
+      "name": "散点构图",
+      "orientation": "portrait",
+      "visual_and_reading": "3–5个对象分布在不同尺度节点，一个最大焦点统领",
+      "title_and_information": "主标题在最大留白，事实聚成一组，不随各点散开",
+      "fit_and_failure": "系列作品、多节目；对象同尺寸会失去阅读次序",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V08",
+      "name": "对称构图",
+      "orientation": "portrait",
+      "visual_and_reading": "中轴与两侧主体呼应，可局部打破对称",
+      "title_and_information": "标题沿中轴或上方，事实底部成组",
+      "fit_and_failure": "仪式、成对对象、空间展；不要为了对称复制同一人物或作品",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "V09",
+      "name": "复合构图",
+      "orientation": "portrait",
+      "visual_and_reading": "一个主体结构如中心/左右+一个辅助关系如小路径或边界字带",
+      "title_and_information": "标题与事实仍遵守一条主要轴线",
+      "fit_and_failure": "内容复杂但有主次；两个独立构图争夺主导即失败",
+      "guide": "libraries/layouts/layout-portrait.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H01",
+      "name": "偏右单焦点、左下标题",
+      "orientation": "landscape",
+      "visual_and_reading": "大圆/单对象中心约x58,y48，占画幅40–55%宽",
+      "title_and_information": "左上小署名，左下主标题，底边事实",
+      "fit_and_failure": "大单对象/材料特写；圆只是占位，可换主题结构",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H02",
+      "name": "右侧单焦点、左栏文字",
+      "orientation": "landscape",
+      "visual_and_reading": "主体x40–90,y12–82",
+      "title_and_information": "左上主题引导，左下主标题；右下少量参加信息",
+      "fit_and_failure": "较多文案；与L1区别是左栏分级更完整，不只是换标题位置",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H03",
+      "name": "左窄字栏、右大图窗",
+      "orientation": "landscape",
+      "visual_and_reading": "图窗x23–94,y8–82，主体完整",
+      "title_and_information": "主标题左侧纵向或短行堆叠；底边横排日期场地",
+      "fit_and_failure": "横向照片；字栏太窄时改为水平标题",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H04",
+      "name": "中央横带、上下错位字",
+      "orientation": "landscape",
+      "visual_and_reading": "主视觉横跨x5–95,y25–76",
+      "title_and_information": "主标题左上与右下形成对角呼应，事实左下",
+      "fit_and_failure": "工艺过程/风线；分置标题仍应连续易读，避免拆专名",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H05",
+      "name": "左右双块错位",
+      "orientation": "landscape",
+      "visual_and_reading": "两视觉块分别x5–40,y15–65与x58–94,y40–90",
+      "title_and_information": "标题右上，事实左下；大小层级决定主次",
+      "fit_and_failure": "两个内容节点；不是两个同等权重宣传卡",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H06",
+      "name": "宽胶囊/中央包围",
+      "orientation": "landscape",
+      "visual_and_reading": "中央宽主体x10–90,y16–86",
+      "title_and_information": "标题沿左下/右下边界呼应，上边放少量说明",
+      "fit_and_failure": "共同空间/集体活动；不强制圆角，边界字不可压进主体细节",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H07",
+      "name": "左文字边栏、中央大图",
+      "orientation": "landscape",
+      "visual_and_reading": "图窗x20–84,y18–82，横向物件",
+      "title_and_information": "左边主题/主标题，右边短署名；参加信息底边",
+      "fit_and_failure": "展览作品；边栏不得四面围满小字",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H08",
+      "name": "上部视觉场、下部信息底",
+      "orientation": "landscape",
+      "visual_and_reading": "主图覆盖上部约60–70%，标题可位于图场下缘",
+      "title_and_information": "下部30–35%放事实，小字集中对齐",
+      "fit_and_failure": "图像强、信息多；需避免像图片+文章的普通模板",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    },
+    {
+      "id": "H09",
+      "name": "错位矩形与右标题",
+      "orientation": "landscape",
+      "visual_and_reading": "两主块对角错位，次块明显较小",
+      "title_and_information": "主标题右上成组；事实左下；用一个轴贯穿",
+      "fit_and_failure": "复合内容/系列；不能机械复制灰矩形，要有主题空间关系",
+      "guide": "libraries/layouts/layout-landscape.md",
+      "topology_policy": "从实际锚点和阅读关系选择M，不由空间模式自动确定",
+      "coordinates_policy": "百分比为起点，须用准确标题/事实行数和主体保护区修订"
+    }
+  ]
+}

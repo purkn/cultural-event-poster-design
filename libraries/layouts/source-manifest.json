@@ -1,0 +1,16 @@
+{
+  "source": "best-poster-creator 2/references",
+  "files": [
+    {
+      "file": "layout-portrait.md",
+      "source_sha256": "8280b894ee41ebb5160bb103e61f9e8a74bc260a586ab5d968db2f02d16134f9",
+      "adaptation": "P1–P9→V01–V09; L1–L9→H01–H09; add runtime boundary notice"
+    },
+    {
+      "file": "layout-landscape.md",
+      "source_sha256": "08683574912dd88aaaede5e712c35a885698f522219d0e966ae6a1023814306e",
+      "adaptation": "P1–P9→V01–V09; L1–L9→H01–H09; add runtime boundary notice"
+    }
+  ],
+  "tutorial_images_reviewed": false
+}
