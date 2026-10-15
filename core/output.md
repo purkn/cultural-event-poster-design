@@ -13,7 +13,7 @@ poster_project/
   06_metadata/
     activity.json                 # fields:{theme,languages,purpose,output_dimensions,...}，每项value/status/source
     activity_profile.json         # 五维标签、证据与置信度
-    design_plan.json               # S主风格/局部辅助、M主骨架、独立参数、判定证据、概念、标题、语言、参考、实际生成参数
+    design_plan.json               # S主风格/局部辅助、M主骨架、独立参数、V/H空间模式、区域蓝图、主体保护区、判定证据、概念、标题、语言、参考、实际生成参数
     workflow_state.json            # input/style/visual/feedback四处交互记录，schema_version=1，详见checkpoints.md
     readability_zh.json            # 真实检测报告
     quality_zh.json                # 四硬项、两美学项及核验观察

@@ -1,11 +1,11 @@
 ---
 name: cultural-poster-flow
 metadata:
-  version: "0.7.0"
+  version: "0.8.0"
 description: 文化活动海报工作流。按与best-poster-creator一致的S1–S8风格指南匹配风格，完成资料核验、风格确认、两版无字主视觉选择、独立艺术标题、图字一体合成、真实分层交付及结构化反馈。适用于海报制作及改版，不用于技能安装、审计或仅写文案。
 ---
 
-# Cultural Poster Flow v0.7.0
+# Cultural Poster Flow v0.8.0
 
 内容理解 → 风格决策 → 共同蓝图 → 主视觉选择 → 标题/正文/分层合成 → 质量评审 → 交付与反馈。
 
@@ -16,7 +16,7 @@ description: 文化活动海报工作流。按与best-poster-creator一致的S1�
 | 全流程/资料分级/质量检查 | [core/workflow.md](core/workflow.md)；六个同名模块YAML只在对应阶段读 |
 | 何时提问、暂停和恢复 | [core/checkpoints.md](core/checkpoints.md) |
 | 八种风格、对应详细提示词 | [libraries/styles/README.md](libraries/styles/README.md) → 只读选中的S指南 |
-| 构图骨架及表现参数 | `libraries/layouts/templates.json`、`libraries/design_parameters.json` |
+| 构图骨架及表现参数 | `libraries/layouts/templates.json`、[空间模式与选择](libraries/layouts/matching.md)、`libraries/design_parameters.json` |
 | H0艺术字与正文融图 | [libraries/typography/h0-typography.md](libraries/typography/h0-typography.md)、[libraries/layouts/integrated-layout.md](libraries/layouts/integrated-layout.md) |
 | 交什么文件 | [core/output.md](core/output.md) |
 | 满意度和经验记录 | [feedback/rules.md](feedback/rules.md)、`feedback/template.json` |
@@ -42,7 +42,7 @@ description: 文化活动海报工作流。按与best-poster-creator一致的S1�
 
 1. **INPUT**：`core/input_validation.yaml`。P0=主题/语言/用途/尺寸，先集中展示并确认资料，无法确定的内容一次补齐；P1可明确待定做预览，P2可省，不适用不当缺失。默认不编造，明确虚构授权按范围记录，但不豁免设计断点。
 2. **STRATEGY**：活动五维证据及素材/体验条件→主S与0–2局部辅S→可行版式。每候选2条适配证据、1条代价。**A：确认风格后才生成。** 真实参考先看图，有图则展示并说明规律；无图说明文字指南/蓝图驱动，不虚构图库。
-3. **COMPOSITION**：选M01–M06骨架及参数，与标题、信息留位共同规划。先写两概念，再生成两张独立无正式文字主视觉；核心母题/空间组织/图字关系至少两项不同。**B：用户选择后才做正式标题和正文。** 沉默、预选、数量要求不等于确认。
+3. **COMPOSITION**：选M01–M06骨架、V01–V09/H01–H09空间模式及参数，与标题、信息留位共同规划。先写两概念，再生成两张独立无正式文字主视觉；核心母题/空间组织/图字关系至少两项不同。**B：用户选择后才做正式标题和正文。** 沉默、预选、数量要求不等于确认。
 4. **PRODUCTION**：准确标题→字形气质→字体驱动或图像艺术字→逐字核验→透明同画布H0；正文用合法字体精确排版。各语言共享视觉系统、分别断行。普通系统字放大不能冒充艺术标题。
 5. **QUALITY/DELIVERY**：核字、可读性、图层完整性、内容完整性四硬项；设计/风格另评分。真实全图与缩略图复核、局部修复，再交成品、真实图层和可编辑工程。交付后进入第四处交互：用户评价与有依据的自我升级；不阻塞成品交付。
 
