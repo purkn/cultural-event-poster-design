@@ -1,0 +1,18 @@
+stage: STRATEGY→A
+resources:
+- libraries/styles/packs.json
+- libraries/matching_matrix.json
+weights:
+  T: 0.3
+  M: 0.25
+  A: 0.2
+  C: 0.15
+  R: 0.1
+constraints_first: true
+reference: 原385图是历史候选检索，未建立8套审定图库；有真实Lead/Support则先看图再传工具，无图时按确认蓝图核漂移
+main: 主S控制空间、表面媒介、配色节奏和标题人格；M骨架及独立参数另述，不把S风格等同固定版式
+aux: 0–2个兼容辅助，逐个说明只借什么；禁平均混合，先查材质/配色/字体/构图冲突
+options: 推荐主S和0–2辅S（只借局部）；每候选2条适配证据+1条代价，展示推荐及备选，A等实际确认
+ranker: scripts/recommend_design.py，仅建议与解释，不代替用户确认
+taxonomy: libraries/styles/README.md：S1–S8与用户提供best-poster-creator v1.1.0的8份styles指南一一对应；不再以F1–F6为现行分类
+guides: 只读取实际推荐/采用的libraries/styles/NN-*.md，不预载全部8份

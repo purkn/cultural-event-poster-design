@@ -1,0 +1,19 @@
+stage: STRATEGY
+dimensions:
+- activity_type
+- theme_tags
+- audience
+- mood
+- communication
+evidence: 标签须有用户/文件证据或明确标记推断及0–1置信度；低于0.5不强行定风格，在A说明假设
+visual_projection:
+- canonical_S_style
+- independent_M_topology
+- medium_direction_type_depth_parameters
+semantics: 活动类型影响信息结构；主题决定视觉语义；受众影响复杂度；气质影响风格；渠道影响比例与可读性。不能只按展览/工作坊选模板。
+schema: core/activity_profile.schema.json
+taxonomy: 活动标签仅为设计证据，不直接指定S风格；风格定义以libraries/styles八份指南为准
+optional_dimensions:
+- experience_mechanism
+- content_structure
+- material_conditions

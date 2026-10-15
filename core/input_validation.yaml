@@ -1,0 +1,30 @@
+stage: INPUT
+levels:
+  P0:
+  - theme
+  - languages
+  - purpose
+  - output_dimensions
+  P1:
+  - dates
+  - venue_or_online
+  - organizer
+  - description
+  - audience
+  - registration
+  P2:
+  - logo
+  - qr
+  - guest_photos
+  - sponsors
+  - references
+  - brand_rules
+missing_policy:
+  P0: 先查用户与文件；无法确定则一次问清并暂停，不默认尺寸/语言
+  P1: 集中询问；可标待定做预览，正式版未解项需确认
+  P2: 同次列为可补选项，用户未补可跳过，不逐项追问
+  not_applicable: 如线上无现场地址，标not_applicable而非missing
+fiction: 默认不编造时间/票价/嘉宾；仅用户明确许可时补虚构事实，记录范围并标示示例。该许可不豁免设计断点。
+output: 06_metadata/activity.json
+
+checkpoint: 无论是否缺失，都集中核对活动资料并取得确认；已有明确同项目确认不重复询问。使用workflow_state.py保存input决定。

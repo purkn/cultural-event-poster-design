@@ -1,0 +1,2030 @@
+{
+  "styles": {
+    "version": "1.0",
+    "reference_selection": "每包10张候选，保留源分桶证据；实际用前看图挑5–10张，A展示3张。不是声称120张新人工精选。",
+    "packs": [
+      {
+        "id": "P01",
+        "name": "模块化网格",
+        "one_liner": "规整网格分块，信息层级清楚，理性现代",
+        "theme_tags": [
+          "design",
+          "architecture",
+          "science",
+          "technology"
+        ],
+        "moods": [
+          "rational",
+          "clear"
+        ],
+        "audiences": [
+          "professionals",
+          "public"
+        ],
+        "channels": [
+          "social_media",
+          "print",
+          "exhibition"
+        ],
+        "visual_parameters": {
+          "media": "平面/排字/几何",
+          "palette_logic": "结构化高对比",
+          "typography": "规则字形、宽度与字重形成主动构图"
+        },
+        "compatible_aux": [
+          "P02",
+          "P09",
+          "P11"
+        ],
+        "conflicts": "不宜强混无序材质；高密度需真实层级",
+        "layout_ids": [
+          "L01",
+          "L05",
+          "L08",
+          "L09",
+          "L10",
+          "L12"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-055",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-055_艺术展览_非对称网格_无衬线_蓝白.jpg",
+            "sha256": "4fdb2498cd33407d94e566dae105475cc8bb0c1f01795db586a1e9e7fa232d40",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-114",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-114_艺术展览_非对称网格_无衬线_白蓝.jpg",
+            "sha256": "f1ac17d90b2b4986daad70cccab2204a069bc555aeb6839b8736d1574fb9599b",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-115",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-115_艺术展览_非对称网格_无衬线_白蓝.jpg",
+            "sha256": "a9b68b5ba7b4b6ee54f6c66001245ec3be08e80c5d08ccad68755ea8f728f89a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-116",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-116_艺术展览_自由拼贴_无衬线_灰蓝红.jpg",
+            "sha256": "788fc3332e644d84c299e83c0c593dfaaf99df36470f4d64b61890d00987010c",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-119",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-119_艺术展览_不规则自由布局_无衬线_白灰.jpg",
+            "sha256": "59f3e88ba8db249a18caef42a479ed79551609d07e3f516a430c503b7502f838",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-161",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-161_音乐演出_非对称网格_无衬线_白蓝.jpg",
+            "sha256": "46aa49418d4a5441154061d29a8a1d1bf92ed8a57c8efee2ee7bbeaa9967b38d",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-041",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-041_艺术展览_模块化网格_混合字体_绿米白.jpg",
+            "sha256": "8f5e44713fd6ab647e4bbb9f906c0a7e75d6081f0786c3ab8cb0f39bfceab704",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-002",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-002_文化节庆_模块化网格_无衬线_绿米白.jpg",
+            "sha256": "b4d87a4b3bf256d2547c3efc3b8ad14fbe5b6ec9199d023141f4189ed92fb372",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-061",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-061_艺术展览_模块化网格_无衬线_白多色.jpg",
+            "sha256": "ef2fe36de9f2021265c711717a3d487bb56cc45e6c30d1e4210bad195398e4a3",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-064",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-064_艺术展览_模块化网格_像素_黑白多色.jpg",
+            "sha256": "dbcf42189e1edf5447c88068882dd3c3853c73220bc401cbbe17e199949675b4",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P02",
+        "name": "非对称网格",
+        "one_liner": "网格但不对称，大留白配偏置标题，杂志编辑感",
+        "theme_tags": [
+          "literature",
+          "photography",
+          "art",
+          "city"
+        ],
+        "moods": [
+          "poetic",
+          "elegant",
+          "rational"
+        ],
+        "audiences": [
+          "young_adults",
+          "professionals",
+          "public"
+        ],
+        "channels": [
+          "social_media",
+          "print",
+          "exhibition"
+        ],
+        "visual_parameters": {
+          "media": "摄影/编辑构图",
+          "palette_logic": "由素材决定、克制重点色",
+          "typography": "精细断行与偏置对齐"
+        },
+        "compatible_aux": [
+          "P04",
+          "P08",
+          "P10"
+        ],
+        "conflicts": "不可为留白删事实，留白应来自构图而非救急底板",
+        "layout_ids": [
+          "L01",
+          "L02",
+          "L05",
+          "L07",
+          "L08",
+          "L10",
+          "L11",
+          "L12"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-059",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-059_艺术展览_上下分区_无衬线_蓝白.jpg",
+            "sha256": "cba329d623bdcf45d4945aa989cc7def10f1a8bee711328aa7484e8089521d03",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-264",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-264_艺术展览_中心轴对称_无衬线_白黑紫.jpg",
+            "sha256": "223194fbebc1d73e9b0ba0a236fbd3a38fe27f415352cf6587c5e6340e92cd78",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-336",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-336_音乐演出_模块化网格_无衬线_白绿.jpg",
+            "sha256": "fe6611edf3b6e05fd2fbe697ae44eee826cd94106dad5367dff87a205812d54d",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-337",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-337_文化节庆_模块化网格_无衬线_白蓝.jpg",
+            "sha256": "1501e6baaa913e9008bdf3555880f73717cd7e6f5729970e3e00c34495a55304",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-214",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-214_社区活动_非对称网格_手写_白蓝.jpg",
+            "sha256": "26a89833b0078c041816e1b00590487d7f35f671b0236496d521bc05ca526179",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-024",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-024_艺术展览_非对称网格_无衬线_灰黑.jpg",
+            "sha256": "b1da7387e448dcb64665815ceb5f39919014642937185188854bf903fdd09fec",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-030",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-030_市集_非对称网格_无衬线_米白橙.jpg",
+            "sha256": "7f9fd9a2173b6a3f98a988edd75ea7bd1f4bf6c02b55f0718996859b5d0552d6",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-031",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-031_商业推广_非对称网格_无衬线_绿红.jpg",
+            "sha256": "a9c23be725c2132e14cd62c44be3248bc2f945ffe043f86dfd33170812e971f2",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-032",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-032_艺术展览_非对称网格_无衬线_蓝白.jpg",
+            "sha256": "c5156052367198f15144f5fec534957e920901b95b89416ff66558ac7895c48c",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-053",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-053_音乐演出_非对称网格_无衬线_蓝黄.jpg",
+            "sha256": "6f6f2974196cb2fe067979189def6a6e7f77f3034f3549184645140e51e4beda",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P03",
+        "name": "中心轴庄重",
+        "one_liner": "中轴对称，主标题居中，正式、公告感、信息明确",
+        "theme_tags": [
+          "history",
+          "tradition",
+          "community"
+        ],
+        "moods": [
+          "formal",
+          "elegant"
+        ],
+        "audiences": [
+          "public",
+          "professionals"
+        ],
+        "channels": [
+          "print",
+          "exhibition",
+          "outdoor"
+        ],
+        "visual_parameters": {
+          "media": "单主体/符号/排字",
+          "palette_logic": "秩序与稳定对比",
+          "typography": "中轴结构但不默认普通标题"
+        },
+        "compatible_aux": [
+          "P04",
+          "P05",
+          "P09"
+        ],
+        "conflicts": "避免单靠对称制造庄重；抽象主题不得自动落入公告模板",
+        "layout_ids": [
+          "L04",
+          "L06",
+          "L10"
+        ],
+        "substyles": [
+          {
+            "id": "hero-image",
+            "name": "居中主视觉图像",
+            "use_when": "有一个明确主体（人、物、插画）撑住画面中心",
+            "members_note": "主视觉占中部，标题压上或置下"
+          },
+          {
+            "id": "graphic-symbol",
+            "name": "居中图形符号",
+            "use_when": "没有摄影主体，用一个图形或符号当视觉中心",
+            "members_note": "图形小而精，四周留白多"
+          },
+          {
+            "id": "text-only",
+            "name": "纯文字公告",
+            "use_when": "信息就是主角，不需要主视觉",
+            "members_note": "字排本身当画面，最考验字体和间距"
+          }
+        ],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-056",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-056_艺术展览_单栏纵向_无衬线_蓝白.jpg",
+            "sha256": "0df5a38bf01ebb587554d687de87c4e5e3c79ed7d969a430d7d19fdba282d84a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-067",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-067_艺术展览_单栏纵向_无衬线_白灰.jpg",
+            "sha256": "9b2c2c13b2088bd9d8d10b114b9ab4ae61683f0f553e04815b19a28285881dc8",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-112",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-112_社区活动_非对称网格_无衬线_白多色.jpg",
+            "sha256": "ebf6e1e7571950800b2fb04952fadf9a80550c0fedede8c5d0162d27f3686dc8",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-122",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-122_艺术展览_上下分区_无衬线_蓝白.jpg",
+            "sha256": "c1dc31e5d053feefc39b480d6aed7c5652980390f75f50631aa964eaf8318d23",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-237",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-237_文化节庆_非对称网格_无衬线_蓝白.jpg",
+            "sha256": "fdebca3933bbd06c9f724b1b9b70d67510b17e645a040e3b2817794296e9f3f3",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-279",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-279_艺术展览_非对称网格_无衬线_白红蓝.jpg",
+            "sha256": "a1781f45acd7cf05f0200fd229695dfdfb8863e932d28ce832653f0f90332b77",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-347",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-347_艺术展览_上下分区_无衬线_米白黑.jpg",
+            "sha256": "80d0bfdaf8953c38cc98dc195d3b64adff71597d8407d77e1d02f2219eb249e9",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-376",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-376_文化节庆_非对称网格_无衬线_白绿.jpg",
+            "sha256": "3c508a0ea2e1f784a31bb1f6b080e0bbf0740c53dcd3ed57d7603d79c1263fe8",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-018",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-018_市集_中心轴对称_无衬线_米白绿.jpg",
+            "sha256": "268c175a147f203e16749002f11de125d54cb6d90b0afb3f6dbc17001282600a",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-029",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-029_市集_中心轴对称_无衬线_黑白.jpg",
+            "sha256": "d5491792d51aff5d2d3d3face7537edb2cffabee08a849a6c6def3d5bdeccc0f",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P04",
+        "name": "衬线典雅",
+        "one_liner": "宋体/衬线标题，安静克制，文化与学术调性",
+        "theme_tags": [
+          "literature",
+          "art",
+          "photography",
+          "history"
+        ],
+        "moods": [
+          "poetic",
+          "elegant",
+          "quiet"
+        ],
+        "audiences": [
+          "public",
+          "professionals",
+          "young_adults"
+        ],
+        "channels": [
+          "print",
+          "exhibition",
+          "social_media"
+        ],
+        "visual_parameters": {
+          "media": "摄影/插画/字排",
+          "palette_logic": "细腻明暗、适度留白",
+          "typography": "衬线或有张力的展示字；尊重用户禁用字体"
+        },
+        "compatible_aux": [
+          "P02",
+          "P08"
+        ],
+        "conflicts": "用户禁用衬线/宋体时剔除此类字形策略，不把标签覆盖偏好",
+        "layout_ids": [
+          "L01",
+          "L02",
+          "L04",
+          "L07",
+          "L10",
+          "L11"
+        ],
+        "substyles": [
+          {
+            "id": "minimal-type",
+            "name": "极简字排学术",
+            "use_when": "讲座、论坛、学术放映，信息少而重",
+            "members_note": "大量留白，字号对比拉开层级"
+          },
+          {
+            "id": "illustration",
+            "name": "插画配宋体",
+            "use_when": "展览、出版类，需要一点温度但不失克制",
+            "members_note": "插画占一块，宋体标题独立区"
+          },
+          {
+            "id": "photo-editorial",
+            "name": "照片编辑风",
+            "use_when": "有摄影素材，想做出杂志内页感",
+            "members_note": "照片不当满版用，切块配文字栏"
+          }
+        ],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-105",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-105_艺术展览_满版构图_书法_蓝白.jpg",
+            "sha256": "b85496905a89795dcf33afc89e778f47ec44f0159ecdb3bc704bf286d64b5d20",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-126",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-126_艺术展览_中心轴对称_混合字体_白橙.jpg",
+            "sha256": "b85644c7840ecdd34b9d04f534843e26fc95d6b9c5b95b11c4072dc3f23ee44e",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-132",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-132_艺术展览_中心轴对称_混合字体_蓝白.jpg",
+            "sha256": "dc95bd42f357ee9f13f2dafc887ab77222120188db8fd53eff4100f6a1080b32",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-173",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-173_艺术展览_中心轴对称_书法_青棕.jpg",
+            "sha256": "cc57847960feddd118c96c1106c1b5ba987c25ad86ff5f822d15933be1012a09",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-198",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-198_艺术展览_上下分区_书法_深绿白.jpg",
+            "sha256": "1a11500eeba55a5f6ffc0055c90a37960c6b87d8aa7229f7f116338113779b78",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-253",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-253_文化节庆_自由拼贴_书法_白青.jpg",
+            "sha256": "a3d8a7e8d373feadfdb2814b210e3e9a9721e0214a61b8099f58eddf9da5aa85",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-292",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-292_艺术展览_中心轴对称_书法_白蓝.jpg",
+            "sha256": "3fdc3a6b1a11369a8afde02b46168e7599a632e98c8fdf05e3c96ab48dfa1c63",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-135",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-135_音乐演出_中心轴对称_装饰字体_黑黄.jpg",
+            "sha256": "fcbbe502b0fc8deaca5c269161b88bde574a5b6cec5dffacefa28022cf7cc2a2",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-137",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-137_音乐演出_上下分区_装饰字体_黑黄.jpg",
+            "sha256": "3b117ee18ca6fc37ee7f773b268fa936f3671dee6dd77f26db0a83508c66a77e",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-169",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-169_艺术展览_非对称网格_书法_白蓝.jpg",
+            "sha256": "848ddd5ff5c5480e1ee47350d97613369dda7d054193fe7e4c6d086336af326d",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P05",
+        "name": "东方书法",
+        "one_liner": "书法标题主导，留白大，东方文人气质",
+        "theme_tags": [
+          "tradition",
+          "history",
+          "literature",
+          "nature"
+        ],
+        "moods": [
+          "poetic",
+          "expressive"
+        ],
+        "audiences": [
+          "public",
+          "young_adults"
+        ],
+        "channels": [
+          "print",
+          "exhibition",
+          "social_media"
+        ],
+        "visual_parameters": {
+          "media": "笔势/肌理/摄影融合",
+          "palette_logic": "笔画与原图明度协同",
+          "typography": "书法艺术字、逐字核笔画"
+        },
+        "compatible_aux": [
+          "P03",
+          "P07",
+          "P08"
+        ],
+        "conflicts": "不得使用伪中文；文化传统不等于必须书法",
+        "layout_ids": [
+          "L02",
+          "L03",
+          "L04",
+          "L07",
+          "L10",
+          "L11"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-051",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-051_艺术展览_自由拼贴_衬线_蓝米白.jpg",
+            "sha256": "d5eaf7ba005d7b86e03e3496dd0063e0023bea50da20f3cce61f1b90eb6b07bd",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-348",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-348_艺术展览_上下分区_衬线_白绿.jpg",
+            "sha256": "6c4010a1d8480451a81413751a3d199c2ff421090e043000570660f4d34d890a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-396",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-396_艺术展览_中心轴对称_衬线_红黑.jpg",
+            "sha256": "49b2be530d5f229b20c55506ad69eed9e15b41afda102479ffc4966e2168ce2f",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-090",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-090_艺术展览_非对称网格_书法_白蓝.jpg",
+            "sha256": "ced40c38363f6a4067ea9b80e43a69240c39495b331907b7b731c812cabecc1b",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-146",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-146_艺术展览_中心轴对称_书法_白黑.jpg",
+            "sha256": "34c56e37b0ddb4b03dfab8200c683a91fcab277f44d0f7164cd69184c5985c76",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-209",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-209_艺术展览_满版构图_书法_绿米白.jpg",
+            "sha256": "076dddd6438a437bfdf6813f8b9043bda86cfb69178bec1c5eeb70a9b8dddd9f",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-211",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-211_文化节庆_满版构图_书法_绿蓝.jpg",
+            "sha256": "b7f1ddfdd251c1592703552d0a81a5ff64e1c2a5ab2ae7c9dd4a4ddbd6b62760",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-229",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-229_文化节庆_上下分区_书法_黑橙.jpg",
+            "sha256": "8e51ab8075b0d47e3895a8689d53262d531ec709759b5f1ac1977ab9e39ccc89",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-232",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-232_艺术展览_中心轴对称_书法_米白蓝.jpg",
+            "sha256": "cbbe354f0ad84f4a4a77efe9f7c9b0d50b659d677addcdb0712940f673af7ec6",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-234",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-234_文化节庆_中心轴对称_书法_青黑.jpg",
+            "sha256": "0e90b6a9d22d6587523a5d537a23e1de0ac00c2524d1ca0dfff3de19a03630d8",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P06",
+        "name": "装饰复古",
+        "one_liner": "装饰性美术字，图案感强，复古或节庆气氛",
+        "theme_tags": [
+          "music",
+          "city",
+          "community",
+          "craft"
+        ],
+        "moods": [
+          "playful",
+          "nostalgic",
+          "lively"
+        ],
+        "audiences": [
+          "young_adults",
+          "public",
+          "families"
+        ],
+        "channels": [
+          "social_media",
+          "print",
+          "outdoor"
+        ],
+        "visual_parameters": {
+          "media": "叠印/海报字/拼贴",
+          "palette_logic": "有限套色或鲜明装饰色",
+          "typography": "装饰展示字、材质有出处"
+        },
+        "compatible_aux": [
+          "P07",
+          "P09",
+          "P10"
+        ],
+        "conflicts": "复古肌理不能侵蚀小字；不与光泽3D平均混合",
+        "layout_ids": [
+          "L02",
+          "L03",
+          "L04",
+          "L06",
+          "L08",
+          "L09",
+          "L10",
+          "L12"
+        ],
+        "substyles": [
+          {
+            "id": "retro-gig",
+            "name": "复古演出",
+            "use_when": "乐队、放映、演出，要年代感",
+            "members_note": "旧印刷质感、套色不准、纸张肌理"
+          },
+          {
+            "id": "riso-pop",
+            "name": "Riso 叠印波普",
+            "use_when": "年轻受众、市集、独立文化",
+            "members_note": "两三色叠印出错位和叠色"
+          },
+          {
+            "id": "playful-display",
+            "name": "活泼装饰字",
+            "use_when": "节庆、亲子、社区，要热闹",
+            "members_note": "标题本身就是图案"
+          }
+        ],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-065",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-065_艺术展览_中心轴对称_书法_白粉.jpg",
+            "sha256": "663639b45b7bf24e5b45073f7d08ceae0d2b6cd960bde9543de026e10586df08",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-212",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-212_市集_不规则自由布局_混合字体_红白.jpg",
+            "sha256": "95d74f42475d45ce90051018683799f5187fa4ab65a8490410374617e1af3bb0",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-228",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-228_市集_中心轴对称_书法_绿红.jpg",
+            "sha256": "ad42babf4e76a6bb3aa764e67101944ae59f92da0ef188ffdc7bff78b963b2f8",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-103",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-103_艺术展览_非对称网格_书法_黄白.jpg",
+            "sha256": "8a55a348e166c4a3263f222709a65f189c7ea20fe87511c912a68ec1adab1085",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-006",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-006_文化节庆_中心轴对称_装饰字体_蓝黄红.jpg",
+            "sha256": "a6239559a5f8656256bbe71c33cba4eb52949cfed3cc4c963d015f1c043c7e3e",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-057",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-057_艺术展览_上下分区_装饰字体_蓝白.jpg",
+            "sha256": "bb9fc9f92cc05cfb1e2b927d4329e1d4bda9f697e504154a2bc349ed06e8ab97",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-079",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-079_商业推广_中心轴对称_装饰字体_黄粉.jpg",
+            "sha256": "5a2f16cb04d4dd167d6cff9e12fc0a1f662009e15c8e5d086b18a2475a8400c6",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-080",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-080_商业推广_模块化网格_装饰字体_白多色.jpg",
+            "sha256": "5211364aefc3427f6cda513dae5c8d14cee331e29822585708a64d1ea7abde01",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-082",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-082_市集_中心轴对称_装饰字体_粉白.jpg",
+            "sha256": "6ecbe0059f17cd7440582a9b8c51c77847ebd1e32b46988fe9a63f99519a6c16",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-133",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-133_艺术展览_中心轴对称_装饰字体_白多色.jpg",
+            "sha256": "9186f6ecb5818d81fb39c706331a82f2a86db3ba37b4a7e5b2dc8a8a9e0833ee",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P07",
+        "name": "手绘亲和",
+        "one_liner": "手写标题，插画或拼贴质感，社区亲和力",
+        "theme_tags": [
+          "nature",
+          "craft",
+          "community",
+          "animals"
+        ],
+        "moods": [
+          "warm",
+          "playful",
+          "gentle"
+        ],
+        "audiences": [
+          "families",
+          "children",
+          "public"
+        ],
+        "channels": [
+          "social_media",
+          "print",
+          "exhibition"
+        ],
+        "visual_parameters": {
+          "media": "插画/织物/剪贴",
+          "palette_logic": "材质驱动色彩而非固定奶油色",
+          "typography": "手写或手工材料字"
+        },
+        "compatible_aux": [
+          "P05",
+          "P06",
+          "P09"
+        ],
+        "conflicts": "亲和不等于幼态；儿童受众与成人手作不能一套模板",
+        "layout_ids": [
+          "L01",
+          "L02",
+          "L03",
+          "L04",
+          "L06",
+          "L07",
+          "L08",
+          "L09",
+          "L11",
+          "L12"
+        ],
+        "substyles": [
+          {
+            "id": "doodle",
+            "name": "涂鸦手写",
+            "use_when": "社区、亲子、工作坊，要随意亲切",
+            "members_note": "像手写上去的，不追求工整"
+          },
+          {
+            "id": "cut-paper",
+            "name": "剪贴拼贴",
+            "use_when": "市集、独立出版、实验活动",
+            "members_note": "撕边、纸张叠压、错位"
+          },
+          {
+            "id": "textured-illustration",
+            "name": "肌理插画",
+            "use_when": "需要插画但不要太甜",
+            "members_note": "颗粒、笔触、版画感"
+          }
+        ],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-010",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-010_社区活动_自由拼贴_书法_蓝白.jpg",
+            "sha256": "b31f7ec568dfd8b2515c3ba2032b6256a2ee675b1020b380d80427585d1e1cfe",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-011",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-011_文化节庆_中心轴对称_书法_黄绿.jpg",
+            "sha256": "f3e099c48940945a4e0aabfc846556e0433775a62ff92f7aafc5744f4ccf05d6",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-014",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-014_文化节庆_中心轴对称_书法_米白绿.jpg",
+            "sha256": "53fdf7214d5088390f010560c2b8f44ab9b41f0d546abb27714cd61297bae847",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-025",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-025_文化节庆_左右分栏_书法_蓝绿.jpg",
+            "sha256": "d04695191515507f0c56473a0c042cfd0a2e495726f3616e97586f5f0fdcb38e",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-084",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-084_音乐演出_中心轴对称_书法_棕橙.jpg",
+            "sha256": "3323e5db4c67797ba15a80381c3a4a08989001fafbe4a322ca25e1526a4d7a1b",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-189",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-189_艺术展览_模块化网格_无衬线_米白蓝.jpg",
+            "sha256": "143c5852830dac49954e8b8f45ec93e883b35d3f1407df4485300adf92278add",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-230",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-230_文化节庆_中心轴对称_书法_红蓝.jpg",
+            "sha256": "9deb3781e2d129bd4deb5e39fdd5d77702d825688982dbb0af7c59a08754b4bf",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-233",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-233_文化节庆_中心轴对称_书法_红黑.jpg",
+            "sha256": "632eb303ef871e84426660af32a587d952d3a365f865b0fa5884782c61798fcc",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-236",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-236_艺术展览_中心轴对称_书法_绿橙.jpg",
+            "sha256": "c2d347d8ffd956cd716a964828a3607d53b6c9a773dba183039ee981ea93e6e8",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-239",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-239_体育活动_非对称网格_无衬线_黄橙黑.jpg",
+            "sha256": "a80b0852bfe4490cd86d72d243fe627463f3c57a4c3141c533b5167faa89c534",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P08",
+        "name": "满版影像",
+        "one_liner": "整版摄影或图像铺满，文字压图，视觉冲击优先",
+        "theme_tags": [
+          "art",
+          "music",
+          "photography",
+          "nature"
+        ],
+        "moods": [
+          "immersive",
+          "poetic",
+          "mysterious"
+        ],
+        "audiences": [
+          "young_adults",
+          "public",
+          "professionals"
+        ],
+        "channels": [
+          "social_media",
+          "outdoor",
+          "exhibition",
+          "print"
+        ],
+        "visual_parameters": {
+          "media": "摄影/完整影像",
+          "palette_logic": "从真实光线取色",
+          "typography": "字与图同等主体，局部对比优先"
+        },
+        "compatible_aux": [
+          "P02",
+          "P04",
+          "P05"
+        ],
+        "conflicts": "不能为了文字把满版图裁成小插图；复杂底图需局部审查",
+        "layout_ids": [
+          "L01",
+          "L02",
+          "L03",
+          "L07",
+          "L08",
+          "L11"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-013",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-013_市集_中心轴对称_无衬线_黄绿.jpg",
+            "sha256": "7e466f576cdbf4f6f5c83f5fff2efc21f4d316107e375ecfc84ea68ad1acbe76",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-037",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-037_商业推广_中心轴对称_书法_棕黑.jpg",
+            "sha256": "f08809cd448cc409253dc7472cb831e2ab9ea44676ceae6dfb9146e20d71eafd",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-128",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-128_文化节庆_中心轴对称_无衬线_荧光绿蓝.jpg",
+            "sha256": "44346ce6ab64dfc62a0bda55796167a8b1ff41c878e13ee551b2dbd25f3a7365",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-218",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-218_商业推广_上下分区_无衬线_黑蓝.jpg",
+            "sha256": "f21b5f93656223e9726ab10d715e99e6f67b3a91059544e4a33a54f07a23eb9e",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-012",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-012_体育活动_满版构图_无衬线_蓝米白.jpg",
+            "sha256": "fdc841a1f00c35ee1055ab387a508ea0ca3725fa4d8d6c74c564cc44fef1ec44",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-034",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-034_商业推广_满版构图_无衬线_棕黑.jpg",
+            "sha256": "5f4e5b33182339dea2db9780f772e80b23e4ff8e7d080b72cb22247d644294a0",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-035",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-035_商业推广_满版构图_无衬线_棕白.jpg",
+            "sha256": "1ed2814b3cda5141d4d09db4b7255148d3ef9674f274f74a8cbc10aba41690a6",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-060",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-060_艺术展览_满版构图_无衬线_蓝绿.jpg",
+            "sha256": "3e9bc872fc635f838938d3ebfc9fce8eb4d61cc137dc1edf2b793ca29914c7f4",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-068",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-068_商业推广_满版构图_无衬线_粉多色.jpg",
+            "sha256": "6e70f5f3d944f1f0a549d063786e6daf0b99930a6302a8ba33d08c233de5ab6d",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-101",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-101_商业推广_满版构图_无衬线_黑荧光绿.jpg",
+            "sha256": "71b1ca234ff3e756b3993ff398341d268db47f4f293c2d2e6f59cc3fa97e71d4",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P09",
+        "name": "图案阵列",
+        "one_liner": "元素重复排布成图案，节奏感强，适合多主体或系列感",
+        "theme_tags": [
+          "craft",
+          "nature",
+          "design",
+          "community"
+        ],
+        "moods": [
+          "rhythmic",
+          "playful",
+          "rational"
+        ],
+        "audiences": [
+          "families",
+          "young_adults",
+          "public"
+        ],
+        "channels": [
+          "print",
+          "social_media",
+          "exhibition"
+        ],
+        "visual_parameters": {
+          "media": "多主体/重复图案",
+          "palette_logic": "重复与反差",
+          "typography": "字排利用纹样间隙"
+        },
+        "compatible_aux": [
+          "P01",
+          "P06",
+          "P07"
+        ],
+        "conflicts": "图案过密时必须留真实呼吸点，不能牺牲事实",
+        "layout_ids": [
+          "L04",
+          "L05",
+          "L06",
+          "L09",
+          "L12"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-395",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-395_艺术展览_模块化网格_无衬线_白棕黑.jpg",
+            "sha256": "50e26de79bb4a8d98c30fb22933991c0ab93ee4ef0984996f5ed2e29405e3290",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-147",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-147_艺术展览_重复阵列_无衬线_米白黑.jpg",
+            "sha256": "b597956701d48a91775f90a03016a8c0b8899531661197cbd2d63a45b0f340e3",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-151",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-151_艺术展览_重复阵列_无衬线_白黄.jpg",
+            "sha256": "8d8c730a361da2e81a226dcf679a799b89faee2ed2c79aa4a5f8bc32d8563ea7",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-182",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-182_艺术展览_重复阵列_无衬线_绿黑.jpg",
+            "sha256": "8833c859975d640c08ac435afcf6f06dee120dc115f5e56a9744348788abf63f",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-235",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-235_文化节庆_重复阵列_无衬线_红黑米白.jpg",
+            "sha256": "ba9b2689233fc36f1807abbb06ffb10acf9d553ae13d439bded0e298047ecc19",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-242",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-242_文化节庆_重复阵列_无衬线_白蓝.jpg",
+            "sha256": "41696c1ae52ec0103a227f8909c52293f8aa4ea98e1512f8f4354d5851dfe725",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-255",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-255_艺术展览_重复阵列_无衬线_白蓝.jpg",
+            "sha256": "823ba36d467b63f56373225bc122f206e2d44d172d21a78a61b86572eb38b4f8",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-343",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-343_艺术展览_重复阵列_无衬线_白蓝.jpg",
+            "sha256": "101342cdc9fcb1a78be7e390abe9e4d3341405ab3cc9ba1f226c59f10ce52ce6",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-349",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-349_艺术展览_重复阵列_无衬线_黑多色.jpg",
+            "sha256": "54869dc3015c291526c01a190a2c05420af86f1fcc76359625c845cad2660d76",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-368",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-368_艺术展览_重复阵列_无衬线_白蓝.jpg",
+            "sha256": "4097da8ef5bb05e66b738d964f25bd4797a3cfd4450b6951fab3eae95ff43ad9",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P10",
+        "name": "拼贴与自由动势",
+        "one_liner": "元素自由散落或对角运动，年轻、实验、不规矩",
+        "theme_tags": [
+          "art",
+          "music",
+          "city",
+          "experimental"
+        ],
+        "moods": [
+          "avant_garde",
+          "playful",
+          "expressive"
+        ],
+        "audiences": [
+          "young_adults",
+          "professionals"
+        ],
+        "channels": [
+          "social_media",
+          "print",
+          "exhibition"
+        ],
+        "visual_parameters": {
+          "media": "照片切片/拼贴/几何",
+          "palette_logic": "主色清晰、辅色受控",
+          "typography": "展示字与图像穿插"
+        },
+        "compatible_aux": [
+          "P02",
+          "P06",
+          "P08"
+        ],
+        "conflicts": "禁止无理由混合所有材质；信息多需先验证可读路径",
+        "layout_ids": [
+          "L01",
+          "L02",
+          "L03",
+          "L06",
+          "L07",
+          "L08",
+          "L09",
+          "L10",
+          "L11",
+          "L12"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-194",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-194_艺术展览_重复阵列_无衬线_白红.jpg",
+            "sha256": "a6dc58d98eaecd39ec943423b73fad905401da2319b28db8cb717805bab75829",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-254",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-254_商业推广_自由拼贴_衬线_白绿.jpg",
+            "sha256": "a642b3e7bab2cfc4fe8edfa757da9bbcabad1104b2649225b3a73e030f4309cb",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-271",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-271_艺术展览_中心轴对称_无衬线_白多色.jpg",
+            "sha256": "eef005839ef096a728d4b94d62c02c5128c91d4fab10d790eadeb96dc02612c3",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-280",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-280_艺术展览_满版构图_无衬线_白红绿.jpg",
+            "sha256": "027f0e4c33aafd3200c2be2d8d45f266eaa5c09fe558a987bbdf29bce6a1d85d",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-299",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-299_市集_中心轴对称_无衬线_白黑绿.jpg",
+            "sha256": "f53d4c6a074d41a820bc54f58aae8a38f9baea8b03e1faf6376d6922d99cb13c",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-355",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-355_商业推广_中心轴对称_无衬线_白红.jpg",
+            "sha256": "3a230f55368fc7a317a9e907d1192d1687cf0df4d40304b3e0c14b1d64ff274a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-363",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-363_文化节庆_满版构图_无衬线_白粉.jpg",
+            "sha256": "8302f9cbb3475b71e34e3c7ddbdc050870feba6ed771ace13e6fbfd4c3d46686",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-366",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-366_艺术展览_满版构图_无衬线_白黑蓝.jpg",
+            "sha256": "f137a1e13cc2e8389aa0fa8acaf7a4b5068e949b8a04aa8890b2b5e1908cff6f",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-027",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-027_艺术展览_自由拼贴_无衬线_蓝粉.jpg",
+            "sha256": "71371899e17261a5b1bb4bc01b822b432b917969bea3320f4c7bbcdfa32283f2",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-047",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-047_艺术展览_不规则自由布局_无衬线_白绿.jpg",
+            "sha256": "9d5bfbf55f68ee870fd0dc538b2d38993b6f9f30b9e5837813f277dbb7045594",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P11",
+        "name": "信息分区",
+        "one_liner": "画面明确切成信息区块，主视觉与信息栏分离，承载大量文字",
+        "theme_tags": [
+          "education",
+          "community",
+          "science",
+          "design"
+        ],
+        "moods": [
+          "clear",
+          "rational",
+          "formal"
+        ],
+        "audiences": [
+          "public",
+          "professionals",
+          "families"
+        ],
+        "channels": [
+          "print",
+          "exhibition",
+          "outdoor",
+          "social_media"
+        ],
+        "visual_parameters": {
+          "media": "信息网络/结构化场景",
+          "palette_logic": "层级而非卡片配色",
+          "typography": "稳定阅读群与有性格H0并存"
+        },
+        "compatible_aux": [
+          "P01",
+          "P02",
+          "P09"
+        ],
+        "conflicts": "旧库有图文分栏，仅借信息组织；不得用救急页眉页脚隔开图字",
+        "layout_ids": [
+          "L01",
+          "L05",
+          "L08",
+          "L12"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-058",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-058_文化节庆_非对称网格_装饰字体_米白绿.jpg",
+            "sha256": "9212be2216192479a9bc59ce6d4c886bbbf72b4be1964558a592c32c1ff64161",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-022",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-022_艺术展览_单栏纵向_无衬线_黑蓝.jpg",
+            "sha256": "44c08f169d2ff548cdd25dd07b5396f94e817e720aead700da08cd07706b8dc5",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-023",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-023_文化节庆_上下分区_无衬线_蓝白.jpg",
+            "sha256": "2308a785865cb1883469cd1df0d01c80f7a39022aba868464896cd92b9b65ff5",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-040",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-040_艺术展览_单栏纵向_无衬线_黄粉.jpg",
+            "sha256": "cff09eda297001388f38f51661db9f5521ed7f701de1cfe0a9c62349561a9c45",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-062",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-062_文化节庆_上下分区_像素_绿蓝.jpg",
+            "sha256": "0588f6c82168d4c5b288744061af3c9cf70c825fbcf113441e6505807dc204f2",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-118",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-118_艺术展览_上下分区_无衬线_白绿.jpg",
+            "sha256": "58d9882d5bf78cca4ad935fd2d044288a3cc5766edffc6cc18a1bd8f941935a0",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-134",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-134_音乐演出_上下分区_无衬线_蓝黑.jpg",
+            "sha256": "ad14501c7986277b9c076cbd630cf85351353f502b8fdf9f32e6017174d7a709",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-141",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-141_艺术展览_上下分区_无衬线_白金.jpg",
+            "sha256": "31307a1285c332947be96e3bf858d2c2a17a8a887191a3474842b48ae36fe014",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-144",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-144_艺术展览_上下分区_无衬线_灰蓝.jpg",
+            "sha256": "0379774b213934612e47d780b3def242a5fa65a3263b7a714513a957f6f2a183",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-200",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-200_艺术展览_上下分区_无衬线_黑白.jpg",
+            "sha256": "79f9792ee49f67768abc9fde77cb39bc8a9b4ceee7e078f57cb052deed7f5aeb",
+            "source_classification": "rule",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      },
+      {
+        "id": "P12",
+        "name": "酸性数字",
+        "one_liner": "渐变金属、发光 3D、变形实验字，数字原生审美",
+        "theme_tags": [
+          "technology",
+          "experimental",
+          "art",
+          "music"
+        ],
+        "moods": [
+          "avant_garde",
+          "mysterious",
+          "immersive"
+        ],
+        "audiences": [
+          "young_adults",
+          "professionals"
+        ],
+        "channels": [
+          "social_media",
+          "exhibition",
+          "outdoor"
+        ],
+        "visual_parameters": {
+          "media": "折射/液态/数字材质",
+          "palette_logic": "光学色彩、真实明暗关系",
+          "typography": "实验展示字但字符结构清晰"
+        },
+        "compatible_aux": [
+          "P08",
+          "P10"
+        ],
+        "conflicts": "不强加未来感于所有主题；印刷需另核色域与细字",
+        "layout_ids": [
+          "L02",
+          "L03",
+          "L06",
+          "L07",
+          "L10",
+          "L11"
+        ],
+        "substyles": [],
+        "references": [
+          {
+            "id": "keyword-20261012:REF-044",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-044_文化节庆_中心轴对称_装饰字体_黑蓝.jpg",
+            "sha256": "ecb07917a0c9b9cfb32c53a403efb9f7802c37cc3ea7909341b056d1df39a620",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-048",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-048_音乐演出_中心轴对称_衬线_蓝紫.jpg",
+            "sha256": "2b72a3c6a742318322b9a5c43cb34be3d9c8978c494b2df15caa2147dfde794a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-049",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-049_文化节庆_中心轴对称_装饰字体_绿紫.jpg",
+            "sha256": "a51891c5255e7a5d8a95ceca6aa3b9006b39d2a11177536d5825b4e1e0499c63",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-052",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-052_音乐演出_满版构图_装饰字体_粉蓝.jpg",
+            "sha256": "de09209db435653af0beb982852b748ca6139ad98a10e0c9fc73b25183ffd8ea",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-063",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-063_艺术展览_模块化网格_无衬线_白多色.jpg",
+            "sha256": "1897a25e959b339e03319a54e0eba60f57112cbc95167c51faecaf8f247a550a",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-069",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-069_商业推广_模块化网格_无衬线_白多色.jpg",
+            "sha256": "20c373554a8ae7231e1f0194f2ea2e6a86bacacccf028a019974e78a27294f18",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-096",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-096_音乐演出_中心轴对称_装饰字体_绿白.jpg",
+            "sha256": "590a72d810d0553d0bd69eea933af242fa9380898efc6d218816c5260f428721",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-097",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-097_艺术展览_满版构图_书法_蓝紫.jpg",
+            "sha256": "fdbec8ef24de633f8bb614295f2752aeca9eddfed672287e9c0cf0ee11c7b8c0",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-191",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-191_艺术展览_自由拼贴_混合字体_白黑橙.jpg",
+            "sha256": "a7e3b87f1f60bf3da438d06c96eba7703caebbf90cead73b0ca6e185df8704ce",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          },
+          {
+            "id": "keyword-20261012:REF-240",
+            "path": "styles/source_library/collections/keyword-20261012/images/REF-240_文化节庆_非对称网格_书法_白绿.jpg",
+            "sha256": "1029eacf3d5b04625df4190e9b81ce46daffe8c280e8cab43dad607dc4ac015f",
+            "source_classification": "visual_override",
+            "selection_status": "候选：任务时看原图筛选，不冒充全部经过新一轮人工审定"
+          }
+        ]
+      }
+    ]
+  },
+  "layouts": {
+    "version": "1.0",
+    "layouts": [
+      {
+        "id": "L01",
+        "name": "偏置锚点",
+        "concept": "主体偏置，文字沿另一侧图像中的低细节区域组织",
+        "density": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "hero_forms": [
+          "single",
+          "photo",
+          "abstract"
+        ],
+        "focus": "offset",
+        "title_positions": [
+          "side",
+          "overlay"
+        ],
+        "style_ids": [
+          "P01",
+          "P02",
+          "P04",
+          "P07",
+          "P08",
+          "P10",
+          "P11"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L02",
+        "name": "图字交叠",
+        "concept": "标题横跨主视觉，图形穿插但关键笔画与主体面部完整",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "photo",
+          "abstract"
+        ],
+        "focus": "fullbleed",
+        "title_positions": [
+          "overlay"
+        ],
+        "style_ids": [
+          "P02",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L03",
+        "name": "动态对角",
+        "concept": "图像与文字沿对角动势推进，关键事实在稳定对齐轴上",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "multiple",
+          "abstract",
+          "photo"
+        ],
+        "focus": "diagonal",
+        "title_positions": [
+          "overlay",
+          "side"
+        ],
+        "style_ids": [
+          "P05",
+          "P06",
+          "P07",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L04",
+        "name": "中轴环抱",
+        "concept": "主体围绕中心标题，信息沿中轴下行而非附加底栏",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "multiple",
+          "abstract"
+        ],
+        "focus": "center",
+        "title_positions": [
+          "center",
+          "surround"
+        ],
+        "style_ids": [
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P07",
+          "P09"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L05",
+        "name": "多中心网格",
+        "concept": "多个主视觉单元构成网格，事实按语义群嵌入单元间",
+        "density": [
+          "medium",
+          "high"
+        ],
+        "hero_forms": [
+          "multiple",
+          "photo"
+        ],
+        "focus": "grid",
+        "title_positions": [
+          "overlay",
+          "side"
+        ],
+        "style_ids": [
+          "P01",
+          "P02",
+          "P09",
+          "P11"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L06",
+        "name": "放射环绕",
+        "concept": "标题或主体成为圆心，次要信息按弧线与径向组织",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "multiple",
+          "abstract"
+        ],
+        "focus": "radial",
+        "title_positions": [
+          "surround"
+        ],
+        "style_ids": [
+          "P03",
+          "P06",
+          "P07",
+          "P09",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L07",
+        "name": "纵向流线",
+        "concept": "纱幕、河流或笔势纵贯画幅，文字沿走势分布",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "abstract",
+          "photo"
+        ],
+        "focus": "vertical_flow",
+        "title_positions": [
+          "side",
+          "overlay"
+        ],
+        "style_ids": [
+          "P02",
+          "P04",
+          "P05",
+          "P07",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L08",
+        "name": "横向叙事",
+        "concept": "连续场景横穿画幅，文字在同一场景的不同空间点接力",
+        "density": [
+          "medium",
+          "high"
+        ],
+        "hero_forms": [
+          "multiple",
+          "photo",
+          "abstract"
+        ],
+        "focus": "horizontal_flow",
+        "title_positions": [
+          "overlay"
+        ],
+        "style_ids": [
+          "P01",
+          "P02",
+          "P06",
+          "P07",
+          "P08",
+          "P10",
+          "P11"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L09",
+        "name": "纹样间隙",
+        "concept": "重复图案产生节奏，文字占据有意识的缺口或反向形",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "multiple",
+          "abstract"
+        ],
+        "focus": "pattern",
+        "title_positions": [
+          "overlay"
+        ],
+        "style_ids": [
+          "P01",
+          "P06",
+          "P07",
+          "P09",
+          "P10"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L10",
+        "name": "排字成像",
+        "concept": "标题轮廓成为图像组织骨架，原图通过字形或字间关系可见",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "abstract",
+          "photo"
+        ],
+        "focus": "typographic",
+        "title_positions": [
+          "overlay",
+          "center"
+        ],
+        "style_ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L11",
+        "name": "景深分层",
+        "concept": "前中后景建立空间，标题叠在合适景深，正文落于原画静区",
+        "density": [
+          "low",
+          "medium"
+        ],
+        "hero_forms": [
+          "single",
+          "photo"
+        ],
+        "focus": "depth",
+        "title_positions": [
+          "overlay"
+        ],
+        "style_ids": [
+          "P02",
+          "P04",
+          "P05",
+          "P07",
+          "P08",
+          "P10",
+          "P12"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      },
+      {
+        "id": "L12",
+        "name": "信息星座",
+        "concept": "多个清晰信息群在完整视觉场中按阅读顺序组成信息网络",
+        "density": [
+          "medium",
+          "high"
+        ],
+        "hero_forms": [
+          "multiple",
+          "abstract",
+          "photo"
+        ],
+        "focus": "distributed",
+        "title_positions": [
+          "side",
+          "surround",
+          "overlay"
+        ],
+        "style_ids": [
+          "P01",
+          "P02",
+          "P06",
+          "P07",
+          "P09",
+          "P10",
+          "P11"
+        ],
+        "safe_regions": {
+          "title": "由实际概念定位，避开面部/主体/关键笔画",
+          "facts": "原画低细节且局部对比可核验的位置",
+          "logo_qr": "仅在提供且适用时加入，按素材比例与扫码净空实际布局"
+        },
+        "forbidden_shortcut": "不允许把主视觉缩为中段插图并补纯色上下信息栏"
+      }
+    ]
+  },
+  "matrix": {
+    "schema_version": "1.0",
+    "weights": {
+      "T": 0.3,
+      "M": 0.25,
+      "A": 0.2,
+      "C": 0.15,
+      "R": 0.1
+    },
+    "weight_status": "初始启发式，未通过跨案例校准，不是概率",
+    "hard_constraints": [
+      "用户明确风格或参考约束",
+      "禁止风格/字体/素材",
+      "信息容量",
+      "主视觉形态",
+      "风格与版式兼容性"
+    ],
+    "reference_priority": "用户明确参考是先验约束，先排不相容候选再排名；不能被总分压过",
+    "reference_assessment": "有明确参考时逐风格记录视觉核对证据与compatible；脚本不伪造图像相似度",
+    "repeat_penalty": {
+      "per_same_style": 0.04,
+      "per_same_layout": 0.05,
+      "maximum": 0.18
+    },
+    "scope": "重复统计仅用已授权项目历史/案例，不读取无关项目；不能抵触用户指定风格",
+    "layout_pairs": {
+      "P01": [
+        "L01",
+        "L05",
+        "L08",
+        "L09",
+        "L10",
+        "L12"
+      ],
+      "P02": [
+        "L01",
+        "L02",
+        "L05",
+        "L07",
+        "L08",
+        "L10",
+        "L11",
+        "L12"
+      ],
+      "P03": [
+        "L04",
+        "L06",
+        "L10"
+      ],
+      "P04": [
+        "L01",
+        "L02",
+        "L04",
+        "L07",
+        "L10",
+        "L11"
+      ],
+      "P05": [
+        "L02",
+        "L03",
+        "L04",
+        "L07",
+        "L10",
+        "L11"
+      ],
+      "P06": [
+        "L02",
+        "L03",
+        "L04",
+        "L06",
+        "L08",
+        "L09",
+        "L10",
+        "L12"
+      ],
+      "P07": [
+        "L01",
+        "L02",
+        "L03",
+        "L04",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L11",
+        "L12"
+      ],
+      "P08": [
+        "L01",
+        "L02",
+        "L03",
+        "L07",
+        "L08",
+        "L11"
+      ],
+      "P09": [
+        "L04",
+        "L05",
+        "L06",
+        "L09",
+        "L12"
+      ],
+      "P10": [
+        "L01",
+        "L02",
+        "L03",
+        "L06",
+        "L07",
+        "L08",
+        "L09",
+        "L10",
+        "L11",
+        "L12"
+      ],
+      "P11": [
+        "L01",
+        "L05",
+        "L08",
+        "L12"
+      ],
+      "P12": [
+        "L02",
+        "L03",
+        "L06",
+        "L07",
+        "L10",
+        "L11"
+      ]
+    },
+    "ranking": "先过滤硬约束；按T/M/A/C/R计算风格解释分，再用版式视觉意图评分与重复惩罚联合排序；A前检查每个候选有可行版式。不得自动确认。"
+  }
+}

@@ -1,0 +1,770 @@
+{
+ "_comment": "视觉校正层。规则分桶（preset_rules.json）只看文件名标签，标签是 provisional 的机器标注，会分错。本文件记录真看图之后的改判，叠加在规则之上。改这里，不要改源参考库。",
+ "_corrections": "首版子风格标注里有 4 个编号（216/218/280/346）是评审 agent 误报——它们并不在被评审的那个桶里。已按 libraries/reference_index/index.json 的实际归属剔除。build 脚本会校验这类冲突并报警，不要忽略那些警告。",
+ "review": {
+  "date": "2026-10-15",
+  "method": "对 11 个预设各生成接触表，派 3 个视觉 agent 逐张看，回报跑偏编号；再用感知哈希扫全库找近似重复。",
+  "caveat": "agent 的判断是二手的，未逐张复核。confidence=high 表示多个 agent 或元数据同时印证；medium 表示单个 agent 单方判断，用之前建议自己打开看一眼。",
+  "near_duplicate_method": "aHash+dHash 汉明距离 <=40/512"
+ },
+ "reassign": {
+  "REF-097": {
+   "from": "P05",
+   "to": "P12",
+   "reason": "数字渐变实验变形字，不是书法",
+   "confidence": "medium"
+  },
+  "REF-240": {
+   "from": "P05",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-249": {
+   "from": "P05",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-328": {
+   "from": "P05",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-044": {
+   "from": "P06",
+   "to": "P12",
+   "reason": "酸系渐变 3D 数字风，非复古装饰",
+   "confidence": "medium"
+  },
+  "REF-049": {
+   "from": "P06",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-052": {
+   "from": "P06",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-096": {
+   "from": "P06",
+   "to": "P12",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-048": {
+   "from": "P04",
+   "to": "P12",
+   "reason": "绿色代码行实验排字",
+   "confidence": "medium"
+  },
+  "REF-191": {
+   "from": "P07",
+   "to": "P12",
+   "reason": "实验飘带字，非手绘",
+   "confidence": "medium"
+  },
+  "REF-260": {
+   "from": "P02",
+   "to": "P12",
+   "reason": "彩虹飘带自由形",
+   "confidence": "medium"
+  },
+  "REF-063": {
+   "from": "P01",
+   "to": "P12",
+   "reason": "渐变模糊色团，无网格结构",
+   "confidence": "medium"
+  },
+  "REF-069": {
+   "from": "P01",
+   "to": "P12",
+   "reason": "渐变模糊色团，无网格结构",
+   "confidence": "medium"
+  },
+  "REF-010": {
+   "from": "P05",
+   "to": "P07",
+   "reason": "儿童涂鸦社区海报，标题非书法",
+   "confidence": "medium"
+  },
+  "REF-011": {
+   "from": "P05",
+   "to": "P07",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-014": {
+   "from": "P05",
+   "to": "P07",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-025": {
+   "from": "P05",
+   "to": "P07",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-301": {
+   "from": "P05",
+   "to": "P07",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-239": {
+   "from": "P02",
+   "to": "P07",
+   "reason": "橙底手绘卡通，非编辑网格",
+   "confidence": "medium"
+  },
+  "REF-297": {
+   "from": "P02",
+   "to": "P07",
+   "reason": "牛皮纸印章拼贴",
+   "confidence": "medium"
+  },
+  "REF-300": {
+   "from": "P01",
+   "to": "P07",
+   "reason": "手绘框花，非模块网格",
+   "confidence": "medium"
+  },
+  "REF-189": {
+   "from": "P01",
+   "to": "P07",
+   "reason": "有机剪形，非模块网格",
+   "confidence": "medium"
+  },
+  "REF-348": {
+   "from": "P04",
+   "to": "P05",
+   "reason": "笔触墨块配草书",
+   "confidence": "medium"
+  },
+  "REF-051": {
+   "from": "P04",
+   "to": "P05",
+   "reason": "草书标题",
+   "confidence": "medium"
+  },
+  "REF-396": {
+   "from": "P04",
+   "to": "P05",
+   "reason": "草书标题",
+   "confidence": "medium"
+  },
+  "REF-105": {
+   "from": "P05",
+   "to": "P04",
+   "reason": "实为宋体标题加安静版式",
+   "confidence": "medium"
+  },
+  "REF-173": {
+   "from": "P05",
+   "to": "P04",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-253": {
+   "from": "P05",
+   "to": "P04",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-292": {
+   "from": "P05",
+   "to": "P04",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-126": {
+   "from": "P07",
+   "to": "P04",
+   "reason": "照片编辑风，非手绘",
+   "confidence": "medium",
+   "substyle": "photo-editorial"
+  },
+  "REF-132": {
+   "from": "P07",
+   "to": "P04",
+   "reason": "照片编辑风，非手绘",
+   "confidence": "medium",
+   "substyle": "photo-editorial"
+  },
+  "REF-212": {
+   "from": "P07",
+   "to": "P06",
+   "reason": "粗美术字，非手写",
+   "confidence": "medium"
+  },
+  "REF-135": {
+   "from": "P06",
+   "to": "P04",
+   "reason": "与 136/137/138/139 同系列，系列必须同桶",
+   "confidence": "low"
+  },
+  "REF-137": {
+   "from": "P06",
+   "to": "P04",
+   "reason": "同上",
+   "confidence": "low"
+  },
+  "REF-013": {
+   "from": "P03",
+   "to": "P08",
+   "reason": "满版插画，不是中轴公告",
+   "confidence": "medium"
+  },
+  "REF-128": {
+   "from": "P03",
+   "to": "P08",
+   "reason": "满版插画",
+   "confidence": "medium"
+  },
+  "REF-194": {
+   "from": "P09",
+   "to": "P10",
+   "reason": "红色有机形自由散落，无重复节奏",
+   "confidence": "medium"
+  },
+  "REF-280": {
+   "from": "P08",
+   "to": "P10",
+   "reason": "白底拼贴，非满版影像",
+   "confidence": "medium"
+  },
+  "REF-363": {
+   "from": "P08",
+   "to": "P10",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-366": {
+   "from": "P08",
+   "to": "P10",
+   "reason": "字体主导，图像不撑满版",
+   "confidence": "low"
+  },
+  "REF-271": {
+   "from": "P03",
+   "to": "P10",
+   "reason": "散点不对称，非中轴",
+   "confidence": "medium"
+  },
+  "REF-299": {
+   "from": "P03",
+   "to": "P10",
+   "reason": "散点不对称，非中轴",
+   "confidence": "medium"
+  },
+  "REF-355": {
+   "from": "P03",
+   "to": "P10",
+   "reason": "对角动态构图",
+   "confidence": "medium"
+  },
+  "REF-055": {
+   "from": "P02",
+   "to": "P01",
+   "reason": "满版密排栏格，属模块网格",
+   "confidence": "medium"
+  },
+  "REF-114": {
+   "from": "P02",
+   "to": "P01",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-115": {
+   "from": "P02",
+   "to": "P01",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-161": {
+   "from": "P02",
+   "to": "P01",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-116": {
+   "from": "P10",
+   "to": "P01",
+   "reason": "模块化块状布局，无拼贴动势",
+   "confidence": "medium"
+  },
+  "REF-119": {
+   "from": "P10",
+   "to": "P01",
+   "reason": "严格网格纯排版",
+   "confidence": "medium"
+  },
+  "REF-041": {
+   "from": "P07",
+   "to": "P01",
+   "reason": "网格排字，手绘特征弱",
+   "confidence": "low"
+  },
+  "REF-395": {
+   "from": "P01",
+   "to": "P09",
+   "reason": "白底器物阵列，重复节奏明显",
+   "confidence": "medium"
+  },
+  "REF-336": {
+   "from": "P01",
+   "to": "P02",
+   "reason": "留白散点偏中轴，非满版模块",
+   "confidence": "medium"
+  },
+  "REF-337": {
+   "from": "P01",
+   "to": "P02",
+   "reason": "同上",
+   "confidence": "medium"
+  },
+  "REF-264": {
+   "from": "P03",
+   "to": "P02",
+   "reason": "偏置极简，非中轴对称",
+   "confidence": "medium"
+  },
+  "REF-059": {
+   "from": "P11",
+   "to": "P02",
+   "reason": "散点文本块，无明确信息栏",
+   "confidence": "medium"
+  },
+  "REF-214": {
+   "from": "P07",
+   "to": "P02",
+   "reason": "极简几何，手绘特征弱",
+   "confidence": "low"
+  },
+  "REF-112": {
+   "from": "P02",
+   "to": "P03",
+   "reason": "居中放射图形，属中轴",
+   "confidence": "medium"
+  },
+  "REF-237": {
+   "from": "P02",
+   "to": "P03",
+   "reason": "居中放射渐变团；且与 REF-056 是近似重复，必须同桶",
+   "confidence": "medium"
+  },
+  "REF-056": {
+   "from": "P11",
+   "to": "P03",
+   "reason": "与 REF-237 近似重复（汉明距离 14），跟随其桶",
+   "confidence": "medium"
+  },
+  "REF-347": {
+   "from": "P11",
+   "to": "P03",
+   "reason": "中轴文字，无信息分区",
+   "confidence": "medium"
+  },
+  "REF-067": {
+   "from": "P11",
+   "to": "P03",
+   "reason": "单卡居中，无分区",
+   "confidence": "medium"
+  },
+  "REF-122": {
+   "from": "P11",
+   "to": "P03",
+   "reason": "渐变居中，无分区",
+   "confidence": "medium"
+  },
+  "REF-376": {
+   "from": "P02",
+   "to": "P03",
+   "reason": "居中椅子主体，属中轴",
+   "confidence": "medium"
+  },
+  "REF-279": {
+   "from": "P02",
+   "to": "P03",
+   "reason": "对称框线建筑图",
+   "confidence": "medium"
+  },
+  "REF-058": {
+   "from": "P06",
+   "to": "P11",
+   "reason": "地图信息图配黑体，信息分区为主",
+   "confidence": "medium"
+  },
+  "REF-218": {
+   "from": "P11",
+   "to": "P08",
+   "reason": "单人物插画撑满，无信息分区",
+   "confidence": "low"
+  },
+  "REF-254": {
+   "from": "P04",
+   "to": "P10",
+   "reason": "与 REF-335 近似重复（汉明距离 5），必须同桶",
+   "confidence": "high"
+  },
+  "REF-037": {
+   "from": "P05",
+   "to": "P08",
+   "reason": "商业电影海报，摄影撑满版，标题非书法",
+   "confidence": "medium"
+  },
+  "REF-084": {
+   "from": "P05",
+   "to": "P07",
+   "to_substyle": "textured-illustration",
+   "reason": "黑体配木刻图形，无书法",
+   "confidence": "medium"
+  },
+  "REF-230": {
+   "from": "P05",
+   "to": "P07",
+   "to_substyle": "textured-illustration",
+   "reason": "民俗插画主导",
+   "confidence": "medium"
+  },
+  "REF-233": {
+   "from": "P05",
+   "to": "P07",
+   "to_substyle": "textured-illustration",
+   "reason": "民俗木刻",
+   "confidence": "medium"
+  },
+  "REF-236": {
+   "from": "P05",
+   "to": "P07",
+   "to_substyle": "textured-illustration",
+   "reason": "民俗插画主导",
+   "confidence": "medium"
+  },
+  "REF-065": {
+   "from": "P05",
+   "to": "P06",
+   "to_substyle": "playful-display",
+   "reason": "美术字标题，非书法",
+   "confidence": "medium"
+  },
+  "REF-228": {
+   "from": "P05",
+   "to": "P06",
+   "to_substyle": "playful-display",
+   "reason": "装饰性美术字",
+   "confidence": "medium"
+  },
+  "REF-103": {
+   "from": "P05",
+   "to": "P06",
+   "to_substyle": "playful-display",
+   "reason": "展示性美术字配大色块",
+   "confidence": "low"
+  },
+  "REF-198": {
+   "from": "P05",
+   "to": "P04",
+   "to_substyle": "photo-editorial",
+   "reason": "照片编辑风配黑体，无书法",
+   "confidence": "medium"
+  },
+  "REF-169": {
+   "from": "P05",
+   "to": "P04",
+   "to_substyle": "photo-editorial",
+   "reason": "织物照片配单个宋体字，非书法主导",
+   "confidence": "low"
+  },
+  "REF-171": {
+   "from": "P05",
+   "to": "P04",
+   "to_substyle": "photo-editorial",
+   "reason": "同 REF-169 系列",
+   "confidence": "low"
+  }
+ },
+ "near_duplicate_series": {
+  "_comment": "感知哈希判定的近似重复。同组必须落在同一个预设里，否则'生成两版让用户选'会选到同一张图的两个变体。源库按 SHA256 去重过，所以这些不是完全重复，是同系列微调版。",
+  "groups": [
+   {
+    "ids": [
+     "REF-042",
+     "REF-162"
+    ],
+    "distance": 1,
+    "note": "几乎完全相同，选一张用即可"
+   },
+   {
+    "ids": [
+     "REF-043",
+     "REF-164"
+    ],
+    "distance": 1,
+    "note": "几乎完全相同"
+   },
+   {
+    "ids": [
+     "REF-254",
+     "REF-335"
+    ],
+    "distance": 5,
+    "note": "同图不同字体标签"
+   },
+   {
+    "ids": [
+     "REF-089",
+     "REF-289"
+    ],
+    "distance": 8,
+    "note": "同系列"
+   },
+   {
+    "ids": [
+     "REF-094",
+     "REF-317"
+    ],
+    "distance": 12,
+    "note": "同系列"
+   },
+   {
+    "ids": [
+     "REF-056",
+     "REF-237"
+    ],
+    "distance": 14,
+    "note": "同图被打了不同构图标签"
+   }
+  ],
+  "same_series_colorways": [
+   {
+    "ids": [
+     "REF-185",
+     "REF-186",
+     "REF-187"
+    ],
+    "note": "武汉印象，同版换色"
+   },
+   {
+    "ids": [
+     "REF-386",
+     "REF-387",
+     "REF-388",
+     "REF-389"
+    ],
+    "note": "课程模板，同版换色"
+   },
+   {
+    "ids": [
+     "REF-314",
+     "REF-316",
+     "REF-319"
+    ],
+    "note": "同版式换底图，319 已非影像"
+   },
+   {
+    "ids": [
+     "REF-368",
+     "REF-370"
+    ],
+    "note": "同一蓝点阵系统"
+   },
+   {
+    "ids": [
+     "REF-281",
+     "REF-286"
+    ],
+    "note": "心脏叠印反色"
+   },
+   {
+    "ids": [
+     "REF-169",
+     "REF-171"
+    ],
+    "note": "扎染两版"
+   },
+   {
+    "ids": [
+     "REF-135",
+     "REF-136",
+     "REF-137",
+     "REF-138",
+     "REF-139"
+    ],
+    "note": "演出海报系列，曾被拆进 P04 和 P06 两个桶"
+   }
+  ]
+ },
+ "substyle_assignments": {
+  "_comment": "大桶内部的子风格。只标注 agent 明确点过名的代表图，其余留 unassigned 等后续看图补。子风格定义在 preset_rules.json 的 substyles 里。",
+  "P03": {
+   "hero-image": [
+    "REF-038",
+    "REF-043",
+    "REF-087",
+    "REF-159",
+    "REF-181",
+    "REF-183",
+    "REF-222",
+    "REF-231",
+    "REF-244",
+    "REF-393",
+    "REF-400"
+   ],
+   "graphic-symbol": [
+    "REF-095",
+    "REF-100",
+    "REF-149",
+    "REF-155",
+    "REF-284",
+    "REF-313",
+    "REF-320",
+    "REF-340",
+    "REF-380"
+   ],
+   "text-only": [
+    "REF-287",
+    "REF-302",
+    "REF-367"
+   ]
+  },
+  "P04": {
+   "minimal-type": [
+    "REF-046",
+    "REF-123",
+    "REF-352",
+    "REF-356",
+    "REF-391"
+   ],
+   "illustration": [
+    "REF-170",
+    "REF-174",
+    "REF-248",
+    "REF-401"
+   ],
+   "photo-editorial": [
+    "REF-036",
+    "REF-188",
+    "REF-190",
+    "REF-268",
+    "REF-126",
+    "REF-132",
+    "REF-198",
+    "REF-169",
+    "REF-171"
+   ]
+  },
+  "P06": {
+   "retro-gig": [
+    "REF-165",
+    "REF-166",
+    "REF-167",
+    "REF-168",
+    "REF-215",
+    "REF-217",
+    "REF-219",
+    "REF-278",
+    "REF-282"
+   ],
+   "riso-pop": [
+    "REF-274",
+    "REF-276",
+    "REF-281",
+    "REF-286",
+    "REF-288"
+   ],
+   "playful-display": [
+    "REF-006",
+    "REF-079",
+    "REF-080",
+    "REF-082",
+    "REF-145",
+    "REF-065",
+    "REF-228",
+    "REF-103"
+   ]
+  },
+  "P07": {
+   "doodle": [
+    "REF-001",
+    "REF-005",
+    "REF-007",
+    "REF-009",
+    "REF-310"
+   ],
+   "cut-paper": [
+    "REF-015",
+    "REF-021",
+    "REF-306",
+    "REF-307"
+   ],
+   "textured-illustration": [
+    "REF-003",
+    "REF-017",
+    "REF-020",
+    "REF-178",
+    "REF-381",
+    "REF-084",
+    "REF-230",
+    "REF-233",
+    "REF-236"
+   ]
+  }
+ },
+ "text_on_image_evidence": {
+  "_comment": "P08 满版影像要文字压图，是中文海报最容易翻车的做法。以下由视觉评审直接点名，做该预设时优先照 good 的排法，避开 bad 的排法。",
+  "good": [
+   {
+    "id": "REF-012",
+    "why": "白粗体压在纯色区，对比充足"
+   },
+   {
+    "id": "REF-035",
+    "why": "疏排白字压均匀沙面，背景纹理不抢字"
+   },
+   {
+    "id": "REF-158",
+    "why": "用白色撕标签当底板压繁忙航拍，先造安全区再放字"
+   },
+   {
+    "id": "REF-210",
+    "why": "文字避开主体，放在空区"
+   },
+   {
+    "id": "REF-314",
+    "why": "小字落在低细节水面"
+   },
+   {
+    "id": "REF-316",
+    "why": "同上"
+   }
+  ],
+  "bad": [
+   {
+    "id": "REF-060",
+    "why": "浅字压浅渐变，对比不足且字号偏小"
+   },
+   {
+    "id": "REF-068",
+    "why": "同上，粉彩底"
+   },
+   {
+    "id": "REF-101",
+    "why": "细白字压高饱和荧光，眩光"
+   },
+   {
+    "id": "REF-262",
+    "why": "白字压密集彩线，背景太吵"
+   },
+   {
+    "id": "REF-277",
+    "why": "绿字压红色人像，同明度相撞"
+   }
+  ]
+ }
+}

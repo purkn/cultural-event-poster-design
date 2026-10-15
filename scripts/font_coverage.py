@@ -17,6 +17,7 @@ def _get_font(font_path, face_index=0):
 
 def assess(font_path, text, face_index=0, locale=None):
     p=Path(font_path)
+    if not text.strip(): raise ValueError('text must contain non-whitespace characters')
     if not p.is_file():raise FileNotFoundError(font_path)
     font,face_count=_get_font(p,face_index)
     cmap=set()
@@ -44,7 +45,7 @@ def assess(font_path, text, face_index=0, locale=None):
       'font_family':get_name(1),'locale_requested':locale,'regional_face_match':locale_match,'font_subfamily':get_name(2),'postscript_name':get_name(6),
       'face_index':face_index,'face_count':face_count,'text':text,'glyphs_checked':len(present)+len(missing),
       'missing':missing,'covered':present,'coverage_ok':not bool(missing) and locale_match is not False,
-      'browser_font_loaded':'NOT_VERIFIED','visual_reference_match':'NOT_VERIFIED',
+      'license_status':'NOT_VERIFIED','browser_font_loaded':'NOT_VERIFIED','visual_reference_match':'NOT_VERIFIED',
       'note':'cmap presence does not prove shape quality, licensing, or browser use'
     }
     font.close()
