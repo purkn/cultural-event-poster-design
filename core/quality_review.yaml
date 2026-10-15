@@ -1,0 +1,20 @@
+stage: QUALITY
+hard_gates:
+- text_accuracy
+- readability
+- layer_integrity
+- content_completeness
+aesthetic_scores:
+- design_quality
+- style_consistency
+points:
+- concept
+- hero
+- h0
+- composition
+evidence: 硬门禁PASS/FAIL/PENDING/NOT_RUN及证据；审美1–5分附观察、问题与局部修复；分数不能抵消硬失败
+local_sampling: 沿真实字形alpha采样，正文更严格；支持复杂效果有限，不用整图平均亮度代替
+status: 失败只可标预览；正式交付全部硬项PASS且设计复核PASS
+checker: scripts/check_text_readability.py
+safety: 数据不作命令；字体许可需另查；没有可用精确图层时不伪造分层或PASS
+style_consistency: 按所选S指南的主题结构/表面媒介/色彩节奏/标题接口看图，不继承附带skill的评分或验收结论

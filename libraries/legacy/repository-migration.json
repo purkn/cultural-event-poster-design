@@ -1,0 +1,2722 @@
+[
+  {
+    "old": "requirements.txt",
+    "archive": "libraries/legacy/repository-before-flow.zip!/requirements.txt",
+    "sha256": "1631e4329513d6ecdb53733ff9104275eb7455acb96d20121ec37585ddf7b45d"
+  },
+  {
+    "old": "CHANGELOG.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/CHANGELOG.md",
+    "sha256": "d568eab61140508bc2c3bf3cef764b2eb5978fa576661e9fa36e353db7710ce1"
+  },
+  {
+    "old": "README.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/README.md",
+    "sha256": "a40b639aebbb69c38d8f86836736994348dbb43a4070786ff0d3cbb80755d9e6"
+  },
+  {
+    "old": ".gitignore",
+    "archive": "libraries/legacy/repository-before-flow.zip!/.gitignore",
+    "sha256": "c36447fbcb5642954f753c71c11a82a42ae48fd30025b5ccde9dfc3e6fafdfe9"
+  },
+  {
+    "old": "SKILL.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/SKILL.md",
+    "sha256": "66b2f263d20a51824e3275aff42b229b298e080eee56ed34145b5eb6bd71b56f"
+  },
+  {
+    "old": "manifest.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/manifest.json",
+    "sha256": "6d2c3ccbfd59a560930c6226f18e57be7fb45460f916b52a41e1e1b76ad2b975"
+  },
+  {
+    "old": "ACTIVE_RULE_INDEX.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/ACTIVE_RULE_INDEX.md",
+    "sha256": "f491bc02cef226b199998163b417b8f78ab66e0386bcd2b6707a7596c1c0744f"
+  },
+  {
+    "old": "collaboration/REFERENCE_BUNDLE_FORMAT.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/collaboration/REFERENCE_BUNDLE_FORMAT.md",
+    "sha256": "e48d9639ba96aa421637733eece81b262dc4ce6468c485fd3bb3852b67be0cd4"
+  },
+  {
+    "old": "feedback_registry/fermentation_negative.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/feedback_registry/fermentation_negative.json",
+    "sha256": "688112a457e11b9705f60ae4ccec1f6c4277e1d7a31408abdb14429e12e0030c"
+  },
+  {
+    "old": "core/reference_library_ingestion.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_library_ingestion.yaml",
+    "sha256": "2c09f6bf79f084715f7673af0d848b2ab4025cb361333b9b741139fc796c3652"
+  },
+  {
+    "old": "core/semantic_operator_library.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/semantic_operator_library.yaml",
+    "sha256": "f79e2343f4340f30f8ca12ebc8b034561cd0e5b80ec844e41f1c93b1730a9962"
+  },
+  {
+    "old": "core/theme_specificity_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/theme_specificity_gate.yaml",
+    "sha256": "af0a61ddfc7ac75917f3446ccbf8cc260c123ea586fe0fd337c06e99a771cca9"
+  },
+  {
+    "old": "core/evidence_scoring.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/evidence_scoring.yaml",
+    "sha256": "6fa199862328e6a397bc1f2e16cb0cefda25a2d15577935e3991382be350c31e"
+  },
+  {
+    "old": "core/reference_comparison_critic.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_comparison_critic.yaml",
+    "sha256": "8670be463b5c34e5a47301d7e8b44e0d5abf7e45670580d7b9dcda923d76c1b8"
+  },
+  {
+    "old": "core/visual_opportunity_map.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/visual_opportunity_map.yaml",
+    "sha256": "70bc4e18de207fca72bab72d14abdc98fdd8da985ec01a09748507dd54f1d4f9"
+  },
+  {
+    "old": "core/chinese_typography_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/chinese_typography_gate.yaml",
+    "sha256": "21fa32583600bede670b8ed77a1d5ec1561efe0621021667122a1ca533579a49"
+  },
+  {
+    "old": "core/operator_selector.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/operator_selector.yaml",
+    "sha256": "e80d16ac9a395ebc2d53b4c5bf8d35ac2ac4b3b54f874daa5da3199be208d57b"
+  },
+  {
+    "old": "core/concept_review_rubric.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/concept_review_rubric.yaml",
+    "sha256": "d08cc049c5b99b7ad1734d4dd7800dfef15af87e55c28612a362cdd4ccd40f41"
+  },
+  {
+    "old": "core/safe_template_penalty.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/safe_template_penalty.yaml",
+    "sha256": "0858d56f2b0660fa4cac00afabcece1cf0bc27fde629c82dbf9f66f5875d3f64"
+  },
+  {
+    "old": "core/style_router.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/style_router.yaml",
+    "sha256": "99bb7e25620de175f64028768b95492d7ce7d0dfff14c812ffa6b991e0f2dfa8"
+  },
+  {
+    "old": "core/reference_retrieval.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_retrieval.yaml",
+    "sha256": "ff2cd1e67be050ec1a063fd80f8ae4310c976126e64ac6da55a63598db316a57"
+  },
+  {
+    "old": "core/lead_validity_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/lead_validity_gate.yaml",
+    "sha256": "c2f29a07382b3ef10a0c249d7aec4ad5b13f294f0fbbdc534a3ec525a44bedfc"
+  },
+  {
+    "old": "core/shortcut_resistance.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/shortcut_resistance.yaml",
+    "sha256": "ea422576019569c41f46a6c1df23ee25e7d47a6ec68d78fdbee99bdeb7731e46"
+  },
+  {
+    "old": "core/h0_strategy_router.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/h0_strategy_router.yaml",
+    "sha256": "3a67eb328e9072f6fe06a5b16b830a2114ee13181ea7590c293a531b47a9626f"
+  },
+  {
+    "old": "core/genericness_penalty.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/genericness_penalty.yaml",
+    "sha256": "b8f647de85738042e195d74ec9dfd7bffaf46a466b4c84a0cf99d63cb861b34a"
+  },
+  {
+    "old": "core/reference_blueprint_contract.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_blueprint_contract.yaml",
+    "sha256": "46712c2f596665fbcfb5ad956cb49ecb9ffd1884f679e5b49a411608ddbb67da"
+  },
+  {
+    "old": "core/typography_reference_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/typography_reference_gate.yaml",
+    "sha256": "616c07249d854423f6c9770f3bc439a41a7eea8ff8d80083bc3cb6904398cb92"
+  },
+  {
+    "old": "core/reference_relative_critic.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_relative_critic.yaml",
+    "sha256": "3756bc5b9424dcb0d4504671b51fc556ec794bda08a0d036de3971c16c438e9e"
+  },
+  {
+    "old": "core/coverage_gap.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/coverage_gap.yaml",
+    "sha256": "eedf0f8da60f388a84218a997a3de526f059a4146f20f79ff208053e67aab08a"
+  },
+  {
+    "old": "core/glyph_safe_artword.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/glyph_safe_artword.yaml",
+    "sha256": "114a0edbcd152da4df364b9fb4463e76b9ff33d1c677cfffebc90b359a7093d5"
+  },
+  {
+    "old": "core/concept_embodiment_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/concept_embodiment_gate.yaml",
+    "sha256": "a2ab7274462c6950079f618a05019eef3ed26b2157c816e86a228b908a0619ca"
+  },
+  {
+    "old": "core/reference_role_decomposition.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_role_decomposition.yaml",
+    "sha256": "3fbbb45aba7710d4ee9df97b0dc435857051fe2c759ac3a09423cb6cf898cc9c"
+  },
+  {
+    "old": "core/design_quality_scores.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/design_quality_scores.yaml",
+    "sha256": "223be4c1b25be3b36ea70717dfb11a24bb3f52f8c69d6bc54996501c3cfe53f4"
+  },
+  {
+    "old": "core/negative_space_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/negative_space_gate.yaml",
+    "sha256": "ce31fa20d0359485a79f1990ace937009aaf72489da8bf31959de67ccbcae53b"
+  },
+  {
+    "old": "core/asset_affordance_engine.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/asset_affordance_engine.yaml",
+    "sha256": "d6f5abe054aa9a4cd14ef3978b246dfe7a7e93e91607d1aba75224ef5db6e3bc"
+  },
+  {
+    "old": "core/route_competition.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/route_competition.yaml",
+    "sha256": "e438f46eb652c5507814aae9c86410a4d5d3e4acdd64fd4331c6d2e0ee5badcc"
+  },
+  {
+    "old": "core/artword_specificity_test.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/artword_specificity_test.yaml",
+    "sha256": "2c6aa13a78ac697d0b4867ae8f439f80831e032f551ff2a4c26848c7a1f4aa00"
+  },
+  {
+    "old": "core/reference_bundle_ingestion.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_bundle_ingestion.yaml",
+    "sha256": "dd38e96a38fa76fc3f33fde575ee2a7c286df2e8099f4862c104c07e72794237"
+  },
+  {
+    "old": "core/medium_surface_fidelity_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/medium_surface_fidelity_gate.yaml",
+    "sha256": "b73dec8174827b429f4ccdd011a59b3d6b07fffefc74aace41b44127a1fd2e3e"
+  },
+  {
+    "old": "core/posterization_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/posterization_gate.yaml",
+    "sha256": "1d708d35e98a8169ced4a9499079f1ed474c435ff8681664fd67726f399d8a67"
+  },
+  {
+    "old": "core/concept_style_separation.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/concept_style_separation.yaml",
+    "sha256": "9fffdfef4572cdea225f214e750cdc5e8b81bb772a84811750800c12aa48c642"
+  },
+  {
+    "old": "core/style_normalization.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/style_normalization.yaml",
+    "sha256": "248d9a1fbb3c9ac7d20c64eb355372457ffbf58cd962d10ae15e4c0a80c0dd11"
+  },
+  {
+    "old": "core/rough_prompt_contract.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/rough_prompt_contract.yaml",
+    "sha256": "211aeff0591e0565d323d91a5b1ee858141c7cb4ae5b1c07193ba95c4c6d9c53"
+  },
+  {
+    "old": "core/anchor_reference_policy.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/anchor_reference_policy.yaml",
+    "sha256": "f6fb7ed31af5566149212c287b5ed4df9a19da3d95f2ff5e12b7c2739f230bb4"
+  },
+  {
+    "old": "core/reference_delta_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_delta_gate.yaml",
+    "sha256": "f9750e5221aec712f2e52526058bb7ec2df11c24779d63f3fd1fb4ef956a339c"
+  },
+  {
+    "old": "core/h0_design_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/h0_design_gate.yaml",
+    "sha256": "f94407f83a4bfd12f3ebc37415020bfe2d5e5063e897981ca4aaf698cb09cd1d"
+  },
+  {
+    "old": "core/universal_poster_critic.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/universal_poster_critic.yaml",
+    "sha256": "9c20b3f2266d28891aa7bf17fd0a8dd1cf4244cf2d909d36f9bb737cb853d3ea"
+  },
+  {
+    "old": "core/information_fit_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/information_fit_gate.yaml",
+    "sha256": "70feeedccd325c3b783688930f6259a45dcb0259542682828e70b06b92a6b298"
+  },
+  {
+    "old": "core/strong_anchor_mode.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/strong_anchor_mode.yaml",
+    "sha256": "f95428de765ba6c792dc086e1532a652fe4fa1d619e560ff00cfea3041b3f263"
+  },
+  {
+    "old": "core/autonomous_execution.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/autonomous_execution.yaml",
+    "sha256": "dff6d02fd4ff4333eca2b0d85b28d5ba57dd6af66eca96d971eabb31ed3ee535"
+  },
+  {
+    "old": "core/semantic_decoration_ban.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/semantic_decoration_ban.yaml",
+    "sha256": "bb4b0969445b18329d2d16262fb7a8bf2168c26e356aae6392912eb315507512"
+  },
+  {
+    "old": "core/palette_structure_gate.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/palette_structure_gate.yaml",
+    "sha256": "a30f5fd18e554cc95c7fa1b10d2ebeb36655066efe46ea47b82b6ef93dd152a8"
+  },
+  {
+    "old": "core/reference_deconstruction.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/reference_deconstruction.yaml",
+    "sha256": "495cc2c52a86083782e55e4d009e22d4ff6ba9dc0e7f63abccfc4da989e3dcbb"
+  },
+  {
+    "old": "core/lead_reference_policy.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/core/lead_reference_policy.yaml",
+    "sha256": "2017b5b118f6ac7c342831f441e8a9e220e06a3ad2d2f05acb3cb6c31cff7159"
+  },
+  {
+    "old": "tests/test_route_compiler.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_route_compiler.py",
+    "sha256": "544714361c4d077002a6aaf3dc3db4b32b47fbebe0ef270bc44cc20908d7ab1e"
+  },
+  {
+    "old": "tests/test_font_assurance.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_font_assurance.py",
+    "sha256": "cf2ec32fcf6c19e99e3fc37e8df8df74a91bbbee6ab8c187fa58d4ed18b3af66"
+  },
+  {
+    "old": "tests/review_fixtures.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/review_fixtures.py",
+    "sha256": "76bb7ee4d052c607a5167d25d2ea1fd2c10d5f32a72e5d2392472f66a1f06c42"
+  },
+  {
+    "old": "tests/test_reference_library.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_reference_library.py",
+    "sha256": "1636abd23b9d01889de03e3255834231c8c515711052f33912751332b1607def"
+  },
+  {
+    "old": "tests/test_poster_review.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_poster_review.py",
+    "sha256": "c140474b88229e67474efb9ad0af284b61a138b8e9efc78d1d9a732e2fb2043f"
+  },
+  {
+    "old": "tests/test_brief_preflight.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_brief_preflight.py",
+    "sha256": "013506b183bfa031f53500bbf247b43f694d76d3c0793bd92795c0bafd207db1"
+  },
+  {
+    "old": "tests/test_rule_contracts.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/test_rule_contracts.py",
+    "sha256": "57a89887b7426393e7c02a5b0fca10f55bc355be44fb780d8e39bd0b2e251fb3"
+  },
+  {
+    "old": "tests/font_fixtures.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/tests/font_fixtures.py",
+    "sha256": "cbe0e56a5d479cd93358b6c8616043089971bb0422a5cffbcdb130afc192c6cb"
+  },
+  {
+    "old": "reference_library/facets.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/facets.json",
+    "sha256": "501755ec0d6e131701cb749e05ca430ee1725086b778ed0e6819f426073e3221"
+  },
+  {
+    "old": "reference_library/aliases.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/aliases.json",
+    "sha256": "fe3e291c5e9c008379faa63180d8083499ec1230e2207cc8520c5a2d834bc3c2"
+  },
+  {
+    "old": "reference_library/README.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/README.md",
+    "sha256": "66a5e8c844cb655ca53d30eb6316325ef6bc0452500d6bcfdf9cdce8a574ac68"
+  },
+  {
+    "old": "reference_library/review_queue.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/review_queue.json",
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+  },
+  {
+    "old": "reference_library/coverage.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/coverage.json",
+    "sha256": "de5e49ecf7506afe9f3e33ac2d23c3f5ce11174e37b5a01f09b577b6409481f0"
+  },
+  {
+    "old": "reference_library/index.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/index.json",
+    "sha256": "2739f8b2aec393d5a1fe12abedd9b0ba49d84043b8855016ee1adf8b45767988"
+  },
+  {
+    "old": "reference_library/index.csv",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/index.csv",
+    "sha256": "c4346579e0362dc7b460fd3fbb79b1845b3355aa331fe77ee78a415bdce7d519"
+  },
+  {
+    "old": "docs/REFERENCE_SYSTEM.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/docs/REFERENCE_SYSTEM.md",
+    "sha256": "bb4e11d259f1152cdfcffd340ee5d01b00fded2eb6ad1d4e08e2762963e760b7"
+  },
+  {
+    "old": "docs/TYPOGRAPHY_SYSTEM.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/docs/TYPOGRAPHY_SYSTEM.md",
+    "sha256": "bcc7f6f9c9ff2e7f82393f1bda7bf0dcf088216b8015534d24c8d975247b6fc0"
+  },
+  {
+    "old": "docs/BRIEF_AND_ASSETS.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/docs/BRIEF_AND_ASSETS.md",
+    "sha256": "1d3b3394b5f4d20c0f3b9f38cc4c41104476698d98c04959b6a1a069b9368f51"
+  },
+  {
+    "old": "docs/QUALITY_AND_DELIVERY.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/docs/QUALITY_AND_DELIVERY.md",
+    "sha256": "8b042d0e62452334dc55048d29616c54e71cf441227c7f66039c34b670072f90"
+  },
+  {
+    "old": "docs/DESIGN_AND_ROUTES.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/docs/DESIGN_AND_ROUTES.md",
+    "sha256": "010cc8b827fe11c786e54b1b8bbad37d12eb3ede6b77b97481ea53ff62eedf7e"
+  },
+  {
+    "old": "schemas/route_input.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/schemas/route_input.schema.json",
+    "sha256": "4986b87f3200f9099828582a994cf9823e8f5942e726d65c73b8273836846669"
+  },
+  {
+    "old": "schemas/lead_validity_report.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/schemas/lead_validity_report.schema.json",
+    "sha256": "0bbca90cae003b87cfa0dd4f3a86e724892b167bff3809b6de28b87db677a20a"
+  },
+  {
+    "old": "schemas/type_blueprint.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/schemas/type_blueprint.schema.json",
+    "sha256": "2f3722bede97904e6fe6ce43d2d74e16ec89b458943e06dd5dedeb4fcf32f0d5"
+  },
+  {
+    "old": "schemas/reference_delta_report.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/schemas/reference_delta_report.schema.json",
+    "sha256": "57ea0a9249030b778ac579ec3a6fbf9bbb05f07c7427283430d7fc8e6863e519"
+  },
+  {
+    "old": "schemas/reference_blueprint.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/schemas/reference_blueprint.schema.json",
+    "sha256": "8ab8be02fb3105283cd765a7cf8f084ba7397d1d6e9a30bfe4dee5187e42efcd"
+  },
+  {
+    "old": "audit/READABILITY_AUDIT_V019.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/READABILITY_AUDIT_V019.md",
+    "sha256": "0bd9c26484185a2ce6ffbaf5531ec280c27b451700c524826bd64ded0dc20179"
+  },
+  {
+    "old": "examples/brief_incomplete.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/examples/brief_incomplete.json",
+    "sha256": "244d3d6ea890ab557546fabcf7c8855176336b074a30ca71ed86781243d2f350"
+  },
+  {
+    "old": "examples/type_blueprint_dunhuang_diagnostic.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/examples/type_blueprint_dunhuang_diagnostic.json",
+    "sha256": "75c0b6a9bc462151bef3daf464a2e5d82b25356aa782b7eac938edb9a29f35c1"
+  },
+  {
+    "old": "examples/brief_complete.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/examples/brief_complete.json",
+    "sha256": "ecc54dff5b5b4e24e1e050f7b6e727ce7ce2449b064283dba937d6a7d068cbfb"
+  },
+  {
+    "old": "examples/reference_blueprint_example.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/examples/reference_blueprint_example.yaml",
+    "sha256": "a8676430621db50a7857a927003d01e442371e79e5cf33a86435ee0bd1a201b2"
+  },
+  {
+    "old": "scripts/reference_library.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/reference_library.py",
+    "sha256": "bec7ee378b7bf1176306f7973ad5f5d9116e36001b59b4236670cda6f31ce8b0"
+  },
+  {
+    "old": "scripts/create_reference_comparison.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/create_reference_comparison.py",
+    "sha256": "5404d5d745dfe9851fce36b92807ae6b7122e5e9ffd537a7e4b005a63d8384f2"
+  },
+  {
+    "old": "scripts/render_type_specimen.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/render_type_specimen.py",
+    "sha256": "6399706a34add6661f5a286b15efd228d5d2dc55b3b7ac783a564241039a8517"
+  },
+  {
+    "old": "scripts/font_coverage.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/font_coverage.py",
+    "sha256": "e8aec611351d6a4922ac7305c88f79175b76ef3d50bc4edfae31d666ab843dbf"
+  },
+  {
+    "old": "scripts/type_browser_audit.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/type_browser_audit.py",
+    "sha256": "0a4ff31a2388462ed55863c55034fe458fd58c5421ece74200471f445563a228"
+  },
+  {
+    "old": "scripts/compile_routes.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/compile_routes.py",
+    "sha256": "6c56e28f96bef3968d92d717a246a0ae0e467bb6cf0105f07ca4326181022fb2"
+  },
+  {
+    "old": "scripts/preflight_brief.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/preflight_brief.py",
+    "sha256": "154870b8f1d9415881ad24d85d76dde5055b14af11536219f21a1e5192e5a61f"
+  },
+  {
+    "old": "scripts/poster_review.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/scripts/poster_review.py",
+    "sha256": "984ee5564cca1e66fb5a6b2f6ec32efde6bec11078278ed24d86e51bdcf8ae8f"
+  },
+  {
+    "old": "layout_engine/README.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/README.md",
+    "sha256": "ac3f082445e94e86d5aa02a03d09fea0162d2bbc7c9a771c6b372ef45056d8c2"
+  },
+  {
+    "old": "layout_engine/SVG_FIRST_LAYOUT.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/SVG_FIRST_LAYOUT.md",
+    "sha256": "ec1d3800bce93aabb2b8fedd39de34f32e244c813193263c635037e057172a25"
+  },
+  {
+    "old": "reference_library/previews/contact-008.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-008.jpg",
+    "sha256": "4b81dbb31a463f310dc0cd1689608311f871bb5f81e99537d78a795fede058b7"
+  },
+  {
+    "old": "reference_library/previews/contact-009.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-009.jpg",
+    "sha256": "749af973d9fa9a97ab007a2fe971509a7903caf0a651bf28bd1ea9eb66b2a389"
+  },
+  {
+    "old": "reference_library/previews/gallery.html",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/gallery.html",
+    "sha256": "983fb7bd5e9c2b0f064a9f538c5b78b6f701798ae7f0f9b1dcd22869f9848656"
+  },
+  {
+    "old": "reference_library/previews/manifest.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/manifest.json",
+    "sha256": "9ffe8f5e3e62197491f95a79409cfbdae8af1e4c5b884bc398357a8789e732ff"
+  },
+  {
+    "old": "reference_library/previews/contact-010.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-010.jpg",
+    "sha256": "5a33415965329292725443a36c84b33c7c7a9a29f97eadb688f5d7bc1d9f2a71"
+  },
+  {
+    "old": "reference_library/previews/contact-004.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-004.jpg",
+    "sha256": "1794ec40ebeda47f70f4f5c1480a9ce84d45e16838db4a9bde7252130b9892cc"
+  },
+  {
+    "old": "reference_library/previews/contact-005.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-005.jpg",
+    "sha256": "6a16b2d20df9f86f77cb5dce14eb00286c0ec59b08337aa0e0c93e149791a35b"
+  },
+  {
+    "old": "reference_library/previews/contact-007.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-007.jpg",
+    "sha256": "fdf29f8d4f69f4999a1dfe1e6a16565a25ab6116e4d051feb6dddfe5abeb1243"
+  },
+  {
+    "old": "reference_library/previews/contact-006.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-006.jpg",
+    "sha256": "a997c57de3959eb780d1b1444f8febf0a0b696b1a0db53833a00d3665a1eb683"
+  },
+  {
+    "old": "reference_library/previews/contact-002.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-002.jpg",
+    "sha256": "9b662bff015bc159a6235e756030e8d306af5fc0e5ae13aed50a90edd5827635"
+  },
+  {
+    "old": "reference_library/previews/contact-003.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-003.jpg",
+    "sha256": "aa1157476d5ff683c6d9c2f72d688842fdb9635e6cac650bed88048c03c5ac8d"
+  },
+  {
+    "old": "reference_library/previews/contact-001.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/previews/contact-001.jpg",
+    "sha256": "8ce502c93db2da70368ba1f36c324f72898ab7cf05aa73173068c8ad76b0608f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/manifest.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/reference_library/collections/keyword-20261012/manifest.json",
+    "sha256": "3865d0bdf1e323fb7bb4c2bb2d7b84ac169133482c2f64e61d3bb8fd007a0763"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-359_文化节庆_满版构图_无衬线_灰蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-359_文化节庆_满版构图_无衬线_灰蓝.jpg",
+    "sha256": "5ec1608ae3b53f23d3d4a934d7da7e3212869e61a756698f2d1d8d4dc277424d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-237_文化节庆_非对称网格_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-237_文化节庆_非对称网格_无衬线_蓝白.jpg",
+    "sha256": "fdebca3933bbd06c9f724b1b9b70d67510b17e645a040e3b2817794296e9f3f3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-311_商业推广_中心轴对称_手写_米白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-311_商业推广_中心轴对称_手写_米白黑.jpg",
+    "sha256": "b45a271abd0ea09285ee5245dfbc0879b6aec6657366d48742aae5df0067859f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-048_音乐演出_中心轴对称_衬线_蓝紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-048_音乐演出_中心轴对称_衬线_蓝紫.jpg",
+    "sha256": "2b72a3c6a742318322b9a5c43cb34be3d9c8978c494b2df15caa2147dfde794a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-223_商业推广_模块化网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-223_商业推广_模块化网格_无衬线_白绿.jpg",
+    "sha256": "cb87a90780e4119d307a91ff5797082664632589d2b539404028b4631bdde105"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-374_艺术展览_重复阵列_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-374_艺术展览_重复阵列_无衬线_黑白.jpg",
+    "sha256": "7b0173d93c7e87466c2a4b1bc046c14436ac199ef2e9521e03f0e60a14b3148c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-187_艺术展览_中心轴对称_衬线_白粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-187_艺术展览_中心轴对称_衬线_白粉蓝.jpg",
+    "sha256": "c20eb48afc407409d79f9ee0f8560ec7e4c0f6bad92a1b7550dc9a7accb89b55"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-104_艺术展览_上下分区_衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-104_艺术展览_上下分区_衬线_白多色.jpg",
+    "sha256": "93fa8242f9a33b149fcc1c33af5ffaa68b58e2cb35784c862254dc2f697c5d42"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-099_文化节庆_中心轴对称_无衬线_绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-099_文化节庆_中心轴对称_无衬线_绿蓝.jpg",
+    "sha256": "5de22263bae2d329501718333a247a8ee6d1db67a0097f3ce95f45107df86be7"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-034_商业推广_满版构图_无衬线_棕黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-034_商业推广_满版构图_无衬线_棕黑.jpg",
+    "sha256": "5f4e5b33182339dea2db9780f772e80b23e4ff8e7d080b72cb22247d644294a0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-143_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-143_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "sha256": "7dc894500401d88ffa2402607ad7969936dee649896fa922dba77285ac21c328"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-152_文化节庆_满版构图_无衬线_红黄蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-152_文化节庆_满版构图_无衬线_红黄蓝.jpg",
+    "sha256": "a86cefabf217c10f04f8e8f99d788c7edb50b0bdfe21f6f43c3d953f930b99a5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-230_文化节庆_中心轴对称_书法_红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-230_文化节庆_中心轴对称_书法_红蓝.jpg",
+    "sha256": "9deb3781e2d129bd4deb5e39fdd5d77702d825688982dbb0af7c59a08754b4bf"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-301_社区活动_模块化网格_书法_白蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-301_社区活动_模块化网格_书法_白蓝黄.jpg",
+    "sha256": "b00a82a6b7c1a337b677734014ba3f8920c6f7a08cf3649255f52b6dcdd1d1a4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-209_艺术展览_满版构图_书法_绿米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-209_艺术展览_满版构图_书法_绿米白.jpg",
+    "sha256": "076dddd6438a437bfdf6813f8b9043bda86cfb69178bec1c5eeb70a9b8dddd9f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-361_文化节庆_中心轴对称_书法_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-361_文化节庆_中心轴对称_书法_白粉.jpg",
+    "sha256": "f214a8d3845f49279ea7372193d7b9c421629fa38232a3205bc7889adb9ef731"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-085_文化节庆_非对称网格_无衬线_白灰.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-085_文化节庆_非对称网格_无衬线_白灰.jpg",
+    "sha256": "1222bc486b5802f59addda61fa27e41496ad2e5839500c40d648d60183c71afb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-364_商业推广_模块化网格_衬线_白黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-364_商业推广_模块化网格_衬线_白黄.jpg",
+    "sha256": "393dd9cf6865146fb289daa034981d7ca21d9831f69e7568bda3b42ee9ad897a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-214_社区活动_非对称网格_手写_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-214_社区活动_非对称网格_手写_白蓝.jpg",
+    "sha256": "26a89833b0078c041816e1b00590487d7f35f671b0236496d521bc05ca526179"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-221_艺术展览_模块化网格_无衬线_棕绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-221_艺术展览_模块化网格_无衬线_棕绿.jpg",
+    "sha256": "3ffd5ffe5aa70b37caa472823319698f51ded79e4a53cc6b0a561d3ad54ffb21"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-323_艺术展览_模块化网格_无衬线_白青.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-323_艺术展览_模块化网格_无衬线_白青.jpg",
+    "sha256": "a12250c8ac987c461ea7d931207c7d1059e883f2e66a54e6566d23ea05b57d75"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-216_艺术展览_自由拼贴_无衬线_粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-216_艺术展览_自由拼贴_无衬线_粉蓝.jpg",
+    "sha256": "bd3bf256bafb6ce411301d374a068b6e0495475cd0675b34fd7c82e5c534e547"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-380_音乐演出_中心轴对称_无衬线_白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-380_音乐演出_中心轴对称_无衬线_白黑.jpg",
+    "sha256": "c6276f2ef54db753d6d97affe436875665a0f1a07e313f595b265606d917f1e1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-246_社区活动_上下分区_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-246_社区活动_上下分区_无衬线_白蓝.jpg",
+    "sha256": "cdea3e6e36cb75f0376bf29a50d6b6ff5c8353d2c954f19ef494b05cb1d9904a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-372_艺术展览_重复阵列_无衬线_白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-372_艺术展览_重复阵列_无衬线_白黑.jpg",
+    "sha256": "39f9c73a8309793e1520488e09f123e3550944ee3123a7a1fd9dea81a121808a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-228_市集_中心轴对称_书法_绿红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-228_市集_中心轴对称_书法_绿红.jpg",
+    "sha256": "ad42babf4e76a6bb3aa764e67101944ae59f92da0ef188ffdc7bff78b963b2f8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-112_社区活动_非对称网格_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-112_社区活动_非对称网格_无衬线_白多色.jpg",
+    "sha256": "ebf6e1e7571950800b2fb04952fadf9a80550c0fedede8c5d0162d27f3686dc8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-148_文化节庆_中心轴对称_衬线_蓝红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-148_文化节庆_中心轴对称_衬线_蓝红.jpg",
+    "sha256": "2d9cccc5c491620ef1cccc022702e0d65eba4414d804e59c5f1c7460324ae881"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-094_文化节庆_中心轴对称_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-094_文化节庆_中心轴对称_无衬线_白蓝.jpg",
+    "sha256": "c23781974de880c28036fdf3223f79562b1e7fc2bf8ad263c6843a25b5caba55"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-242_文化节庆_重复阵列_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-242_文化节庆_重复阵列_无衬线_白蓝.jpg",
+    "sha256": "41696c1ae52ec0103a227f8909c52293f8aa4ea98e1512f8f4354d5851dfe725"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-252_音乐演出_上下分区_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-252_音乐演出_上下分区_无衬线_蓝白.jpg",
+    "sha256": "c3e2f05b7da9c4457b14cb566e6264fe2de54fed759654ad583f7c82563f6b75"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-300_市集_模块化网格_无衬线_绿橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-300_市集_模块化网格_无衬线_绿橙.jpg",
+    "sha256": "9d681e245f9ddee45908e2351bc3b272a6fcab315da65cb7a8054714552b527a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-021_市集_非对称网格_手写_橙粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-021_市集_非对称网格_手写_橙粉.jpg",
+    "sha256": "f0ec56f0ab8e07505b44ace4a634098b04ab054daebbaa622277b2a30440dbf2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-157_艺术展览_中心轴对称_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-157_艺术展览_中心轴对称_无衬线_蓝白.jpg",
+    "sha256": "abf2b61750df809909987bbaedaa811ba898078bcdcc632b82dde5179f6804da"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-267_艺术展览_中心轴对称_衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-267_艺术展览_中心轴对称_衬线_白红.jpg",
+    "sha256": "eba4ab86a410dfcbc87bf62fb9fb4925b298992a4280b873032bf17a7a30bce8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-144_艺术展览_上下分区_无衬线_灰蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-144_艺术展览_上下分区_无衬线_灰蓝.jpg",
+    "sha256": "0379774b213934612e47d780b3def242a5fa65a3263b7a714513a957f6f2a183"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-138_音乐演出_上下分区_衬线_橙黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-138_音乐演出_上下分区_衬线_橙黑.jpg",
+    "sha256": "1b3c214bb001ac4bd292257162bb2a063fd1d6069f88907cee9f74f9241bf529"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-280_艺术展览_满版构图_无衬线_白红绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-280_艺术展览_满版构图_无衬线_白红绿.jpg",
+    "sha256": "027f0e4c33aafd3200c2be2d8d45f266eaa5c09fe558a987bbdf29bce6a1d85d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-248_艺术展览_非对称网格_衬线_白青.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-248_艺术展览_非对称网格_衬线_白青.jpg",
+    "sha256": "8f9839371762d36eeb71acfb56ce98cfcb0787a1876cc8bc117e8d8e35619686"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-060_艺术展览_满版构图_无衬线_蓝绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-060_艺术展览_满版构图_无衬线_蓝绿.jpg",
+    "sha256": "3e9bc872fc635f838938d3ebfc9fce8eb4d61cc137dc1edf2b793ca29914c7f4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-351_艺术展览_左右分栏_无衬线_白米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-351_艺术展览_左右分栏_无衬线_白米白.jpg",
+    "sha256": "f2e66a33ccd20e48fe6bfd5d737c856032176e40e8283c2a16efd9a733b5cf5c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-395_艺术展览_模块化网格_无衬线_白棕黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-395_艺术展览_模块化网格_无衬线_白棕黑.jpg",
+    "sha256": "50e26de79bb4a8d98c30fb22933991c0ab93ee4ef0984996f5ed2e29405e3290"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-201_艺术展览_满版构图_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-201_艺术展览_满版构图_无衬线_黑白.jpg",
+    "sha256": "5851ba5a19634a8039d0bb26a83af3f5ed77d564509a133d91a68f896791b181"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-174_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-174_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "sha256": "46928e312f998ba80712f5af200a417eba3c00c15f197354eb23ccd5d8ad1212"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-331_艺术展览_模块化网格_衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-331_艺术展览_模块化网格_衬线_白绿.jpg",
+    "sha256": "9563dfd2e9d62d1b31aff41d18cf9dff75874e5cd37646c608a139b6d0de53f6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-293_体育活动_不规则自由布局_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-293_体育活动_不规则自由布局_无衬线_白多色.jpg",
+    "sha256": "3ba85475ebddd09f043a45f500923dc04221935cdb9b9028ac41e9398d299072"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-340_文化节庆_中心轴对称_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-340_文化节庆_中心轴对称_无衬线_蓝白.jpg",
+    "sha256": "834d2e945458a680fada613edaa61a1574decd56ddbe321bb62fd2f5f8374b3a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-103_艺术展览_非对称网格_书法_黄白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-103_艺术展览_非对称网格_书法_黄白.jpg",
+    "sha256": "8a55a348e166c4a3263f222709a65f189c7ea20fe87511c912a68ec1adab1085"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-161_音乐演出_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-161_音乐演出_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "46aa49418d4a5441154061d29a8a1d1bf92ed8a57c8efee2ee7bbeaa9967b38d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-145_艺术展览_中心轴对称_装饰字体_红黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-145_艺术展览_中心轴对称_装饰字体_红黑.jpg",
+    "sha256": "231536a8f05c914c18742ceaa285237f9aa6f909945d76063506edecc352a199"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-183_文化节庆_中心轴对称_无衬线_蓝橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-183_文化节庆_中心轴对称_无衬线_蓝橙.jpg",
+    "sha256": "ef33a990ef62925054080da8b0991146e22d29e23f8c935978339ba0074bcfce"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-231_文化节庆_中心轴对称_无衬线_黄绿紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-231_文化节庆_中心轴对称_无衬线_黄绿紫.jpg",
+    "sha256": "0c8aa19cc97845a9aa4777995ba11b89ea91574d12001b739b328797c5fb560e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-189_艺术展览_模块化网格_无衬线_米白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-189_艺术展览_模块化网格_无衬线_米白蓝.jpg",
+    "sha256": "143c5852830dac49954e8b8f45ec93e883b35d3f1407df4485300adf92278add"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-391_艺术展览_中心轴对称_衬线_灰白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-391_艺术展览_中心轴对称_衬线_灰白.jpg",
+    "sha256": "44af2d3a0210fe9499ec747797c6700078e2ffee5141377bd3fd3580f1c8e467"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-080_商业推广_模块化网格_装饰字体_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-080_商业推广_模块化网格_装饰字体_白多色.jpg",
+    "sha256": "5211364aefc3427f6cda513dae5c8d14cee331e29822585708a64d1ea7abde01"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-398_艺术展览_满版构图_书法_红黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-398_艺术展览_满版构图_书法_红黑.jpg",
+    "sha256": "ffee46ac61ff80ee37f3b5f60dd6771c3e10b9d354b137ab3bb63eb913f71a01"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-026_音乐演出_中心轴对称_衬线_紫白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-026_音乐演出_中心轴对称_衬线_紫白.jpg",
+    "sha256": "c099d78ea8b373e07d65fa1863eae28dfee277ed4150844e033e7a27e6547c2b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-239_体育活动_非对称网格_无衬线_黄橙黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-239_体育活动_非对称网格_无衬线_黄橙黑.jpg",
+    "sha256": "a80b0852bfe4490cd86d72d243fe627463f3c57a4c3141c533b5167faa89c534"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-105_艺术展览_满版构图_书法_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-105_艺术展览_满版构图_书法_蓝白.jpg",
+    "sha256": "b85496905a89795dcf33afc89e778f47ec44f0159ecdb3bc704bf286d64b5d20"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-306_艺术展览_自由拼贴_手写_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-306_艺术展览_自由拼贴_手写_白蓝.jpg",
+    "sha256": "f2f0f609ac8a7bef199c80376ce314268efa421532ead38713c297419303c027"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-304_商业推广_中心轴对称_手写_白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-304_商业推广_中心轴对称_手写_白黑.jpg",
+    "sha256": "415d0df5d601732125141bbdc274d6fe21bb17e3b8e000b2b89bc042341ff11f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-028_商业推广_中心轴对称_手写_米白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-028_商业推广_中心轴对称_手写_米白棕.jpg",
+    "sha256": "d0051e201c70439360d8a29c6cc50e468dff2f42b89513506a83eeda085cfbda"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-298_文化节庆_自由拼贴_手写_白米白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-298_文化节庆_自由拼贴_手写_白米白多色.jpg",
+    "sha256": "23af9cd14b91fc330b5e31e0caeb4c7911bbc36b4c7672ba54a6a87bd0dd1a78"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-253_文化节庆_自由拼贴_书法_白青.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-253_文化节庆_自由拼贴_书法_白青.jpg",
+    "sha256": "a3d8a7e8d373feadfdb2814b210e3e9a9721e0214a61b8099f58eddf9da5aa85"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-014_文化节庆_中心轴对称_书法_米白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-014_文化节庆_中心轴对称_书法_米白绿.jpg",
+    "sha256": "53fdf7214d5088390f010560c2b8f44ab9b41f0d546abb27714cd61297bae847"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-107_文化节庆_中心轴对称_无衬线_紫绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-107_文化节庆_中心轴对称_无衬线_紫绿.jpg",
+    "sha256": "bc66e002438628bed3f60e113d539bbf67d6f78d60186c7daafbb5edf9f59ce2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-128_文化节庆_中心轴对称_无衬线_荧光绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-128_文化节庆_中心轴对称_无衬线_荧光绿蓝.jpg",
+    "sha256": "44346ce6ab64dfc62a0bda55796167a8b1ff41c878e13ee551b2dbd25f3a7365"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-047_艺术展览_不规则自由布局_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-047_艺术展览_不规则自由布局_无衬线_白绿.jpg",
+    "sha256": "9d5bfbf55f68ee870fd0dc538b2d38993b6f9f30b9e5837813f277dbb7045594"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-333_艺术展览_上下分区_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-333_艺术展览_上下分区_衬线_白蓝.jpg",
+    "sha256": "47febf530bfc1612c24973b93a519032881782c21eeca66f2647b291428492d6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-259_艺术展览_中心轴对称_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-259_艺术展览_中心轴对称_无衬线_白蓝.jpg",
+    "sha256": "a74809f9dbfa840b7e979ee3c8f554349adc757a9e6b418724269388c2837d23"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-262_艺术展览_满版构图_无衬线_黑多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-262_艺术展览_满版构图_无衬线_黑多色.jpg",
+    "sha256": "4679d5cea6644a4ac1013a8f32bd489b238dad86b7b3c23827e011f26ff221cd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-199_社区活动_模块化网格_衬线_米白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-199_社区活动_模块化网格_衬线_米白红.jpg",
+    "sha256": "e8ea5f4dd5ab8eab6a66e9ca25d04c4077dd94f560e7eb6879145921104373d8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-337_文化节庆_模块化网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-337_文化节庆_模块化网格_无衬线_白蓝.jpg",
+    "sha256": "1501e6baaa913e9008bdf3555880f73717cd7e6f5729970e3e00c34495a55304"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-205_艺术展览_模块化网格_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-205_艺术展览_模块化网格_无衬线_黑白.jpg",
+    "sha256": "467a4057cbd41f65d8501fbf8705ea5aebdb0bf133c7868f535dc4e4a0beb0f5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-031_商业推广_非对称网格_无衬线_绿红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-031_商业推广_非对称网格_无衬线_绿红.jpg",
+    "sha256": "a9c23be725c2132e14cd62c44be3248bc2f945ffe043f86dfd33170812e971f2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-050_艺术展览_中心轴对称_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-050_艺术展览_中心轴对称_无衬线_白绿.jpg",
+    "sha256": "5fde321e81cef8fedb455e86f07941ccfa8b7e352a15df2bfe6a50fd48ea8c63"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-366_艺术展览_满版构图_无衬线_白黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-366_艺术展览_满版构图_无衬线_白黑蓝.jpg",
+    "sha256": "f137a1e13cc2e8389aa0fa8acaf7a4b5068e949b8a04aa8890b2b5e1908cff6f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-353_音乐演出_模块化网格_衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-353_音乐演出_模块化网格_衬线_白多色.jpg",
+    "sha256": "ec8bb220174e7271e54f523a73b2dbb3327536b6e60322359ec50d72a53c30c7"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-324_艺术展览_模块化网格_衬线_白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-324_艺术展览_模块化网格_衬线_白棕.jpg",
+    "sha256": "567f42371813e16b661c8773eec31d11f239e79ff5033327689a1da54eb1e34d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-046_艺术展览_左右分栏_衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-046_艺术展览_左右分栏_衬线_黑白.jpg",
+    "sha256": "7cfcf8ae9c3dde299e6f8905f47dfaafb6401ddc464d342da25dd04cf7c37cf6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-220_艺术展览_自由拼贴_装饰字体_黑粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-220_艺术展览_自由拼贴_装饰字体_黑粉.jpg",
+    "sha256": "f2b5d3b7f3cf8aed5268ab4dae73ec1fef38923b435018a22872758b8032781b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-101_商业推广_满版构图_无衬线_黑荧光绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-101_商业推广_满版构图_无衬线_黑荧光绿.jpg",
+    "sha256": "71b1ca234ff3e756b3993ff398341d268db47f4f293c2d2e6f59cc3fa97e71d4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-335_艺术展览_自由拼贴_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-335_艺术展览_自由拼贴_无衬线_白蓝.jpg",
+    "sha256": "b3a20f762442397fb10823b71724de4aafd6434e2ee1910acc1ce850ab60ef26"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-260_艺术展览_非对称网格_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-260_艺术展览_非对称网格_无衬线_白多色.jpg",
+    "sha256": "d0a5fde646484fa68288b652fd754fde844988c557e563b43e440acf2558bb22"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-029_市集_中心轴对称_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-029_市集_中心轴对称_无衬线_黑白.jpg",
+    "sha256": "d5491792d51aff5d2d3d3face7537edb2cffabee08a849a6c6def3d5bdeccc0f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-125_艺术展览_中心轴对称_无衬线_黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-125_艺术展览_中心轴对称_无衬线_黄绿.jpg",
+    "sha256": "70ed73737edf73f3db58caaf2f1830152617f90b8d33fd38775a6f0b9184b320"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-053_音乐演出_非对称网格_无衬线_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-053_音乐演出_非对称网格_无衬线_蓝黄.jpg",
+    "sha256": "6f6f2974196cb2fe067979189def6a6e7f77f3034f3549184645140e51e4beda"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-206_文化节庆_不规则自由布局_手写_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-206_文化节庆_不规则自由布局_手写_白蓝.jpg",
+    "sha256": "7dc753e9285ced6e3e697a42d0dbf5fee3b2656c5f0225eb50e46df375f5c106"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-133_艺术展览_中心轴对称_装饰字体_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-133_艺术展览_中心轴对称_装饰字体_白多色.jpg",
+    "sha256": "9186f6ecb5818d81fb39c706331a82f2a86db3ba37b4a7e5b2dc8a8a9e0833ee"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-282_商业推广_中心轴对称_装饰字体_米白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-282_商业推广_中心轴对称_装饰字体_米白红.jpg",
+    "sha256": "18e2b7d21b3b3da86cfad01ff693a3706083bb52fe1f3171fd7a04715e2cab61"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-155_艺术展览_中心轴对称_无衬线_白黄蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-155_艺术展览_中心轴对称_无衬线_白黄蓝.jpg",
+    "sha256": "9b64d3aa9bbed061c349dba2ba272c60d2f6adf4225b78e06788786ec26a2956"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-117_音乐演出_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-117_音乐演出_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "f40112832c4f519e9e5795f16bb938e99953305fdd092c5b8955bcf01eb01f6b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-059_艺术展览_上下分区_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-059_艺术展览_上下分区_无衬线_蓝白.jpg",
+    "sha256": "cba329d623bdcf45d4945aa989cc7def10f1a8bee711328aa7484e8089521d03"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-134_音乐演出_上下分区_无衬线_蓝黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-134_音乐演出_上下分区_无衬线_蓝黑.jpg",
+    "sha256": "ad14501c7986277b9c076cbd630cf85351353f502b8fdf9f32e6017174d7a709"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-195_文化节庆_模块化网格_无衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-195_文化节庆_模块化网格_无衬线_白红.jpg",
+    "sha256": "180bdba4787f57139878e4eb7d0bd5ae45fd8dfc79371ebae8f19738ff39693d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-217_商业推广_中心轴对称_装饰字体_黄红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-217_商业推广_中心轴对称_装饰字体_黄红.jpg",
+    "sha256": "2675097ba23341e8f5b1172f5db41312b7937ce17c63a0b3c4926dcb45df2ba0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-191_艺术展览_自由拼贴_混合字体_白黑橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-191_艺术展览_自由拼贴_混合字体_白黑橙.jpg",
+    "sha256": "a7e3b87f1f60bf3da438d06c96eba7703caebbf90cead73b0ca6e185df8704ce"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-118_艺术展览_上下分区_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-118_艺术展览_上下分区_无衬线_白绿.jpg",
+    "sha256": "58d9882d5bf78cca4ad935fd2d044288a3cc5766edffc6cc18a1bd8f941935a0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-194_艺术展览_重复阵列_无衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-194_艺术展览_重复阵列_无衬线_白红.jpg",
+    "sha256": "a6dc58d98eaecd39ec943423b73fad905401da2319b28db8cb717805bab75829"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-238_工作坊_模块化网格_无衬线_白蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-238_工作坊_模块化网格_无衬线_白蓝黄.jpg",
+    "sha256": "d156abc5180dcbe8b7f2c2a59293ca30fc0e597f256323174e3c8ef2f3ec4d71"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-016_市集_上下分区_手写_黄蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-016_市集_上下分区_手写_黄蓝.jpg",
+    "sha256": "7ff303509ea27b05235dc0910e792e8be2ac76e4fcaf56b0d1f777c3b37d99d8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-379_市集_非对称网格_衬线_白绿粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-379_市集_非对称网格_衬线_白绿粉.jpg",
+    "sha256": "c19900d3536b6b19c7255141df9b4dbfc95baaf654e4566c80b7d1f8c940b652"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-092_艺术展览_模块化网格_混合字体_白米白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-092_艺术展览_模块化网格_混合字体_白米白多色.jpg",
+    "sha256": "a9ab43cffc1a530eed2fe64c654eb3ee16d5719d9c46c8b03e279cbac55520cb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-288_音乐演出_中心轴对称_装饰字体_米白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-288_音乐演出_中心轴对称_装饰字体_米白红蓝.jpg",
+    "sha256": "be11a961f10a0cd2a1cb820c545d0d5eb7290307faddc29bd7c3d170ef3f77b1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-307_艺术展览_自由拼贴_手写_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-307_艺术展览_自由拼贴_手写_白多色.jpg",
+    "sha256": "a8986cc33f173dd6894caa85520e9a46ef8a5dcdd6cb630fc8e3d75d61d4d879"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-305_工作坊_中心轴对称_书法_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-305_工作坊_中心轴对称_书法_白绿.jpg",
+    "sha256": "697a31cf984d8041a23a2529517270c42fcce9f877888483d6c4b10943158094"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-057_艺术展览_上下分区_装饰字体_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-057_艺术展览_上下分区_装饰字体_蓝白.jpg",
+    "sha256": "bb9fc9f92cc05cfb1e2b927d4329e1d4bda9f697e504154a2bc349ed06e8ab97"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-024_艺术展览_非对称网格_无衬线_灰黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-024_艺术展览_非对称网格_无衬线_灰黑.jpg",
+    "sha256": "b1da7387e448dcb64665815ceb5f39919014642937185188854bf903fdd09fec"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-142_艺术展览_非对称网格_无衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-142_艺术展览_非对称网格_无衬线_白红.jpg",
+    "sha256": "c8525cf0fced4b300765b823589e77d67797d6315549df15b4f5ea94f849243f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-284_社区活动_中心轴对称_无衬线_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-284_社区活动_中心轴对称_无衬线_白红蓝.jpg",
+    "sha256": "775a66e96cdba4b8987df729b09edc53419f7c33128c138f5359ecf7ad58787f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-198_艺术展览_上下分区_书法_深绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-198_艺术展览_上下分区_书法_深绿白.jpg",
+    "sha256": "1a11500eeba55a5f6ffc0055c90a37960c6b87d8aa7229f7f116338113779b78"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-013_市集_中心轴对称_无衬线_黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-013_市集_中心轴对称_无衬线_黄绿.jpg",
+    "sha256": "7e466f576cdbf4f6f5c83f5fff2efc21f4d316107e375ecfc84ea68ad1acbe76"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-062_文化节庆_上下分区_像素_绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-062_文化节庆_上下分区_像素_绿蓝.jpg",
+    "sha256": "0588f6c82168d4c5b288744061af3c9cf70c825fbcf113441e6505807dc204f2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-358_艺术展览_对角线构图_无衬线_蓝粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-358_艺术展览_对角线构图_无衬线_蓝粉.jpg",
+    "sha256": "946d3a995a89ef2eac458e5d06e23e5cc6d26f10391661a484c6a78dd168a703"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-381_文化节庆_中心轴对称_手写_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-381_文化节庆_中心轴对称_手写_绿白.jpg",
+    "sha256": "b4dba1c4667e5b1767387ef8afe3a259f59f8e0d983842b928325fbc83e7d12a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-229_文化节庆_上下分区_书法_黑橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-229_文化节庆_上下分区_书法_黑橙.jpg",
+    "sha256": "8e51ab8075b0d47e3895a8689d53262d531ec709759b5f1ac1977ab9e39ccc89"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-007_艺术展览_自由拼贴_手写_米白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-007_艺术展览_自由拼贴_手写_米白绿.jpg",
+    "sha256": "58372632616450279d453bb2bf335aeeb35e3fcaae9c6f7707ea049c234d52b1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-139_音乐演出_上下分区_衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-139_音乐演出_上下分区_衬线_黑白.jpg",
+    "sha256": "142f431ef1bc9b7c4dfeb948ab44c5b6fda93f812b4a36100cd9c3f382d46555"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-042_音乐演出_自由拼贴_混合字体_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-042_音乐演出_自由拼贴_混合字体_蓝黄.jpg",
+    "sha256": "98bc4b23bfac8ca2cabed416952e8074fcadff84b2c6318ac6acb0ba2ce85a13"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-136_音乐演出_左右分栏_衬线_黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-136_音乐演出_左右分栏_衬线_黑绿.jpg",
+    "sha256": "48b1c6f41439cbbc5bc299534d44701d7d189f5548a10af6dbb1ab8e355e9f1b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-098_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-098_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "1818f66b615580944c7fa26b5437d9025839b98bb4d3ac6b4fbb998a07221808"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-032_艺术展览_非对称网格_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-032_艺术展览_非对称网格_无衬线_蓝白.jpg",
+    "sha256": "c5156052367198f15144f5fec534957e920901b95b89416ff66558ac7895c48c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-158_文化节庆_满版构图_无衬线_棕白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-158_文化节庆_满版构图_无衬线_棕白.jpg",
+    "sha256": "d9777baaed49f5a29a741a109c8112e805ecccd61df5789f62037899fc6593f8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-387_工作坊_左右分栏_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-387_工作坊_左右分栏_衬线_白蓝.jpg",
+    "sha256": "6aaee4d11a122c0a7fb279f71e64fd36543e377f3364f61f69f844d4bbcf0a6a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-123_艺术展览_非对称网格_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-123_艺术展览_非对称网格_衬线_白蓝.jpg",
+    "sha256": "5f1ea1cd02355ad4d7499bbb12744be211c521f5d96cac5b2e93f6716d4e88b9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-102_工作坊_中心轴对称_无衬线_紫白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-102_工作坊_中心轴对称_无衬线_紫白.jpg",
+    "sha256": "9b939c398aad643488128f532f7717e547ed60bafc8da7fd4040c9cfda24dfbb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-219_艺术展览_对角线构图_装饰字体_红黄蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-219_艺术展览_对角线构图_装饰字体_红黄蓝.jpg",
+    "sha256": "fc1e4d560e10067a6726286cb208f5fe96d938e3b90fb37018004fa63f0145c9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-181_文化节庆_中心轴对称_无衬线_蓝多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-181_文化节庆_中心轴对称_无衬线_蓝多色.jpg",
+    "sha256": "5760c9bcf0a4582bc8dd09573f216b5f0543d41daf9c4adacf70feb79f1a7400"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-147_艺术展览_重复阵列_无衬线_米白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-147_艺术展览_重复阵列_无衬线_米白黑.jpg",
+    "sha256": "b597956701d48a91775f90a03016a8c0b8899531661197cbd2d63a45b0f340e3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-096_音乐演出_中心轴对称_装饰字体_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-096_音乐演出_中心轴对称_装饰字体_绿白.jpg",
+    "sha256": "590a72d810d0553d0bd69eea933af242fa9380898efc6d218816c5260f428721"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-261_艺术展览_模块化网格_无衬线_白粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-261_艺术展览_模块化网格_无衬线_白粉蓝.jpg",
+    "sha256": "9beb3ba389ccbf0330856f2acaa56f592e5a0219f1f132208b5cfb6253ef221f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-009_社区活动_非对称网格_手写_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-009_社区活动_非对称网格_手写_蓝白.jpg",
+    "sha256": "b59b30c115092ade8b684f54441b3f7bda03c41bcbb84486389f7369015f5639"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-326_讲座论坛_满版构图_无衬线_青白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-326_讲座论坛_满版构图_无衬线_青白.jpg",
+    "sha256": "91872b91a15e99a5ac5f67ad4c73410a0a5fd88a915473aa91f7868a01521c44"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-210_商业推广_满版构图_无衬线_绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-210_商业推广_满版构图_无衬线_绿蓝.jpg",
+    "sha256": "61a49168a47952baa9c0dab5e21c564ede01702fa4f29eb7fd806b26f9d94646"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-170_艺术展览_非对称网格_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-170_艺术展览_非对称网格_衬线_白蓝.jpg",
+    "sha256": "7871c0c8bf39890fda05e8c441105fe90faee32223651553b97430b48b3eb079"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-390_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-390_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "sha256": "3892352613157d2ff57085da9226031e42e66f0f497fdc0ae92c0e9073a33d55"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-329_文化节庆_模块化网格_无衬线_黄蓝橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-329_文化节庆_模块化网格_无衬线_黄蓝橙.jpg",
+    "sha256": "3d0c65713676f0d79bc8616bf638184a5342f6bef0ed2559d030797b8fc9fa73"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-141_艺术展览_上下分区_无衬线_白金.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-141_艺术展览_上下分区_无衬线_白金.jpg",
+    "sha256": "31307a1285c332947be96e3bf858d2c2a17a8a887191a3474842b48ae36fe014"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-023_文化节庆_上下分区_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-023_文化节庆_上下分区_无衬线_蓝白.jpg",
+    "sha256": "2308a785865cb1883469cd1df0d01c80f7a39022aba868464896cd92b9b65ff5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-022_艺术展览_单栏纵向_无衬线_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-022_艺术展览_单栏纵向_无衬线_黑蓝.jpg",
+    "sha256": "44c08f169d2ff548cdd25dd07b5396f94e817e720aead700da08cd07706b8dc5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-004_市集_单栏纵向_手写_棕绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-004_市集_单栏纵向_手写_棕绿.jpg",
+    "sha256": "dde36230b6961717217ce65616d9b8d7391a7a37ee639558dffa92fd86bbd70d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-146_艺术展览_中心轴对称_书法_白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-146_艺术展览_中心轴对称_书法_白黑.jpg",
+    "sha256": "34c56e37b0ddb4b03dfab8200c683a91fcab277f44d0f7164cd69184c5985c76"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-317_体育活动_中心轴对称_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-317_体育活动_中心轴对称_无衬线_白蓝.jpg",
+    "sha256": "aebd48bcf9b721b229c787eb147d8c76bed955d7d1fce446c3b0b2f55c297448"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-002_文化节庆_模块化网格_无衬线_绿米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-002_文化节庆_模块化网格_无衬线_绿米白.jpg",
+    "sha256": "b4d87a4b3bf256d2547c3efc3b8ad14fbe5b6ec9199d023141f4189ed92fb372"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-010_社区活动_自由拼贴_书法_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-010_社区活动_自由拼贴_书法_蓝白.jpg",
+    "sha256": "b31f7ec568dfd8b2515c3ba2032b6256a2ee675b1020b380d80427585d1e1cfe"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-167_音乐演出_中心轴对称_装饰字体_粉红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-167_音乐演出_中心轴对称_装饰字体_粉红.jpg",
+    "sha256": "7b671c0f889f26b84bf0a787b470b400ee43982ed5bdd2a832b43be67a9960c8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-166_音乐演出_自由拼贴_装饰字体_黑黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-166_音乐演出_自由拼贴_装饰字体_黑黄.jpg",
+    "sha256": "1691ab52fea6464a0a927bdcd33282e4af978815fc6bad457f1b2a0e74e96b42"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-159_文化节庆_中心轴对称_无衬线_棕白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-159_文化节庆_中心轴对称_无衬线_棕白.jpg",
+    "sha256": "52ee305dbd4908a2ba4c39f71cc9012c02a23241843a7f6e20f6eb865e4d77de"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-393_艺术展览_中心轴对称_无衬线_绿粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-393_艺术展览_中心轴对称_无衬线_绿粉.jpg",
+    "sha256": "76a169483f1355d7aad125397ed02023708d0535ca15a1878ded2513574f9105"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-299_市集_中心轴对称_无衬线_白黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-299_市集_中心轴对称_无衬线_白黑绿.jpg",
+    "sha256": "f53d4c6a074d41a820bc54f58aae8a38f9baea8b03e1faf6376d6922d99cb13c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-243_社区活动_自由拼贴_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-243_社区活动_自由拼贴_无衬线_白多色.jpg",
+    "sha256": "c4bad79eacab3c80ce4309c1421d5d992bdb352f32f5c95f4817cb5352195db1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-258_艺术展览_中心轴对称_无衬线_绿黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-258_艺术展览_中心轴对称_无衬线_绿黑.jpg",
+    "sha256": "b278a02d89f103e8cbb6a7576dcfdd70314a93c9451d1f4299535787db24c9f4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-234_文化节庆_中心轴对称_书法_青黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-234_文化节庆_中心轴对称_书法_青黑.jpg",
+    "sha256": "0e90b6a9d22d6587523a5d537a23e1de0ac00c2524d1ca0dfff3de19a03630d8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-367_艺术展览_中心轴对称_无衬线_紫白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-367_艺术展览_中心轴对称_无衬线_紫白.jpg",
+    "sha256": "1af51bcdfc65c83e481047b44c20bb8b2965365e634c6d69b4ec22841e827631"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-319_体育活动_满版构图_无衬线_绿红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-319_体育活动_满版构图_无衬线_绿红.jpg",
+    "sha256": "4f440a64448c3059af633f1d54e60b512e341720bc192488aedf9ca524b99ac7"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-272_文化节庆_模块化网格_无衬线_黄黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-272_文化节庆_模块化网格_无衬线_黄黑.jpg",
+    "sha256": "b0df3cabfa0cb36becf20c25e48d236748cf31de336a42cd02f6ae0dacdd18e5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-269_艺术展览_上下分区_无衬线_白红绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-269_艺术展览_上下分区_无衬线_白红绿.jpg",
+    "sha256": "819aaef3011bc094e6a4b01ce421cd60f6db54933d5285c27bfca322b3a38daf"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-373_艺术展览_重复阵列_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-373_艺术展览_重复阵列_衬线_白蓝.jpg",
+    "sha256": "fce56844e111c06d2c6e4b9923cca877247e0a48f47577efd31c745ab182b6f0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-315_体育活动_中心轴对称_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-315_体育活动_中心轴对称_无衬线_蓝白.jpg",
+    "sha256": "fcdc547f557e1264aa935d398d90d8e1486a223b4bb36aaf42da4482196e3ae5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-192_艺术展览_模块化网格_无衬线_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-192_艺术展览_模块化网格_无衬线_黑蓝.jpg",
+    "sha256": "649642d1db805ff50427fee9f3bb2ca96ee1399719ca461ca4d754324998452c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-376_文化节庆_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-376_文化节庆_非对称网格_无衬线_白绿.jpg",
+    "sha256": "3c508a0ea2e1f784a31bb1f6b080e0bbf0740c53dcd3ed57d7603d79c1263fe8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-182_艺术展览_重复阵列_无衬线_绿黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-182_艺术展览_重复阵列_无衬线_绿黑.jpg",
+    "sha256": "8833c859975d640c08ac435afcf6f06dee120dc115f5e56a9744348788abf63f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-241_文化节庆_中心轴对称_无衬线_荧光绿橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-241_文化节庆_中心轴对称_无衬线_荧光绿橙.jpg",
+    "sha256": "5fdfda92c89a686a4fcd0819b6ef5ad760cf48353a59db89dfd5e527978d6402"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-342_艺术展览_非对称网格_衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-342_艺术展览_非对称网格_衬线_白绿.jpg",
+    "sha256": "0b594f18a5161147796330489faed9bfb335820f6aa92396a6e45f59b1e785d6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-115_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-115_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "a9b68b5ba7b4b6ee54f6c66001245ec3be08e80c5d08ccad68755ea8f728f89a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-245_文化节庆_中心轴对称_无衬线_紫粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-245_文化节庆_中心轴对称_无衬线_紫粉.jpg",
+    "sha256": "5a5146e016a8ab29126fc3fab3b233fed7e32c1f4d668b650eb25496e0874a57"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-397_艺术展览_自由拼贴_无衬线_米白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-397_艺术展览_自由拼贴_无衬线_米白棕.jpg",
+    "sha256": "2dc96f36f6d28e505bcfabc7364cbafcf0db0782eb31d3e2317283463396bd12"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-066_艺术展览_中心轴对称_无衬线_白荧光绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-066_艺术展览_中心轴对称_无衬线_白荧光绿.jpg",
+    "sha256": "ac4fb148d3c819fc0ab23612ae8505d61313cf4889f99d15c10a85534405a98e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-310_艺术展览_中心轴对称_手写_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-310_艺术展览_中心轴对称_手写_白蓝.jpg",
+    "sha256": "427113de1aedc939b2310330cc3a257871476ba007b3604aa94b335ccbf145a6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-116_艺术展览_自由拼贴_无衬线_灰蓝红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-116_艺术展览_自由拼贴_无衬线_灰蓝红.jpg",
+    "sha256": "788fc3332e644d84c299e83c0c593dfaaf99df36470f4d64b61890d00987010c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-318_音乐演出_对角线构图_装饰字体_黄黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-318_音乐演出_对角线构图_装饰字体_黄黑.jpg",
+    "sha256": "cd3ecaac51b7b6f07930887b47a85da5f7cbddd6fc84f60000378bd5d4c109d4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-049_文化节庆_中心轴对称_装饰字体_绿紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-049_文化节庆_中心轴对称_装饰字体_绿紫.jpg",
+    "sha256": "a51891c5255e7a5d8a95ceca6aa3b9006b39d2a11177536d5825b4e1e0499c63"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-088_艺术展览_中心轴对称_手写_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-088_艺术展览_中心轴对称_手写_黑白.jpg",
+    "sha256": "e4d173b4163f69b209b5e04322e7aefd9e753c8cbb4d5f7e08207e8032754247"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-204_艺术展览_上下分区_无衬线_荧光绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-204_艺术展览_上下分区_无衬线_荧光绿白.jpg",
+    "sha256": "c0a160e0f0b9a2175e4818dd8de5628219d8cbe8ccee490970f207c2f986d08d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-244_文化节庆_中心轴对称_无衬线_蓝红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-244_文化节庆_中心轴对称_无衬线_蓝红.jpg",
+    "sha256": "d1487e407589bb1a36923a3e55067f3c4d80cc18b6a7d4468fa9732cdd452a54"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-129_讲座论坛_中心轴对称_无衬线_绿紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-129_讲座论坛_中心轴对称_无衬线_绿紫.jpg",
+    "sha256": "2ba1cdd441019833b2b86aca5c6dbe061cc3e84a946d27a34fad0e759f2b06ee"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-172_艺术展览_非对称网格_衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-172_艺术展览_非对称网格_衬线_白多色.jpg",
+    "sha256": "c9d11aa9e04fbdc9e6785b92ed850247df4ce1298f950cf8ea83965654dc43f9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-168_文化节庆_中心轴对称_装饰字体_红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-168_文化节庆_中心轴对称_装饰字体_红蓝.jpg",
+    "sha256": "3def76f8c862c2a6385c8c04db701314c05b8c860a02e9264b130a3d6efa3287"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-153_艺术展览_非对称网格_无衬线_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-153_艺术展览_非对称网格_无衬线_白红蓝.jpg",
+    "sha256": "08e7fb0512dbf186d40f4a0398077c46c10a773045dc53b5fa45e832a57a7bfd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-368_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-368_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "sha256": "4097da8ef5bb05e66b738d964f25bd4797a3cfd4450b6951fab3eae95ff43ad9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-215_商业推广_中心轴对称_装饰字体_红黄黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-215_商业推广_中心轴对称_装饰字体_红黄黑.jpg",
+    "sha256": "5faf0f2308c21c8d064ccead88eba50911f51bacc378908bd96450ac933ecb44"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-082_市集_中心轴对称_装饰字体_粉白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-082_市集_中心轴对称_装饰字体_粉白.jpg",
+    "sha256": "6ecbe0059f17cd7440582a9b8c51c77847ebd1e32b46988fe9a63f99519a6c16"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-286_商业推广_中心轴对称_装饰字体_米白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-286_商业推广_中心轴对称_装饰字体_米白粉.jpg",
+    "sha256": "8c0f892706e7b1f5facb1eb05b4c8ab01cf47bd7c4e29232b9cb9c643c0bbcc1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-054_艺术展览_非对称网格_衬线_米白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-054_艺术展览_非对称网格_衬线_米白棕.jpg",
+    "sha256": "92560d65ebbc6354f482bc27feee3ff2f5c649e5445e24665701e2be553a4295"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-401_工作坊_中心轴对称_衬线_米白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-401_工作坊_中心轴对称_衬线_米白橙.jpg",
+    "sha256": "3d01c0456aa5cf91d4e585b33dc248b3b18a56a54536bcbbda4c7d9918de6f13"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-151_艺术展览_重复阵列_无衬线_白黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-151_艺术展览_重复阵列_无衬线_白黄.jpg",
+    "sha256": "8d8c730a361da2e81a226dcf679a799b89faee2ed2c79aa4a5f8bc32d8563ea7"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-120_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-120_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "45de9fe75a0072469cbbb5b5b58443f5ceb1421c3820dcc188e9269d08aa0436"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-394_艺术展览_中心轴对称_衬线_棕白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-394_艺术展览_中心轴对称_衬线_棕白.jpg",
+    "sha256": "78d9acafe365186cb550110e4e91a7a75e87f318bc6ad25f6f08ca1fe4f5619a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-330_艺术展览_满版构图_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-330_艺术展览_满版构图_无衬线_黑白.jpg",
+    "sha256": "e06ad5530099079069c1cc6087866ba096106f9b96d3270db0f3909404c12e8d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-063_艺术展览_模块化网格_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-063_艺术展览_模块化网格_无衬线_白多色.jpg",
+    "sha256": "1897a25e959b339e03319a54e0eba60f57112cbc95167c51faecaf8f247a550a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-264_艺术展览_中心轴对称_无衬线_白黑紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-264_艺术展览_中心轴对称_无衬线_白黑紫.jpg",
+    "sha256": "223194fbebc1d73e9b0ba0a236fbd3a38fe27f415352cf6587c5e6340e92cd78"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-025_文化节庆_左右分栏_书法_蓝绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-025_文化节庆_左右分栏_书法_蓝绿.jpg",
+    "sha256": "d04695191515507f0c56473a0c042cfd0a2e495726f3616e97586f5f0fdcb38e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-263_艺术展览_满版构图_书法_黑蓝橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-263_艺术展览_满版构图_书法_黑蓝橙.jpg",
+    "sha256": "7f236a986911079b2ae6f75784a14386f6ce7241c683af26cc166ffa1d5918d9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-067_艺术展览_单栏纵向_无衬线_白灰.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-067_艺术展览_单栏纵向_无衬线_白灰.jpg",
+    "sha256": "9b2c2c13b2088bd9d8d10b114b9ab4ae61683f0f553e04815b19a28285881dc8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-083_市集_中心轴对称_无衬线_黄粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-083_市集_中心轴对称_无衬线_黄粉.jpg",
+    "sha256": "19ab15ccaf8770cd44d78f56a4fc050b2490237b7a540e88b4708c8e9a253c81"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-173_艺术展览_中心轴对称_书法_青棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-173_艺术展览_中心轴对称_书法_青棕.jpg",
+    "sha256": "cc57847960feddd118c96c1106c1b5ba987c25ad86ff5f822d15933be1012a09"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-207_艺术展览_非对称网格_无衬线_白红黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-207_艺术展览_非对称网格_无衬线_白红黄.jpg",
+    "sha256": "c1cef416bf4d8bb402c8e29d0618bd4dbab743538cf834de57c7092712320886"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-177_商业推广_中心轴对称_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-177_商业推广_中心轴对称_无衬线_白绿.jpg",
+    "sha256": "14e2b235f0bd96696b6f559bbab83f5f9cfd599f7cb44790b3318d6f55bf2b9e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-339_艺术展览_中心轴对称_无衬线_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-339_艺术展览_中心轴对称_无衬线_白粉.jpg",
+    "sha256": "3cf8f2315254bc901ff1bdfa205dad96f4399ff245e1076b110653713c4a7e05"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-027_艺术展览_自由拼贴_无衬线_蓝粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-027_艺术展览_自由拼贴_无衬线_蓝粉.jpg",
+    "sha256": "71371899e17261a5b1bb4bc01b822b432b917969bea3320f4c7bbcdfa32283f2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-283_工作坊_非对称网格_无衬线_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-283_工作坊_非对称网格_无衬线_白红蓝.jpg",
+    "sha256": "9b34d377b5b20b536609c4660723b160ca7648ced87b729909810951dc228c1f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-347_艺术展览_上下分区_无衬线_米白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-347_艺术展览_上下分区_无衬线_米白黑.jpg",
+    "sha256": "80d0bfdaf8953c38cc98dc195d3b64adff71597d8407d77e1d02f2219eb249e9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-309_艺术展览_中心轴对称_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-309_艺术展览_中心轴对称_无衬线_白绿.jpg",
+    "sha256": "bc34d91ad14b36366ffb8c2af258261f71dc3a3f7770ac563af457f9fb5f6311"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-250_艺术展览_上下分区_无衬线_白青.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-250_艺术展览_上下分区_无衬线_白青.jpg",
+    "sha256": "05ae3f8541016317be5c6ede858e3448c0c8101dc5a5077719ee940ed9c92b5b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-132_艺术展览_中心轴对称_混合字体_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-132_艺术展览_中心轴对称_混合字体_蓝白.jpg",
+    "sha256": "dc95bd42f357ee9f13f2dafc887ab77222120188db8fd53eff4100f6a1080b32"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-294_艺术展览_非对称网格_无衬线_白黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-294_艺术展览_非对称网格_无衬线_白黑绿.jpg",
+    "sha256": "3955c216b33f600acc169b680baf0b206248011234b4daf95bde72782212510d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-345_讲座论坛_中心轴对称_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-345_讲座论坛_中心轴对称_无衬线_白绿.jpg",
+    "sha256": "219b7301b3613187d15731a1be4c293de1901f828907266301c7eca38ec318ed"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-290_市集_满版构图_衬线_黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-290_市集_满版构图_衬线_黑绿.jpg",
+    "sha256": "5d4ff9394c6b3264d40446e154deae93318b6649e94fb5672d6823c6be044c58"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-251_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-251_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "sha256": "2a520f4af2b21b3d83ce801a98338acfdf08d70ed538172393f8675e74a43c11"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-212_市集_不规则自由布局_混合字体_红白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-212_市集_不规则自由布局_混合字体_红白.jpg",
+    "sha256": "95d74f42475d45ce90051018683799f5187fa4ab65a8490410374617e1af3bb0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-377_市集_模块化网格_无衬线_白红黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-377_市集_模块化网格_无衬线_白红黄.jpg",
+    "sha256": "6b3d0f11609f9cd482dd182eb54dfe0d639331bf11260318fa9ef0ec0d01441d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-348_艺术展览_上下分区_衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-348_艺术展览_上下分区_衬线_白绿.jpg",
+    "sha256": "6c4010a1d8480451a81413751a3d199c2ff421090e043000570660f4d34d890a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-356_商业推广_中心轴对称_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-356_商业推广_中心轴对称_衬线_白蓝.jpg",
+    "sha256": "a58e057e70bac783f3b91a179d59196240b9e637830319c053f798d186a2eefd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-005_文化节庆_不规则自由布局_手写_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-005_文化节庆_不规则自由布局_手写_蓝白.jpg",
+    "sha256": "ef146c1d15e60411044f3dc35afb88ea5c0b1269aceeecd96cbc5e9920276f23"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-110_社区活动_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-110_社区活动_非对称网格_无衬线_白绿.jpg",
+    "sha256": "bd0dc04776b46a3a8941232920a1199896881f92d7d15e4415dd5ef20638cfe5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-039_商业推广_不规则自由布局_手写_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-039_商业推广_不规则自由布局_手写_白绿.jpg",
+    "sha256": "457ec3a00bf75428c4f10de67046780c5926633fe2ce2d6bd170d33c82435157"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-197_艺术展览_模块化网格_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-197_艺术展览_模块化网格_无衬线_蓝白.jpg",
+    "sha256": "6df35698fac75d625a329986e6b10b75b3efaa09c2e8449dd5e0dde6bec6dc3a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-399_艺术展览_模块化网格_无衬线_红绿粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-399_艺术展览_模块化网格_无衬线_红绿粉.jpg",
+    "sha256": "29ec4f33d4a6c8caa9c234b7a2b43c842849178ef9013fb6905c9c95138b9a7c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-320_体育活动_中心轴对称_无衬线_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-320_体育活动_中心轴对称_无衬线_绿白.jpg",
+    "sha256": "1813f6d2ccd3add59ff09ed7c1e946f1c61d2def9c7c2cf80045f73fddda95fc"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-211_文化节庆_满版构图_书法_绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-211_文化节庆_满版构图_书法_绿蓝.jpg",
+    "sha256": "b7f1ddfdd251c1592703552d0a81a5ff64e1c2a5ab2ae7c9dd4a4ddbd6b62760"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-124_商业推广_非对称网格_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-124_商业推广_非对称网格_无衬线_黑白.jpg",
+    "sha256": "180d2a5bdd4259fe44ddcd4804c2c0df7a96eaf5501b44fddade3ff64f02ca98"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-122_艺术展览_上下分区_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-122_艺术展览_上下分区_无衬线_蓝白.jpg",
+    "sha256": "c1dc31e5d053feefc39b480d6aed7c5652980390f75f50631aa964eaf8318d23"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-154_艺术展览_非对称网格_无衬线_白粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-154_艺术展览_非对称网格_无衬线_白粉蓝.jpg",
+    "sha256": "2d3e1a2fb27f8a1a4568cdc9be442ba8050acfd1b3b3aae410040d218be3f172"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-400_艺术展览_中心轴对称_无衬线_蓝绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-400_艺术展览_中心轴对称_无衬线_蓝绿.jpg",
+    "sha256": "1ad3e7bd8194a66a63971e3da7d2e184b08c53171309995d840320873dc8dc15"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-213_艺术展览_满版构图_手写_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-213_艺术展览_满版构图_手写_绿白.jpg",
+    "sha256": "f384c70517043ff84c24532c990d22bdd8e344c057bf232c1a8b6669d09d82c8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-203_讲座论坛_模块化网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-203_讲座论坛_模块化网格_无衬线_白绿.jpg",
+    "sha256": "462ddea40402f737db3c75d203a72cdbe2c92448700d20be4aaaff2ccb46b3e8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-069_商业推广_模块化网格_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-069_商业推广_模块化网格_无衬线_白多色.jpg",
+    "sha256": "20c373554a8ae7231e1f0194f2ea2e6a86bacacccf028a019974e78a27294f18"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-163_音乐演出_中心轴对称_无衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-163_音乐演出_中心轴对称_无衬线_白橙.jpg",
+    "sha256": "5309d817ae2df9fcf00ec0415dcec38c2682e25f0ab499c905850fbc04ade5e5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-081_商业推广_中心轴对称_像素_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-081_商业推广_中心轴对称_像素_蓝黄.jpg",
+    "sha256": "33987e1e40ef88a24bd59ae678e2c1c9a8b4062d928b6d37e1b68514e93bb3dc"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-268_艺术展览_上下分区_衬线_白黑橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-268_艺术展览_上下分区_衬线_白黑橙.jpg",
+    "sha256": "b1139b2b2dbd30abe2c99fd4daa81b40e13884d4acd020657167da10dd480a14"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-171_艺术展览_非对称网格_书法_灰蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-171_艺术展览_非对称网格_书法_灰蓝.jpg",
+    "sha256": "0ffc542c977b90c17a7d97d7a3734f3dbc634ebcd6e5db79805b87cacc07e4f4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-093_文化节庆_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-093_文化节庆_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "7f3615e05ba76d2e19946404787df7b59d17ab5716fd5b682cbf2fcb5893cd9b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-019_文化节庆_非对称网格_手写_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-019_文化节庆_非对称网格_手写_蓝白.jpg",
+    "sha256": "07bd077a156f7c64524b4f1cb099ea962909d45cbf0d8adcde25f7238904bc63"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-091_艺术展览_非对称网格_手写_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-091_艺术展览_非对称网格_手写_白绿.jpg",
+    "sha256": "2cc7d2090898627d9da0dfd6ca9d37530412832d1a5429ba2ce4333173c9c27e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-156_艺术展览_满版构图_无衬线_米黄橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-156_艺术展览_满版构图_无衬线_米黄橙.jpg",
+    "sha256": "b2bb80c5918144c6d96b40c60096dc97bfa39cefefb7f3febff408ed2cc0bc9c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-140_艺术展览_中心轴对称_衬线_粉黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-140_艺术展览_中心轴对称_衬线_粉黑.jpg",
+    "sha256": "7b1505c5a5ffe5092db29cc86d1f3c8aba95daf4516e33ddcc801399972431ac"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-314_体育活动_满版构图_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-314_体育活动_满版构图_无衬线_蓝白.jpg",
+    "sha256": "5a27422148c3c5ecbd100d8068f6ee5ac834ef2a4476a5816ed620721d101c64"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-164_音乐演出_中心轴对称_无衬线_蓝橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-164_音乐演出_中心轴对称_无衬线_蓝橙.jpg",
+    "sha256": "f86d6e7b0e605e25c2b4ea0fafe8d3c21864271d5ce968f25bdc6be4c097c89c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-338_艺术展览_模块化网格_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-338_艺术展览_模块化网格_无衬线_蓝白.jpg",
+    "sha256": "895ad4996a30f7569faa8bf68c7f88055e7df4e33c6d2360549b323229522bcb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-270_艺术展览_上下分区_无衬线_黑多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-270_艺术展览_上下分区_无衬线_黑多色.jpg",
+    "sha256": "dcf1a2d78f43386c3ec9cac4e0ebadfb4b049915a15eadb4ae1e49e40c188cd2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-222_艺术展览_中心轴对称_无衬线_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-222_艺术展览_中心轴对称_无衬线_绿白.jpg",
+    "sha256": "a692e8cda2b6a49744d66aeeb4c5decb5f98cf4b55390292fb72d48c98b0a5eb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-321_艺术展览_中心轴对称_无衬线_白黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-321_艺术展览_中心轴对称_无衬线_白黄绿.jpg",
+    "sha256": "c384d86883f94d2353daac3f7dd0918b301fc8485b81ef35ad1f1a300ea59ac6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-308_商业推广_中心轴对称_手写_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-308_商业推广_中心轴对称_手写_白粉.jpg",
+    "sha256": "6d8fa2f073affe5d0cbf275ab2f0eef293c6d6b0836a70373356b0bf96b87541"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-137_音乐演出_上下分区_装饰字体_黑黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-137_音乐演出_上下分区_装饰字体_黑黄.jpg",
+    "sha256": "3b117ee18ca6fc37ee7f773b268fa936f3671dee6dd77f26db0a83508c66a77e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-389_工作坊_中心轴对称_衬线_蓝黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-389_工作坊_中心轴对称_衬线_蓝黑.jpg",
+    "sha256": "c07b0c7d6a8bfcea22363c12437aa676587c5efb3754e6eb2bc9a286c338f025"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-336_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-336_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "sha256": "fe6611edf3b6e05fd2fbe697ae44eee826cd94106dad5367dff87a205812d54d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-274_商业推广_中心轴对称_装饰字体_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-274_商业推广_中心轴对称_装饰字体_白红蓝.jpg",
+    "sha256": "71ef82376f72aaaed53ec854b09a4a9daae576c6ee1b59b459f107554e6bfe1f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-370_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-370_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "sha256": "79a26a06b902560c4df92c61238d4d266f99fd0f13d934ca60a2e59a125fcd0d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-349_艺术展览_重复阵列_无衬线_黑多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-349_艺术展览_重复阵列_无衬线_黑多色.jpg",
+    "sha256": "54869dc3015c291526c01a190a2c05420af86f1fcc76359625c845cad2660d76"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-162_音乐演出_自由拼贴_混合字体_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-162_音乐演出_自由拼贴_混合字体_蓝黄.jpg",
+    "sha256": "d480004967afe29b07d40b35018266b75000cb7caa81a8cf09a71edaec758966"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-036_商业推广_非对称网格_衬线_棕黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-036_商业推广_非对称网格_衬线_棕黑.jpg",
+    "sha256": "13f8f070ef6d82367810109da1412cae50a76ca7645c9baecd528a0f9ff33d9d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-218_商业推广_上下分区_无衬线_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-218_商业推广_上下分区_无衬线_黑蓝.jpg",
+    "sha256": "f21b5f93656223e9726ab10d715e99e6f67b3a91059544e4a33a54f07a23eb9e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-235_文化节庆_重复阵列_无衬线_红黑米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-235_文化节庆_重复阵列_无衬线_红黑米白.jpg",
+    "sha256": "ba9b2689233fc36f1807abbb06ffb10acf9d553ae13d439bded0e298047ecc19"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-328_艺术展览_满版构图_书法_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-328_艺术展览_满版构图_书法_白绿.jpg",
+    "sha256": "02ce9d09db3c44ac334a5b3f8b626e59f2f7cb1cee68b69d385a1ebf079b1d3d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-185_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-185_艺术展览_中心轴对称_衬线_白橙.jpg",
+    "sha256": "f50c25eb3dd6446ee142b541db69292ca676b7edc02c96eab0b5473b09990968"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-169_艺术展览_非对称网格_书法_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-169_艺术展览_非对称网格_书法_白蓝.jpg",
+    "sha256": "848ddd5ff5c5480e1ee47350d97613369dda7d054193fe7e4c6d086336af326d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-196_艺术展览_自由拼贴_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-196_艺术展览_自由拼贴_无衬线_白蓝.jpg",
+    "sha256": "f02f99efff6a3d14a7f148f8d03fa9f90f95683936208ad961d4f0a35addd44e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-386_工作坊_左右分栏_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-386_工作坊_左右分栏_衬线_白蓝.jpg",
+    "sha256": "cdfc5ef330bee3a052e24a02b0e23879f1fad5d9cfff0018cd2c084b6e58f9cd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-190_社区活动_非对称网格_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-190_社区活动_非对称网格_衬线_白蓝.jpg",
+    "sha256": "61315167c68cf3945f39e78526f05cdb148cf572182853af1d654936ec4f66a0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-388_工作坊_中心轴对称_衬线_绿黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-388_工作坊_中心轴对称_衬线_绿黑.jpg",
+    "sha256": "27b9acb089e9707addef8dc9b46add60efac9aeaf90665f43f11f6694dafcb7b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-086_市集_中心轴对称_手写_黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-086_市集_中心轴对称_手写_黄绿.jpg",
+    "sha256": "532556634a0f816c5897462ecc971bfe1d17473f55bee1dbfcdf904188fac3d1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-360_文化节庆_中心轴对称_无衬线_蓝黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-360_文化节庆_中心轴对称_无衬线_蓝黑.jpg",
+    "sha256": "8ce6b58601aa68eca473c4dbc6e1eba945eecda7652a292c8aeb136e3ace8b37"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-035_商业推广_满版构图_无衬线_棕白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-035_商业推广_满版构图_无衬线_棕白.jpg",
+    "sha256": "1ed2814b3cda5141d4d09db4b7255148d3ef9674f274f74a8cbc10aba41690a6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-295_社区活动_模块化网格_无衬线_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-295_社区活动_模块化网格_无衬线_绿白.jpg",
+    "sha256": "f991143c2c778dc1a3a9e2f94c5d08d5116ad1d7fdb536c9feb34a4e27454bad"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-160_音乐演出_中心轴对称_无衬线_黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-160_音乐演出_中心轴对称_无衬线_黑绿.jpg",
+    "sha256": "2e78c3a8602c78bbd433423613f0b629bd2bb9f136cc987aac5139db893005d5"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-064_艺术展览_模块化网格_像素_黑白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-064_艺术展览_模块化网格_像素_黑白多色.jpg",
+    "sha256": "dbcf42189e1edf5447c88068882dd3c3853c73220bc401cbbe17e199949675b4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-070_社区活动_模块化网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-070_社区活动_模块化网格_无衬线_白蓝.jpg",
+    "sha256": "5db2109c3ba40e2fe7029bc6a0b8101461f07307bf92dbc725d5618d120245bb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-178_艺术展览_中心轴对称_手写_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-178_艺术展览_中心轴对称_手写_白绿.jpg",
+    "sha256": "ab8336b2449357cb47826cb44e658fe29ceb19f9d2791c6dad8903946a6a3b4a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-065_艺术展览_中心轴对称_书法_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-065_艺术展览_中心轴对称_书法_白粉.jpg",
+    "sha256": "663639b45b7bf24e5b45073f7d08ceae0d2b6cd960bde9543de026e10586df08"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-344_艺术展览_模块化网格_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-344_艺术展览_模块化网格_衬线_白蓝.jpg",
+    "sha256": "43f5a7a444c44d28953e3e2fbf40c0c11836b933c65989a4aa4820ecb1782b5c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-037_商业推广_中心轴对称_书法_棕黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-037_商业推广_中心轴对称_书法_棕黑.jpg",
+    "sha256": "f08809cd448cc409253dc7472cb831e2ab9ea44676ceae6dfb9146e20d71eafd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-296_市集_中心轴对称_手写_白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-296_市集_中心轴对称_手写_白棕.jpg",
+    "sha256": "05033904512a4251ae989205c605e23e2e741fb2db9e81f47c889d188b07d198"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-334_讲座论坛_模块化网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-334_讲座论坛_模块化网格_无衬线_白蓝.jpg",
+    "sha256": "95f4ecdb2fa82797f4a13ef96bb3782de8a73429bbb2b3ca2abfe7cad57f03fb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-079_商业推广_中心轴对称_装饰字体_黄粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-079_商业推广_中心轴对称_装饰字体_黄粉.jpg",
+    "sha256": "5a2f16cb04d4dd167d6cff9e12fc0a1f662009e15c8e5d086b18a2475a8400c6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-236_艺术展览_中心轴对称_书法_绿橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-236_艺术展览_中心轴对称_书法_绿橙.jpg",
+    "sha256": "c2d347d8ffd956cd716a964828a3607d53b6c9a773dba183039ee981ea93e6e8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-180_文化节庆_中心轴对称_无衬线_绿棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-180_文化节庆_中心轴对称_无衬线_绿棕.jpg",
+    "sha256": "8ee16a95720977e1821aaa7da2e5cba99731b856981a65ab1fa1dca3f48de8ee"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-058_文化节庆_非对称网格_装饰字体_米白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-058_文化节庆_非对称网格_装饰字体_米白绿.jpg",
+    "sha256": "9212be2216192479a9bc59ce6d4c886bbbf72b4be1964558a592c32c1ff64161"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-109_工作坊_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-109_工作坊_非对称网格_无衬线_白绿.jpg",
+    "sha256": "37c8fec88cae41c8a08423e5d49791e514bd2ba61f3167b6910a5512182658b9"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-285_艺术展览_中心轴对称_无衬线_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-285_艺术展览_中心轴对称_无衬线_白红蓝.jpg",
+    "sha256": "11c244981ba7f8e550665beff958285ca4cc78721c6b4c28bbe778633a76f742"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-277_音乐演出_满版构图_无衬线_白红绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-277_音乐演出_满版构图_无衬线_白红绿.jpg",
+    "sha256": "179ce79f8efaf7065b0ab26db57cc6f4c0d8c976ed400e64cff4e9554b51460e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-135_音乐演出_中心轴对称_装饰字体_黑黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-135_音乐演出_中心轴对称_装饰字体_黑黄.jpg",
+    "sha256": "fcbbe502b0fc8deaca5c269161b88bde574a5b6cec5dffacefa28022cf7cc2a2"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-165_音乐演出_中心轴对称_装饰字体_红黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-165_音乐演出_中心轴对称_装饰字体_红黑.jpg",
+    "sha256": "ec03c41140876e17559b94e473cff38e19f9856ddfeb0e65b304c53fea57527e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-043_音乐演出_中心轴对称_无衬线_蓝橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-043_音乐演出_中心轴对称_无衬线_蓝橙.jpg",
+    "sha256": "740d1de4a80190fc3ffd8f084f1e9f94e4540701ae8c2e1a4110c3bd379bfcb6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-287_艺术展览_中心轴对称_无衬线_白粉绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-287_艺术展览_中心轴对称_无衬线_白粉绿.jpg",
+    "sha256": "32e6760cfb92f9e4adccb8ea8fb32671748741496811be5ca5b695ba02015d60"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-365_艺术展览_非对称网格_无衬线_灰白黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-365_艺术展览_非对称网格_无衬线_灰白黄.jpg",
+    "sha256": "8ac6ee7fbd510707628854182244573a40930499be26658bdaa25f72086b0ca3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-186_艺术展览_中心轴对称_衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-186_艺术展览_中心轴对称_衬线_白绿.jpg",
+    "sha256": "5d6649698b59ab9ad851f8512206c7124acc2b8d6bd9a98f5c210b49e940e943"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-396_艺术展览_中心轴对称_衬线_红黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-396_艺术展览_中心轴对称_衬线_红黑.jpg",
+    "sha256": "49b2be530d5f229b20c55506ad69eed9e15b41afda102479ffc4966e2168ce2f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-051_艺术展览_自由拼贴_衬线_蓝米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-051_艺术展览_自由拼贴_衬线_蓝米白.jpg",
+    "sha256": "d5eaf7ba005d7b86e03e3496dd0063e0023bea50da20f3cce61f1b90eb6b07bd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-188_艺术展览_上下分区_衬线_粉绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-188_艺术展览_上下分区_衬线_粉绿.jpg",
+    "sha256": "3829db8aa040b4af51a0e7cbf755c3e37f13a756fb5a6be518558141f62e4360"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-302_体育活动_中心轴对称_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-302_体育活动_中心轴对称_无衬线_白多色.jpg",
+    "sha256": "cf3c8171a7c75df84f5dc5d84031028edcfe1e9ef8ecfae4077eb8f9e940bb83"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-097_艺术展览_满版构图_书法_蓝紫.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-097_艺术展览_满版构图_书法_蓝紫.jpg",
+    "sha256": "fdbec8ef24de633f8bb614295f2752aeca9eddfed672287e9c0cf0ee11c7b8c0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-256_艺术展览_中心轴对称_衬线_蓝粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-256_艺术展览_中心轴对称_衬线_蓝粉.jpg",
+    "sha256": "3dbe37f4051f418d601cef813de1eaba6e27163ab42b327f4b356dd0341e1f37"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-113_体育活动_满版构图_混合字体_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-113_体育活动_满版构图_混合字体_白多色.jpg",
+    "sha256": "2d16a707ac56fdbc5e24a26a2e2f1cecbc2aacd59abb81e8c7a3eabec1210e2a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-044_文化节庆_中心轴对称_装饰字体_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-044_文化节庆_中心轴对称_装饰字体_黑蓝.jpg",
+    "sha256": "ecb07917a0c9b9cfb32c53a403efb9f7802c37cc3ea7909341b056d1df39a620"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-061_艺术展览_模块化网格_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-061_艺术展览_模块化网格_无衬线_白多色.jpg",
+    "sha256": "ef2fe36de9f2021265c711717a3d487bb56cc45e6c30d1e4210bad195398e4a3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-033_商业推广_中心轴对称_手写_灰白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-033_商业推广_中心轴对称_手写_灰白.jpg",
+    "sha256": "e98b53554a0b78eabb84a991871c7d6f757bbed8263a37c3e790712f0ccb1a75"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-040_艺术展览_单栏纵向_无衬线_黄粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-040_艺术展览_单栏纵向_无衬线_黄粉.jpg",
+    "sha256": "cff09eda297001388f38f51661db9f5521ed7f701de1cfe0a9c62349561a9c45"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-375_音乐演出_重复阵列_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-375_音乐演出_重复阵列_无衬线_蓝白.jpg",
+    "sha256": "4752003554e3a9df55b3e570d8962b2f040dff928b2f70b7af060370710b427e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-111_体育活动_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-111_体育活动_非对称网格_无衬线_白绿.jpg",
+    "sha256": "37ad7d83d69e230f84a80c151d334a407e0d70ef1f6ad45b7924b5c68fffb2ac"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-297_工作坊_非对称网格_无衬线_米白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-297_工作坊_非对称网格_无衬线_米白绿.jpg",
+    "sha256": "bcd5b237fe87b4a479f3a07815f53df45f1ed2b0979b9cbb86af6386988b5256"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-383_讲座论坛_模块化网格_无衬线_白黑橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-383_讲座论坛_模块化网格_无衬线_白黑橙.jpg",
+    "sha256": "0a5bcf93c475532d1b91201b831fb73a8a1558ae35805cc20528f1c1a3956b97"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-257_艺术展览_上下分区_无衬线_荧光绿蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-257_艺术展览_上下分区_无衬线_荧光绿蓝.jpg",
+    "sha256": "c1ee38f4ee64ca2f27c5c5d0bc4e71ef92e8ec4487190973873d22cb50cb5c5e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-275_艺术展览_满版构图_无衬线_红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-275_艺术展览_满版构图_无衬线_红蓝.jpg",
+    "sha256": "ca2a98f6310aa787b4b663b5abea6cea4ede9783a3295423d55f504f8c44581e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-266_艺术展览_满版构图_手写_白黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-266_艺术展览_满版构图_手写_白黑绿.jpg",
+    "sha256": "e156ad2095cfe21fb418ac77eef1956155ad27fb90401c8083acf3dbd455c276"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-281_商业推广_中心轴对称_装饰字体_米白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-281_商业推广_中心轴对称_装饰字体_米白粉.jpg",
+    "sha256": "b5a78f5d5f326829ce421ce9f0d0290063ab5ec16a9b852ff008af3bbaa024a4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-249_讲座论坛_中心轴对称_书法_蓝绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-249_讲座论坛_中心轴对称_书法_蓝绿.jpg",
+    "sha256": "1c9f9cf73c0d978e1afb643b180f8530026ba737af9e78d0c4d5cca03cdfb168"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-276_文化节庆_满版构图_装饰字体_白粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-276_文化节庆_满版构图_装饰字体_白粉蓝.jpg",
+    "sha256": "90db674865926513497032a96a5dbe6dababe921639a6c21624cd22d7749b544"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-095_音乐演出_中心轴对称_无衬线_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-095_音乐演出_中心轴对称_无衬线_黑蓝.jpg",
+    "sha256": "942931be8b339292a155e7454cd2f69f560c2e9d248133c5487d477a0893254c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-289_市集_非对称网格_无衬线_白黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-289_市集_非对称网格_无衬线_白黄绿.jpg",
+    "sha256": "6071a07dc4278d000f3b07b37e1dff38a7346c24c79f2ba9a4a2e6e6aca04a3d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-352_艺术展览_自由拼贴_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-352_艺术展览_自由拼贴_衬线_白蓝.jpg",
+    "sha256": "1e26f6298044999e0da872304f370f337c10acb57b11d3e8b3bb5627bb22ed06"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-278_音乐演出_中心轴对称_装饰字体_米白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-278_音乐演出_中心轴对称_装饰字体_米白红.jpg",
+    "sha256": "54c930f8b7969227b40bd120c6a957a1fa4741c36645fcddd4ddd14e399821e8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-240_文化节庆_非对称网格_书法_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-240_文化节庆_非对称网格_书法_白绿.jpg",
+    "sha256": "1029eacf3d5b04625df4190e9b81ce46daffe8c280e8cab43dad607dc4ac015f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-254_商业推广_自由拼贴_衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-254_商业推广_自由拼贴_衬线_白绿.jpg",
+    "sha256": "a642b3e7bab2cfc4fe8edfa757da9bbcabad1104b2649225b3a73e030f4309cb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-291_社区活动_中心轴对称_手写_绿白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-291_社区活动_中心轴对称_手写_绿白.jpg",
+    "sha256": "2daf8d08abf2d427dc0e5c2a264416f02a00f587ffbc0f30b33bc29fccadd2e0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-327_艺术展览_模块化网格_无衬线_绿黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-327_艺术展览_模块化网格_无衬线_绿黑.jpg",
+    "sha256": "a2ae736b1481c15437e493982ae84aa5a1160121494558e9f1f70d0d0e608543"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-292_艺术展览_中心轴对称_书法_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-292_艺术展览_中心轴对称_书法_白蓝.jpg",
+    "sha256": "3fdc3a6b1a11369a8afde02b46168e7599a632e98c8fdf05e3c96ab48dfa1c63"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-392_艺术展览_中心轴对称_衬线_红绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-392_艺术展览_中心轴对称_衬线_红绿.jpg",
+    "sha256": "bdca14b839b47e2f7b7d449085425a384911fa47bc7a0216d1bf851b208b9a2e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-090_艺术展览_非对称网格_书法_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-090_艺术展览_非对称网格_书法_白蓝.jpg",
+    "sha256": "ced40c38363f6a4067ea9b80e43a69240c39495b331907b7b731c812cabecc1b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-271_艺术展览_中心轴对称_无衬线_白多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-271_艺术展览_中心轴对称_无衬线_白多色.jpg",
+    "sha256": "eef005839ef096a728d4b94d62c02c5128c91d4fab10d790eadeb96dc02612c3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-055_艺术展览_非对称网格_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-055_艺术展览_非对称网格_无衬线_蓝白.jpg",
+    "sha256": "4fdb2498cd33407d94e566dae105475cc8bb0c1f01795db586a1e9e7fa232d40"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-018_市集_中心轴对称_无衬线_米白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-018_市集_中心轴对称_无衬线_米白绿.jpg",
+    "sha256": "268c175a147f203e16749002f11de125d54cb6d90b0afb3f6dbc17001282600a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-232_艺术展览_中心轴对称_书法_米白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-232_艺术展览_中心轴对称_书法_米白蓝.jpg",
+    "sha256": "cbbe354f0ad84f4a4a77efe9f7c9b0d50b659d677addcdb0712940f673af7ec6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-355_商业推广_中心轴对称_无衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-355_商业推广_中心轴对称_无衬线_白红.jpg",
+    "sha256": "3a230f55368fc7a317a9e907d1192d1687cf0df4d40304b3e0c14b1d64ff274a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-247_艺术展览_中心轴对称_衬线_白青.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-247_艺术展览_中心轴对称_衬线_白青.jpg",
+    "sha256": "2ff57ee476c33efed4292ac4b97be244cd7a488b1a29e18d8ed6af882c61a289"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-179_艺术展览_中心轴对称_手写_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-179_艺术展览_中心轴对称_手写_白绿.jpg",
+    "sha256": "90ac18597041e65ba227f8c92a38841c4048fb217d0aa761365d184ee70c0af0"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-200_艺术展览_上下分区_无衬线_黑白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-200_艺术展览_上下分区_无衬线_黑白.jpg",
+    "sha256": "79f9792ee49f67768abc9fde77cb39bc8a9b4ceee7e078f57cb052deed7f5aeb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-227_艺术展览_自由拼贴_装饰字体_米白黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-227_艺术展览_自由拼贴_装饰字体_米白黄.jpg",
+    "sha256": "057fdfa54aa3bfa64ce3612c6728f714e85dcb4ab5c4a192ca28a851c56b63c8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-030_市集_非对称网格_无衬线_米白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-030_市集_非对称网格_无衬线_米白橙.jpg",
+    "sha256": "7f9fd9a2173b6a3f98a988edd75ea7bd1f4bf6c02b55f0718996859b5d0552d6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-363_文化节庆_满版构图_无衬线_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-363_文化节庆_满版构图_无衬线_白粉.jpg",
+    "sha256": "8302f9cbb3475b71e34e3c7ddbdc050870feba6ed771ace13e6fbfd4c3d46686"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-006_文化节庆_中心轴对称_装饰字体_蓝黄红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-006_文化节庆_中心轴对称_装饰字体_蓝黄红.jpg",
+    "sha256": "a6239559a5f8656256bbe71c33cba4eb52949cfed3cc4c963d015f1c043c7e3e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-362_音乐演出_中心轴对称_衬线_蓝米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-362_音乐演出_中心轴对称_衬线_蓝米白.jpg",
+    "sha256": "b96b86f9febeefd26b2b8badcb2131951b8c3491d5405b239e3837528076d68c"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-208_艺术展览_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-208_艺术展览_非对称网格_无衬线_白绿.jpg",
+    "sha256": "244d22cf7e72a0deef2268aa92da7ffe7e09a9808f3f6d660a3fc6daf4091146"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-150_艺术展览_非对称网格_无衬线_白蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-150_艺术展览_非对称网格_无衬线_白蓝黄.jpg",
+    "sha256": "58e734aebbe7e1f6469220eb411f49fe6ea90dc413ea53365f8a4efca8eb3a7f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-106_文化节庆_中心轴对称_无衬线_黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-106_文化节庆_中心轴对称_无衬线_黄绿.jpg",
+    "sha256": "4972d8b6e47bf79ed5918089ba9205d66387558b915f29dc75932860f2e43c4d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-003_讲座论坛_中心轴对称_手写_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-003_讲座论坛_中心轴对称_手写_蓝黄.jpg",
+    "sha256": "b2db6e121a33f556102c3570f145e9a3ddad19ece8721175c0d3b22b17b8fc1e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-131_文化节庆_中心轴对称_无衬线_粉黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-131_文化节庆_中心轴对称_无衬线_粉黄.jpg",
+    "sha256": "22e6a335833b8d2471dbc39f89f4d8c08f5f326396bbac0d81bd0c3756fa9ba4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-341_艺术展览_自由拼贴_无衬线_白蓝粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-341_艺术展览_自由拼贴_无衬线_白蓝粉.jpg",
+    "sha256": "fffac98118f467f506c4cd8ce52793f47836019e91d3089fdb054f7e3a311e2b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-020_文化节庆_不规则自由布局_手写_绿黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-020_文化节庆_不规则自由布局_手写_绿黄.jpg",
+    "sha256": "ab6cfadff9e567aac9342eed8d6c9e451d70f3b538faeb9cfdf3bf0c64e62ed1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-175_艺术展览_非对称网格_衬线_米白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-175_艺术展览_非对称网格_衬线_米白棕.jpg",
+    "sha256": "00fe36c2a4015e19f859f774b2a627365f5f02ee4831eecda997398c5bcc09bc"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-354_商业推广_中心轴对称_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-354_商业推广_中心轴对称_无衬线_白蓝.jpg",
+    "sha256": "6e36ae54104e5f8cc5f1866156687dabbb16d0afb1ea28e7cf503773922b2d3f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-346_商业推广_非对称网格_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-346_商业推广_非对称网格_衬线_白蓝.jpg",
+    "sha256": "d8d5769ccd0fdcb340879c5500b52d3640e2b3d2764e8d3c7cc53cf0b2f159bf"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-273_艺术展览_自由拼贴_无衬线_白黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-273_艺术展览_自由拼贴_无衬线_白黑.jpg",
+    "sha256": "7908c6282ad7dbee9f49e1e46bb73f75ce772059d20b77349d3fcf1914a48190"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-015_市集_自由拼贴_手写_橙粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-015_市集_自由拼贴_手写_橙粉.jpg",
+    "sha256": "ac953ba9a02f1b400508c4f3916374b09a9efcdc317ccfa205eb8096b4054e6a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-303_艺术展览_满版构图_无衬线_绿黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-303_艺术展览_满版构图_无衬线_绿黄.jpg",
+    "sha256": "6190a6317c7f7dbc2b86aa814cd315922ada4a14922c243f1eedb69fc217a3db"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-008_市集_中心轴对称_手写_米白棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-008_市集_中心轴对称_手写_米白棕.jpg",
+    "sha256": "7749e0099d3e095c739eec66df0b73da8e9d1142c097a8320e8f16054d7f7f06"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-226_文化节庆_中心轴对称_装饰字体_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-226_文化节庆_中心轴对称_装饰字体_白绿.jpg",
+    "sha256": "aada158ba068dc0229a403eea6b814d939998ca68ff9eb95c6753c4a00b413a3"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-350_艺术展览_中心轴对称_衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-350_艺术展览_中心轴对称_衬线_白蓝.jpg",
+    "sha256": "e36ae2d699d27d5b262d72dc604d02d3791bd42ba2c8119bdc0c06fd75ad2c2a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-193_艺术展览_满版构图_无衬线_灰荧光绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-193_艺术展览_满版构图_无衬线_灰荧光绿.jpg",
+    "sha256": "7f1bb3eb8147d76f830277952e4915f198fe220a4cf9fa9129e2d7347617b5ff"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-369_音乐演出_模块化网格_衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-369_音乐演出_模块化网格_衬线_白红.jpg",
+    "sha256": "591595e09ea2a4682706e2244a49048cafdfe90cc8af8f8956c5e9a071b6accb"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-052_音乐演出_满版构图_装饰字体_粉蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-052_音乐演出_满版构图_装饰字体_粉蓝.jpg",
+    "sha256": "de09209db435653af0beb982852b748ca6139ad98a10e0c9fc73b25183ffd8ea"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-089_市集_非对称网格_无衬线_白黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-089_市集_非对称网格_无衬线_白黄.jpg",
+    "sha256": "3f10cfac05a9bafaca061aa98a814f85adf4db5c200c8cbcf6a736fbed5baa3a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-001_文化节庆_自由拼贴_手写_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-001_文化节庆_自由拼贴_手写_蓝黄.jpg",
+    "sha256": "d402b602e4a3631bb70bc94855bc55c448d4e1005c3b9ceddbebe9444378f144"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-114_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-114_艺术展览_非对称网格_无衬线_白蓝.jpg",
+    "sha256": "f1ac17d90b2b4986daad70cccab2204a069bc555aeb6839b8736d1574fb9599b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-343_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-343_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "sha256": "101342cdc9fcb1a78be7e390abe9e4d3341405ab3cc9ba1f226c59f10ce52ce6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-378_文化节庆_模块化网格_无衬线_米白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-378_文化节庆_模块化网格_无衬线_米白蓝.jpg",
+    "sha256": "e0aa1d0c7485ce271f72b37624be3dc8bbbd88253b40153fcefbb256a5265221"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-056_艺术展览_单栏纵向_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-056_艺术展览_单栏纵向_无衬线_蓝白.jpg",
+    "sha256": "0df5a38bf01ebb587554d687de87c4e5e3c79ed7d969a430d7d19fdba282d84a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-100_音乐演出_中心轴对称_无衬线_白粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-100_音乐演出_中心轴对称_无衬线_白粉.jpg",
+    "sha256": "14d60e5227ab55d28c453b6a560cec1c65ce689836307afbe2d80f07e6d1ae0d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-176_艺术展览_中心轴对称_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-176_艺术展览_中心轴对称_无衬线_白蓝.jpg",
+    "sha256": "3907db1d73e94fec700fc7fca4bb2d649ac4a97264aca3b92bf979a807843bd6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-255_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-255_艺术展览_重复阵列_无衬线_白蓝.jpg",
+    "sha256": "823ba36d467b63f56373225bc122f206e2d44d172d21a78a61b86572eb38b4f8"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-233_文化节庆_中心轴对称_书法_红黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-233_文化节庆_中心轴对称_书法_红黑.jpg",
+    "sha256": "632eb303ef871e84426660af32a587d952d3a365f865b0fa5884782c61798fcc"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-316_体育活动_满版构图_无衬线_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-316_体育活动_满版构图_无衬线_蓝黄.jpg",
+    "sha256": "2bf9127a22611f858dd8afe393b46927d0f3f61714489702a687835c43e25f17"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-011_文化节庆_中心轴对称_书法_黄绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-011_文化节庆_中心轴对称_书法_黄绿.jpg",
+    "sha256": "f3e099c48940945a4e0aabfc846556e0433775a62ff92f7aafc5744f4ccf05d6"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-119_艺术展览_不规则自由布局_无衬线_白灰.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-119_艺术展览_不规则自由布局_无衬线_白灰.jpg",
+    "sha256": "59f3e88ba8db249a18caef42a479ed79551609d07e3f516a430c503b7502f838"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-084_音乐演出_中心轴对称_书法_棕橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-084_音乐演出_中心轴对称_书法_棕橙.jpg",
+    "sha256": "3323e5db4c67797ba15a80381c3a4a08989001fafbe4a322ca25e1526a4d7a1b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-041_艺术展览_模块化网格_混合字体_绿米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-041_艺术展览_模块化网格_混合字体_绿米白.jpg",
+    "sha256": "8f5e44713fd6ab647e4bbb9f906c0a7e75d6081f0786c3ab8cb0f39bfceab704"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-202_艺术展览_模块化网格_无衬线_灰白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-202_艺术展览_模块化网格_无衬线_灰白.jpg",
+    "sha256": "74ffd13f47c300b013382e7195174102b5113ca941d90a78869d5da70fa61c02"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-126_艺术展览_中心轴对称_混合字体_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-126_艺术展览_中心轴对称_混合字体_白橙.jpg",
+    "sha256": "b85644c7840ecdd34b9d04f534843e26fc95d6b9c5b95b11c4072dc3f23ee44e"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-017_市集_中心轴对称_手写_蓝粉.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-017_市集_中心轴对称_手写_蓝粉.jpg",
+    "sha256": "429078446a9a95a68c2ede012d7fdaeeccdcfcc35adcbaf47cf52ac9027e8505"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-224_艺术展览_中心轴对称_无衬线_绿橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-224_艺术展览_中心轴对称_无衬线_绿橙.jpg",
+    "sha256": "41e95d282fa91b1d748e607daa615c225a4a0a7f56e5ffce64341d30e457e133"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-332_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-332_音乐演出_模块化网格_无衬线_白绿.jpg",
+    "sha256": "256e997a2c46a2bdd5f9f51b662dd9e9eb0226e817cbbad132c0682454d960e7"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-149_艺术展览_中心轴对称_无衬线_蓝黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-149_艺术展览_中心轴对称_无衬线_蓝黄.jpg",
+    "sha256": "8f4a4a6cd533a61d9c458a036bc3baec09578762fca213302c1f9673fd6dfd12"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-130_艺术展览_满版构图_无衬线_绿黑.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-130_艺术展览_满版构图_无衬线_绿黑.jpg",
+    "sha256": "a407cef2f975f344e5068949cf1e5837e003a0428ead9806a43afe58381174bd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-038_音乐演出_中心轴对称_无衬线_黑棕.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-038_音乐演出_中心轴对称_无衬线_黑棕.jpg",
+    "sha256": "37fedb7d7f58d08d2f9dccc027e4bafa299640f04683c22f260892932557a5f1"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-068_商业推广_满版构图_无衬线_粉多色.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-068_商业推广_满版构图_无衬线_粉多色.jpg",
+    "sha256": "6e70f5f3d944f1f0a549d063786e6daf0b99930a6302a8ba33d08c233de5ab6d"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-279_艺术展览_非对称网格_无衬线_白红蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-279_艺术展览_非对称网格_无衬线_白红蓝.jpg",
+    "sha256": "a1781f45acd7cf05f0200fd229695dfdfb8863e932d28ce832653f0f90332b77"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-322_商业推广_模块化网格_无衬线_白绿红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-322_商业推广_模块化网格_无衬线_白绿红.jpg",
+    "sha256": "f455fec4302b673e8e13f7017970715a27cc3d21609e3802bb2c45917284339a"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-108_社区活动_非对称网格_无衬线_白绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-108_社区活动_非对称网格_无衬线_白绿.jpg",
+    "sha256": "29994637b876f2e5b23f1618b18af2f77d8bbbd6fda36412cdf212daf47455b4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-012_体育活动_满版构图_无衬线_蓝米白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-012_体育活动_满版构图_无衬线_蓝米白.jpg",
+    "sha256": "fdc841a1f00c35ee1055ab387a508ea0ca3725fa4d8d6c74c564cc44fef1ec44"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-127_音乐演出_满版构图_无衬线_橙黄.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-127_音乐演出_满版构图_无衬线_橙黄.jpg",
+    "sha256": "5f65c3f59acdb3030c0a9ab293dac46d716c5112858be8a8275237652e0979a4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-087_市集_中心轴对称_无衬线_蓝白.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-087_市集_中心轴对称_无衬线_蓝白.jpg",
+    "sha256": "3b44123037ce00fe1ba4e0c079841186acfdadc05ace67a68972dd9cb827724f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-265_艺术展览_上下分区_无衬线_白红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-265_艺术展览_上下分区_无衬线_白红.jpg",
+    "sha256": "d37f91079a1874619f0cb2ceb0eb80a5eac8115a34422d31add0785373828ce4"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-325_艺术展览_满版构图_无衬线_黑蓝.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-325_艺术展览_满版构图_无衬线_黑蓝.jpg",
+    "sha256": "395009318542d8758991a23f43a658b497cfd53670bdd2d3c0e790882dd34a7f"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-371_商业推广_满版构图_装饰字体_灰红.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-371_商业推广_满版构图_装饰字体_灰红.jpg",
+    "sha256": "f9d02721d83efd0b67bae5fe8314022ac71fc7fef61be30da9b3fd3cea4aef0b"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-045_讲座论坛_中心轴对称_无衬线_黑绿.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-045_讲座论坛_中心轴对称_无衬线_黑绿.jpg",
+    "sha256": "0610007b9fc3fc7abf4af7bb4beb6dd863af0db0760ca0d5f11f5a5a328939dd"
+  },
+  {
+    "old": "reference_library/collections/keyword-20261012/images/REF-313_体育活动_中心轴对称_无衬线_白橙.jpg",
+    "current": "libraries/reference_index/source_library/collections/keyword-20261012/images/REF-313_体育活动_中心轴对称_无衬线_白橙.jpg",
+    "sha256": "2c7a3a68ed012563a357ebfdcc62c6014831ad9f483ccf238fc285f6984b2e2b"
+  },
+  {
+    "old": "audit/v019_test_evidence/visual_regression_contact_sheet.jpg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/visual_regression_contact_sheet.jpg",
+    "sha256": "21d0bc2e688d9f0920e8dc6478574b0569bfe02289c7176fe0646ecf0534ed75"
+  },
+  {
+    "old": "audit/v019_test_evidence/results.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/results.json",
+    "sha256": "0f6006da4f20a15280ae15d1101e5d1b7abe00dd1a248559b8bf8a993c7d9aaa"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/hero.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/hero.png",
+    "sha256": "7eaa500dd639bb8de29666c950d77abeaeb3730986eb09dff6aff177b1333341"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/plan.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/plan.json",
+    "sha256": "2a466c2839dcab7062c56638c5bd4262f18659d17a60248ad2161560302c87c2"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/hero.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/hero.png",
+    "sha256": "c78be7fe1a6aafac32e7158ff3c7e5ecd06a6245d24767fbcfe8a05baff05c6b"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/plan.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/plan.json",
+    "sha256": "d6d10738a43764f356613ea834a58a5406afd7d69006e0557c84212d3b4199be"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/hero.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/hero.png",
+    "sha256": "202dcf15bc422cdfa2587d2c945ad3c1ce1b64fd130c94169fe20407a189db77"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/plan.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/plan.json",
+    "sha256": "7202846c35afd2ac0776869ba9529be04312c9abedd9eef259179108d70563eb"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/hero.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/hero.png",
+    "sha256": "4ee60477d75c7591ab9722de0e3d1f4153e47db25982c5275193e3f600eb5ee6"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/plan.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/plan.json",
+    "sha256": "42b70b6bb71597a075d34c2750818f67de410f90f1308b19ab07f71346b4505f"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/round_0.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/round_0.svg",
+    "sha256": "40c9212fcae9a60ac22079224801d1f1e4b84d7147a44ecbc763fac6728c0776"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/round_1.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/round_1.svg",
+    "sha256": "9ea47bcceb8b44e3aa51be085462df64ebb1b452abc9ced088a8a89d26ed7aac"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/readability_report.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/readability_report.json",
+    "sha256": "91ef3b2622d5b95086d8796f3fdd559a6b48c4bf6152326c4c5e952241bc8437"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/final_render.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/final_render.png",
+    "sha256": "8b2ceaf5d0c00abbf5b1b5b7d0651356080cfab42e4506cb075386a12964d04e"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/pre_text_background.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/pre_text_background.png",
+    "sha256": "7eaa500dd639bb8de29666c950d77abeaeb3730986eb09dff6aff177b1333341"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/poster_plan_review.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/poster_plan_review.json",
+    "sha256": "f98f2dbab388248099053da5d8208f52bfd9f357ab7d53f26595b36ba25c427f"
+  },
+  {
+    "old": "audit/v019_test_evidence/light_on_light/out/poster_final_review.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/light_on_light/out/poster_final_review.svg",
+    "sha256": "9ea47bcceb8b44e3aa51be085462df64ebb1b452abc9ced088a8a89d26ed7aac"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/round_0.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/round_0.svg",
+    "sha256": "12d4f4cc5a2e306c9f42d110f90cdff920b170228cc3a5433aad3c4ad3dda7d6"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/round_1.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/round_1.svg",
+    "sha256": "bb7232b89ae148f009c90ef767f087c95e5d9d3b42faec278ed78c60be67a762"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/readability_report.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/readability_report.json",
+    "sha256": "9008fd25478484d76e26f5f2d834ac276c947f5bd1a167dc17d4f075911a0e89"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/final_render.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/final_render.png",
+    "sha256": "b91aaa0ada97a7cc7497684f743020126b42905d07596e0b1b8772fb279ff03d"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/pre_text_background.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/pre_text_background.png",
+    "sha256": "c78be7fe1a6aafac32e7158ff3c7e5ecd06a6245d24767fbcfe8a05baff05c6b"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/poster_plan_review.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/poster_plan_review.json",
+    "sha256": "2d161dd7245c8c74af1f1c81e2d8c70cd047c92d1def82dda07eea1383b64084"
+  },
+  {
+    "old": "audit/v019_test_evidence/busy_texture/out/poster_final_review.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/busy_texture/out/poster_final_review.svg",
+    "sha256": "bb7232b89ae148f009c90ef767f087c95e5d9d3b42faec278ed78c60be67a762"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/round_0.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/round_0.svg",
+    "sha256": "c32b20e5983546ad2ae4eaf2973e180f1174fda643f5f127f3f77552b5abcd63"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/readability_report.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/readability_report.json",
+    "sha256": "10a3cefbf1e7643f11b8ceb573454aa906cc76c3d74c0c732777d3b3efe0c56c"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/final_render.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/final_render.png",
+    "sha256": "fd4c43061946dc6939911f1acb79cc4222c18e722dae36c06f49a4b17d8e986a"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/pre_text_background.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/pre_text_background.png",
+    "sha256": "202dcf15bc422cdfa2587d2c945ad3c1ce1b64fd130c94169fe20407a189db77"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/poster_plan_review.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/poster_plan_review.json",
+    "sha256": "7202846c35afd2ac0776869ba9529be04312c9abedd9eef259179108d70563eb"
+  },
+  {
+    "old": "audit/v019_test_evidence/local_uneven/out/poster_final_review.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/local_uneven/out/poster_final_review.svg",
+    "sha256": "c32b20e5983546ad2ae4eaf2973e180f1174fda643f5f127f3f77552b5abcd63"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/round_0.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/round_0.svg",
+    "sha256": "e36f9e0ed0b529787a6e49eafb5e8be4945aca4cca938a043679e0afac41e8fe"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/round_1.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/round_1.svg",
+    "sha256": "3e85f6b761dd473b973c214e8de9b06af47ea33738da424a8cfa0bbc895e0a4d"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/readability_report.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/readability_report.json",
+    "sha256": "df323761f47ba8cb6a008410e675008da7d3098e5804ed58ef715bb543be390e"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/final_render.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/final_render.png",
+    "sha256": "90062e49af03878f9ce748c1f9fa5b8c310f41a305837d477ef0c8f0002af518"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/pre_text_background.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/pre_text_background.png",
+    "sha256": "4ee60477d75c7591ab9722de0e3d1f4153e47db25982c5275193e3f600eb5ee6"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/poster_plan_review.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/poster_plan_review.json",
+    "sha256": "1be3742ded1df477e5cbc21097ddf1440a3c265ad35868ca4bab367c967c2dc7"
+  },
+  {
+    "old": "audit/v019_test_evidence/dark_on_dark/out/poster_final_review.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/audit/v019_test_evidence/dark_on_dark/out/poster_final_review.svg",
+    "sha256": "3e85f6b761dd473b973c214e8de9b06af47ea33738da424a8cfa0bbc895e0a4d"
+  },
+  {
+    "old": "examples/reference_bundle_example/manifest.yaml",
+    "archive": "libraries/legacy/repository-before-flow.zip!/examples/reference_bundle_example/manifest.yaml",
+    "sha256": "55c76e2e2c9bf6e5bebf801fba57d0f8537afa7fc4cb3e21891e1cb0ff026977"
+  },
+  {
+    "old": "layout_engine/tests/test_svg_layout.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/tests/test_svg_layout.py",
+    "sha256": "7596e408e43ae36d4d7b953e34ff083447fcba863c9456ddbf943619cc4bc883"
+  },
+  {
+    "old": "layout_engine/schemas/poster_plan.schema.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/schemas/poster_plan.schema.json",
+    "sha256": "80f244b3980bb06ca174fa97fb91574105be710691494bd6db12efd6ab459426"
+  },
+  {
+    "old": "layout_engine/examples/sample_layout.svg",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/examples/sample_layout.svg",
+    "sha256": "bb3b524379fd2e761bf6d7472bbff7c7c03f2d199dd28fe3f92bc3bdd7920078"
+  },
+  {
+    "old": "layout_engine/examples/sample_layout.png",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/examples/sample_layout.png",
+    "sha256": "7e6b844279bf5405c0c9c3dbbd7b4c8449fb964b86ba4688e3b55fe9f46193fc"
+  },
+  {
+    "old": "layout_engine/examples/example_plan.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/examples/example_plan.json",
+    "sha256": "bf08d1909a2bf66af4f5a7f72d7bef6103306de50be32189e2a34482d0c5d3e6"
+  },
+  {
+    "old": "layout_engine/scripts/build_poster_svg.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/scripts/build_poster_svg.py",
+    "sha256": "2877520f4ca3c9e7c41e075b6ea82c26ea241a18da63377e8ca7b369573c70b8"
+  },
+  {
+    "old": "layout_engine/readability/audit_and_repair.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/readability/audit_and_repair.py",
+    "sha256": "cd263afd6506f62a4768607d62671116051828488e7375291262315ade194b63"
+  },
+  {
+    "old": "layout_engine/readability/test_readability.py",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/readability/test_readability.py",
+    "sha256": "e6feec6b5befcb952f0d5272af23419901ddcd175616191b64614e4e5276187a"
+  },
+  {
+    "old": "layout_engine/readability/visual_review_template.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/readability/visual_review_template.json",
+    "sha256": "34f968ad4e3b9aa19c9194ecf74da1898075f4d313cf6ac132dca1e3bdbd50c8"
+  },
+  {
+    "old": "layout_engine/readability/README.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/layout_engine/readability/README.md",
+    "sha256": "e4bbcef5eaef7c5a83ed1aea9bc5a9756012bb27f08a17d9f85df396e871de8f"
+  },
+  {
+    "old": "modules/prompt_compiler/PROMPT_COMPILER.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/modules/prompt_compiler/PROMPT_COMPILER.md",
+    "sha256": "67528c62b40f620545637657dbf8d2966d916f75de6fc36d04f0e0938b0874ba"
+  },
+  {
+    "old": "modules/prompt_compiler/examples/test_only_distinct_routes.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/modules/prompt_compiler/examples/test_only_distinct_routes.json",
+    "sha256": "faaf66e3f6a8033496dffb3564b0cfa54f6d9d34a0a09be9e28f1c9d4cdaabe2"
+  },
+  {
+    "old": "modules/prompt_compiler/examples/negative_route.json",
+    "archive": "libraries/legacy/repository-before-flow.zip!/modules/prompt_compiler/examples/negative_route.json",
+    "sha256": "1f97fc45f4aa840824c8fde99d50d60e848be185a7736b3686761c0d4d72b431"
+  },
+  {
+    "old": "modules/prompt_compiler/examples/README.md",
+    "archive": "libraries/legacy/repository-before-flow.zip!/modules/prompt_compiler/examples/README.md",
+    "sha256": "2b982b20495bfb56c44be81ff57b325e29b28d8fbd9c6d2361b3f29cd8fcef43"
+  }
+]

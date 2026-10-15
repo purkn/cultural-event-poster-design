@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "independent_axes": {
+    "medium": {
+      "values": [
+        "photography",
+        "illustration",
+        "flat_graphics",
+        "collage",
+        "3d",
+        "textile",
+        "mixed"
+      ],
+      "purpose": "图像如何制作，不直接决定风格"
+    },
+    "direction": {
+      "values": [
+        "horizontal",
+        "vertical",
+        "diagonal",
+        "curved",
+        "radial"
+      ],
+      "purpose": "路径/轴向，可用于不同骨架"
+    },
+    "placement": {
+      "values": [
+        "centered",
+        "offset",
+        "distributed"
+      ],
+      "purpose": "锚点在画布的位置"
+    },
+    "typography": {
+      "character": [
+        "geometric",
+        "serif",
+        "sans",
+        "calligraphic",
+        "handmade",
+        "experimental"
+      ],
+      "title_role": [
+        "anchor",
+        "partner",
+        "annotation"
+      ],
+      "purpose": "字形及构图角色，不与风格家族混为同级"
+    },
+    "text_image_relation": {
+      "values": [
+        "overlay",
+        "interleave",
+        "negative_space",
+        "type_mask"
+      ],
+      "purpose": "图字接触方式，不独立命名母版"
+    },
+    "depth": {
+      "values": [
+        "flat",
+        "layered",
+        "photographic"
+      ],
+      "purpose": "空间层次，不等于阅读拓扑"
+    },
+    "density": {
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "purpose": "信息承载要求，须结合真实文本与尺寸"
+    }
+  },
+  "recipe": "一个主风格S + 一个主骨架M + 具体参数 + 活动事实/证据；S编号与best-poster-creator八风格一致",
+  "examples": [
+    {
+      "name": "剪纸手作体验",
+      "style": "S1",
+      "layout": "M01",
+      "parameters": {
+        "medium": "flat_graphics",
+        "direction": "diagonal",
+        "placement": "offset",
+        "text_image_relation": "interleave"
+      },
+      "why": "不规则纸片建构主题是S1；单体焦点为M01；斜向是参数"
+    },
+    {
+      "name": "像素编织过程展",
+      "style": "S7",
+      "layout": "M04",
+      "parameters": {
+        "medium": "flat_graphics",
+        "direction": "curved",
+        "text_image_relation": "overlay"
+      },
+      "why": "统一像素模块定义S7，过程链为M04；不会因手作题材自动改成剪纸"
+    },
+    {
+      "name": "水与纸材料展",
+      "style": "S8",
+      "layout": "M05",
+      "parameters": {
+        "medium": "photography",
+        "depth": "photographic",
+        "text_image_relation": "negative_space"
+      },
+      "why": "一个具体材料动作与负空间构成S8；连续水纸场景可选M05，不能只看水就判风格"
+    }
+  ]
+}

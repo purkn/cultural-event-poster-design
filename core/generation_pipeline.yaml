@@ -1,0 +1,32 @@
+stages:
+- title_skeleton
+- concepts
+- hero_candidates
+- B_wait
+- h0
+- body
+- compose
+concept_fields:
+- metaphor
+- subject_form
+- media_material
+- palette_lighting
+- spatial_relation
+- title_safe_region
+candidates: A确认主S/辅助责任后，先写两个概念，再生成两张独立无正式文字主视觉；核心母题、空间组织、图字关系三项至少两项不同。已锁定的事实、比例和参数保持一致。
+previews: 后端支持时先小预览再出选定高分辨率，不伪造尺寸/费用能力
+B: 必须展示并暂停；用户选择后方可H0制作和最终正文合成
+h0_paths:
+- font_driven
+- image_generated
+h0_validation: 准确标题→字体气质→选路径→艺术字→逐字核笔画→同画布透明层。中文错字/缺笔画/不可辨认均硬返工。
+body: 中文英文分别排版，共享视觉系统，不机械替换文字
+tools:
+- scripts/compose_layers.py
+- scripts/validate_output.py
+retry: 每问题最多两轮局部修复；需更多调用时说明限制，不无限整图重生
+style_prompt_source: libraries/styles/NN-*.md中的唯一prompts JSON区块；使用scripts/build_style_prompt.py准备hero_a/hero_b/h0/repair，不代表已调用生图后端
+
+title_skeleton: 生图前核对准确标题字数/断行/比例/视觉重量，S4由字形骨架驱动；B同时展示无字图与排版示意。
+state_guard: 使用workflow_state.py和build_style_prompt.py的--state检查前置确认；直接调用生图也必须遵守。
+layer_feasibility: 生成前说明分层路径和工具能力；透明H0需回贴最终背景验边缘/字形/材质；不能保证真实分层时先说明仅可做预览。

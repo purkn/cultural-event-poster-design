@@ -1,0 +1,15 @@
+stage: COMPOSITION
+resource: libraries/layouts/templates.json
+filter:
+- user_constraints
+- reference_evidence
+- actual_capacity_evidence
+ranking:
+- activity_fit
+- explained_topology_preference
+- authorized_new_taxonomy_history
+repeat_scope: 仅明确授权历史与已复评案例；惩罚不能覆盖用户指定
+safe_regions: 构图里的真实空间与局部对比，不等于纯色文字底板
+joint: A前已有可行版式；确认风格后细化。如果无法容纳事实，回调构图，不把风格和版式完全分离。
+taxonomy: M01–M06为独立构图骨架，不是S1–S8图片风格；风格与骨架共同规划标题接口
+compatibility: 不因风格固定一张版式；采用S指南的构图建议与本次信息容量证据，普通倾向仅0.03软加分

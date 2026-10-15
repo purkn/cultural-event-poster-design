@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "purpose": "空白项目反馈模板，不在skill安装目录写入用户记录",
+  "project_id": null,
+  "status": "awaiting_feedback",
+  "evaluations": [],
+  "cases": [],
+  "pending_core_rule_proposals": []
+}

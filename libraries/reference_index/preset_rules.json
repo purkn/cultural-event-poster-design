@@ -1,0 +1,360 @@
+{
+  "_comment": "预制风格分桶规则。按 rules 顺序自上而下匹配，命中即停，因此优先级 = 数组顺序。字体性格比构图更能定义风格，所以字体类预设排在前面。match 里 typography / composition 是「或」关系，同一预设内两者都要满足才算命中；缺省字段表示不限。",
+  "source_library": {
+    "root": "libraries/reference_index/source_library",
+    "index": "index.json",
+    "note": "随 skill 附带参考图与源索引；相对路径以 skill 根目录解析。"
+  },
+  "value_regime_rules": {
+    "_comment": "从 palette 文字推断明度家族，只是粗分，用于同一预设内部再分池，不作为风格判据。",
+    "dark_prefix": [
+      "黑",
+      "灰黑",
+      "青黑",
+      "棕黑",
+      "蓝黑",
+      "绿黑",
+      "红黑",
+      "粉黑",
+      "橙黑",
+      "黄黑"
+    ],
+    "light_prefix": [
+      "白",
+      "米白",
+      "米黄",
+      "灰白",
+      "青白"
+    ],
+    "light_suffix": [
+      "白",
+      "米白"
+    ],
+    "labels": {
+      "light": "高调",
+      "dark": "暗调",
+      "mid": "中调偏彩",
+      "color": "彩色中间调"
+    }
+  },
+  "presets": [
+    {
+      "id": "P05",
+      "slug": "oriental-calligraphy",
+      "name": "东方书法",
+      "match": {
+        "typography": [
+          "书法"
+        ]
+      },
+      "one_liner": "书法标题主导，留白大，东方文人气质",
+      "typical_events": [
+        "文化节庆",
+        "艺术展览",
+        "讲座论坛"
+      ]
+    },
+    {
+      "id": "P06",
+      "slug": "decorative-retro",
+      "name": "装饰复古",
+      "match": {
+        "typography": [
+          "装饰字体"
+        ]
+      },
+      "one_liner": "装饰性美术字，图案感强，复古或节庆气氛",
+      "typical_events": [
+        "音乐演出",
+        "市集",
+        "艺术展览"
+      ]
+    },
+    {
+      "id": "P07",
+      "slug": "handmade-warm",
+      "name": "手绘亲和",
+      "match": {
+        "typography": [
+          "手写",
+          "混合字体"
+        ]
+      },
+      "one_liner": "手写标题，插画或拼贴质感，社区亲和力",
+      "typical_events": [
+        "市集",
+        "工作坊",
+        "社区活动",
+        "文化节庆"
+      ]
+    },
+    {
+      "id": "P04",
+      "slug": "serif-elegant",
+      "name": "衬线典雅",
+      "match": {
+        "typography": [
+          "衬线"
+        ]
+      },
+      "one_liner": "宋体/衬线标题，安静克制，文化与学术调性",
+      "typical_events": [
+        "艺术展览",
+        "讲座论坛",
+        "工作坊"
+      ]
+    },
+    {
+      "id": "P08",
+      "slug": "fullbleed-image",
+      "name": "满版影像",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "满版构图"
+        ]
+      },
+      "one_liner": "整版摄影或图像铺满，文字压图，视觉冲击优先",
+      "typical_events": [
+        "音乐演出",
+        "艺术展览",
+        "体育活动"
+      ]
+    },
+    {
+      "id": "P09",
+      "slug": "pattern-array",
+      "name": "图案阵列",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "重复阵列"
+        ]
+      },
+      "one_liner": "元素重复排布成图案，节奏感强，适合多主体或系列感",
+      "typical_events": [
+        "艺术展览",
+        "文化节庆",
+        "商业推广"
+      ]
+    },
+    {
+      "id": "P10",
+      "slug": "collage-freeform",
+      "name": "拼贴与自由动势",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "自由拼贴",
+          "不规则自由布局",
+          "对角线构图"
+        ]
+      },
+      "one_liner": "元素自由散落或对角运动，年轻、实验、不规矩",
+      "typical_events": [
+        "音乐演出",
+        "市集",
+        "艺术展览",
+        "文化节庆"
+      ]
+    },
+    {
+      "id": "P01",
+      "slug": "modular-grid",
+      "name": "模块化网格",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "模块化网格"
+        ]
+      },
+      "one_liner": "规整网格分块，信息层级清楚，理性现代",
+      "typical_events": [
+        "艺术展览",
+        "讲座论坛",
+        "商业推广"
+      ]
+    },
+    {
+      "id": "P02",
+      "slug": "asymmetric-editorial",
+      "name": "非对称网格",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "非对称网格"
+        ]
+      },
+      "one_liner": "网格但不对称，大留白配偏置标题，杂志编辑感",
+      "typical_events": [
+        "艺术展览",
+        "讲座论坛",
+        "工作坊"
+      ]
+    },
+    {
+      "id": "P03",
+      "slug": "axis-formal",
+      "name": "中心轴庄重",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "中心轴对称"
+        ]
+      },
+      "one_liner": "中轴对称，主标题居中，正式、公告感、信息明确",
+      "typical_events": [
+        "文化节庆",
+        "讲座论坛",
+        "社区活动",
+        "商业推广"
+      ]
+    },
+    {
+      "id": "P11",
+      "slug": "info-zoned",
+      "name": "信息分区",
+      "match": {
+        "typography": [
+          "无衬线",
+          "像素"
+        ],
+        "composition": [
+          "上下分区",
+          "左右分栏",
+          "单栏纵向"
+        ]
+      },
+      "one_liner": "画面明确切成信息区块，主视觉与信息栏分离，承载大量文字",
+      "typical_events": [
+        "讲座论坛",
+        "社区活动",
+        "体育活动",
+        "工作坊"
+      ]
+    },
+    {
+      "id": "P12",
+      "slug": "acid-digital",
+      "name": "酸性数字",
+      "match": null,
+      "one_liner": "渐变金属、发光 3D、变形实验字，数字原生审美",
+      "typical_events": [
+        "音乐演出",
+        "艺术展览",
+        "商业推广"
+      ],
+      "note": "没有可用的标签规则——源库把这批图错标成了书法或装饰字体。只能由 overrides.json 逐张指进来，新增图必须人工看后归类。"
+    },
+    {
+      "id": "P99",
+      "slug": "uncategorized",
+      "name": "待归类",
+      "match": null,
+      "is_fallback": true,
+      "one_liner": "规则没兜住的图，人工看后改 rules 再重跑，不要直接用",
+      "typical_events": []
+    }
+  ],
+  "substyles": {
+    "_comment": "大桶内部的第二层。同一个主风格里，构图做法可能差很远，生图时要说清用哪个子风格。目前只覆盖视觉评审点过名的图，其余成员是 unassigned，用到时先看接触表再定。",
+    "P03": [
+      {
+        "id": "hero-image",
+        "name": "居中主视觉图像",
+        "use_when": "有一个明确主体（人、物、插画）撑住画面中心",
+        "members_note": "主视觉占中部，标题压上或置下"
+      },
+      {
+        "id": "graphic-symbol",
+        "name": "居中图形符号",
+        "use_when": "没有摄影主体，用一个图形或符号当视觉中心",
+        "members_note": "图形小而精，四周留白多"
+      },
+      {
+        "id": "text-only",
+        "name": "纯文字公告",
+        "use_when": "信息就是主角，不需要主视觉",
+        "members_note": "字排本身当画面，最考验字体和间距"
+      }
+    ],
+    "P04": [
+      {
+        "id": "minimal-type",
+        "name": "极简字排学术",
+        "use_when": "讲座、论坛、学术放映，信息少而重",
+        "members_note": "大量留白，字号对比拉开层级"
+      },
+      {
+        "id": "illustration",
+        "name": "插画配宋体",
+        "use_when": "展览、出版类，需要一点温度但不失克制",
+        "members_note": "插画占一块，宋体标题独立区"
+      },
+      {
+        "id": "photo-editorial",
+        "name": "照片编辑风",
+        "use_when": "有摄影素材，想做出杂志内页感",
+        "members_note": "照片不当满版用，切块配文字栏"
+      }
+    ],
+    "P06": [
+      {
+        "id": "retro-gig",
+        "name": "复古演出",
+        "use_when": "乐队、放映、演出，要年代感",
+        "members_note": "旧印刷质感、套色不准、纸张肌理"
+      },
+      {
+        "id": "riso-pop",
+        "name": "Riso 叠印波普",
+        "use_when": "年轻受众、市集、独立文化",
+        "members_note": "两三色叠印出错位和叠色"
+      },
+      {
+        "id": "playful-display",
+        "name": "活泼装饰字",
+        "use_when": "节庆、亲子、社区，要热闹",
+        "members_note": "标题本身就是图案"
+      }
+    ],
+    "P07": [
+      {
+        "id": "doodle",
+        "name": "涂鸦手写",
+        "use_when": "社区、亲子、工作坊，要随意亲切",
+        "members_note": "像手写上去的，不追求工整"
+      },
+      {
+        "id": "cut-paper",
+        "name": "剪贴拼贴",
+        "use_when": "市集、独立出版、实验活动",
+        "members_note": "撕边、纸张叠压、错位"
+      },
+      {
+        "id": "textured-illustration",
+        "name": "肌理插画",
+        "use_when": "需要插画但不要太甜",
+        "members_note": "颗粒、笔触、版画感"
+      }
+    ]
+  }
+}

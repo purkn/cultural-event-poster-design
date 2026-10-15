@@ -1,0 +1,120 @@
+{
+  "version": "2.0",
+  "axis": "主导锚点关系/阅读拓扑；不按方向或特效拆类",
+  "layouts": [
+    {
+      "id": "M01",
+      "name": "单核聚焦",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "一个支配全画面的视觉锚点，其他信息为从属注释",
+      "recognition_test": "只有一个支配节点；其余不与它等权",
+      "density_natural": [
+        "low",
+        "medium"
+      ],
+      "density_needs_evidence": [
+        "high"
+      ],
+      "not_a_new_template": "位置可以中心/偏置/斜向；主锚也可以是标题",
+      "diagram": "[ 从属文字 ] → [ ◎ 主锚点 ] ← [ 从属信息 ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    },
+    {
+      "id": "M02",
+      "name": "双锚对话",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "两个可独立辨认、彼此对话的视觉锚点构成张力",
+      "recognition_test": "恰有两个主要节点且没有强制起点/终点先后，其他信息从属；有强制先后关系时看M04",
+      "density_natural": [
+        "low",
+        "medium"
+      ],
+      "density_needs_evidence": [
+        "high"
+      ],
+      "not_a_new_template": "不是简单左右分栏；可上下/交错/叠合",
+      "diagram": "[ ◎ 锚点A ] ↔ [ ◎ 锚点B ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    },
+    {
+      "id": "M03",
+      "name": "组列节奏",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "三个以上同级或近同级单元，通过重复/间隔形成组列",
+      "recognition_test": "主要单元可互换且近同级；无唯一强制阅读路径",
+      "density_natural": [
+        "medium",
+        "high"
+      ],
+      "density_needs_evidence": [
+        "low"
+      ],
+      "not_a_new_template": "网格/阵列/自由重复是参数；不固定方格卡片",
+      "diagram": "[ ○ ][ ○ ][ ○ ]  /  [ ○ ][ ○ ][ ○ ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    },
+    {
+      "id": "M04",
+      "name": "路径叙事",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "两个以上内容节点沿一条可感知路径依次展开",
+      "recognition_test": "存在起点→后继→终点；主关系是一条链",
+      "density_natural": [
+        "low",
+        "medium"
+      ],
+      "density_needs_evidence": [
+        "high"
+      ],
+      "not_a_new_template": "路径可直线/对角/曲线/螺旋；方向不是新母版",
+      "diagram": "[ ● 起 ] → [ ● 中 ] → [ ● 终 ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    },
+    {
+      "id": "M05",
+      "name": "连续场域",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "视觉吸引力分布于连续场景/肌理，而非局部独立主物",
+      "recognition_test": "不能抽出一个局部对象仍保留视觉核心；文字在场中组织",
+      "density_natural": [
+        "low",
+        "medium"
+      ],
+      "density_needs_evidence": [
+        "high"
+      ],
+      "not_a_new_template": "满版是可用呈现方式，不等于摄影风格",
+      "diagram": "[ ~ 连续场景 ~ 字 ~ 纹理 ~ 信息 ~ ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    },
+    {
+      "id": "M06",
+      "name": "分群网络",
+      "classification_axis": "dominant_anchor_relationship",
+      "definition": "三个以上不等权的语义群，以层级和关联组成信息网络",
+      "recognition_test": "组群异质且有主次；不是同级组列，也不是单链",
+      "density_natural": [
+        "medium",
+        "high"
+      ],
+      "density_needs_evidence": [
+        "low"
+      ],
+      "not_a_new_template": "空间可有网格，但每组角色不同；不靠纯底卡片",
+      "diagram": "[ ◎ 主群 ] ↔ [ ○ 次群 ] ↔ [ · 小群 ]",
+      "capacity_policy": "密度是条件提示，不是实测容量；非自然密度必须有本次排版容量证据，实际尺寸/字数/主体遮挡在B前核验",
+      "safe_regions": "由实际主视觉与真实字形局部验证；不能生成后补的大色板",
+      "counterfactual": "去掉颜色/字体/媒介后，锚点和阅读关系仍保留，才是构图骨架"
+    }
+  ]
+}

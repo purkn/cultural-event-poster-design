@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ActivityProfile",
+  "type": "object",
+  "required": [
+    "activity_id",
+    "activity_type",
+    "theme_tags",
+    "audience",
+    "mood",
+    "communication",
+    "evidence"
+  ],
+  "properties": {
+    "activity_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activity_type": {
+      "type": "string"
+    },
+    "theme_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audience": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "mood": {
+      "type": "object",
+      "required": [
+        "primary"
+      ],
+      "properties": {
+        "primary": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "communication": {
+      "type": "object",
+      "required": [
+        "channel",
+        "density"
+      ],
+      "properties": {
+        "channel": {
+          "enum": [
+            "social_media",
+            "print",
+            "exhibition",
+            "outdoor",
+            "campus"
+          ]
+        },
+        "density": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "hero_form": {
+          "deprecated": true,
+          "description": "旧字段混杂媒介和主体数；新工作流不使用它给骨架分类"
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "source",
+          "confidence"
+        ],
+        "properties": {
+          "source": {
+            "type": "string",
+            "minLength": 1
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "inferred": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "reference_constraint": {
+      "type": "boolean"
+    },
+    "reference_assessments": {
+      "type": "object"
+    },
+    "history": {
+      "type": "array"
+    },
+    "parameters": {
+      "type": "object",
+      "description": "媒介、方向、位置、字形、图字关系、景深，见libraries/design_parameters.json"
+    },
+    "layout_assessments": {
+      "type": "object",
+      "description": "每M类实际容量评估及观察证据"
+    },
+    "channel_assessments": {
+      "type": "object",
+      "description": "每F类实际投放适配评分与证据，不依据家族名自动猜测"
+    },
+    "materials": {
+      "type": "object",
+      "description": "S2需要scene_photo={verified:true,source:可靠来源,path:真实文件路径}，verified来自真实看图，不由脚本虚构"
+    }
+  }
+}

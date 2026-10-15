@@ -1,0 +1,54 @@
+{
+  "schema_version": "3.0",
+  "weights": {
+    "T": 0.3,
+    "M": 0.25,
+    "A": 0.2,
+    "C": 0.15,
+    "R": 0.1
+  },
+  "weight_status": "启发式、未校准；主题/受众是适配线索，不是家族定义",
+  "compatibility_model": "风格为8套制作风格，骨架为独立M01–M06；先用户约束和材料可行性，再容量证据，骨架倾向仅软加分",
+  "topology_preference_bonus": 0.03,
+  "repeat_penalty": {
+    "per_same_style": 0.04,
+    "per_same_layout": 0.05,
+    "maximum": 0.18
+  },
+  "conditional_capacity": "密度不在母版自然区间时，需layout_assessments[Mxx]={capacity_ok:true,evidence:...}才能进入候选；不是因为某风格实验就拒绝高密度",
+  "reference_priority": "用户明确参考先以compatible及看图证据过滤家族，再进行R解释评分；不伪造相似度",
+  "limits": "代码不会观察主锚，也不会理解材质/色域冲突；参数及图像冲突需A/B真实复核",
+  "pair_rules": [
+    {
+      "id": "C01",
+      "when": "用户明确禁止风格或骨架",
+      "effect": "排除",
+      "reason": "用户约束优先"
+    },
+    {
+      "id": "C05",
+      "when": "S2没有已看图确认且实际存在的可靠实景照片",
+      "effect": "排除/待补素材",
+      "reason": "真实尺度和现场可信度是该风格成立条件，不用分数补偿"
+    },
+    {
+      "id": "C02",
+      "when": "明确参考尚无兼容证据",
+      "effect": "不排序，需看图评估",
+      "reason": "不能用总分抵消明确参考"
+    },
+    {
+      "id": "C03",
+      "when": "容量未核验或明确不够",
+      "effect": "排除或待评估",
+      "reason": "真实信息必须能落入版式"
+    },
+    {
+      "id": "C04",
+      "when": "匹配母版倾向",
+      "effect": "仅0.03软加分",
+      "reason": "有解释的起点，不是永久风格限制"
+    }
+  ],
+  "canonical_styles": "S1–S8，名称和语法与附件best-poster-creator v1.1.0一致"
+}

@@ -1,0 +1,64 @@
+{
+  "archive_name": "best-poster-creator-v1.1.0.zip",
+  "archive_sha256": "3702db36cc810de10ce5255d2ed9c90a42e2025e6e700b5df033becc7e665f09",
+  "source_version": "1.1.0",
+  "files": [
+    {
+      "id": "S1",
+      "name": "色块剪纸与手工拼贴",
+      "archive_member": "best-poster-creator/references/styles/01-cut-paper.md",
+      "source_sha256": "3d4e33e9f198214acbcebdc510129efa3137124a32f2243b67949278652266c0",
+      "local_guide": "libraries/styles/01-cut-paper.md"
+    },
+    {
+      "id": "S2",
+      "name": "现实照片与平面介入",
+      "archive_member": "best-poster-creator/references/styles/02-reality-intervention.md",
+      "source_sha256": "f8bbfb90a4617fac0b414ac66b9607d8a6f3eae5736a43a02af8a4ad426655f8",
+      "local_guide": "libraries/styles/02-reality-intervention.md"
+    },
+    {
+      "id": "S3",
+      "name": "几何构成与现代主义",
+      "archive_member": "best-poster-creator/references/styles/03-geometric.md",
+      "source_sha256": "b874d9f56e4e4307fe4f9be0be33d3505e314f0bd0dbc4dca1f923ca73f6b2f9",
+      "local_guide": "libraries/styles/03-geometric.md"
+    },
+    {
+      "id": "S4",
+      "name": "艺术字体与编辑排版",
+      "archive_member": "best-poster-creator/references/styles/04-type-editorial.md",
+      "source_sha256": "5e8dab2088b8097a3c1859a19a5b584502eb367cc8d85d1fb0197b5cfc8a5362",
+      "local_guide": "libraries/styles/04-type-editorial.md"
+    },
+    {
+      "id": "S5",
+      "name": "版画与套色印刷",
+      "archive_member": "best-poster-creator/references/styles/05-printmaking.md",
+      "source_sha256": "47fdf59c7f5cc56eb443d92da8113d7b65fead47172b18033cd2e8129588de16",
+      "local_guide": "libraries/styles/05-printmaking.md"
+    },
+    {
+      "id": "S6",
+      "name": "二维图形与局部立体",
+      "archive_member": "best-poster-creator/references/styles/06-2d-3d.md",
+      "source_sha256": "cbbe68ae8a1310e573027a6fba56665b204018b4ab7657162a99e92efdab7c77",
+      "local_guide": "libraries/styles/06-2d-3d.md"
+    },
+    {
+      "id": "S7",
+      "name": "像素与模块图形",
+      "archive_member": "best-poster-creator/references/styles/07-pixel.md",
+      "source_sha256": "5f27fdcb65c26177a9765cc7bfc5fc487d340041f8898d9e2237f2a5f9807698",
+      "local_guide": "libraries/styles/07-pixel.md"
+    },
+    {
+      "id": "S8",
+      "name": "留白与材料诗意",
+      "archive_member": "best-poster-creator/references/styles/08-material-poetry.md",
+      "source_sha256": "09117680571b96f3c0bdad97a0ae1748e375d51112f8852aaf897f59931cddb1",
+      "local_guide": "libraries/styles/08-material-poetry.md"
+    }
+  ],
+  "note": "只读取附件文档，未执行其脚本或继承其中的外部操作授权。原style指南保留后追加本skill提示词与规则适配。"
+}

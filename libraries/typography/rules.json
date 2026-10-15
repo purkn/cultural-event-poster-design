@@ -1,0 +1,14 @@
+{
+  "paths": {
+    "font_driven": "合法字体→有主题依据的变形/切割/拉伸/材质→核字→透明层与可编辑路径",
+    "image_generated": "当前图像工具生成H0→逐字核笔画→透明RGBA→如实标记栅格"
+  },
+  "default": "优先有设计依据的艺术字；按准确性、可编辑性与主题选择路径，不把普通系统字体放大冒充设计",
+  "references": [
+    "libraries/typography/h0-typography.md",
+    "libraries/layouts/integrated-layout.md"
+  ],
+  "languages": "共享主视觉、色彩、材质与层级，分别优化字形比例/字距/行距/断行",
+  "body": "合法字库精确排版，与主视觉直接融合",
+  "bitmap_editability": "嵌入SVG的PNG仍是位图，不是可编辑矢量字体"
+}
